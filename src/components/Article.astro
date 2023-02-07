@@ -1,0 +1,21 @@
+---
+
+type Props = {
+  title: string,
+  date: string,
+  author: string,
+  url?: string,
+  published: boolean
+}
+
+const {title, date, author, url, published} = Astro.props;
+
+---
+
+<tr>
+  <td>{date}</td>
+  <td>{author}</td>
+  <td>{
+    url && published ? (<a href=`${url}`>{title}</a>) : title
+    }</td>
+</tr>

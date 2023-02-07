@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "author": "thinca",
+      "date": "2023-02-01",
+      "title": "vim-jp ekiden の説明とか",
+      "url": "https://example.com/vim_jp_ekiden",
+      "published": true
+    },
+    {
+      "author": "kuu",
+      "date": "2023-02-03",
+      "title": "ぼくのかんがえたさいきょうのゔぃむあーるしー",
+      "url": "https://example.com/greatest_vimrc_of_me",
+      "published": false
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+---
+import content from "../content.json"
+import Article from "./Article.astro";
+
+const articles = content.articles;
+
+---
+
+<table>
+  <tbody>
+    {
+      articles.map((article) => <Article {...article} />)
+    }
+  </tbody>
+</table>
