@@ -11,5 +11,6 @@
 	},
 	"dependencies": {
 		"astro": "^2.0.8"
-	}
+	},
+	"packageManager": "pnpm@7.26.3"
 }
