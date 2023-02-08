@@ -1,12 +1,13 @@
 ---
-
-type Props = {
+export type Article = {
   title: string,
   date: string,
   author: string,
   url?: string,
   published: boolean
 }
+
+type Props = Article
 
 const {title, date, author, url, published} = Astro.props;
 

@@ -10,7 +10,15 @@
 		"astro": "astro"
 	},
 	"dependencies": {
-		"astro": "^2.0.8"
+		"@astrojs/react": "^2.0.2",
+		"@fullcalendar/core": "^6.1.4",
+		"@fullcalendar/daygrid": "^6.1.4",
+		"@fullcalendar/react": "^6.1.4",
+		"@types/react": "^18.0.21",
+		"@types/react-dom": "^18.0.6",
+		"astro": "^2.0.8",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0"
 	},
 	"packageManager": "pnpm@7.26.3"
 }

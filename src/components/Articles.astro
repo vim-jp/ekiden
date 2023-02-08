@@ -1,10 +1,14 @@
 ---
-import content from "../content.json"
-import Article from "./Article.astro";
+import Article, {Article as TArticle} from "./Article.astro";
 
-const articles = content.articles;
+type Props = {
+  articles: TArticle[]
+}
+
+const {articles} = Astro.props;
 
 ---
+
 
 <table>
   <tbody>
