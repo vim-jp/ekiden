@@ -13,17 +13,18 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: "16"
-      - uses: pnpm/action-setup@v2
+      - uses: withastro/action@v0
         with:
-          version: 7
-          run_install: true
+          node-version: 16
+          package-manager: pnpm
 
-      - run: |
-          pnpm install
-          pnpm run build
-
-      - uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref == 'refs/heads/main' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
