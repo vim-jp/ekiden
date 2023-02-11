@@ -1,5 +1,5 @@
 ---
-export type Article = {
+export type ArticleProps = {
   title: string,
   date: string,
   author: string,
@@ -7,7 +7,7 @@ export type Article = {
   published: boolean
 }
 
-type Props = Article
+type Props = ArticleProps
 
 const {title, date, author, url, published} = Astro.props;
 

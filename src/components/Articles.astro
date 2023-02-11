@@ -1,8 +1,8 @@
 ---
-import Article, {Article as TArticle} from "./Article.astro";
+import Article, {ArticleProps} from "./Article.astro";
 
 type Props = {
-  articles: TArticle[]
+  articles: ArticleProps[]
 }
 
 const {articles} = Astro.props;
