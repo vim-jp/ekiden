@@ -1,0 +1,22 @@
+---
+export type Article = {
+  title: string,
+  date: string,
+  author: string,
+  url?: string,
+  published: boolean
+}
+
+type Props = Article
+
+const {title, date, author, url, published} = Astro.props;
+
+---
+
+<tr>
+  <td>{date}</td>
+  <td>{author}</td>
+  <td>{
+    url && published ? (<a href=`${url}`>{title}</a>) : title
+    }</td>
+</tr>

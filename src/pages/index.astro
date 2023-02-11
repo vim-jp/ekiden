@@ -1,0 +1,28 @@
+---
+import Articles from "../components/Articles.astro";
+import Calendar from "../components/Calendar";
+
+import content from "../content.json"
+
+const articles = content.articles;
+const events = articles.map((article) => ({
+  title: article.title,
+  start: article.date,
+}));
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+  <title>Vim 駅伝</title>
+  </head>
+  <body>
+    <h1>Vim 駅伝</h1>
+    <h2>スケジュール</h2>
+    <Calendar events={events} client:load />
+    <h2>記事一覧</h2>
+    <Articles articles={articles}>
+  </body>
+</html>
