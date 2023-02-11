@@ -13,10 +13,10 @@ const {title, date, author, url, published} = Astro.props;
 
 ---
 
-<tr>
-  <td>{date}</td>
-  <td>{author}</td>
-  <td>{
-    url && published ? (<a href=`${url}`>{title}</a>) : title
+<tr class="flex flex-row">
+  <td class="basis-1/6">{date}</td>
+  <td class="basis-1/6">{author}</td>
+  <td class="basis-2/3">{
+    url && published ? (<a class="underline" href=`${url}`>{title}</a>) : title
     }</td>
 </tr>

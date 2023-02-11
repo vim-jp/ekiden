@@ -19,10 +19,29 @@ const events = articles.map((article) => ({
   <title>Vim 駅伝</title>
   </head>
   <body>
-    <h1>Vim 駅伝</h1>
-    <h2>スケジュール</h2>
-    <Calendar events={events} client:load />
-    <h2>記事一覧</h2>
-    <Articles articles={articles}>
+    <main>
+      <h1>Vim 駅伝</h1>
+      <div class="py-5">
+        <h2>スケジュール</h2>
+        <Calendar events={events} client:load />
+      </div>
+      <div class="py-5">
+        <h2>記事一覧</h2>
+        <Articles articles={articles} />
+      </div>
+    </main>
   </body>
 </html>
+
+<style>
+  :root {}
+  main {
+    @apply m-20;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold my-1;
+  }
+</style>
