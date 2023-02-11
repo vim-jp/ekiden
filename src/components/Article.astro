@@ -1,15 +1,19 @@
 ---
+import dayjs from 'dayjs';
+
 export type ArticleProps = {
   title: string;
   date: string;
   author: string;
   url?: string;
-  published: boolean;
 };
 
 type Props = ArticleProps;
 
-const { title, date, author, url, published } = Astro.props;
+const { title, date, author, url } = Astro.props;
+
+const today = dayjs()
+const published = today >= dayjs(date)
 ---
 
 <tr>

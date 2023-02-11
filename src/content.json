@@ -1,11 +1,14 @@
 {
   "articles": [
     {
+      "github": {
+        "user": "thinca",
+        "issue_url": ""
+      },
       "title": "Vim 駅伝を紹介します",
       "author": "thinca",
       "date": "2023-02-13",
-      "url": "https://example.com",
-      "published": false
+      "url": "https://example.com"
     }
   ]
 }
