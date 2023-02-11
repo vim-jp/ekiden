@@ -2,7 +2,7 @@
 import Articles from "../components/Articles.astro";
 import Calendar from "../components/Calendar";
 
-import content from "../content.json"
+import content from "../content.json";
 
 const articles = content.articles;
 const events = articles.map((article) => ({
@@ -29,6 +29,6 @@ const events = articles.map((article) => ({
     <h2>スケジュール</h2>
     <Calendar events={events} client:load />
     <h2>記事一覧</h2>
-    <Articles articles={articles}>
+    <Articles articles={articles} />
   </body>
 </html>

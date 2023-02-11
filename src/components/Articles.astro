@@ -1,19 +1,15 @@
 ---
-import Article, {Article as TArticle} from "./Article.astro";
+import Article, { Article as TArticle } from "./Article.astro";
 
 type Props = {
-  articles: TArticle[]
-}
+  articles: TArticle[];
+};
 
-const {articles} = Astro.props;
-
+const { articles } = Astro.props;
 ---
-
 
 <table>
   <tbody>
-    {
-      articles.map((article) => <Article {...article} />)
-    }
+    {articles.map((article) => <Article {...article} />)}
   </tbody>
 </table>
