@@ -1,20 +1,37 @@
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
+import type { EventContentArg } from "@fullcalendar/core";
 
 type Props = {
-  events: {
+  articles: {
     title: string;
-    start: string;
+    author: string;
+    date: string;
+    url: string;
   }[];
 };
 
 const Calendar = (props: Props) => {
-  const events = props.events.map((event) => {
+  const events = props.articles.map((article) => {
     return {
-      ...event,
-      ...{ display: "background" },
+      title: article.title,
+      url: article.url,
+      date: article.date,
+      author: article.author,
+      display: "background",
     };
   });
+
+  const eventContent = (arg: EventContentArg) => {
+    return (
+      <div>
+        <div>
+          <a href={arg.event.url}>{arg.event.title}</a>
+        </div>
+        <div>{arg.event.extendedProps.author}</div>
+      </div>
+    );
+  };
 
   return (
     <FullCalendar
@@ -22,6 +39,7 @@ const Calendar = (props: Props) => {
       initialView="dayGridMonth"
       locale="ja"
       events={events}
+      eventContent={eventContent}
     />
   );
 };
