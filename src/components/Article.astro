@@ -1,16 +1,15 @@
 ---
 export type Article = {
-  title: string,
-  date: string,
-  author: string,
-  url?: string,
-  published: boolean
-}
+  title: string;
+  date: string;
+  author: string;
+  url?: string;
+  published: boolean;
+};
 
-type Props = Article
+type Props = Article;
 
-const {title, date, author, url, published} = Astro.props;
-
+const { title, date, author, url, published } = Astro.props;
 ---
 
 <tr class="flex flex-row">
