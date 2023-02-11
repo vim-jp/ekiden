@@ -2,7 +2,7 @@
 import Articles from "../components/Articles.astro";
 import Calendar from "../components/Calendar";
 
-import content from "../content.json"
+import content from "../content.json";
 
 const articles = content.articles;
 ---
@@ -12,13 +12,13 @@ const articles = content.articles;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-  <title>Vim 駅伝</title>
+    <title>Vim 駅伝</title>
   </head>
   <body>
     <h1>Vim 駅伝</h1>
     <h2>スケジュール</h2>
     <Calendar articles={articles} client:load />
     <h2>記事一覧</h2>
-    <Articles articles={articles}>
+    <Articles articles={articles} />
   </body>
 </html>

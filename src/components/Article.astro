@@ -1,22 +1,19 @@
 ---
 export type ArticleProps = {
-  title: string,
-  date: string,
-  author: string,
-  url?: string,
-  published: boolean
-}
+  title: string;
+  date: string;
+  author: string;
+  url?: string;
+  published: boolean;
+};
 
-type Props = ArticleProps
+type Props = ArticleProps;
 
-const {title, date, author, url, published} = Astro.props;
-
+const { title, date, author, url, published } = Astro.props;
 ---
 
 <tr>
   <td>{date}</td>
   <td>{author}</td>
-  <td>{
-    url && published ? (<a href=`${url}`>{title}</a>) : title
-    }</td>
+  <td>{url && published ? <a href={url}>{title}</a> : title}</td>
 </tr>
