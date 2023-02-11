@@ -9,12 +9,19 @@ type Props = {
 };
 
 const Calendar = (props: Props) => {
+  const events = props.events.map((event) => {
+    return {
+      ...event,
+      ...{ display: "background" },
+    };
+  });
+
   return (
     <FullCalendar
       plugins={[dayGridPlugin]}
       initialView="dayGridMonth"
       locale="ja"
-      events={props.events}
+      events={events}
     />
   );
 };
