@@ -1,0 +1,36 @@
+name: '新しい記事のエントリー'
+description: 'Issue を作ることで新しい記事のエントリーをすることができます。'
+labels: ['article']
+body:
+  - type: 'markdown'
+    attributes:
+      value: |
+        - タイトルの先頭には公開予定日を YYYY-mm-dd の形式で入力してください。
+        - 内容を修正したい場合は本文を編集してください。フォーマットは崩さないように注意してください。
+        - キャンセルしたい場合は、記事 URL が入力されていない状態で Issue を閉じてください。
+        - 各種変更は GitHub Actions でリポジトリに反映されます。
+          - 短い間隔で変更を行うと、GitHub Actions の動作に支障が出る場合があります。連続で変更する場合は少し間隔を開けて行ってください。
+          - 何か問題が起きた場合は @vim-jp/ekiden までコメントでお知らせください。
+  - type: 'input'
+    id: 'name'
+    attributes:
+      label: '執筆者名'
+      description: |
+        記事の執筆者の名前です。
+        省略した場合は GitHub のユーザー名になります。
+  - type: 'input'
+    id: 'title'
+    attributes:
+      label: '記事タイトル'
+      description: |
+        記事のタイトルです。
+        後から変更することも可能です。
+    validations:
+      required: true
+  - type: 'input'
+    id: 'url'
+    attributes:
+      label: '記事 URL'
+      description: |
+        記事の URL です。
+        後から変更することも可能です。
