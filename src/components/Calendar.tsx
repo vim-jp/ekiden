@@ -1,6 +1,6 @@
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
-import type { EventContentArg } from "@fullcalendar/core";
+import type { EventContentArg, EventInput } from "@fullcalendar/core";
 import dayjs from "dayjs";
 import styled from "@emotion/styled";
 
@@ -35,7 +35,7 @@ function registrationLinkDisplayDates(today: dayjs.Dayjs): string[] {
 
 const Calendar = (props: Props) => {
   const today = dayjs();
-  const eventMap = new Map();
+  const eventMap: Map<string, EventInput> = new Map();
   for (const article of props.articles) {
     eventMap.set(article.date, {
       title: article.title,
@@ -63,7 +63,7 @@ const Calendar = (props: Props) => {
       });
     }
   }
-  const events = Array.from(eventMap).map(([_, v]) => v);
+  const events = Array.from(eventMap).map(([, v]) => v);
 
   const eventContent = (arg: EventContentArg) => {
     if (arg.event.extendedProps.registered) {
@@ -89,7 +89,7 @@ const Calendar = (props: Props) => {
           <div>
             <a
               href={`https://github.com/vim-jp/ekiden/issues/new?title=${dayjs(
-                arg.event.start,
+                arg.event.start
               ).format("YYYY-MM-DD")}`}
             >
               参加登録
