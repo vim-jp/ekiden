@@ -84,13 +84,12 @@ const Calendar = (props: Props) => {
         </>
       );
     } else {
+      const title = dayjs(arg.event.start).format("YYYY-MM-DD");
       return (
         <div>
           <div>
             <a
-              href={`https://github.com/vim-jp/ekiden/issues/new?title=${dayjs(
-                arg.event.start
-              ).format("YYYY-MM-DD")}`}
+              href={`https://github.com/vim-jp/ekiden/issues/new?template=article.yml&title=${title}`}
             >
               参加登録
             </a>
