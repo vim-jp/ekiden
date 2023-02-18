@@ -15,10 +15,36 @@ const articles = content.articles;
     <title>Vim 駅伝</title>
   </head>
   <body>
-    <h1>Vim 駅伝</h1>
-    <h2>スケジュール</h2>
-    <Calendar articles={articles} client:load />
-    <h2>記事一覧</h2>
-    <Articles articles={articles} />
+    <main>
+      <div class="tw-c-container">
+        <h1>Vim 駅伝</h1>
+        <div class="tw-c-section">
+          <h2>スケジュール</h2>
+          <Calendar articles={articles} client:load />
+        </div>
+        <div class="tw-c-section">
+          <h2>記事一覧</h2>
+          <Articles articles={articles} />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
+
+<style>
+  main {
+    @apply flex justify-center my-10 mx-20;
+  }
+  div.tw-c-container {
+    @apply max-w-4xl flex-1;
+  }
+  div.tw-c-section {
+    @apply py-5;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-2xl font-bold my-1;
+  }
+</style>
