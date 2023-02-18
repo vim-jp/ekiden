@@ -9,6 +9,16 @@
       "author": "thinca",
       "date": "2023-02-13",
       "url": "https://example.com"
+    },
+    {
+      "github": {
+        "user": "monaqa",
+        "issue_url": ""
+      },
+      "title": "何か書く",
+      "author": "monaqa",
+      "date": "2023-03-13",
+      "url": "https://example.com"
     }
   ]
 }
