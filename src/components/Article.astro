@@ -20,6 +20,6 @@ const published = today >= dayjs(date);
   <td class="basis-1/6">{date}</td>
   <td class="basis-1/6">{author}</td>
   <td class="basis-2/3">{
-    url && published ? (<a class="underline" href=`${url}`>{title}</a>) : title
+    url && published ? (<a class="text-blue-600 visited:text-purple-600 underline" href={url}>{title}</a>) : title
     }</td>
 </tr>

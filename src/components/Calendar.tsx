@@ -20,6 +20,10 @@ const OverrideCalendarStyle = styled.div`
 `;
 
 const REGISTRATION_LINK_DISPLAY_DAYS = 30;
+/**
+ * Vim 駅伝対象日の日付を YYYY-MM-DD 形式で返す。
+ * ただし 本日から REGISTRATION_LINK_DISPLAY_DAYS 以内の日付に限る。
+ */
 function registrationLinkDisplayDates(today: dayjs.Dayjs): string[] {
   const dates = [];
   // 特定の条件を満たす日のみリストに加える
@@ -36,6 +40,7 @@ function registrationLinkDisplayDates(today: dayjs.Dayjs): string[] {
 const Calendar = (props: Props) => {
   const today = dayjs();
   const eventMap: Map<string, EventInput> = new Map();
+
   for (const article of props.articles) {
     eventMap.set(article.date, {
       title: article.title,
@@ -69,9 +74,14 @@ const Calendar = (props: Props) => {
     if (arg.event.extendedProps.registered) {
       return (
         <>
-          <div>
+          <div className="pt-6">
             {arg.event.extendedProps.published ? (
-              <a href={arg.event.url}>{arg.event.title}</a>
+              <a
+                href={arg.event.url}
+                className="text-blue-600 visited:text-purple-600 underline"
+              >
+                {arg.event.title}
+              </a>
             ) : (
               <span style={{ color: "#111111" }}>{arg.event.title}</span>
             )}
@@ -86,14 +96,13 @@ const Calendar = (props: Props) => {
     } else {
       const title = dayjs(arg.event.start).format("YYYY-MM-DD");
       return (
-        <div>
-          <div>
-            <a
-              href={`https://github.com/vim-jp/ekiden/issues/new?template=article.yml&title=${title}`}
-            >
-              参加登録
-            </a>
-          </div>
+        <div className="pt-6">
+          <a
+            className="text-blue-600 visited:text-purple-600 underline"
+            href={`https://github.com/vim-jp/ekiden/issues/new?template=article.yml&title=${title}`}
+          >
+            参加登録
+          </a>
         </div>
       );
     }
