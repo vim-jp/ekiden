@@ -1,22 +1,11 @@
 ---
-import Article, { Article as TArticle } from "./Article.astro";
+import Article, { ArticleProps } from "./Article.astro";
 
 type Props = {
-  articles: TArticle[];
+  articles: ArticleProps[];
 };
 
 const { articles } = Astro.props;
 ---
 
-<table class="w-full">
-  <thead class="text-left">
-    <tr class="flex flex-row">
-      <th class="basis-1/6">Date</th>
-      <th class="basis-1/6">Author</th>
-      <th class="basis-2/3">Title</th>
-    </tr>
-  </thead>
-  <tbody>
-    {articles.map((article) => <Article {...article} />)}
-  </tbody>
-</table>
+{articles.map((article) => <Article {...article} />)}

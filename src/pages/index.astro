@@ -5,10 +5,6 @@ import Calendar from "../components/Calendar";
 import content from "../content.json";
 
 const articles = content.articles;
-const events = articles.map((article) => ({
-  title: article.title,
-  start: article.date,
-}));
 ---
 
 <html lang="ja">
@@ -22,9 +18,9 @@ const events = articles.map((article) => ({
     <main>
       <div class="tw-c-container">
         <h1>Vim 駅伝</h1>
-        <div class="tw-c-section">
+        <div class="tw-c-section hidden md:block">
           <h2>スケジュール</h2>
-          <Calendar events={events} client:load />
+          <Calendar articles={articles} client:load />
         </div>
         <div class="tw-c-section">
           <h2>記事一覧</h2>
@@ -37,7 +33,7 @@ const events = articles.map((article) => ({
 
 <style>
   main {
-    @apply flex justify-center my-10 mx-20;
+    @apply flex justify-center my-10 mx-5;
   }
   div.tw-c-container {
     @apply max-w-4xl flex-1;
@@ -50,5 +46,8 @@ const events = articles.map((article) => ({
   }
   h2 {
     @apply text-2xl font-bold my-1;
+  }
+  a {
+    @apply text-blue-600;
   }
 </style>
