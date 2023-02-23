@@ -1,0 +1,117 @@
+name: 'Update article'
+run-name: 'Update ${{ github.event.issue.title }}: @${{ github.event.issue.user.login }}'
+on:
+  issues:
+    types:
+      - 'opened'
+      - 'reopened'
+      - 'edited'
+      - 'closed'
+
+jobs:
+  update-article:
+    name: 'Update article'
+    runs-on: 'ubuntu-latest'
+    if: |
+      contains(github.event.issue.labels.*.name, 'article') && (
+        github.event.issue.state == 'open' || github.event.action == 'closed'
+      )
+    permissions:
+      issues: 'write'
+    steps:
+      - uses: 'actions/checkout@v3'
+        with:
+          ref: 'main'
+          ssh-key: '${{ secrets.ARTICLE_DEPLOY_KEY }}'
+      - uses: 'denoland/setup-deno@v1'
+        with:
+          deno-version: 'v1.30.3'
+      - name: 'Run script'
+        id: 'script'
+        run: |
+          echo 'ERROR_MESSAGE<<MESSAGE' >> "${GITHUB_OUTPUT}"
+          jq -r '"公開日\n" + .issue.title + "\n" + .issue.body' '${{ github.event_path }}' | \
+               deno --quiet run --allow-read --allow-write ./scripts/update-article.ts \
+               --issueNumber '${{ github.event.issue.number }}' \
+               --githubUser '${{ github.event.issue.user.login }}' \
+               ${{ github.event.action == 'closed' && 'delete' || '' }} \
+               2>> "${GITHUB_OUTPUT}"
+          echo 'MESSAGE' >> "${GITHUB_OUTPUT}"
+      - name: 'Push changes'
+        id: 'push'
+        if:
+          steps.script.outputs.ERROR_MESSAGE == ''
+        env:
+          GIT_AUTHOR_NAME: '${{ github.event.issue.user.login }}'
+          GIT_AUTHOR_EMAIL: '${{ github.event.issue.user.login }}@users.noreply.github.com'
+          GIT_COMMITTER_NAME: 'github-actions[bot]'
+          GIT_COMMITTER_EMAIL: 'github-actions[bot]@users.noreply.github.com'
+        run: |
+          git add src/content.json
+          if git diff --cached --exit-code; then
+            exit
+          fi
+          git commit --message='Update content.json by #${{ github.event.issue.number }}'
+          echo "COMMIT_HASH=$(git rev-parse HEAD)" >> "${GITHUB_OUTPUT}"
+          git push
+      - name: 'Report'
+        uses: 'actions/github-script@v6'
+        env:
+          ERROR_MESSAGE: '${{ steps.script.outputs.ERROR_MESSAGE }}'
+          COMMIT_HASH: '${{ steps.push.outputs.COMMIT_HASH }}'
+        with:
+          script: |
+            const issue = {
+              ...context.repo,
+              issue_number: context.issue.number,
+            };
+            if (process.env.ERROR_MESSAGE) {
+              if (context.payload.action !== "closed") {
+                github.rest.issues.createComment({
+                  ...issue,
+                  body: `エラーが発生しました。\n\n- ${process.env.ERROR_MESSAGE}`,
+                });
+              } else {
+                github.rest.issues.createComment({
+                  ...issue,
+                  body: `エラーが発生しました。\n\n- ${process.env.ERROR_MESSAGE}\n\n問題を解消したら再オープンしてから再び閉じてください。`,
+                });
+              }
+            } else if (process.env.COMMIT_HASH) {
+              if (context.payload.action === "opened") {
+                github.rest.issues.createComment({
+                  ...issue,
+                  body: `エントリーしました。\n${process.env.COMMIT_HASH}`
+                });
+              } else if (context.payload.action === "closed") {
+                github.rest.issues.update({
+                  ...issue,
+                  state_reason: "not_planned",
+                });
+                github.rest.issues.createComment({
+                  ...issue,
+                  body: `キャンセルしました。\n${process.env.COMMIT_HASH}`
+                });
+              }
+            }
+
+  retry-on-failure:
+    name: 'Retry on failure'
+    runs-on: 'ubuntu-latest'
+    needs: 'update-article'
+    if: |
+      failure() && github.run_attempt < 5
+    permissions:
+      actions: 'write'
+    steps:
+      - uses: 'actions/github-script@v6'
+        with:
+          script: |
+            github.rest.actions.createWorkflowDispatch({
+              ...context.repo,
+              workflow_id: "retry-update-article.yml",
+              ref: "main",
+              inputs: {
+                run_id: String(context.runId),
+              },
+            });

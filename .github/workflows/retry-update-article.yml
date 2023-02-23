@@ -1,0 +1,22 @@
+name: 'Update article'
+run-name: 'Retry https://github.com/${{ github.repository }}/actions/runs/${{ inputs.run_id }}'
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        type: 'string'
+
+jobs:
+  retry-on-failure:
+    name: 'Retry on failure'
+    runs-on: 'ubuntu-latest'
+    permissions:
+      actions: 'write'
+    steps:
+      - uses: 'actions/github-script@v6'
+        with:
+          script: |
+            github.rest.actions.reRunWorkflowFailedJobs({
+              ...context.repo,
+              run_id: ${{ toJSON(inputs.run_id) }},
+            });
