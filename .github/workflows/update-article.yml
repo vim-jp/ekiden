@@ -90,7 +90,7 @@ jobs:
                 });
                 github.rest.issues.createComment({
                   ...issue,
-                  body: `キャンセルしました。\n${process.env.COMMIT_HASH}`
+                  body: `キャンセルしました。\n${process.env.COMMIT_HASH}`,
                 });
               }
             }
