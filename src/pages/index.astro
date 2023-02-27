@@ -18,7 +18,7 @@ const articles = content.articles;
     <main>
       <div class="tw-c-container">
         <h1>Vim 駅伝</h1>
-        <div class="tw-c-section hidden md:block">
+        <div class="tw-c-section">
           <h2>スケジュール</h2>
           <Calendar articles={articles} client:only="react" />
         </div>
@@ -54,5 +54,11 @@ const articles = content.articles;
 <style is:global>
   div.fc-daygrid-day-top {
     @apply relative z-10;
+  }
+  div.fc-view-harness {
+    @apply overflow-x-auto md:overflow-visible;
+  }
+  div.fc-dayGridMonth-view {
+    @apply min-w-[45rem];
   }
 </style>
