@@ -57,6 +57,10 @@ function validatePublishDate(date: string) {
   }
 }
 
+function unescapeContent(s: string): string {
+  return /^(`*)(.*)\1$/.exec(s)![2].trim();
+}
+
 function descriptionToArticle(
   description: string,
   githubUser: string | undefined,
@@ -94,17 +98,19 @@ function descriptionToArticle(
         break;
       }
       case "執筆者名": {
-        author = isEmpty(content) ? githubUser : content;
+        const unescaped = unescapeContent(content);
+        author = isEmpty(unescaped) ? githubUser : unescaped;
         break;
       }
       case "記事タイトル": {
-        title = content;
+        title = unescapeContent(content);
         break;
       }
       case "記事 URL": {
-        if (/^http/.test(content)) {
-          url = content;
-        } else if (!isEmpty(content)) {
+        const unescaped = unescapeContent(content);
+        if (/^http/.test(unescaped)) {
+          url = unescaped;
+        } else if (!isEmpty(unescaped)) {
           throw new ValidationError(`記事 URL の形式が不正です。: ${content}`);
         }
         break;
