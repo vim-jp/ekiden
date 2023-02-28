@@ -44,6 +44,7 @@ jobs:
                 }
               } else {
                 const today = new Date();
+                // JSTへの換算を簡略化。UTC 15:00（JST 24:00）以降に動作させる場合は日付がズレるので修正を要する
                 date = `${z(today.getUTCFullYear(), 4)}-${z(today.getUTCMonth() + 1, 2)}-${z(today.getUTCDate(), 2)}`;
               }
 
