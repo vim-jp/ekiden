@@ -48,6 +48,13 @@
       "author": "kuuote",
       "url": null,
       "issueNumber": 20
+    },
+    {
+      "title": "lualine.nvimでステータスラインをカスタマイズしよう!",
+      "date": "2023-03-17",
+      "author": "Liquid_system",
+      "url": "https://liquid-system.github.io/",
+      "issueNumber": 22
     }
   ]
 }
