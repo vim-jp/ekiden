@@ -1,4 +1,4 @@
-name: 'Update article'
+name: 'Retry update article'
 run-name: 'Retry https://github.com/${{ github.repository }}/actions/runs/${{ inputs.run_id }}'
 on:
   workflow_dispatch:

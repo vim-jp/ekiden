@@ -1,0 +1,115 @@
+name: 'Check article'
+run-name: "Check ${{ inputs.date || 'today' }}"
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: 'Date to check'
+  schedule:
+    - cron: '0 0 * * 1,3,5'  # 9:00 JST
+    - cron: '50 14 * * 1,3,5'  # 23:50 JST
+
+jobs:
+  check-article:
+    name: 'Check article'
+    runs-on: 'ubuntu-latest'
+    permissions:
+      issues: 'write'
+    steps:
+      - uses: 'actions/checkout@v3'
+        with:
+          ref: 'main'
+      - name: 'Report'
+        uses: 'actions/github-script@v6'
+        env:
+          DATE: '${{ inputs.date }}'
+        with:
+          script: |
+            const fs = require("fs");
+            const CONTENT_JSON_PATH = "./src/content.json";
+
+            function readContentJSON() {
+              return JSON.parse(fs.readFileSync(CONTENT_JSON_PATH, { encoding: "utf-8" }));
+            }
+            function z(num, digit) {
+              return String(num).padStart(digit, "0");
+            }
+
+            async function main() {
+              let date = process.env.DATE;
+              if (date) {
+                if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) {
+                  console.log(`環境変数の"DATE"に設定されている文字列が日付のフォーマットに違反しています。: ${date}`);
+                  return;
+                }
+              } else {
+                const today = new Date();
+                // JSTへの換算を簡略化。UTC 15:00（JST 24:00）以降に動作させる場合は日付がズレるので修正を要する
+                date = `${z(today.getUTCFullYear(), 4)}-${z(today.getUTCMonth() + 1, 2)}-${z(today.getUTCDate(), 2)}`;
+              }
+
+              console.log(`チェック対象日: ${date}`);
+
+              const articles = readContentJSON().articles;
+              const article = articles.find((a) =>
+                a.date == date
+              );
+
+              if (!article) {
+                throw new Error(`${date} の担当者がまだいません。`);
+              }
+
+              console.log(`チェック対象 Issue: ${article.issueNumber}`);
+
+              const issuePayload = {
+                ...context.repo,
+                issue_number: article.issueNumber,
+              };
+
+              const { data: issue } = await github.rest.issues.get(issuePayload);
+              if (issue.state === "closed") {
+                console.log("Issue はすでに閉じられています。");
+                return;
+              }
+
+              if (!article.url) {
+                const msg =`@${issue.user.login} 記事がまだありません。参加が難しい場合は Issue を閉じてキャンセルをしてください。`;
+                console.error(msg);
+                github.rest.issues.createComment({
+                  ...issuePayload,
+                  body: msg,
+                });
+                return;
+              }
+
+              let res;
+              const timeout = 10000; // 10s
+              for (const _ of Array(3)) {
+                const controller = new AbortController();
+                const id = setTimeout(() => controller.abort(), timeout);
+                res = await fetch(article.url, { method: 'HEAD', signal: controller.signal });
+                clearTimeout(id);
+                if (res.ok) {
+                  github.rest.issues.createComment({
+                    ...issuePayload,
+                    body: `@${issue.user.login} 投稿を確認できました。\n参加ありがとうございました！またの参加をお待ちしています！`,
+                  });
+                  github.rest.issues.update({
+                    ...issuePayload,
+                    state: "closed",
+                    state_reason: "completed",
+                  });
+                  return;
+                }
+              }
+
+              console.log(res);
+              const msg = `@${issue.user.login} 投稿を確認できませんでした。(${res?.status} ${res?.statusText})\nURL を確認してください。`;
+              console.error(msg);
+              github.rest.issues.createComment({
+                ...issuePayload,
+                body: msg,
+              });
+            }
+
+            await main();
