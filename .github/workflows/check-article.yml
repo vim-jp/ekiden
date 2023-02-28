@@ -83,7 +83,7 @@ jobs:
               }
 
               let res;
-              const timeout = 10;
+              const timeout = 10000; // 10s
               for (const _ of Array(3)) {
                 const controller = new AbortController();
                 const id = setTimeout(() => controller.abort(), timeout);
