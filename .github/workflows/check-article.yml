@@ -83,8 +83,12 @@ jobs:
               }
 
               let res;
+              const timeout = 10;
               for (const _ of Array(3)) {
-                res = await fetch(article.url, { method: 'HEAD' });
+                const controller = new AbortController();
+                const id = setTimeout(() => controller.abort(), timeout);
+                res = await fetch(article.url, { method: 'HEAD', signal: controller.signal });
+                clearTimeout(id);
                 if (res.ok) {
                   github.rest.issues.createComment({
                     ...issuePayload,
