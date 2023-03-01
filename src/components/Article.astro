@@ -23,7 +23,16 @@ const published = today >= dayjs(date);
     {date}
   </p>
   <p class="text-gray-700 text-base mb-1 break-words truncate">
-    {author}
+    {
+      (
+        <a
+          href={`https://github.com/${author}`}
+          class="text-blue-600 visited:text-purple-600 underline"
+        >
+          {`@${author}`}
+        </a>
+      )
+    }
   </p>
   <p
     class="leading-tight font-medium mb-1 truncate sm:col-span-3 md:col-span-2"
