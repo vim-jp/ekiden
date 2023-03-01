@@ -5,6 +5,7 @@ import content from "../content.json";
 export async function get(context) {
   const today = dayjs();
   const articles = content.articles
+    .filter((article) => article.url)
     .filter((article) => today >= dayjs(article.date))
     .sort((a, b) => dayjs(b.date) - dayjs(a.date))
     .slice(0, 10);
