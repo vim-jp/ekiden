@@ -7,6 +7,7 @@ specifiers:
   '@emotion/styled': ^11.10.6
   '@fullcalendar/core': ^6.1.4
   '@fullcalendar/daygrid': ^6.1.4
+  '@fullcalendar/multimonth': ^6.1.4
   '@fullcalendar/react': ^6.1.4
   '@types/react': ^18.0.28
   '@types/react-dom': ^18.0.11
@@ -30,6 +31,7 @@ dependencies:
   '@emotion/styled': 11.10.6_oouaibmszuch5k64ms7uxp2aia
   '@fullcalendar/core': 6.1.4
   '@fullcalendar/daygrid': 6.1.4_@fullcalendar+core@6.1.4
+  '@fullcalendar/multimonth': 6.1.4_@fullcalendar+core@6.1.4
   '@fullcalendar/react': 6.1.4_6alpvorycvuhssp2uvumgv3fue
   '@types/react': 18.0.28
   '@types/react-dom': 18.0.11
@@ -766,6 +768,15 @@ packages:
       '@fullcalendar/core': ~6.1.4
     dependencies:
       '@fullcalendar/core': 6.1.4
+    dev: false
+
+  /@fullcalendar/multimonth/6.1.4_@fullcalendar+core@6.1.4:
+    resolution: {integrity: sha512-bljwyIER4APKTpKF/M8u0BkMDbYDKVkSszCSg1VIX9uVTPpAbzlStqiMAwT+zoOPvoQ8Hsn+yuCFFKKbfUwAFw==}
+    peerDependencies:
+      '@fullcalendar/core': ~6.1.4
+    dependencies:
+      '@fullcalendar/core': 6.1.4
+      '@fullcalendar/daygrid': 6.1.4_@fullcalendar+core@6.1.4
     dev: false
 
   /@fullcalendar/react/6.1.4_6alpvorycvuhssp2uvumgv3fue:

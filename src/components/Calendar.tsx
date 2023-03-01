@@ -1,4 +1,5 @@
 import FullCalendar from "@fullcalendar/react";
+import multiMonthPlugin from '@fullcalendar/multimonth'
 import dayGridPlugin from "@fullcalendar/daygrid";
 import type { EventContentArg, EventInput } from "@fullcalendar/core";
 import dayjs from "dayjs";
@@ -111,8 +112,9 @@ const Calendar = (props: Props) => {
   return (
     <OverrideCalendarStyle>
       <FullCalendar
-        plugins={[dayGridPlugin]}
-        initialView="dayGridMonth"
+        plugins={[dayGridPlugin, multiMonthPlugin]}
+        initialView="multiMonthYear"
+        multiMonthMaxColumns="1"
         locale="ja"
         events={events}
         eventContent={eventContent}

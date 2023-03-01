@@ -20,6 +20,7 @@
     "@emotion/styled": "^11.10.6",
     "@fullcalendar/core": "^6.1.4",
     "@fullcalendar/daygrid": "^6.1.4",
+    "@fullcalendar/multimonth": "^6.1.4",
     "@fullcalendar/react": "^6.1.4",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
