@@ -7,4 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   base: "/ekiden",
   integrations: [react(), tailwind()],
+  server:{
+      host:true
+  }
 });
