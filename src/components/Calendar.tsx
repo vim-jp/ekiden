@@ -19,7 +19,7 @@ const OverrideCalendarStyle = styled.div`
   }
 `;
 
-const REGISTRATION_LINK_DISPLAY_DAYS = 30;
+const REGISTRATION_LINK_DISPLAY_DAYS = 60;
 /**
  * Vim 駅伝対象日の日付を YYYY-MM-DD 形式で返す。
  * ただし 本日から REGISTRATION_LINK_DISPLAY_DAYS 以内の日付に限る。
