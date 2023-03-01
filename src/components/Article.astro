@@ -16,24 +16,26 @@ const today = dayjs();
 const published = today >= dayjs(date);
 ---
 
-<div class="flex">
-  <div class="mb-4 w-full p-2 rounded-lg bg-white flex flex-wrap">
-    <p class="text-gray-700 text-base mb-1 break-words w-1/3 md:w-1/6">
-      {date}
-    </p>
-    <p class="text-gray-700 text-base mb-1 break-words pr-2 w-2/3 md:w-1/5">
-      {author}
-    </p>
-    <p class="leading-tight font-medium mb-1">
-      {
-        published ? (
-          <a href={url} class="text-blue-600 visited:text-purple-600 underline">
-            {title}
-          </a>
-        ) : (
-          <>{title}</>
-        )
-      }
-    </p>
-  </div>
+<div
+  class="mb-4 w-full p-2 rounded-lg bg-white grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4"
+>
+  <p class="text-gray-700 text-base mb-1 break-words truncate">
+    {date}
+  </p>
+  <p class="text-gray-700 text-base mb-1 break-words truncate">
+    {author}
+  </p>
+  <p
+    class="leading-tight font-medium mb-1 truncate sm:col-span-3 md:col-span-2"
+  >
+    {
+      published ? (
+        <a href={url} class="text-blue-600 visited:text-purple-600 underline">
+          {title}
+        </a>
+      ) : (
+        <>{title}</>
+      )
+    }
+  </p>
 </div>
