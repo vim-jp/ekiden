@@ -50,7 +50,7 @@ const Calendar = (props: Props) => {
       url: article.url,
       date: article.date,
       display: "background",
-      backgroundColor: "#d0f5dd",
+      backgroundColor: "rgb(108, 154, 157, 0.75)",
 
       // extended props
       author: article.author,
@@ -64,7 +64,7 @@ const Calendar = (props: Props) => {
       eventMap.set(date, {
         date,
         display: "background",
-        backgroundColor: "#f7e3e3",
+        backgroundColor: "#edc7a1",
 
         // extended props
         registered: false,
@@ -90,7 +90,7 @@ const Calendar = (props: Props) => {
             )}
           </div>
           <div>
-            <span style={{ color: "#444444" }}>
+            <span style={{ color: "#111111" }}>
               {arg.event.extendedProps.author}
             </span>
           </div>
