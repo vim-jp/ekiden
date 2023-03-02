@@ -55,6 +55,13 @@
       "author": "Liquid_system",
       "url": "https://liquid-system.github.io/",
       "issueNumber": 22
+    },
+    {
+      "title": "Vim9 script の始め方",
+      "date": "2023-03-20",
+      "author": "thinca",
+      "url": null,
+      "issueNumber": 32
     }
   ]
 }
