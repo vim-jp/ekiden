@@ -18,7 +18,7 @@ export async function get(context) {
     items: articles.map((article) => ({
       title: article.title,
       description: `By ${article.author}`,
-      pubDate: article.date,
+      pubDate: dayjs(article.date).toDate(),
       link: article.url,
     })),
   });
