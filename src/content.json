@@ -69,6 +69,13 @@
       "author": "matoruru",
       "url": null,
       "issueNumber": 33
+    },
+    {
+      "title": "neovimターミナルモードエスケープと即座に確定するマッピング",
+      "date": "2023-03-24",
+      "author": "fuzmare",
+      "url": "https://zenn.dev/fuzmare/articles/vim-term-escape",
+      "issueNumber": 35
     }
   ]
 }
