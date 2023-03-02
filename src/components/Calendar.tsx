@@ -17,6 +17,9 @@ const OverrideCalendarStyle = styled.div`
   .fc-bg-event {
     opacity: 1;
   }
+  .fc-daygrid-bg-harness {
+    overflow: hidden;
+  }
 `;
 
 const REGISTRATION_LINK_DISPLAY_DAYS = 60;
