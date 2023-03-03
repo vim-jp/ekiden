@@ -1,6 +1,7 @@
 ---
 import Articles from "../components/Articles.astro";
 import Calendar from "../components/Calendar";
+import Rss from "../components/Rss.astro";
 
 import content from "../content.json";
 
@@ -24,6 +25,7 @@ const articles = content.articles;
         </div>
         <div class="tw-c-section">
           <h2>記事一覧</h2>
+          <Rss />
           <Articles articles={articles} />
         </div>
       </div>
