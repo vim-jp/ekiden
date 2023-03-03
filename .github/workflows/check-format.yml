@@ -14,10 +14,9 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
       - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.2
+        uses: pnpm/action-setup@v2.2.4
         with:
-          # 必要に応じて pnpm のバージョンを変更してください
-          version: 7.1.0
+          version: 7.26.3
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
       - name: Run tests
