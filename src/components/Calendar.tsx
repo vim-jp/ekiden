@@ -81,7 +81,7 @@ const Calendar = (props: Props) => {
             {arg.event.extendedProps.published ? (
               <a
                 href={arg.event.url}
-                className="text-blue-600 visited:text-purple-600 underline"
+                className="text-[#000D94] visited:text-[#480069] underline"
               >
                 {arg.event.title}
               </a>
