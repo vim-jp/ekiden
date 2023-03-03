@@ -2,12 +2,12 @@ import rss from "@astrojs/rss";
 import dayjs from "dayjs";
 import content from "../content.json";
 
-export async function get(context) {
+export async function get(context: { site: string }) {
   const today = dayjs();
   const articles = content.articles
     .filter((article) => article.url)
     .filter((article) => today >= dayjs(article.date))
-    .sort((a, b) => dayjs(b.date) - dayjs(a.date))
+    .sort((a, b) => dayjs(b.date).unix() - dayjs(a.date).unix())
     .slice(0, 10);
 
   return rss({
@@ -19,7 +19,9 @@ export async function get(context) {
       title: article.title,
       description: `By ${article.author}`,
       pubDate: dayjs(article.date).toDate(),
-      link: article.url,
+      // article.url が null なものは除いているため本当はいらないのだが、
+      // 型チェックを通すために仕方なく
+      link: article.url ?? "",
     })),
   });
 }
