@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@astrojs/react": "^2.0.2",
+    "@astrojs/rss": "^2.1.1",
     "@astrojs/tailwind": "^3.0.1",
     "@emotion/react": "^11.0.0-rc.0",
     "@emotion/styled": "^11.10.6",
