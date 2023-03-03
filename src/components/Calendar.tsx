@@ -101,7 +101,7 @@ const Calendar = (props: Props) => {
       return (
         <div className="pt-6">
           <a
-            className="text-blue-600 visited:text-purple-600 underline"
+            className="text-[#000D94] visited:text-[#480069] underline"
             href={`https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${title}`}
           >
             参加登録
