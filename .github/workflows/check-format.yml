@@ -1,0 +1,26 @@
+name: use pnpm
+'on':
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
+        with:
+          # 必要に応じて pnpm のバージョンを変更してください
+          version: 7.1.0
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+      - name: Run tests
+        run: |
+          pnpm run lint:check
+          pnpm run prettier:check
