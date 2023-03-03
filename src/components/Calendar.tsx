@@ -43,6 +43,8 @@ function registrationLinkDisplayDates(today: dayjs.Dayjs): string[] {
 const Calendar = (props: Props) => {
   const today = dayjs();
   const eventMap: Map<string, EventInput> = new Map();
+  const linkColor = "text-[#000D94] visited:text-[#8001BB]";
+  const textColor = "text-[#111111]";
 
   for (const article of props.articles) {
     eventMap.set(article.date, {
@@ -50,7 +52,7 @@ const Calendar = (props: Props) => {
       url: article.url,
       date: article.date,
       display: "background",
-      backgroundColor: "rgb(108, 154, 157, 0.75)",
+      backgroundColor: "#B3C9CF",
 
       // extended props
       author: article.author,
@@ -81,16 +83,16 @@ const Calendar = (props: Props) => {
             {arg.event.extendedProps.published ? (
               <a
                 href={arg.event.url}
-                className="text-[#000D94] visited:text-[#480069] underline"
+                className={`${linkColor} underline`}
               >
                 {arg.event.title}
               </a>
             ) : (
-              <span style={{ color: "#111111" }}>{arg.event.title}</span>
+              <span className={`${textColor}`}>{arg.event.title}</span>
             )}
           </div>
           <div>
-            <span style={{ color: "#111111" }}>
+            <span className={`${textColor}`}>
               {arg.event.extendedProps.author}
             </span>
           </div>
@@ -101,7 +103,7 @@ const Calendar = (props: Props) => {
       return (
         <div className="pt-6">
           <a
-            className="text-[#000D94] visited:text-[#480069] underline"
+            className={`${linkColor} underline`}
             href={`https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${title}`}
           >
             参加登録
