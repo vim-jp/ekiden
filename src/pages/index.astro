@@ -20,7 +20,7 @@ const articles = content.articles;
         <h1>Vim 駅伝</h1>
         <div class="tw-c-section">
           <h2>スケジュール</h2>
-          <Calendar articles={articles} client:only="react" />
+          <Calendar articles={articles}  client:load client:only="react" />
         </div>
         <div class="tw-c-section">
           <h2>記事一覧</h2>

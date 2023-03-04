@@ -3,6 +3,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import type { EventContentArg, EventInput } from "@fullcalendar/core";
 import dayjs from "dayjs";
 import styled from "@emotion/styled";
+import { useLayoutEffect, useState } from 'react'
 
 type Props = {
   articles: {
@@ -43,6 +44,26 @@ function registrationLinkDisplayDates(today: dayjs.Dayjs): string[] {
 const Calendar = (props: Props) => {
   const today = dayjs();
   const eventMap: Map<string, EventInput> = new Map();
+
+
+
+  const useWindowSize = (): number => {
+    const [size, setSize] = useState(0);
+    useLayoutEffect(() => {
+      const updateSize = (): void => {
+        setSize(window.innerWidth);
+      };
+      window.addEventListener('resize', updateSize);
+      updateSize();
+      return () => window.removeEventListener('resize', updateSize);
+    }, []);
+    return size;
+  };
+  
+  const width = useWindowSize();
+  // tailwindのブレイクポイントを基準に分岐
+  const SM = 640;
+  let hiddenDays = width >= SM ? []: [0,2,4,6];
 
   for (const article of props.articles) {
     eventMap.set(article.date, {
@@ -119,6 +140,7 @@ const Calendar = (props: Props) => {
         locale="ja"
         events={events}
         eventContent={eventContent}
+        hiddenDays = {[...hiddenDays]}
       />
     </OverrideCalendarStyle>
   );
