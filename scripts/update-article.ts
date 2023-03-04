@@ -17,6 +17,7 @@ type Article = {
   date: string;
   author: string;
   url: string | null;
+  githubUser: string;
   issueNumber?: number;
 };
 
@@ -63,7 +64,7 @@ function unescapeContent(s: string): string {
 
 function descriptionToArticle(
   description: string,
-  githubUser: string | undefined,
+  githubUser: string,
 ): Article {
   let title, author, date, url = null;
 
@@ -137,6 +138,7 @@ function descriptionToArticle(
     date,
     author,
     url,
+    githubUser,
   };
 }
 
@@ -183,7 +185,9 @@ function deleteArticleFromContents(articles: Article[], newArticle: Article) {
     a.issueNumber === newArticle.issueNumber
   );
   if (newArticle.url) {
-    throw new ValidationError("URL が登録されている場合はクローズでのエントリー解除はできません。エントリー解除がしたい場合は URL を空にしてからやり直してください。");
+    throw new ValidationError(
+      "URL が登録されている場合はクローズでのエントリー解除はできません。エントリー解除がしたい場合は URL を空にしてからやり直してください。",
+    );
   }
   if (0 <= existenceArticleIndex) {
     articles.splice(existenceArticleIndex, 1);
@@ -193,7 +197,11 @@ function deleteArticleFromContents(articles: Article[], newArticle: Article) {
 async function main() {
   const parsedArgs = parse(Deno.args);
   const description = await getStdin({ exitOnEnter: false });
-  const article = descriptionToArticle(description, parsedArgs.githubUser);
+  const { githubUser } = parsedArgs;
+  if (!githubUser) {
+    throw new Error("--githubUser required.");
+  }
+  const article = descriptionToArticle(description, githubUser);
 
   const issueNumber = Number(parsedArgs.issueNumber);
   if (issueNumber) {
