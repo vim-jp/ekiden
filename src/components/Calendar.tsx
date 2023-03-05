@@ -43,6 +43,8 @@ function registrationLinkDisplayDates(today: dayjs.Dayjs): string[] {
 const Calendar = (props: Props) => {
   const today = dayjs();
   const eventMap: Map<string, EventInput> = new Map();
+  const linkColor = "text-[#000D94] visited:text-[#8001BB]";
+  const textColor = "text-[#111111]";
 
   for (const article of props.articles) {
     eventMap.set(article.date, {
@@ -50,7 +52,7 @@ const Calendar = (props: Props) => {
       url: article.url,
       date: article.date,
       display: "background",
-      backgroundColor: "#d0f5dd",
+      backgroundColor: "#B3C9CF",
 
       // extended props
       author: article.author,
@@ -64,7 +66,7 @@ const Calendar = (props: Props) => {
       eventMap.set(date, {
         date,
         display: "background",
-        backgroundColor: "#f7e3e3",
+        backgroundColor: "#edc7a1",
 
         // extended props
         registered: false,
@@ -79,18 +81,15 @@ const Calendar = (props: Props) => {
         <>
           <div className="pt-6">
             {arg.event.extendedProps.published ? (
-              <a
-                href={arg.event.url}
-                className="text-blue-600 visited:text-purple-600 underline"
-              >
+              <a href={arg.event.url} className={`${linkColor} underline`}>
                 {arg.event.title}
               </a>
             ) : (
-              <span style={{ color: "#111111" }}>{arg.event.title}</span>
+              <span className={`${textColor}`}>{arg.event.title}</span>
             )}
           </div>
           <div>
-            <span style={{ color: "#444444" }}>
+            <span className={`${textColor}`}>
               {arg.event.extendedProps.author}
             </span>
           </div>
@@ -101,7 +100,7 @@ const Calendar = (props: Props) => {
       return (
         <div className="pt-6">
           <a
-            className="text-blue-600 visited:text-purple-600 underline"
+            className={`${linkColor} underline`}
             href={`https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${title}`}
           >
             参加登録

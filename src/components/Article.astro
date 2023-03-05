@@ -17,7 +17,7 @@ const published = today >= dayjs(date);
 ---
 
 <div
-  class="mb-4 w-full p-2 rounded-lg bg-white grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4"
+  class="mb-4 w-full p-2 rounded-lg grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4"
 >
   <p class="text-gray-700 text-base mb-1 break-words truncate">
     {date}
@@ -30,7 +30,7 @@ const published = today >= dayjs(date);
   >
     {
       published ? (
-        <a href={url} class="text-blue-600 visited:text-purple-600 underline">
+        <a href={url} class="text-[#000D94] visited:text-[#8001BB] underline">
           {title}
         </a>
       ) : (

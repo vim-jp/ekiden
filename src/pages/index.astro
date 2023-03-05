@@ -22,8 +22,8 @@ const articles = content.articles;
   </head>
   <body>
     <main>
+      <h1>Vim 駅伝</h1>
       <div class="tw-c-container">
-        <h1>Vim 駅伝</h1>
         <div class="tw-c-section">
           <h2>スケジュール</h2>
           <Calendar articles={articles} client:only="react" />
@@ -38,23 +38,27 @@ const articles = content.articles;
 </html>
 
 <style>
+  body {
+    background-color: #f6f7f8;
+  }
   main {
-    @apply flex justify-center my-10 mx-5;
+    @apply flex justify-center items-center flex-col p-0 m-0;
   }
   div.tw-c-container {
-    @apply max-w-4xl flex-1;
+    @apply max-w-4xl flex-1 px-4;
   }
   div.tw-c-section {
     @apply py-5;
   }
   h1 {
-    @apply text-4xl font-bold;
+    @apply text-4xl font-bold py-16 w-full text-center;
+    background-color: #b3c9cf;
   }
   h2 {
     @apply text-2xl font-bold my-1;
   }
   a {
-    @apply text-blue-600;
+    @apply text-blue-500;
   }
 </style>
 <style is:global>
@@ -69,6 +73,10 @@ const articles = content.articles;
   }
   div.fc-bg-event {
     @apply p-2;
+  }
+  th.fc-day {
+    @apply text-white;
+    background-color: #2c3e50;
   }
   th.fc-day-sun {
     @apply bg-red-500 text-white;
