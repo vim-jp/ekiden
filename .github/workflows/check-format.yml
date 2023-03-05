@@ -1,4 +1,4 @@
-name: use pnpm
+name: Check format
 'on':
   pull_request:
     types:
@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v3
-        with:
-          ref: ${{ github.head_ref }}
       - name: Setup pnpm
         uses: pnpm/action-setup@v2.2.4
         with:
