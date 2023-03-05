@@ -81,10 +81,7 @@ const Calendar = (props: Props) => {
         <>
           <div className="pt-6">
             {arg.event.extendedProps.published ? (
-              <a
-                href={arg.event.url}
-                className={`${linkColor} underline`}
-              >
+              <a href={arg.event.url} className={`${linkColor} underline`}>
                 {arg.event.title}
               </a>
             ) : (
