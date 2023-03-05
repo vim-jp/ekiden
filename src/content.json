@@ -76,6 +76,13 @@
       "author": "fuzmare",
       "url": "https://zenn.dev/fuzmare/articles/vim-term-escape",
       "issueNumber": 35
+    },
+    {
+      "title": "Vimを使わないVimmerであってもいい",
+      "date": "2023-03-27",
+      "author": "tadashi-aikawa",
+      "url": null,
+      "issueNumber": 41
     }
   ]
 }
