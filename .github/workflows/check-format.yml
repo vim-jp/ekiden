@@ -1,0 +1,23 @@
+name: Check format
+'on':
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v3
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7.26.3
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+      - name: Run tests
+        run: |
+          pnpm run lint:check
+          pnpm run prettier:check
