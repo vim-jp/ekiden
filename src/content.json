@@ -97,6 +97,13 @@
       "author": "monaqa",
       "url": null,
       "issueNumber": 44
+    },
+    {
+      "title": "Vim + npm install --save-dev textlint",
+      "date": "2023-04-03",
+      "author": "IK",
+      "url": null,
+      "issueNumber": 45
     }
   ]
 }
