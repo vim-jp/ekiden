@@ -5,6 +5,7 @@
       "date": "2023-03-01",
       "author": "thinca",
       "url": "https://thinca.hatenablog.com/entry/vim-ekiden-is-launched",
+      "githubUser": "thinca",
       "issueNumber": 11
     },
     {
@@ -12,6 +13,7 @@
       "date": "2023-03-03",
       "author": "atusy",
       "url": "https://blog.atusy.net/2023/03/03/horizontal-arrows-on-insert/",
+      "githubUser": "atusy",
       "issueNumber": 12
     },
     {
@@ -19,6 +21,7 @@
       "date": "2023-03-06",
       "author": "ryoppippi",
       "url": "https://github.com/ryoppippi/bunsetsu-wb.nvim/blob/main/README.md",
+      "githubUser": "ryoppippi",
       "issueNumber": 15
     },
     {
@@ -26,6 +29,7 @@
       "date": "2023-03-08",
       "author": "tani",
       "url": "https://gist.github.com/tani/04c52c12ab4254528c1ba7ad509946ad",
+      "githubUser": "tani",
       "issueNumber": 16
     },
     {
@@ -33,6 +37,7 @@
       "date": "2023-03-10",
       "author": "kyoh86",
       "url": "https://zenn.dev/kyoh86/articles/681ab90a44302c",
+      "githubUser": "kyoh86",
       "issueNumber": 17
     },
     {
@@ -40,6 +45,7 @@
       "date": "2023-03-13",
       "author": "staticWagomU",
       "url": "https://wagomu.me/blog/dark-powerd-vim",
+      "githubUser": "staticWagomU",
       "issueNumber": 18
     },
     {
@@ -47,6 +53,7 @@
       "date": "2023-03-15",
       "author": "kuuote",
       "url": null,
+      "githubUser": "kuuote",
       "issueNumber": 20
     },
     {
@@ -54,6 +61,7 @@
       "date": "2023-03-17",
       "author": "Liquid_system",
       "url": "https://liquid-system.github.io/",
+      "githubUser": "Liquid-system",
       "issueNumber": 22
     },
     {
@@ -61,6 +69,7 @@
       "date": "2023-03-20",
       "author": "thinca",
       "url": null,
+      "githubUser": "thinca",
       "issueNumber": 32
     },
     {
@@ -68,6 +77,7 @@
       "date": "2023-03-22",
       "author": "matoruru",
       "url": null,
+      "githubUser": "matoruru",
       "issueNumber": 33
     },
     {
@@ -75,6 +85,7 @@
       "date": "2023-03-24",
       "author": "fuzmare",
       "url": "https://zenn.dev/fuzmare/articles/vim-term-escape",
+      "githubUser": "fuzmare",
       "issueNumber": 35
     },
     {
@@ -82,6 +93,7 @@
       "date": "2023-03-27",
       "author": "tadashi-aikawa",
       "url": null,
+      "githubUser": "tadashi-aikawa",
       "issueNumber": 41
     },
     {
@@ -89,6 +101,7 @@
       "date": "2023-03-29",
       "author": "ArcCosine",
       "url": null,
+      "githubUser": "ArcCosine",
       "issueNumber": 43
     },
     {
@@ -96,6 +109,7 @@
       "date": "2023-03-31",
       "author": "monaqa",
       "url": null,
+      "githubUser": "monaqa",
       "issueNumber": 44
     },
     {
@@ -103,6 +117,7 @@
       "date": "2023-04-03",
       "author": "IK",
       "url": null,
+      "githubUser": "get-me-power",
       "issueNumber": 45
     }
   ]
