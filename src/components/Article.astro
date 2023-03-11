@@ -20,11 +20,11 @@ const published = dayjs() >= dayjs(date);
 <div class="container">
   {firstDay && (
     <div class="month">
-      <div class="date opened">{dayjs(date).month()}</div>
+      <div class="date opened">{dayjs(date).month() + 1}月</div>
     </div>
   )}
   <a href={published ? url : opened ? url : "#"} class="article">
-    <div class:list={["date", { opened, published }]}>{dayjs(date).date()}</div>
+    <div class:list={["date", { opened, published }]}>{dayjs(date).date()}日</div>
     <div class="metadata">
       <div class="author">{author}</div>
       <div class="title">{title}</div>
@@ -55,7 +55,7 @@ const published = dayjs() >= dayjs(date);
   --timeline-hr: 20px;
   --timeline-mr: 40px;
   --title-h: 30px;
-  --timeline-fs: 1.0em;
+  --timeline-fs: 0.9em;
   --timeline-a:
     atan2(calc(0px - var(--container-h) / 2 + var(--title-h)),
       calc(var(--timeline-m) + var(--timeline-r)));
@@ -89,7 +89,7 @@ const published = dayjs() >= dayjs(date);
 
 .article:hover {
   --timeline-hr: calc(var(--timeline-r) * 1.5);
-  --timeline-fs: calc(1.0em * 1.5);
+  --timeline-fs: calc(0.8em * 1.5);
 }
 
 .article .date {
