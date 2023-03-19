@@ -49,72 +49,59 @@ const published = dayjs() >= dayjs(date);
 }
 
 .container {
-  --container-h: 100px;
-  --timeline-m: 30px;
-  --timeline-r: 20px;
-  --timeline-hr: 20px;
-  --timeline-mr: 40px;
-  --title-h: 30px;
-  --timeline-fs: 0.9em;
-  --timeline-a:
-    atan2(calc(0px - var(--container-h) / 2 + var(--title-h)),
-      calc(var(--timeline-m) + var(--timeline-r)));
-  --timeline-c:
-    calc((var(--timeline-m) + var(--timeline-r)) / cos(var(--timeline-a)));
+  --date-r: 20px;
+  --date-my: 40px;
+  --date-mx: 40px;
+  --date-fs: 1rem;
+  --timeline-w: 10px;
+  --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
+  --author-h: 30px;
+  --triangle-h: calc(var(--date-my) + var(--date-r) - var(--author-h));
+  --triangle-w: calc(var(--date-mx) + var(--date-r));
+  --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
+  --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
 }
 
-.month .date {
-  --the-r: max(var(--timeline-mr), var(--timeline-r));
-  --the-m: calc(var(--timeline-m) - (var(--timeline-mr) - var(--timeline-r)));
-  font-size: 2em;
-  background: #11405b;
-  display: flex;
-  min-width: calc(var(--the-r) * 2);
-  height: calc(var(--the-r) * 2);
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--the-r);
-  background: #666;
-  color: white;
-  margin: 0 var(--the-m);
-  transition-property: min-width height margin font-size;
-  transition-duration: 0.5s;
+.month {
+  --date-r: 40px;
+  --date-mx: 20px;
+  --date-my: 20px;
+  --date-fs: 1.4rem;
 }
 
 .article, .month {
   display: flex;
-  height: var(--container-h);
+  min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
   align-items: center;
 }
 
 .article:hover {
-  --timeline-hr: calc(var(--timeline-r) * 1.5);
-  --timeline-fs: calc(0.8em * 1.5);
+  --date-r: 30px;
+  --date-mx: 30px;
+  --date-my: 30px;
+  --date-fs: 1.4rem;
 }
 
-.article .date {
-  --the-r: max(var(--timeline-hr), var(--timeline-r));
-  --the-m: calc(var(--timeline-m) - (var(--timeline-hr) - var(--timeline-r)));
-  font-size: var(--timeline-fs);
+.date {
   display: flex;
-  min-width: calc(var(--the-r) * 2);
-  height: calc(var(--the-r) * 2);
+  font-size: var(--date-fs);
+  min-width: calc(var(--date-r) * 2);
+  min-height: calc(var(--date-r) * 2);
   justify-content: center;
   align-items: center;
-  border-radius: var(--the-r);
+  border-radius: var(--date-r);
   color: white;
-  margin: 0 var(--the-m);
+  margin: var(--date-my) var(--date-mx);
   background: #11405b;
-  transition-property: min-width height margin font-size;
-  transition-duration: 0.5s;
+  transition: all 0.3s;
 }
 
 .date::before {
   position: absolute;
   content: " ";
-  height: var(--container-h);
+  min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
   background: #666;
-  width: var(--timeline-r);
+  width: var(--timeline-w);
   z-index: -1;
 }
 
@@ -122,21 +109,20 @@ const published = dayjs() >= dayjs(date);
   position: absolute;
   content: " ";
   background: #666;
-  width: var(--timeline-c);
-  transform:
-    rotate(var(--timeline-a)) translate(50%, 0);
+  width: var(--triangle-l);
+  transform: rotate(var(--triangle-a)) translate(50%, 0);
   height: 1px;
   z-index: -1;
 }
 
 .metadata {
-  height: var(--container-h);
+  min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
   width: 100%;
   color: #333;
 }
 
 .author {
-  height: var(--title-h);
+  height: var(--author-h);
   border-bottom: 1px #333 solid;
   display: flex;
   align-items: end;
