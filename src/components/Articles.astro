@@ -6,31 +6,45 @@ type Props = {
   articles: ArticleProps[];
 };
 
-let initialDay = dayjs().subtract(1, 'M');
-const diff = initialDay.day() === 0 ? 1 :
-             initialDay.day() === 1 ? 0 :
-             initialDay.day() === 2 ? 1 :
-             initialDay.day() === 3 ? 0 :
-             initialDay.day() === 4 ? 1 :
-             initialDay.day() === 5 ? 0 :
-             initialDay.day() === 6 ? 2 : 0;
-initialDay = initialDay.add(diff, 'd');
+let initialDay = dayjs().subtract(1, "M");
+const diff =
+  initialDay.day() === 0
+    ? 1
+    : initialDay.day() === 1
+    ? 0
+    : initialDay.day() === 2
+    ? 1
+    : initialDay.day() === 3
+    ? 0
+    : initialDay.day() === 4
+    ? 1
+    : initialDay.day() === 5
+    ? 0
+    : initialDay.day() === 6
+    ? 2
+    : 0;
+initialDay = initialDay.add(diff, "d");
 let today = initialDay;
-let yesterday = initialDay.subtract(1, 'M');
+let yesterday = initialDay.subtract(1, "M");
 const articles = [];
-while(initialDay.add(2, 'M') >= today) {
+while (initialDay.add(2, "M") >= today) {
   let article: ArticleProps = {
     opened: true,
     author: "募集中",
     title: "記事を投稿する",
     date: today.format("YYYY-MM-DD"),
-    url: `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${today.format("YYYY-MM-DD")}`,
+    url: `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${today.format(
+      "YYYY-MM-DD"
+    )}`,
   };
-  article = Astro.props.articles.find(({ date })=> date === today.format("YYYY-MM-DD")) ?? article;
+  article =
+    Astro.props.articles.find(
+      ({ date }) => date === today.format("YYYY-MM-DD")
+    ) ?? article;
   article.firstDay = today.month() !== yesterday.month();
   articles.push(article);
   yesterday = today;
-  today = today.add(today.day() >= 4 ? 3 : 2, 'd');
+  today = today.add(today.day() >= 4 ? 3 : 2, "d");
 }
 ---
 

@@ -20,13 +20,17 @@ const published = dayjs() >= dayjs(date);
 ---
 
 <div class="container">
-  {firstDay && (
-    <div class="month">
-      <div class="date opened">{dayjs(date).month() + 1}月</div>
-    </div>
-  )}
+  {
+    firstDay && (
+      <div class="month">
+        <div class="date opened">{dayjs(date).month() + 1}月</div>
+      </div>
+    )
+  }
   <a href={published ? url : opened ? url : "#"} class="article">
-    <div class:list={["date", { opened, published }]}>{dayjs(date).date()}日</div>
+    <div class:list={["date", { opened, published }]}>
+      {dayjs(date).date()}日
+    </div>
     <div class="metadata">
       <div class="author">{author}</div>
       <div class="title">{title}</div>
@@ -35,98 +39,99 @@ const published = dayjs() >= dayjs(date);
 </div>
 
 <style>
-* {
+  * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
+  }
 
-.opened {
-  background: #666 !important;
-}
+  .opened {
+    background: #666 !important;
+  }
 
-.published {
-  background: #2a9bdd !important;
-  box-shadow: 2px 2px 2px #444;
-}
+  .published {
+    background: #2a9bdd !important;
+    box-shadow: 2px 2px 2px #444;
+  }
 
-.container {
-  --date-r: 20px;
-  --date-my: 40px;
-  --date-mx: 40px;
-  --date-fs: 1rem;
-  --timeline-w: 10px;
-  --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
-  --author-h: 30px;
-  --triangle-h: calc(var(--date-my) + var(--date-r) - var(--author-h));
-  --triangle-w: calc(var(--date-mx) + var(--date-r));
-  --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
-  --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
-}
+  .container {
+    --date-r: 20px;
+    --date-my: 40px;
+    --date-mx: 40px;
+    --date-fs: 1rem;
+    --timeline-w: 10px;
+    --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
+    --author-h: 30px;
+    --triangle-h: calc(var(--date-my) + var(--date-r) - var(--author-h));
+    --triangle-w: calc(var(--date-mx) + var(--date-r));
+    --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
+    --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
+  }
 
-.month {
-  --date-r: 40px;
-  --date-mx: 20px;
-  --date-my: 20px;
-  --date-fs: 1.4rem;
-}
+  .month {
+    --date-r: 40px;
+    --date-mx: 20px;
+    --date-my: 20px;
+    --date-fs: 1.4rem;
+  }
 
-.article, .month {
-  display: flex;
-  min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-  align-items: center;
-}
+  .article,
+  .month {
+    display: flex;
+    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
+    align-items: center;
+  }
 
-.article:hover {
-  --date-r: 30px;
-  --date-mx: 30px;
-  --date-my: 30px;
-  --date-fs: 1.4rem;
-}
+  .article:hover {
+    --date-r: 30px;
+    --date-mx: 30px;
+    --date-my: 30px;
+    --date-fs: 1.4rem;
+  }
 
-.date {
-  display: flex;
-  font-size: var(--date-fs);
-  min-width: calc(var(--date-r) * 2);
-  min-height: calc(var(--date-r) * 2);
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--date-r);
-  color: white;
-  margin: var(--date-my) var(--date-mx);
-  background: #11405b;
-  transition: all 0.3s;
-}
+  .date {
+    display: flex;
+    font-size: var(--date-fs);
+    min-width: calc(var(--date-r) * 2);
+    min-height: calc(var(--date-r) * 2);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--date-r);
+    color: white;
+    margin: var(--date-my) var(--date-mx);
+    background: #11405b;
+    transition: all 0.3s;
+  }
 
-.date::before {
-  position: absolute;
-  content: " ";
-  min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-  background: #666;
-  width: var(--timeline-w);
-  z-index: -1;
-}
+  .date::before {
+    position: absolute;
+    content: " ";
+    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
+    background: #666;
+    width: var(--timeline-w);
+    z-index: -1;
+  }
 
-.article .date::after {
-  position: absolute;
-  content: " ";
-  background: #666;
-  width: var(--triangle-l);
-  transform: rotate(var(--triangle-a)) translate(50%, 0);
-  height: 1px;
-  z-index: -1;
-}
+  .article .date::after {
+    position: absolute;
+    content: " ";
+    background: #666;
+    width: var(--triangle-l);
+    transform: rotate(var(--triangle-a)) translate(50%, 0);
+    height: 1px;
+    z-index: -1;
+  }
 
-.metadata {
-  min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-  width: 100%;
-  color: #333;
-}
+  .metadata {
+    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
+    width: 100%;
+    color: #333;
+  }
 
-.author {
-  height: var(--author-h);
-  border-bottom: 1px #333 solid;
-  display: flex;
-  align-items: end;
-}
+  .author {
+    height: var(--author-h);
+    border-bottom: 1px #333 solid;
+    display: flex;
+    align-items: end;
+  }
 </style>
