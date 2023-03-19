@@ -13,6 +13,7 @@ specifiers:
   prettier-plugin-astro: ^0.8.0
   tailwindcss: ^3.2.7
   typescript: ^5.0.2
+  typescript-eslint-parser-for-extra-files: ^0.2.0
 
 dependencies:
   '@astrojs/rss': 2.3.0
@@ -29,6 +30,7 @@ devDependencies:
   prettier: 2.8.4
   prettier-plugin-astro: 0.8.0
   typescript: 5.0.2
+  typescript-eslint-parser-for-extra-files: 0.2.0_njpj63dgkfpdpbepdckvhcxvka
 
 packages:
 
@@ -3613,6 +3615,29 @@ packages:
     resolution: {integrity: sha512-RAH822pAdBgcNMAfWnCBU3CFZcfZ/i1eZjwFU/dsLKumyuuP3niueg2UAukXYF0E2AAoc82ZSSf9J0WQBinzHA==}
     engines: {node: '>=12.20'}
     dev: false
+
+  /typescript-eslint-parser-for-extra-files/0.2.0_njpj63dgkfpdpbepdckvhcxvka:
+    resolution: {integrity: sha512-TvZRCDfdOCcsSgcRX33VGn/mspzCYTcfkCHmRQ1u47y7A8JRhvmvSDv6sWVLJsA0DOaPkbW5D9ZfX4SNd4GaZg==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      '@typescript-eslint/parser': '>=5.41.0'
+      astrojs-compiler-sync: '>=0.3.1'
+      svelte2tsx: '>=0.5.20'
+      typescript: '>=4.8.4'
+      vue: ^3.2.45
+    peerDependenciesMeta:
+      astrojs-compiler-sync:
+        optional: true
+      svelte2tsx:
+        optional: true
+      typescript:
+        optional: true
+      vue:
+        optional: true
+    dependencies:
+      '@typescript-eslint/parser': 5.55.0_j4766f7ecgqbon3u7zlxn5zszu
+      typescript: 5.0.2
+    dev: true
 
   /typescript/5.0.2:
     resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
