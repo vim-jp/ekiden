@@ -5,9 +5,11 @@ export type ArticleProps = {
   title: string;
   date: string;
   author: string;
-  url?: string;
+  url: string | null;
   firstDay?: boolean;
   opened?: boolean;
+  githubUser?: string;
+  issueNumber?: number;
 };
 
 type Props = ArticleProps;

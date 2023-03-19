@@ -3,7 +3,7 @@ import Article, { ArticleProps } from "./Article.astro";
 import dayjs from "dayjs";
 
 type Props = {
-articles: ArticleProps[];
+  articles: ArticleProps[];
 };
 
 let initialDay = dayjs().subtract(1, 'M');
@@ -19,13 +19,14 @@ let today = initialDay;
 let yesterday = initialDay.subtract(1, 'M');
 const articles = [];
 while(initialDay.add(2, 'M') >= today) {
-  const article = Astro.props.articles.find(a => a.date === today.format("YYYY-MM-DD")) ?? {
+  let article: ArticleProps = {
     opened: true,
     author: "募集中",
     title: "記事を投稿する",
     date: today.format("YYYY-MM-DD"),
-    url: `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${today.format("YYYY-MM-DD")}`
+    url: `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${today.format("YYYY-MM-DD")}`,
   };
+  article = Astro.props.articles.find(({ date })=> date === today.format("YYYY-MM-DD")) ?? article;
   article.firstDay = today.month() !== yesterday.month();
   articles.push(article);
   yesterday = today;
