@@ -1,7 +1,5 @@
 ---
 import Articles from "../components/Articles.astro";
-import Calendar from "../components/Calendar";
-
 import content from "../content.json";
 
 const articles = content.articles;
@@ -16,7 +14,7 @@ const articles = content.articles;
       rel="alternate"
       type="application/rss+xml"
       title="RSS2.0"
-      href=`${import.meta.env.BASE_URL}rss.xml`
+      href={`${import.meta.env.BASE_URL}rss.xml`}
     />
     <title>Vim 駅伝</title>
   </head>
@@ -24,21 +22,28 @@ const articles = content.articles;
     <main>
       <h1>Vim 駅伝</h1>
       <div class="tw-c-container">
-        <div class="tw-c-section">
-          <h2>スケジュール</h2>
-          <Calendar articles={articles} client:only="react" />
-        </div>
-        <div class="tw-c-section">
-          <h2>記事一覧</h2>
-          <Articles articles={articles} />
-        </div>
+        <section>
+          <h2>イベント概要</h2>
+        </section>
+        <Articles articles={articles} />
       </div>
     </main>
   </body>
 </html>
 
 <style>
+  @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Yuji+Syuku&display=swap");
+  section {
+    height: 150px;
+    padding: 20px;
+    color: #666;
+    margin-top: 50px;
+    border: 5px solid #666;
+    border-radius: 30px;
+    background: rgba(244, 244, 244, 0.8);
+  }
   body {
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
     background-color: #f6f7f8;
   }
   main {
@@ -51,37 +56,15 @@ const articles = content.articles;
     @apply py-5;
   }
   h1 {
-    @apply text-4xl font-bold py-16 w-full text-center;
-    background-color: #b3c9cf;
+    @apply text-4xl py-3 w-full text-center;
+    background: #477745;
+    color: #efefef;
+    box-shadow: 1px 0px 2px black;
   }
   h2 {
     @apply text-2xl font-bold my-1;
   }
   a {
     @apply text-blue-500;
-  }
-</style>
-<style is:global>
-  div.fc-daygrid-day-top {
-    @apply relative z-10;
-  }
-  div.fc-view-harness {
-    @apply overflow-x-auto md:overflow-visible;
-  }
-  div.fc-dayGridMonth-view {
-    @apply min-w-[45rem];
-  }
-  div.fc-bg-event {
-    @apply p-2;
-  }
-  th.fc-day {
-    @apply text-white;
-    background-color: #2c3e50;
-  }
-  th.fc-day-sun {
-    @apply bg-red-500 text-white;
-  }
-  th.fc-day-sat {
-    @apply bg-blue-500 text-white;
   }
 </style>
