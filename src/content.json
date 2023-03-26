@@ -127,6 +127,14 @@
       "url": null,
       "githubUser": "eihigh",
       "issueNumber": 51
+    },
+    {
+      "title": "Neovim Luaでユーザーの入力をテストする (vusted & nvim-kit)",
+      "date": "2023-04-07",
+      "author": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 53
     }
   ]
 }
