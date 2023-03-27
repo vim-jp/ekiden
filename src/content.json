@@ -135,6 +135,14 @@
       "url": null,
       "githubUser": "uga-rosa",
       "issueNumber": 53
+    },
+    {
+      "title": "denops-docker.vim にポートを開く機能を追加する話",
+      "date": "2023-04-10",
+      "author": "ゴリラ",
+      "url": null,
+      "githubUser": "skanehira",
+      "issueNumber": 55
     }
   ]
 }
