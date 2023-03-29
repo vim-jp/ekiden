@@ -137,10 +137,10 @@
       "issueNumber": 53
     },
     {
-      "title": "denops-docker.vim にポートを開く機能を追加する話",
+      "title": "denops-docker.vim のバグを直した話",
       "date": "2023-04-10",
       "author": "ゴリラ",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/2023-03-29-vim-docker-vim-bug-fix",
       "githubUser": "skanehira",
       "issueNumber": 55
     }
