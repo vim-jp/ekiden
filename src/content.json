@@ -143,6 +143,14 @@
       "url": "https://zenn.dev/vim_jp/articles/2023-03-29-vim-docker-vim-bug-fix",
       "githubUser": "skanehira",
       "issueNumber": 55
+    },
+    {
+      "title": "自分の dotfiles から Vim の設定を1つ紹介する",
+      "date": "2023-04-12",
+      "author": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 57
     }
   ]
 }
