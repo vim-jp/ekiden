@@ -5,37 +5,135 @@ export type ArticleProps = {
   title: string;
   date: string;
   author: string;
-  url?: string;
+  url: string | null;
+  firstDay?: boolean;
+  opened?: boolean;
+  githubUser?: string;
+  issueNumber?: number;
 };
 
 type Props = ArticleProps;
 
-const { title, date, author, url } = Astro.props;
+const { title, date, author, url, firstDay, opened } = Astro.props;
 
-const today = dayjs();
-const published = today >= dayjs(date);
+const published = dayjs() >= dayjs(date);
 ---
 
-<div
-  class="mb-4 w-full p-2 rounded-lg grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4"
->
-  <p class="text-gray-700 text-base mb-1 break-words truncate">
-    {date}
-  </p>
-  <p class="text-gray-700 text-base mb-1 break-words truncate">
-    {author}
-  </p>
-  <p
-    class="leading-tight font-medium mb-1 truncate sm:col-span-3 md:col-span-2"
-  >
-    {
-      published ? (
-        <a href={url} class="text-[#000D94] visited:text-[#8001BB] underline">
-          {title}
-        </a>
-      ) : (
-        <>{title}</>
-      )
-    }
-  </p>
+<div class="container">
+  {
+    firstDay && (
+      <div class="month">
+        <div class="date opened">{dayjs(date).month() + 1}月</div>
+      </div>
+    )
+  }
+  <a href={published ? url : opened ? url : "#"} class="article">
+    <div class:list={["date", { opened, published }]}>
+      {dayjs(date).date()}日
+    </div>
+    <div class="metadata">
+      <div class="author">{author}</div>
+      <div class="title">{title}</div>
+    </div>
+  </a>
 </div>
+
+<style>
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  .opened {
+    background: #666 !important;
+  }
+
+  .published {
+    background: #2a9bdd !important;
+    box-shadow: 2px 2px 2px #444;
+  }
+
+  .container {
+    --date-r: 20px;
+    --date-my: 40px;
+    --date-mx: 40px;
+    --date-fs: 1rem;
+    --timeline-w: 10px;
+    --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
+    --author-h: 30px;
+    --triangle-h: calc(var(--date-my) + var(--date-r) - var(--author-h));
+    --triangle-w: calc(var(--date-mx) + var(--date-r));
+    --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
+    --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
+  }
+
+  .month {
+    --date-r: 40px;
+    --date-mx: 20px;
+    --date-my: 20px;
+    --date-fs: 1.4rem;
+  }
+
+  .article,
+  .month {
+    position: relative;
+    display: flex;
+    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
+    align-items: start;
+    overflow: hidden;
+  }
+
+  .article:hover {
+    --date-r: 30px;
+    --date-mx: 30px;
+    --date-my: 30px;
+    --date-fs: 1.4rem;
+  }
+
+  .date {
+    display: flex;
+    font-size: var(--date-fs);
+    min-width: calc(var(--date-r) * 2);
+    min-height: calc(var(--date-r) * 2);
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--date-r);
+    color: white;
+    margin: var(--date-my) var(--date-mx);
+    background: #11405b;
+    transition: all 0.3s;
+  }
+
+  .date::before {
+    position: absolute;
+    content: " ";
+    min-height: 65535px;
+    background: #666;
+    width: var(--timeline-w);
+    z-index: -1;
+  }
+
+  .article .date::after {
+    position: absolute;
+    content: " ";
+    background: #666;
+    width: var(--triangle-l);
+    transform: rotate(var(--triangle-a)) translate(50%, 0);
+    height: 1px;
+    z-index: -1;
+  }
+
+  .metadata {
+    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
+    width: 100%;
+    color: #333;
+  }
+
+  .author {
+    height: var(--author-h);
+    border-bottom: 1px #333 solid;
+    display: flex;
+    align-items: end;
+  }
+</style>
