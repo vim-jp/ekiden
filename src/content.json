@@ -60,7 +60,7 @@
       "title": "lualine.nvimでステータスラインをカスタマイズしよう!",
       "date": "2023-03-17",
       "author": "Liquid_system",
-      "url": "https://liquid-system.github.io/post/lualine.nvim%E3%81%A7%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E4%BB%95%E6%A7%98/",
+      "url": "https://liquid-system.github.io/lualine.nvim%E3%81%A7%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%97%E3%82%88%E3%81%86/",
       "githubUser": "Liquid-system",
       "issueNumber": 22
     },
@@ -76,7 +76,7 @@
       "title": "錆びついたinit.vimをLuaで書き換えてピカピカにする",
       "date": "2023-03-22",
       "author": "matoruru",
-      "url": null,
+      "url": "https://qiita.com/matoruru/items/b5ad6e0f1ef6c804378d",
       "githubUser": "matoruru",
       "issueNumber": 33
     },
@@ -92,7 +92,7 @@
       "title": "Vimを使わないVimmerであってもいい",
       "date": "2023-03-27",
       "author": "tadashi-aikawa",
-      "url": null,
+      "url": "https://minerva.mamansoft.net/%F0%9F%93%98Articles/%F0%9F%93%98Vim%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84Vimmer%E3%81%A7%E3%81%82%E3%81%A3%E3%81%A6%E3%82%82%E3%81%84%E3%81%84",
       "githubUser": "tadashi-aikawa",
       "issueNumber": 41
     },
@@ -100,7 +100,7 @@
       "title": "Vimのテキストオブジェクトとsurround.vimで効率よく入力",
       "date": "2023-03-29",
       "author": "ArcCosine",
-      "url": null,
+      "url": "https://looxu.blogspot.com/2023/03/vim-surroundvim.html",
       "githubUser": "ArcCosine",
       "issueNumber": 43
     },
@@ -108,7 +108,7 @@
       "title": "Vim 駅伝開始1ヶ月を振り返る",
       "date": "2023-03-31",
       "author": "monaqa",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/2023-03-31-vim-ekiden-looking-back-the-first-month",
       "githubUser": "monaqa",
       "issueNumber": 44
     },
@@ -127,6 +127,38 @@
       "url": null,
       "githubUser": "eihigh",
       "issueNumber": 51
+    },
+    {
+      "title": "Neovim Luaでユーザーの入力をテストする (vusted & nvim-kit)",
+      "date": "2023-04-07",
+      "author": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 53
+    },
+    {
+      "title": "denops-docker.vim のバグを直した話",
+      "date": "2023-04-10",
+      "author": "ゴリラ",
+      "url": "https://zenn.dev/vim_jp/articles/2023-03-29-vim-docker-vim-bug-fix",
+      "githubUser": "skanehira",
+      "issueNumber": 55
+    },
+    {
+      "title": "自分の dotfiles から Vim の設定を1つ紹介する",
+      "date": "2023-04-12",
+      "author": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 57
+    },
+    {
+      "title": "HHKBとVIｍとの親和性について語る",
+      "date": "2023-04-14",
+      "author": "ArcCosine",
+      "url": null,
+      "githubUser": "ArcCosine",
+      "issueNumber": 59
     }
   ]
 }

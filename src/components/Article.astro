@@ -77,9 +77,11 @@ const published = dayjs() >= dayjs(date);
 
   .article,
   .month {
+    position: relative;
     display: flex;
     min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-    align-items: center;
+    align-items: start;
+    overflow: hidden;
   }
 
   .article:hover {
@@ -91,6 +93,7 @@ const published = dayjs() >= dayjs(date);
 
   .date {
     display: flex;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
     font-size: var(--date-fs);
     min-width: calc(var(--date-r) * 2);
     min-height: calc(var(--date-r) * 2);
@@ -106,7 +109,7 @@ const published = dayjs() >= dayjs(date);
   .date::before {
     position: absolute;
     content: " ";
-    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
+    min-height: 65535px;
     background: #666;
     width: var(--timeline-w);
     z-index: -1;

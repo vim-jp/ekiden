@@ -23,7 +23,23 @@ const articles = content.articles;
       <h1>Vim 駅伝</h1>
       <div class="tw-c-container">
         <section>
-          <h2>イベント概要</h2>
+          <h2>Vim 駅伝とは</h2>
+          <p>
+            Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。
+            GitHub のアカウントさえあれば誰でも投稿できます。
+            小さなノウハウ、ちょっとした気づき、作ったプラグイン、開発の苦労話など、
+            Vim
+            またはテクノロジーに関連していればどんな些細な内容でもかまいません。
+            皆さんの手で、Vim 駅伝を盛り上げていきましょう！
+          </p>
+          <h2>注意事項</h2>
+          <ul>
+            <li>
+              個人攻撃や差別的な内容を含む記事、公序良俗に反する不適切な記事の投稿を禁止します。
+              明らかに不適切と判断された記事については、GitHub
+              経由での通告のもと本ページからリンクを削除する場合があります。
+            </li>
+          </ul>
         </section>
         <Articles articles={articles} />
       </div>
@@ -34,16 +50,16 @@ const articles = content.articles;
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Yuji+Syuku&display=swap");
   section {
-    height: 150px;
     padding: 20px;
+    padding-top: 5px;
     color: #666;
     margin-top: 50px;
     border: 5px solid #666;
     border-radius: 30px;
-    background: rgba(244, 244, 244, 0.8);
+    background: rgba(244, 244, 244, 1);
   }
   body {
-    font-family: "Kaushan Script", "Yuji Syuku", serif;
+    font-family: sans-serif;
     background-color: #f6f7f8;
   }
   main {
@@ -57,12 +73,14 @@ const articles = content.articles;
   }
   h1 {
     @apply text-4xl py-3 w-full text-center;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
     background: #477745;
     color: #efefef;
     box-shadow: 1px 0px 2px black;
   }
   h2 {
-    @apply text-2xl font-bold my-1;
+    @apply text-2xl font-bold mt-4 mb-2;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
   }
   a {
     @apply text-blue-500;
