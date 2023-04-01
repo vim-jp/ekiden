@@ -29,20 +29,22 @@ const articles = content.articles
               <div
                 class={
                   article.published
-                    ? "rounded-full w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
-                    : "rounded-full w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"
+                    ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
+                    : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"
                 }
               >
                 <div class="text-center">
                   <div class="text-lg font-bold">#{article.index}</div>
-                  <div>{article.shortDate}</div>
+                  <div class="text-sm">{article.shortDate}</div>
                 </div>
               </div>
               <div
                 class={article.published ? "text-gray-700" : "text-gray-500"}
               >
-                <h2 class="text-lg font-bold mb-1">{article.title}</h2>
-                <p class="text-sm">{article.author}</p>
+                <h2 class="text-md md:text-lg font-bold mb-1">
+                  {article.title}
+                </h2>
+                <p class="text-sm md:text-md">{article.author}</p>
               </div>
             </div>
           </div>
