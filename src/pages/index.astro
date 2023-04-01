@@ -50,13 +50,13 @@ const articles = content.articles;
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Yuji+Syuku&display=swap");
   section {
-    padding: 20px;
-    padding-top: 5px;
     color: #666;
     margin-top: 50px;
     border: 5px solid #666;
     border-radius: 30px;
     background: rgba(244, 244, 244, 1);
+    @apply p-5;
+    padding-top: 5px;
   }
   body {
     font-family: sans-serif;
@@ -72,15 +72,15 @@ const articles = content.articles;
     @apply py-5;
   }
   h1 {
-    @apply text-4xl py-3 w-full text-center;
     font-family: "Kaushan Script", "Yuji Syuku", serif;
     background: #477745;
     color: #efefef;
     box-shadow: 1px 0px 2px black;
+    @apply text-4xl py-3 w-full text-center;
   }
   h2 {
-    @apply text-2xl font-bold mt-4 mb-2;
     font-family: "Kaushan Script", "Yuji Syuku", serif;
+    @apply text-2xl font-bold mt-4 mb-2;
   }
   a {
     @apply text-blue-500;
