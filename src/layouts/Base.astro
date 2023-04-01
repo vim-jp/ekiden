@@ -1,8 +1,8 @@
 ---
 import Header from "../components/Header.astro";
 
-const {title, slug} = Astro.props;
-
+type Props = { title: string; slug: string };
+const { title, slug } = Astro.props;
 ---
 
 <html lang="ja">
@@ -10,14 +10,14 @@ const {title, slug} = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <slot name="head"/>
+    <slot name="head" />
     <title>{title}</title>
   </head>
   <body>
     <main>
-      <Header slug={slug}/>
+      <Header slug={slug} />
       <div class="max-w-4xl flex-1 px-4">
-        <slot/>
+        <slot />
       </div>
     </main>
   </body>
