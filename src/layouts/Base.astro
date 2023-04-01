@@ -1,0 +1,36 @@
+---
+import Header from "../components/Header.astro";
+
+const {title, slug} = Astro.props;
+
+---
+
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <slot name="head"/>
+    <title>{title}</title>
+  </head>
+  <body>
+    <main>
+      <Header slug={slug}/>
+      <div class="max-w-4xl flex-1 px-4">
+        <slot/>
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Yuji+Syuku&display=swap");
+  body {
+    font-family: sans-serif;
+    background-color: #f6f7f8;
+  }
+
+  main {
+    @apply flex justify-center items-center flex-col p-0 m-0;
+  }
+</style>

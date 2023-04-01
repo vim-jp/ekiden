@@ -1,0 +1,53 @@
+---
+import dayjs from "dayjs";
+import Articles from "../components/Articles.astro";
+import Header from "../components/Header.astro";
+import content from "../content.json";
+import Base from "../layouts/Base.astro";
+
+const slug = "/archive/"
+
+const articles = content.articles
+  .sort((a, b) => (dayjs(a.date).unix() - dayjs(b.date).unix()))
+  .filter((article) => (
+    dayjs(article.date) <= dayjs() && article.url !== null
+  ))
+  .map(
+    (article, index) => ({
+      index: index + 1,
+      shortDate: dayjs(article.date).format("M/D"),
+      ...article
+      })
+  );
+
+---
+
+<Base title="Vim 駅伝 - アーカイブ" slug="/archive/">
+  {articles.map((article) => (
+    <div class="w-full hover:shadow-md hover:bg-[#efefef]">
+      <a href={article.url}>
+        <div class="p-4">
+          <div class="flex items-center">
+            <div class="rounded-full bg-[#477745] text-white w-16 h-16 flex items-center justify-center mr-4">
+              <div class="text-center">
+                <div class="text-lg font-bold">#{article.index}</div>
+                <div>{article.shortDate}</div>
+              </div>
+            </div>
+            <div class="text-gray-700">
+              <h2 class="text-lg font-bold mb-1">{article.title}</h2>
+              <p class="text-sm">{article.author}</p>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  ))}
+</Base>
+
+<style>
+  h1 {
+    @apply text-4xl font-bold mt-4 mb-2;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
+  }
+</style>

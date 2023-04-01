@@ -1,0 +1,12 @@
+---
+const { slug, href } = Astro.props;
+---
+
+<span class="px-4">
+  {slug === href
+  ?
+    <span class="underline"><slot/></span>
+  :
+    <a href={"/ekiden" + href}><slot/></a>
+  }
+</span>
