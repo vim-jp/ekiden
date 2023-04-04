@@ -116,15 +116,15 @@
       "title": "Vim + npm install --save-dev textlint",
       "date": "2023-04-03",
       "author": "IK",
-      "url": null,
+      "url": "https://qiita.com/get_me_power/items/c20447b9cab4eeaef4e4",
       "githubUser": "get-me-power",
       "issueNumber": 45
     },
     {
-      "title": "ミニマリストに憧れて - 素 vim の力を引き出そう",
+      "title": "ミニマリストに憧れて - 無彩色カラースキームを作った話",
       "date": "2023-04-05",
       "author": "eihigh",
-      "url": null,
+      "url": "https://eihigh.hatenablog.com/entry/2023/04/05/000000",
       "githubUser": "eihigh",
       "issueNumber": 51
     },
@@ -159,6 +159,22 @@
       "url": null,
       "githubUser": "ArcCosine",
       "issueNumber": 59
+    },
+    {
+      "title": "Vim（vi）との出逢いを振り返る",
+      "date": "2023-04-17",
+      "author": "matoruru",
+      "url": null,
+      "githubUser": "matoruru",
+      "issueNumber": 62
+    },
+    {
+      "title": "My Vim philosophy 2",
+      "date": "2023-04-28",
+      "author": "ゴリラ",
+      "url": null,
+      "githubUser": "skanehira",
+      "issueNumber": 63
     }
   ]
 }
