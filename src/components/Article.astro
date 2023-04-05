@@ -39,14 +39,12 @@ const published = dayjs() >= dayjs(date);
 </div>
 
 <style>
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  :root {
+    --light-gray: #666;
+    --text-black: #333;
   }
-
   .opened {
-    background: #666 !important;
+    background: var(--light-gray) !important;
   }
 
   .published {
@@ -77,11 +75,8 @@ const published = dayjs() >= dayjs(date);
 
   .article,
   .month {
-    position: relative;
-    display: flex;
     min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-    align-items: start;
-    overflow: hidden;
+    @apply relative flex items-start overflow-hidden;
   }
 
   .article:hover {
@@ -92,49 +87,43 @@ const published = dayjs() >= dayjs(date);
   }
 
   .date {
-    display: flex;
     font-family: "Kaushan Script", "Yuji Syuku", serif;
+    background: #11405b;
     font-size: var(--date-fs);
     min-width: calc(var(--date-r) * 2);
     min-height: calc(var(--date-r) * 2);
-    justify-content: center;
-    align-items: center;
-    border-radius: var(--date-r);
-    color: white;
     margin: var(--date-my) var(--date-mx);
-    background: #11405b;
     transition: all 0.3s;
+    @apply text-white flex justify-center items-center rounded-full;
   }
 
   .date::before {
-    position: absolute;
     content: " ";
     min-height: 65535px;
-    background: #666;
+    background: var(--light-gray);
     width: var(--timeline-w);
     z-index: -1;
+    @apply absolute;
   }
 
   .article .date::after {
-    position: absolute;
     content: " ";
-    background: #666;
+    background: var(--light-gray);
     width: var(--triangle-l);
     transform: rotate(var(--triangle-a)) translate(50%, 0);
-    height: 1px;
     z-index: -1;
+    @apply absolute h-px;
   }
 
   .metadata {
     min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-    width: 100%;
-    color: #333;
+    color: var(--text-black);
+    @apply w-full;
   }
 
   .author {
     height: var(--author-h);
-    border-bottom: 1px #333 solid;
-    display: flex;
-    align-items: end;
+    border-bottom: 1px var(--text-black) solid;
+    @apply flex items-end;
   }
 </style>
