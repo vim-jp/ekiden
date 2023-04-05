@@ -27,7 +27,7 @@ const published = dayjs() >= dayjs(date);
       </div>
     )
   }
-  <a href={published ? url : opened ? url : "#"} class="article">
+  <a href={published || opened ? url : undefined} class="article">
     <div class:list={["date", { opened, published }]}>
       {dayjs(date).date()}日
     </div>
