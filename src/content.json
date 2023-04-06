@@ -129,10 +129,10 @@
       "issueNumber": 51
     },
     {
-      "title": "Neovim Luaでユーザーの入力をテストする (vusted & nvim-kit)",
+      "title": "vusted & nvim-kitでユーザーの入力をテストする",
       "date": "2023-04-07",
       "author": "uga-rosa",
-      "url": null,
+      "url": "https://zenn.dev/uga_rosa/articles/6a69ecb4dd26c1",
       "githubUser": "uga-rosa",
       "issueNumber": 53
     },
