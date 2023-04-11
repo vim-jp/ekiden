@@ -169,6 +169,14 @@
       "issueNumber": 62
     },
     {
+      "title": "tsnode-marker.nvimでコードブロックとかの背景色を変える",
+      "date": "2023-04-19",
+      "author": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 65
+    },
+    {
       "title": "My Vim philosophy 2",
       "date": "2023-04-28",
       "author": "ゴリラ",
