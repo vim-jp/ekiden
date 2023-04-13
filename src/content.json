@@ -177,6 +177,14 @@
       "issueNumber": 65
     },
     {
+      "title": "eclipseでもvimキーバインドが使えたはなし",
+      "date": "2023-04-21",
+      "author": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 66
+    },
+    {
       "title": "My Vim philosophy 2",
       "date": "2023-04-28",
       "author": "ゴリラ",
