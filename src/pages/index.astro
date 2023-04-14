@@ -1,9 +1,16 @@
 ---
+import dayjs from "dayjs";
 import Articles from "../components/Articles.astro";
 import content from "../content.json";
 import Base from "../layouts/Base.astro";
 
 const articles = content.articles;
+
+const newestArticle = content.articles
+  .filter((article) => dayjs(article.date) <= dayjs() && article.url !== null)
+  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
+  .pop();
+
 ---
 
 <Base title="Vim 駅伝" slug="/">
@@ -16,13 +23,10 @@ const articles = content.articles;
     href={`${import.meta.env.BASE_URL}rss.xml`}
   />
 
-  <section>
+  <section class="py-4">
     <h2>Vim 駅伝とは</h2>
     <p>
-      Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。
-      GitHub のアカウントさえあれば誰でも投稿できます。
-      小さなノウハウ、ちょっとした気づき、作ったプラグイン、開発の苦労話など、
-      Vim またはテクノロジーに関連していればどんな些細な内容でもかまいません。
+      Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。 GitHub のアカウントさえあれば誰でも投稿できます。 小さなノウハウ、ちょっとした気づき、作ったプラグイン、開発の苦労話など、 Vim またはテクノロジーに関連していればどんな些細な内容でもかまいません。
       皆さんの手で、Vim 駅伝を盛り上げていきましょう！
     </p>
     <h2>注意事項</h2>
@@ -34,16 +38,30 @@ const articles = content.articles;
       </li>
     </ul>
   </section>
+  <section class="news">
+    {newestArticle &&
+      <p>
+        <b>News</b>:
+        {dayjs(newestArticle.date).format("M/D")}
+        の記事
+        「<a href=`#article-${newestArticle.date}`>{newestArticle.title}</a>」
+        が公開されました！
+      </p>
+    }
+  </section>
   <Articles articles={articles} />
 </Base>
+
 <style>
   section {
-    padding: 20px;
-    padding-top: 5px;
     color: #666;
-    margin-top: 50px;
-    border: 5px solid #666;
-    border-radius: 30px;
+    background: rgba(244, 244, 244, 1);
+  }
+  .news {
+    margin-top: 10px;
+    padding: 20px;
+    border: 3px solid #666;
+    border-radius: 10px;
     background: rgba(244, 244, 244, 1);
   }
   h2 {
