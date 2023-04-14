@@ -10,7 +10,6 @@ const newestArticle = content.articles
   .filter((article) => dayjs(article.date) <= dayjs() && article.url !== null)
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
   .pop();
-
 ---
 
 <Base title="Vim 駅伝" slug="/">
@@ -26,7 +25,10 @@ const newestArticle = content.articles
   <section class="py-4">
     <h2>Vim 駅伝とは</h2>
     <p>
-      Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。 GitHub のアカウントさえあれば誰でも投稿できます。 小さなノウハウ、ちょっとした気づき、作ったプラグイン、開発の苦労話など、 Vim またはテクノロジーに関連していればどんな些細な内容でもかまいません。
+      Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。
+      GitHub のアカウントさえあれば誰でも投稿できます。
+      小さなノウハウ、ちょっとした気づき、作ったプラグイン、開発の苦労話など、
+      Vim またはテクノロジーに関連していればどんな些細な内容でもかまいません。
       皆さんの手で、Vim 駅伝を盛り上げていきましょう！
     </p>
     <h2>注意事項</h2>
@@ -39,14 +41,15 @@ const newestArticle = content.articles
     </ul>
   </section>
   <section class="news">
-    {newestArticle &&
-      <p>
-        <b>News</b>:
-        {dayjs(newestArticle.date).format("M/D")}
-        の記事
-        「<a href=`#article-${newestArticle.date}`>{newestArticle.title}</a>」
-        が公開されました！
-      </p>
+    {
+      newestArticle && (
+        <p>
+          <b>News</b>:{dayjs(newestArticle.date).format("M/D")}
+          の記事 「
+          <a href={`#article-${newestArticle.date}`}>{newestArticle.title}</a>」
+          が公開されました！
+        </p>
+      )
     }
   </section>
   <Articles articles={articles} />
