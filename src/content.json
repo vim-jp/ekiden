@@ -185,6 +185,14 @@
       "issueNumber": 66
     },
     {
+      "title": "Vim scriptから同期的に使えるセレクタを作る",
+      "date": "2023-04-24",
+      "author": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 68
+    },
+    {
       "title": "My Vim philosophy 2",
       "date": "2023-04-28",
       "author": "ゴリラ",
