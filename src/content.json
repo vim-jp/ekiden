@@ -207,6 +207,14 @@
       "url": null,
       "githubUser": "skanehira",
       "issueNumber": 63
+    },
+    {
+      "title": "dein.vim の hooks_file を使って vimrc を書き換えた話",
+      "date": "2023-05-01",
+      "author": "hokorobi",
+      "url": "https://zenn.dev/hokorobi/articles/256b34ab97b5b7",
+      "githubUser": "hokorobi",
+      "issueNumber": 70
     }
   ]
 }
