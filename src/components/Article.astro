@@ -19,7 +19,7 @@ const { title, date, author, url, firstDay, opened } = Astro.props;
 const published = dayjs() >= dayjs(date);
 ---
 
-<div class="container">
+<div class="container" id={`article-${date}`}>
   {
     firstDay && (
       <div class="month">
