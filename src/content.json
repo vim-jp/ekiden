@@ -231,6 +231,14 @@
       "url": null,
       "githubUser": "kamecha",
       "issueNumber": 73
+    },
+    {
+      "title": "NeovimはMinecraft (SpigotMC) 向けのプラグインをScalaで書けるのか？",
+      "date": "2023-05-08",
+      "author": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 74
     }
   ]
 }
