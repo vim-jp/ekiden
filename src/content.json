@@ -177,7 +177,7 @@
       "issueNumber": 65
     },
     {
-      "title": "Java開発でもVimが使いたかったはなし",
+      "title": "Eclipse 上で Vim ライクな操作を可能にする Vrapper を使ったはなし",
       "date": "2023-04-21",
       "author": "staticWagomU",
       "url": "https://wagomu.me/blog/2023-04-21-vim-ekiden",
