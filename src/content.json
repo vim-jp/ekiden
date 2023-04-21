@@ -239,6 +239,14 @@
       "url": null,
       "githubUser": "kyoh86",
       "issueNumber": 74
+    },
+    {
+      "title": "vim.ui.inputを自作floating windowにした",
+      "date": "2023-05-10",
+      "author": "ryota2357",
+      "url": null,
+      "githubUser": "ryota2357",
+      "issueNumber": 75
     }
   ]
 }
