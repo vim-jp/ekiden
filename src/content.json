@@ -247,6 +247,14 @@
       "url": null,
       "githubUser": "ryota2357",
       "issueNumber": 75
+    },
+    {
+      "title": "ccc.nvimのcolor highlighter機能について",
+      "date": "2023-05-12",
+      "author": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 77
     }
   ]
 }
