@@ -255,6 +255,14 @@
       "url": null,
       "githubUser": "uga-rosa",
       "issueNumber": 77
+    },
+    {
+      "title": "NeovimとVSCode Neovimで使用するpluginを分ける",
+      "date": "2023-05-15",
+      "author": "ikorihn",
+      "url": null,
+      "githubUser": "ikorihn",
+      "issueNumber": 78
     }
   ]
 }
