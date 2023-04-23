@@ -185,6 +185,14 @@
       "issueNumber": 66
     },
     {
+      "title": "Neovim用のターミナルプラグインを作った話",
+      "date": "2023-04-24",
+      "author": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 81
+    },
+    {
       "title": "something about LSP",
       "date": "2023-04-26",
       "author": "ryoppippi",
