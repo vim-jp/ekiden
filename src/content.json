@@ -193,10 +193,10 @@
       "issueNumber": 81
     },
     {
-      "title": "something about LSP",
+      "title": "Neovim 0.8以降のビルトインLSPについて",
       "date": "2023-04-26",
       "author": "ryoppippi",
-      "url": null,
+      "url": "https://zenn.dev/ryoppippi/articles/8aeedded34c914",
       "githubUser": "ryoppippi",
       "issueNumber": 69
     },
