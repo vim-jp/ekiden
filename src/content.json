@@ -271,6 +271,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 82
+    },
+    {
+      "title": "Vim キーバインドをカスタマイズするとき考えていること",
+      "date": "2023-05-19",
+      "author": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 85
     }
   ]
 }
