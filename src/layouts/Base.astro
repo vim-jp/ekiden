@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 
 type Props = { title: string; slug: string };
 const { title, slug } = Astro.props;
@@ -19,6 +20,7 @@ const { title, slug } = Astro.props;
       <div class="max-w-4xl flex-1 px-4">
         <slot />
       </div>
+      <Footer />
     </main>
   </body>
 </html>
