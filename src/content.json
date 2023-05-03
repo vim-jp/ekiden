@@ -233,7 +233,7 @@
       "issueNumber": 73
     },
     {
-      "title": "NeovimはMinecraft (SpigotMC) 向けのプラグインをScalaで書けるのか？",
+      "title": "NeovimでScalaを使ってマインクラフトのプラグインを作ってみる",
       "date": "2023-05-08",
       "author": "kyoh86",
       "url": null,
