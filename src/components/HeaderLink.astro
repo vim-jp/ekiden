@@ -3,7 +3,7 @@ type Props = { slug: string; href: string };
 const { slug, href } = Astro.props;
 ---
 
-<span class="px-4">
+<span>
   {
     slug === href ? (
       <span class="underline">
@@ -16,3 +16,9 @@ const { slug, href } = Astro.props;
     )
   }
 </span>
+
+<style>
+  span {
+    @apply px-4 py-2;
+  }
+</style>
