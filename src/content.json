@@ -287,6 +287,14 @@
       "url": null,
       "githubUser": "ryoppippi",
       "issueNumber": 86
+    },
+    {
+      "title": "leap.nvimで検索箇所にラベルをつけてジャンプする",
+      "date": "2023-05-24",
+      "author": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 89
     }
   ]
 }
