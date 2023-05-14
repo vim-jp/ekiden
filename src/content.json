@@ -257,10 +257,10 @@
       "issueNumber": 77
     },
     {
-      "title": "NeovimとVSCode Neovimで使用するpluginを分ける",
+      "title": "NeovimとVSCode Neovimで使用するプラグインや設定を使い分ける",
       "date": "2023-05-15",
       "author": "ikorihn",
-      "url": null,
+      "url": "https://zenn.dev/r57ty7/articles/accd3014e22366",
       "githubUser": "ikorihn",
       "issueNumber": 78
     },
