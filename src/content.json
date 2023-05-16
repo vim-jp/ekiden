@@ -295,6 +295,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 89
+    },
+    {
+      "title": "Neovimの設定すべてをまるっと切り替えられるマルチプロファイル運用",
+      "date": "2023-05-26",
+      "author": "kyoh86",
+      "url": "https://zenn.dev/kyoh86/articles/e27a93d78767a7",
+      "githubUser": "kyoh86",
+      "issueNumber": 90
     }
   ]
 }
