@@ -265,10 +265,10 @@
       "issueNumber": 78
     },
     {
-      "title": "Neovimのプラグインを再選定したはなし",
+      "title": "Neovim+LSPをなるべく簡単な設定で構築する ~ Lazy.nvim編 ~",
       "date": "2023-05-17",
       "author": "staticWagomU",
-      "url": null,
+      "url": "https://wagomu.me/blog/2023-05-17-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 82
     },
