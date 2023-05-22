@@ -319,6 +319,14 @@
       "url": null,
       "githubUser": "mityu",
       "issueNumber": 92
+    },
+    {
+      "title": "キーマッピングを設定しないVimmerが居たっていい",
+      "date": "2023-06-02",
+      "author": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 93
     }
   ]
 }
