@@ -311,6 +311,14 @@
       "url": null,
       "githubUser": "uga-rosa",
       "issueNumber": 91
+    },
+    {
+      "title": "zsh on :terminal on Vim で zsh のカレントディレクトリを Vim と同期する",
+      "date": "2023-05-31",
+      "author": "mityu",
+      "url": null,
+      "githubUser": "mityu",
+      "issueNumber": 92
     }
   ]
 }
