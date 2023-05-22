@@ -281,10 +281,10 @@
       "issueNumber": 85
     },
     {
-      "title": "Svelte + Neovim",
+      "title": "NeovimでのSvelte/SvelteKitの開発環境",
       "date": "2023-05-22",
       "author": "ryoppippi",
-      "url": null,
+      "url": "https://zenn.dev/ryoppippi/articles/a8d8928795c8c1",
       "githubUser": "ryoppippi",
       "issueNumber": 86
     },
