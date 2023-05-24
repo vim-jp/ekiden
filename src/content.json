@@ -289,10 +289,10 @@
       "issueNumber": 86
     },
     {
-      "title": "leap.nvimで検索箇所にラベルをつけてジャンプする",
+      "title": "leap.nvimを拡張して検索対象にラベルをつけて飛べるleap-search.nvimを作った",
       "date": "2023-05-24",
       "author": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2023/05/24/leap-onto-matched-patterns/",
       "githubUser": "atusy",
       "issueNumber": 89
     },
