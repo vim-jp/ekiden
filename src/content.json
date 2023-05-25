@@ -343,6 +343,14 @@
       "url": null,
       "githubUser": "sontixyou",
       "issueNumber": 95
+    },
+    {
+      "title": "Typescript で Vim / Neovim の設定を書く！",
+      "date": "2023-06-09",
+      "author": "yukimemi",
+      "url": null,
+      "githubUser": "yukimemi",
+      "issueNumber": 96
     }
   ]
 }
