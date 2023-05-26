@@ -351,6 +351,14 @@
       "url": null,
       "githubUser": "yukimemi",
       "issueNumber": 96
+    },
+    {
+      "title": "NeovimのHEADをビルドする方法",
+      "date": "2023-06-12",
+      "author": "uhooi",
+      "url": null,
+      "githubUser": "uhooi",
+      "issueNumber": 98
     }
   ]
 }
