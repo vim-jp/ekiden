@@ -359,6 +359,14 @@
       "url": null,
       "githubUser": "uhooi",
       "issueNumber": 98
+    },
+    {
+      "title": "Vim scriptで1回しか使えないコマンド・関数を定義する",
+      "date": "2023-06-14",
+      "author": "kawarimidoll",
+      "url": null,
+      "githubUser": "kawarimidoll",
+      "issueNumber": 99
     }
   ]
 }
