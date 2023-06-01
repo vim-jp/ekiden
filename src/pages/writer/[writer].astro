@@ -25,7 +25,7 @@ const writerArticles = content.articles
   }));
 ---
 
-<Base title="Vim 駅伝 - 記者一覧" slug="/writer/">
+<Base title={`Vim 駅伝 - ${writer}の記事一覧`} slug="/writer/">
   <h1>{writer}</h1>
   {
     writerArticles.map((article) => (
