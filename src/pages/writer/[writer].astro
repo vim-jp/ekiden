@@ -5,16 +5,16 @@ import Base from "../../layouts/Base.astro";
 
 export function getStaticPaths() {
   const paths = Array.from(
-    new Set(content.articles.map((article) => article.author))
-  ).map((author) => {
-    return { params: { writer: author } };
+    new Set(content.articles.map((article) => article.githubUser))
+  ).map((githubUser) => {
+    return { params: { writer: githubUser } };
   });
   return paths;
 }
 
 const { writer } = Astro.params;
 const writerArticles = content.articles
-  .filter((article) => article.author === writer)
+  .filter((article) => article.githubUser === writer)
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
   .map((article, index) => ({
     index: index + 1,
