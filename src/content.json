@@ -367,6 +367,14 @@
       "url": null,
       "githubUser": "kawarimidoll",
       "issueNumber": 99
+    },
+    {
+      "title": "2つのEXコマンドを直列実行する",
+      "date": "2023-06-16",
+      "author": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 102
     }
   ]
 }
