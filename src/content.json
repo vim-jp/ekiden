@@ -375,6 +375,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 102
+    },
+    {
+      "title": "LSP完全に理解した（ddu-source-lspの紹介）",
+      "date": "2023-06-19",
+      "author": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 103
     }
   ]
 }
