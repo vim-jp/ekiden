@@ -391,6 +391,14 @@
       "url": null,
       "githubUser": "monaqa",
       "issueNumber": 104
+    },
+    {
+      "title": "Neovim の LSP 関係のプラグインの役割",
+      "date": "2023-06-23",
+      "author": "futsuuu",
+      "url": null,
+      "githubUser": "futsuuu",
+      "issueNumber": 105
     }
   ]
 }
