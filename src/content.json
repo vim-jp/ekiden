@@ -465,6 +465,14 @@
       "issueNumber": 116
     },
     {
+      "title": "Neovimでディレクトリを開いた時に任意のファイラープラグインを起動する設定を楽にするプラグインを作った",
+      "date": "2023-07-14",
+      "author": "tomato3713",
+      "url": "https://tomato3713.hatenablog.com/entry/create-hijack-open-directory-nvim",
+      "githubUser": "tomato3713",
+      "issueNumber": 117
+    },
+    {
       "title": "「いぶし銀プラグイン」企画集計結果発表",
       "date": "2023-07-21",
       "author": "monaqa",
