@@ -441,6 +441,14 @@
       "issueNumber": 112
     },
     {
+      "title": "Vimでやべー名前のファイルが保存されるのを防止する",
+      "date": "2023-07-07",
+      "author": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/f02adb4f325e51",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 120
+    },
+    {
       "title": "Vimmerのレベル１０",
       "date": "2023-07-10",
       "author": "tani",
