@@ -503,6 +503,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 121
+    },
+    {
+      "title": "ファイルリストのディレクトリにだけ色を付けると良い感じ",
+      "date": "2023-07-26",
+      "author": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 122
     }
   ]
 }
