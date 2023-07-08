@@ -30,7 +30,7 @@ const articles = [];
 while (initialDay.add(2, "M") >= today) {
   let article: ArticleProps = {
     opened: true,
-    author: "募集中",
+    runner: "募集中",
     title: "記事を投稿する",
     date: today.format("YYYY-MM-DD"),
     url: `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${today.format(
