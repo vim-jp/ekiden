@@ -3,7 +3,7 @@
     {
       "title": "Vim 駅伝、始動します",
       "date": "2023-03-01",
-      "author": "thinca",
+      "runner": "thinca",
       "url": "https://thinca.hatenablog.com/entry/vim-ekiden-is-launched",
       "githubUser": "thinca",
       "issueNumber": 11
@@ -11,7 +11,7 @@
     {
       "title": "Insertモードでも気軽に←・→したい",
       "date": "2023-03-03",
-      "author": "atusy",
+      "runner": "atusy",
       "url": "https://blog.atusy.net/2023/03/03/horizontal-arrows-on-insert/",
       "githubUser": "atusy",
       "issueNumber": 12
@@ -19,7 +19,7 @@
     {
       "title": "bunsetsu.vimとbunsetsu-wb.nvimを作ってます！！！",
       "date": "2023-03-06",
-      "author": "ryoppippi",
+      "runner": "ryoppippi",
       "url": "https://github.com/ryoppippi/bunsetsu-wb.nvim/blob/main/README.md",
       "githubUser": "ryoppippi",
       "issueNumber": 15
@@ -27,7 +27,7 @@
     {
       "title": "Project V 「思考のスピードで編集せよ。32年の伝統をもつテキストエディタをビルドする。」",
       "date": "2023-03-08",
-      "author": "tani",
+      "runner": "tani",
       "url": "https://gist.github.com/tani/04c52c12ab4254528c1ba7ad509946ad",
       "githubUser": "tani",
       "issueNumber": 16
@@ -35,7 +35,7 @@
     {
       "title": "heirline.nvimでNeovimのStatusLineをカスタマイズしてみる",
       "date": "2023-03-10",
-      "author": "kyoh86",
+      "runner": "kyoh86",
       "url": "https://zenn.dev/kyoh86/articles/681ab90a44302c",
       "githubUser": "kyoh86",
       "issueNumber": 17
@@ -43,7 +43,7 @@
     {
       "title": "Vim,Neovimのフォント変更方法について",
       "date": "2023-03-13",
-      "author": "staticWagomU",
+      "runner": "staticWagomU",
       "url": "https://wagomu.me/blog/2023-03-12-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 18
@@ -51,7 +51,7 @@
     {
       "title": "Vim Input Method Editor",
       "date": "2023-03-15",
-      "author": "kuuote",
+      "runner": "kuuote",
       "url": "https://zenn.dev/vim_jp/articles/20230315_skkeleton",
       "githubUser": "kuuote",
       "issueNumber": 20
@@ -59,7 +59,7 @@
     {
       "title": "lualine.nvimでステータスラインをカスタマイズしよう!",
       "date": "2023-03-17",
-      "author": "Liquid_system",
+      "runner": "Liquid_system",
       "url": "https://liquid-system.github.io/lualine.nvim%E3%81%A7%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3%E3%82%92%E3%82%AB%E3%82%B9%E3%82%BF%E3%83%9E%E3%82%A4%E3%82%BA%E3%81%97%E3%82%88%E3%81%86/",
       "githubUser": "Liquid-system",
       "issueNumber": 22
@@ -67,7 +67,7 @@
     {
       "title": "Vim9 script の始め方",
       "date": "2023-03-20",
-      "author": "thinca",
+      "runner": "thinca",
       "url": "https://thinca.hatenablog.com/entry/execute-vim9-script",
       "githubUser": "thinca",
       "issueNumber": 32
@@ -75,7 +75,7 @@
     {
       "title": "錆びついたinit.vimをLuaで書き換えてピカピカにする",
       "date": "2023-03-22",
-      "author": "matoruru",
+      "runner": "matoruru",
       "url": "https://qiita.com/matoruru/items/b5ad6e0f1ef6c804378d",
       "githubUser": "matoruru",
       "issueNumber": 33
@@ -83,7 +83,7 @@
     {
       "title": "neovimターミナルモードエスケープと即座に確定するマッピング",
       "date": "2023-03-24",
-      "author": "fuzmare",
+      "runner": "fuzmare",
       "url": "https://zenn.dev/fuzmare/articles/vim-term-escape",
       "githubUser": "fuzmare",
       "issueNumber": 35
@@ -91,7 +91,7 @@
     {
       "title": "Vimを使わないVimmerであってもいい",
       "date": "2023-03-27",
-      "author": "tadashi-aikawa",
+      "runner": "tadashi-aikawa",
       "url": "https://minerva.mamansoft.net/%F0%9F%93%98Articles/%F0%9F%93%98Vim%E3%82%92%E4%BD%BF%E3%82%8F%E3%81%AA%E3%81%84Vimmer%E3%81%A7%E3%81%82%E3%81%A3%E3%81%A6%E3%82%82%E3%81%84%E3%81%84",
       "githubUser": "tadashi-aikawa",
       "issueNumber": 41
@@ -99,7 +99,7 @@
     {
       "title": "Vimのテキストオブジェクトとsurround.vimで効率よく入力",
       "date": "2023-03-29",
-      "author": "ArcCosine",
+      "runner": "ArcCosine",
       "url": "https://looxu.blogspot.com/2023/03/vim-surroundvim.html",
       "githubUser": "ArcCosine",
       "issueNumber": 43
@@ -107,7 +107,7 @@
     {
       "title": "Vim 駅伝開始1ヶ月を振り返る",
       "date": "2023-03-31",
-      "author": "monaqa",
+      "runner": "monaqa",
       "url": "https://zenn.dev/vim_jp/articles/2023-03-31-vim-ekiden-looking-back-the-first-month",
       "githubUser": "monaqa",
       "issueNumber": 44
@@ -115,7 +115,7 @@
     {
       "title": "Vim + npm install --save-dev textlint",
       "date": "2023-04-03",
-      "author": "IK",
+      "runner": "IK",
       "url": "https://qiita.com/get_me_power/items/c20447b9cab4eeaef4e4",
       "githubUser": "get-me-power",
       "issueNumber": 45
@@ -123,7 +123,7 @@
     {
       "title": "ミニマリストに憧れて - 無彩色カラースキームを作った話",
       "date": "2023-04-05",
-      "author": "eihigh",
+      "runner": "eihigh",
       "url": "https://eihigh.hatenablog.com/entry/2023/04/05/000000",
       "githubUser": "eihigh",
       "issueNumber": 51
@@ -131,7 +131,7 @@
     {
       "title": "vusted & nvim-kitでユーザーの入力をテストする",
       "date": "2023-04-07",
-      "author": "uga-rosa",
+      "runner": "uga-rosa",
       "url": "https://zenn.dev/uga_rosa/articles/6a69ecb4dd26c1",
       "githubUser": "uga-rosa",
       "issueNumber": 53
@@ -139,7 +139,7 @@
     {
       "title": "denops-docker.vim のバグを直した話",
       "date": "2023-04-10",
-      "author": "ゴリラ",
+      "runner": "ゴリラ",
       "url": "https://zenn.dev/vim_jp/articles/2023-03-29-vim-docker-vim-bug-fix",
       "githubUser": "skanehira",
       "issueNumber": 55
@@ -147,7 +147,7 @@
     {
       "title": "dial.nvim の新機能紹介",
       "date": "2023-04-12",
-      "author": "monaqa",
+      "runner": "monaqa",
       "url": "https://zenn.dev/vim_jp/articles/2023-04-12-vim-dial-additive-increment",
       "githubUser": "monaqa",
       "issueNumber": 57
@@ -155,7 +155,7 @@
     {
       "title": "HHKBとViｍとの親和性について語る",
       "date": "2023-04-14",
-      "author": "ArcCosine",
+      "runner": "ArcCosine",
       "url": "https://looxu.hateblo.jp/entry/an-hhkb-and-vim-wannabe-talks",
       "githubUser": "ArcCosine",
       "issueNumber": 59
@@ -163,7 +163,7 @@
     {
       "title": "Vim（vi）との出逢いを振り返る",
       "date": "2023-04-17",
-      "author": "matoruru",
+      "runner": "matoruru",
       "url": "https://twitter.com/_matoruru/status/1647762400970706944",
       "githubUser": "matoruru",
       "issueNumber": 62
@@ -171,7 +171,7 @@
     {
       "title": "tsnode-marker.nvimでコードブロックとかの背景色を変える",
       "date": "2023-04-19",
-      "author": "atusy",
+      "runner": "atusy",
       "url": "https://blog.atusy.net/2023/04/19/tsnode-marker-nvim/",
       "githubUser": "atusy",
       "issueNumber": 65
@@ -179,7 +179,7 @@
     {
       "title": "Eclipse 上で Vim ライクな操作を可能にする Vrapper を使ったはなし",
       "date": "2023-04-21",
-      "author": "staticWagomU",
+      "runner": "staticWagomU",
       "url": "https://wagomu.me/blog/2023-04-21-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 66
@@ -187,7 +187,7 @@
     {
       "title": "Neovim用のターミナルプラグインを作った話",
       "date": "2023-04-24",
-      "author": "uga-rosa",
+      "runner": "uga-rosa",
       "url": "https://zenn.dev/uga_rosa/articles/76fc0848b4233d",
       "githubUser": "uga-rosa",
       "issueNumber": 81
@@ -195,7 +195,7 @@
     {
       "title": "Neovim 0.8以降のビルトインLSPについて",
       "date": "2023-04-26",
-      "author": "ryoppippi",
+      "runner": "ryoppippi",
       "url": "https://zenn.dev/ryoppippi/articles/8aeedded34c914",
       "githubUser": "ryoppippi",
       "issueNumber": 69
@@ -203,7 +203,7 @@
     {
       "title": "My Vim philosophy 2",
       "date": "2023-04-28",
-      "author": "ゴリラ",
+      "runner": "ゴリラ",
       "url": "https://zenn.dev/vim_jp/articles/2023-04-27-vim-my-philosophy2",
       "githubUser": "skanehira",
       "issueNumber": 63
@@ -211,7 +211,7 @@
     {
       "title": "dein.vim の hooks_file を使って vimrc を書き換えた話",
       "date": "2023-05-01",
-      "author": "hokorobi",
+      "runner": "hokorobi",
       "url": "https://zenn.dev/hokorobi/articles/256b34ab97b5b7",
       "githubUser": "hokorobi",
       "issueNumber": 70
@@ -219,7 +219,7 @@
     {
       "title": "DDSKKのチュートリアルをやりたい",
       "date": "2023-05-03",
-      "author": "slin",
+      "runner": "slin",
       "url": "https://zenn.dev/slin/articles/2023-05-03-skk",
       "githubUser": "willelz",
       "issueNumber": 71
@@ -227,7 +227,7 @@
     {
       "title": "部内SNSのVimクライアントもどきを作ってVim†完全に理解した†話",
       "date": "2023-05-05",
-      "author": "kamecha",
+      "runner": "kamecha",
       "url": "https://trap.jp/post/1870/",
       "githubUser": "kamecha",
       "issueNumber": 73
@@ -235,7 +235,7 @@
     {
       "title": "NeovimでScalaを使ってマインクラフトのプラグインを作ってみる",
       "date": "2023-05-08",
-      "author": "kyoh86",
+      "runner": "kyoh86",
       "url": "https://zenn.dev/kyoh86/articles/05660a921293a7",
       "githubUser": "kyoh86",
       "issueNumber": 74
@@ -243,7 +243,7 @@
     {
       "title": "vim.ui.inputを自作floating windowにした",
       "date": "2023-05-10",
-      "author": "ryota2357",
+      "runner": "ryota2357",
       "url": "https://ryota2357.com/blog/2023/neovim-custom-vim-ui-input/",
       "githubUser": "ryota2357",
       "issueNumber": 75
@@ -251,7 +251,7 @@
     {
       "title": "ccc.nvimのcolor highlighter機能について",
       "date": "2023-05-12",
-      "author": "uga-rosa",
+      "runner": "uga-rosa",
       "url": "https://zenn.dev/uga_rosa/articles/61200f157b70fc",
       "githubUser": "uga-rosa",
       "issueNumber": 77
@@ -259,7 +259,7 @@
     {
       "title": "NeovimとVSCode Neovimで使用するプラグインや設定を使い分ける",
       "date": "2023-05-15",
-      "author": "ikorihn",
+      "runner": "ikorihn",
       "url": "https://zenn.dev/r57ty7/articles/accd3014e22366",
       "githubUser": "ikorihn",
       "issueNumber": 78
@@ -267,7 +267,7 @@
     {
       "title": "Neovim+LSPをなるべく簡単な設定で構築する ~ Lazy.nvim編 ~",
       "date": "2023-05-17",
-      "author": "staticWagomU",
+      "runner": "staticWagomU",
       "url": "https://wagomu.me/blog/2023-05-17-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 82
@@ -275,7 +275,7 @@
     {
       "title": "Vim キーバインドをカスタマイズするとき考えていること",
       "date": "2023-05-19",
-      "author": "monaqa",
+      "runner": "monaqa",
       "url": "https://zenn.dev/vim_jp/articles/2023-05-19-vim-keybind-philosophy",
       "githubUser": "monaqa",
       "issueNumber": 85
@@ -283,7 +283,7 @@
     {
       "title": "NeovimでのSvelte/SvelteKitの開発環境",
       "date": "2023-05-22",
-      "author": "ryoppippi",
+      "runner": "ryoppippi",
       "url": "https://zenn.dev/ryoppippi/articles/a8d8928795c8c1",
       "githubUser": "ryoppippi",
       "issueNumber": 86
@@ -291,7 +291,7 @@
     {
       "title": "leap.nvimを拡張して検索対象にラベルをつけて飛べるleap-search.nvimを作った",
       "date": "2023-05-24",
-      "author": "atusy",
+      "runner": "atusy",
       "url": "https://blog.atusy.net/2023/05/24/leap-onto-matched-patterns/",
       "githubUser": "atusy",
       "issueNumber": 89
@@ -299,7 +299,7 @@
     {
       "title": "Neovimの設定すべてをまるっと切り替えられるマルチプロファイル運用",
       "date": "2023-05-26",
-      "author": "kyoh86",
+      "runner": "kyoh86",
       "url": "https://zenn.dev/kyoh86/articles/e27a93d78767a7",
       "githubUser": "kyoh86",
       "issueNumber": 90
@@ -307,7 +307,7 @@
     {
       "title": "ddu.vimにちゃんと入門した話",
       "date": "2023-05-29",
-      "author": "uga-rosa",
+      "runner": "uga-rosa",
       "url": "https://zenn.dev/uga_rosa/articles/f55be75a573c0b",
       "githubUser": "uga-rosa",
       "issueNumber": 91
@@ -315,7 +315,7 @@
     {
       "title": "zsh on :terminal on Vim で zsh のカレントディレクトリを Vim と同期する",
       "date": "2023-05-31",
-      "author": "mityu",
+      "runner": "mityu",
       "url": "https://zenn.dev/vim_jp/articles/sync-cwd-zsh-on-vim",
       "githubUser": "mityu",
       "issueNumber": 92
@@ -323,7 +323,7 @@
     {
       "title": "キーマッピングを設定しないVimmerが居たっていい",
       "date": "2023-06-02",
-      "author": "staticWagomU",
+      "runner": "staticWagomU",
       "url": "https://wagomu.me/blog/2023-06-02-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 93
@@ -331,7 +331,7 @@
     {
       "title": "2023年版VimでGoを書く",
       "date": "2023-06-05",
-      "author": "eihigh",
+      "runner": "eihigh",
       "url": "https://zenn.dev/vim_jp/articles/3128c01c792dd6",
       "githubUser": "eihigh",
       "issueNumber": 94
@@ -339,7 +339,7 @@
     {
       "title": "Neovimで今開いているファイルのパスをコピーするスクリプトを作った話",
       "date": "2023-06-07",
-      "author": "sontixyou",
+      "runner": "sontixyou",
       "url": "https://zenn.dev/kenkenlysh/articles/9d6d8c40229d55",
       "githubUser": "sontixyou",
       "issueNumber": 95
@@ -347,7 +347,7 @@
     {
       "title": "Typescript で Vim / Neovim の設定を書く！",
       "date": "2023-06-09",
-      "author": "yukimemi",
+      "runner": "yukimemi",
       "url": "https://zenn.dev/yukimemi/articles/2023-06-09-dvpm",
       "githubUser": "yukimemi",
       "issueNumber": 96
@@ -355,7 +355,7 @@
     {
       "title": "NeovimのHEADをビルドする方法",
       "date": "2023-06-12",
-      "author": "uhooi",
+      "runner": "uhooi",
       "url": "https://qiita.com/uhooi/items/95ffbfc1270df79f1fbd",
       "githubUser": "uhooi",
       "issueNumber": 98
@@ -363,7 +363,7 @@
     {
       "title": "Vim scriptで1回しか使えないコマンド・関数を定義する",
       "date": "2023-06-14",
-      "author": "kawarimidoll",
+      "runner": "kawarimidoll",
       "url": "https://zenn.dev/kawarimidoll/articles/22856ed2627056",
       "githubUser": "kawarimidoll",
       "issueNumber": 99
@@ -371,7 +371,7 @@
     {
       "title": "vim.defer_fn でコマンドを直列実行する",
       "date": "2023-06-16",
-      "author": "staticWagomU",
+      "runner": "staticWagomU",
       "url": "https://zenn.dev/vim_jp/articles/20230616vim_ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 102
@@ -379,7 +379,7 @@
     {
       "title": "LSP完全に理解した（ddu-source-lspの紹介）",
       "date": "2023-06-19",
-      "author": "uga-rosa",
+      "runner": "uga-rosa",
       "url": "https://zenn.dev/uga_rosa/articles/8441f13d44300f",
       "githubUser": "uga-rosa",
       "issueNumber": 103
@@ -387,7 +387,7 @@
     {
       "title": "【企画】これだけは外せない！あなたにとっての「いぶし銀」なプラグインを教えてください",
       "date": "2023-06-21",
-      "author": "monaqa",
+      "runner": "monaqa",
       "url": "https://zenn.dev/vim_jp/articles/2023-06-21-call-for-vim-accomplished-plugins",
       "githubUser": "monaqa",
       "issueNumber": 104
@@ -395,7 +395,7 @@
     {
       "title": "Neovim の LSP 関係のプラグインの役割",
       "date": "2023-06-23",
-      "author": "futsuuu",
+      "runner": "futsuuu",
       "url": "https://zenn.dev/futsuuu/articles/3b74a8acec166e",
       "githubUser": "futsuuu",
       "issueNumber": 105
@@ -403,7 +403,7 @@
     {
       "title": "Denopsでプラグインを作るときのTips",
       "date": "2023-06-26",
-      "author": "4513ECHO",
+      "runner": "4513ECHO",
       "url": "https://zenn.dev/vim_jp/articles/2023-06-23-denops-tips",
       "githubUser": "4513ECHO",
       "issueNumber": 107
@@ -411,7 +411,7 @@
     {
       "title": "とあるｺｰﾃﾞｨﾝｸﾞﾁｮｯﾄﾜｶﾙ勢のエディタ遍歴",
       "date": "2023-06-28",
-      "author": "ryoppippi",
+      "runner": "ryoppippi",
       "url": "https://zenn.dev/ryoppippi/articles/58d97a2ec2c2ae",
       "githubUser": "ryoppippi",
       "issueNumber": 108
@@ -419,7 +419,7 @@
     {
       "title": "Vim の一括置換を楽に行う裏技",
       "date": "2023-06-30",
-      "author": "monaqa",
+      "runner": "monaqa",
       "url": "https://zenn.dev/vim_jp/articles/2023-06-30-vim-substitute-tips",
       "githubUser": "monaqa",
       "issueNumber": 114
@@ -427,7 +427,7 @@
     {
       "title": "初めて参加したもくもく会の感想",
       "date": "2023-07-03",
-      "author": "staticWagomU",
+      "runner": "staticWagomU",
       "url": "https://wagomu.me/blog/2023-07-03",
       "githubUser": "staticWagomU",
       "issueNumber": 111
@@ -435,7 +435,7 @@
     {
       "title": "タイポ修正を支える技術",
       "date": "2023-07-05",
-      "author": "tani",
+      "runner": "tani",
       "url": "https://zenn.dev/dog/articles/vim_typo_2023",
       "githubUser": "tani",
       "issueNumber": 112
@@ -443,7 +443,7 @@
     {
       "title": "Vimでやべー名前のファイルが保存されるのを防止する",
       "date": "2023-07-07",
-      "author": "kawarimidoll",
+      "runner": "kawarimidoll",
       "url": "https://zenn.dev/vim_jp/articles/f02adb4f325e51",
       "githubUser": "kawarimidoll",
       "issueNumber": 120
@@ -451,7 +451,7 @@
     {
       "title": "Vimmerのレベル１０",
       "date": "2023-07-10",
-      "author": "tani",
+      "runner": "tani",
       "url": "https://scrapbox.io/vim-jp/Vimmer%E3%81%AE%E3%83%AC%E3%83%99%E3%83%AB%EF%BC%91%EF%BC%90",
       "githubUser": "tani",
       "issueNumber": 115
@@ -459,7 +459,7 @@
     {
       "title": "Vim を IME として使いこなす",
       "date": "2023-07-12",
-      "author": "NI57721",
+      "runner": "NI57721",
       "url": null,
       "githubUser": "NI57721",
       "issueNumber": 116
@@ -467,7 +467,7 @@
     {
       "title": "Neovimでディレクトリを開いた時に任意のファイラープラグインを起動する設定を楽にするプラグインを作った",
       "date": "2023-07-14",
-      "author": "tomato3713",
+      "runner": "tomato3713",
       "url": "https://tomato3713.hatenablog.com/entry/create-hijack-open-directory-nvim",
       "githubUser": "tomato3713",
       "issueNumber": 117
@@ -475,7 +475,7 @@
     {
       "title": "west-jp-vimのオフ会幹事をしました",
       "date": "2023-07-17",
-      "author": "K Ikeda",
+      "runner": "K Ikeda",
       "url": null,
       "githubUser": "makizo",
       "issueNumber": 118
@@ -483,7 +483,7 @@
     {
       "title": "カラースキーム自作のススメ",
       "date": "2023-07-19",
-      "author": "ぺりー",
+      "runner": "ぺりー",
       "url": null,
       "githubUser": "satorunooshie",
       "issueNumber": 119
@@ -491,7 +491,7 @@
     {
       "title": "「いぶし銀プラグイン」企画集計結果発表",
       "date": "2023-07-21",
-      "author": "monaqa",
+      "runner": "monaqa",
       "url": null,
       "githubUser": "monaqa",
       "issueNumber": 109
@@ -499,7 +499,7 @@
     {
       "title": "flash.nvimとkensaku.vimを組み合わせる",
       "date": "2023-07-24",
-      "author": "atusy",
+      "runner": "atusy",
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 121
@@ -507,7 +507,7 @@
     {
       "title": "ファイルリストのディレクトリにだけ色を付けると見やすい！",
       "date": "2023-07-26",
-      "author": "kyoh86",
+      "runner": "kyoh86",
       "url": null,
       "githubUser": "kyoh86",
       "issueNumber": 122

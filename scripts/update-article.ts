@@ -15,7 +15,7 @@ function writeContentJSON(o: unknown) {
 type Article = {
   title: string;
   date: string;
-  author: string;
+  runner: string;
   url: string | null;
   githubUser: string;
   issueNumber?: number;
@@ -66,7 +66,7 @@ function descriptionToArticle(
   description: string,
   githubUser: string,
 ): Article {
-  let title, author, date, url = null;
+  let title, runner, date, url = null;
 
   const sections = description.split("\n###").map((s) => s.trim()).filter((s) =>
     s != ""
@@ -100,7 +100,7 @@ function descriptionToArticle(
       }
       case "執筆者名": {
         const unescaped = unescapeContent(content);
-        author = isEmpty(unescaped) ? githubUser : unescaped;
+        runner = isEmpty(unescaped) ? githubUser : unescaped;
         break;
       }
       case "記事タイトル": {
@@ -129,14 +129,14 @@ function descriptionToArticle(
   if (!date) {
     throw new ValidationError("公開日がありません。");
   }
-  if (!author) {
+  if (!runner) {
     throw new ValidationError("執筆者名がありません。");
   }
 
   return {
     title,
     date,
-    author,
+    runner,
     url,
     githubUser,
   };
@@ -149,7 +149,7 @@ function checkOverwritable(existanceArticle: Article, newArticle: Article) {
   ) {
     return existanceArticle.issueNumber === newArticle.issueNumber;
   }
-  return existanceArticle.author === newArticle.author;
+  return existanceArticle.runner === newArticle.runner;
 }
 
 function insertArticleToContents(articles: Article[], newArticle: Article) {

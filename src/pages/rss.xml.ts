@@ -17,7 +17,7 @@ export async function get(context: { site: string }) {
     site: context.site,
     items: articles.map((article) => ({
       title: article.title,
-      description: `By ${article.author}`,
+      description: `By ${article.runner}`,
       pubDate: dayjs(article.date).toDate(),
       // article.url が null なものは除いているため本当はいらないのだが、
       // 型チェックを通すために仕方なく

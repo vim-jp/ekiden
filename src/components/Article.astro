@@ -4,7 +4,7 @@ import dayjs from "dayjs";
 export type ArticleProps = {
   title: string;
   date: string;
-  author: string;
+  runner: string;
   url: string | null;
   firstDay?: boolean;
   opened?: boolean;
@@ -14,7 +14,7 @@ export type ArticleProps = {
 
 type Props = ArticleProps;
 
-const { title, date, author, url, firstDay, opened } = Astro.props;
+const { title, date, runner, url, firstDay, opened } = Astro.props;
 
 const published = dayjs() >= dayjs(date);
 ---
@@ -32,7 +32,7 @@ const published = dayjs() >= dayjs(date);
       {dayjs(date).date()}日
     </div>
     <div class="metadata">
-      <div class="author">{author}</div>
+      <div class="runner">{runner}</div>
       <div class="title">{title}</div>
     </div>
   </a>
@@ -59,8 +59,8 @@ const published = dayjs() >= dayjs(date);
     --date-fs: 1rem;
     --timeline-w: 10px;
     --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
-    --author-h: 30px;
-    --triangle-h: calc(var(--date-my) + var(--date-r) - var(--author-h));
+    --runner-h: 30px;
+    --triangle-h: calc(var(--date-my) + var(--date-r) - var(--runner-h));
     --triangle-w: calc(var(--date-mx) + var(--date-r));
     --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
     --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
@@ -122,8 +122,8 @@ const published = dayjs() >= dayjs(date);
     @apply w-full;
   }
 
-  .author {
-    height: var(--author-h);
+  .runner {
+    height: var(--runner-h);
     border-bottom: 1px var(--text-black) solid;
     @apply flex items-end;
   }
