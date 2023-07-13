@@ -25,7 +25,7 @@ const runnersArticles = content.articles
   }));
 ---
 
-<Base title={`Vim 駅伝 - ${runner}の記事一覧`} slug="/runner/">
+<Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runner/">
   <h1>{runner}</h1>
   {
     runnersArticles.map((article) => (
