@@ -1,0 +1,80 @@
+---
+import dayjs from "dayjs";
+import content from "../../content.json";
+import Base from "../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  const paths = Array.from(
+    new Set(content.articles.map((article) => article.githubUser))
+  ).map((githubUser) => {
+    return { params: { runner: githubUser } };
+  });
+  return paths;
+}
+
+const { runner } = Astro.params;
+const runnersArticles = content.articles
+  .filter((article) => article.githubUser === runner)
+  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
+  .map((article, index) => ({
+    index: index + 1,
+    published: dayjs(article.date) <= dayjs() && article.url !== null,
+    shortDate: dayjs(article.date).format("M/D"),
+    year: dayjs(article.date).format("YYYY"),
+    ...article,
+  }));
+---
+
+<Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runner/">
+  <h1>{runner}</h1>
+  {
+    runnersArticles.map((article) => (
+      <>
+        <h2
+          class={
+            article.index === 1 ||
+            article.year !== runnersArticles[article.index - 2].year
+              ? "text-2xl font-bold mt-8 mb-4"
+              : "hidden"
+          }
+        >
+          {article.year}年
+        </h2>
+        <div
+          class={
+            article.published
+              ? "w-full hover:shadow-md hover:bg-[#efefef]"
+              : "w-full"
+          }
+        >
+          <a href={article.published ? article.url : undefined}>
+            <div class="p-4">
+              <div class="flex items-center">
+                <div
+                  class={
+                    article.published
+                      ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
+                      : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"
+                  }
+                >
+                  <div class="text-center">
+                    <div class="text-lg font-bold">#{article.index}</div>
+                    <div class="text-sm">{article.shortDate}</div>
+                  </div>
+                </div>
+                <div
+                  class={article.published ? "text-gray-700" : "text-gray-500"}
+                >
+                  <h2 class="text-md md:text-lg font-bold mb-1">
+                    {article.title}
+                  </h2>
+                  <p class="text-sm md:text-md">{article.author}</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </>
+    ))
+  }
+</Base>
