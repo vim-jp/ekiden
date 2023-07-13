@@ -316,7 +316,7 @@
       "title": "zsh on :terminal on Vim で zsh のカレントディレクトリを Vim と同期する",
       "date": "2023-05-31",
       "author": "mityu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/sync-cwd-zsh-on-vim",
       "githubUser": "mityu",
       "issueNumber": 92
     },
@@ -367,6 +367,14 @@
       "url": null,
       "githubUser": "kawarimidoll",
       "issueNumber": 99
+    },
+    {
+      "title": "2つのEXコマンドを直列実行する",
+      "date": "2023-06-16",
+      "author": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 102
     }
   ]
 }
