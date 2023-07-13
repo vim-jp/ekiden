@@ -7,14 +7,14 @@ export function getStaticPaths() {
   const paths = Array.from(
     new Set(content.articles.map((article) => article.githubUser))
   ).map((githubUser) => {
-    return { params: { writer: githubUser } };
+    return { params: { runner: githubUser } };
   });
   return paths;
 }
 
-const { writer } = Astro.params;
-const writerArticles = content.articles
-  .filter((article) => article.githubUser === writer)
+const { runner } = Astro.params;
+const runnersArticles = content.articles
+  .filter((article) => article.githubUser === runner)
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
   .map((article, index) => ({
     index: index + 1,
@@ -25,15 +25,15 @@ const writerArticles = content.articles
   }));
 ---
 
-<Base title={`Vim 駅伝 - ${writer}の記事一覧`} slug="/writer/">
-  <h1>{writer}</h1>
+<Base title={`Vim 駅伝 - ${runner}の記事一覧`} slug="/runner/">
+  <h1>{runner}</h1>
   {
-    writerArticles.map((article) => (
+    runnersArticles.map((article) => (
       <>
         <h2
           class={
             article.index === 1 ||
-            article.year !== writerArticles[article.index - 2].year
+            article.year !== runnersArticles[article.index - 2].year
               ? "text-2xl font-bold mt-8 mb-4"
               : "hidden"
           }
