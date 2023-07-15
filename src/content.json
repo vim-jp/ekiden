@@ -513,10 +513,10 @@
       "issueNumber": 122
     },
     {
-      "title": "denops.vimを使って始めてプラグインを作った",
+      "title": "denops.vim を使って初めてvim-pluginを作った。MarkdownをHTMLに変換してクリップボードにコピーする。",
       "date": "2023-07-28",
       "runner": "ArcCosine",
-      "url": null,
+      "url": "https://looxu.blogspot.com/2023/07/denopsvim-vim-pluginmarkdownhtml.html",
       "githubUser": "ArcCosine",
       "issueNumber": 124
     }
