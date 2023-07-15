@@ -511,6 +511,14 @@
       "url": null,
       "githubUser": "kyoh86",
       "issueNumber": 122
+    },
+    {
+      "title": "denops.vimを使って始めてプラグインを作った",
+      "date": "2023-07-28",
+      "runner": "ArcCosine",
+      "url": null,
+      "githubUser": "ArcCosine",
+      "issueNumber": 124
     }
   ]
 }
