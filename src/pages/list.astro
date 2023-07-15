@@ -1,0 +1,20 @@
+---
+import content from "../content.json";
+import Base from "../layouts/Base.astro";
+const runners = content.articles.filter(
+  (article, index, self) =>
+    self.findIndex((element) => element.runner === article.runner) === index
+);
+---
+
+<Base title={`Vim 駅伝 - 走者一覧`} slug="/runner/">
+  <div class={"w-full flex flex-wrap"}>
+    {
+      runners.map((runner) => (
+        <div class={"p-4 my-2"}>
+          <a href={`/ekiden/runner/` + runner.githubUser}>{runner.runner}</a>
+        </div>
+      ))
+    }
+  </div>
+</Base>
