@@ -9,6 +9,9 @@ const articles = content.articles
     index: index + 1,
     published: dayjs(article.date) <= dayjs() && article.url !== null,
     shortDate: dayjs(article.date).format("M/D"),
+    runnerPath: article.githubUser
+      ? `/ekiden/runner/${article.githubUser}`
+      : undefined,
     ...article,
   }));
 ---
@@ -44,7 +47,9 @@ const articles = content.articles
                 <h2 class="text-md md:text-lg font-bold mb-1">
                   {article.title}
                 </h2>
-                <p class="text-sm md:text-md">{article.runner}</p>
+                <p class="text-sm md:text-md">
+                  <a href={article.runnerPath}>{article.runner}</a>
+                </p>
               </div>
             </div>
           </div>
