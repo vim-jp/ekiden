@@ -519,6 +519,14 @@
       "url": "https://looxu.blogspot.com/2023/07/denopsvim-vim-pluginmarkdownhtml.html",
       "githubUser": "ArcCosine",
       "issueNumber": 124
+    },
+    {
+      "title": "lazy.nvimを使った起動時間チューニング入門！ ~起動時間10倍を目指して~",
+      "date": "2023-07-31",
+      "runner": "yuucu",
+      "url": "https://zenn.dev/yuucu/articles/lazy_nvim_tuning",
+      "githubUser": "yuucu",
+      "issueNumber": 126
     }
   ]
 }
