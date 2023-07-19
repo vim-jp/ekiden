@@ -505,10 +505,10 @@
       "issueNumber": 121
     },
     {
-      "title": "ファイルリストのディレクトリにだけ色を付けると見やすい！",
+      "title": "配下のファイルを一覧するときはディレクトリに色を付けると見やすい！",
       "date": "2023-07-26",
       "runner": "kyoh86",
-      "url": null,
+      "url": "http://localhost:8000/articles/6a3fff9cdd4e86",
       "githubUser": "kyoh86",
       "issueNumber": 122
     },
