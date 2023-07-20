@@ -527,6 +527,14 @@
       "url": "https://zenn.dev/yuucu/articles/lazy_nvim_tuning",
       "githubUser": "yuucu",
       "issueNumber": 126
+    },
+    {
+      "title": "「いぶし銀プラグイン」企画集計結果発表（後編）",
+      "date": "2023-08-21",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 128
     }
   ]
 }
