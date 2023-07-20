@@ -13,7 +13,11 @@ export function getStaticPaths() {
 }
 
 const { runner } = Astro.params;
-const runnersArticles = content.articles
+const newArticles = content.articles.map((article, index) => ({
+  contentIndex: index + 1,
+  ...article,
+}));
+const runnersArticles = newArticles
   .filter((article) => article.githubUser === runner)
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
   .map((article, index) => ({
@@ -25,7 +29,7 @@ const runnersArticles = content.articles
   }));
 ---
 
-<Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runner/">
+<Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runners/">
   <h1>{runner}</h1>
   {
     runnersArticles.map((article) => (
@@ -33,7 +37,7 @@ const runnersArticles = content.articles
         <h2
           class={
             article.index === 1 ||
-            article.year !== runnersArticles[article.index - 2].year
+            article.year !== runnersArticles[article.index - 1].year
               ? "text-2xl font-bold mt-8 mb-4"
               : "hidden"
           }
@@ -58,7 +62,7 @@ const runnersArticles = content.articles
                   }
                 >
                   <div class="text-center">
-                    <div class="text-lg font-bold">#{article.index}</div>
+                    <div class="text-lg font-bold">#{article.contentIndex}</div>
                     <div class="text-sm">{article.shortDate}</div>
                   </div>
                 </div>
@@ -78,3 +82,9 @@ const runnersArticles = content.articles
     ))
   }
 </Base>
+<style>
+  h1 {
+    @apply text-3xl font-bold mt-4 mb-4 border-l-[24px] border-b pl-4;
+    border-color: #477745;
+  }
+</style>
