@@ -497,10 +497,10 @@
       "issueNumber": 109
     },
     {
-      "title": "flash.nvimとkensaku.vimを組み合わせる",
+      "title": "Vimでコマンドライン履歴を遡りやすくする",
       "date": "2023-07-24",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2023/07/24/vim-clean-history/",
       "githubUser": "atusy",
       "issueNumber": 121
     },
