@@ -537,6 +537,14 @@
       "issueNumber": 129
     },
     {
+      "title": "ddc-source-nvim-lspを大幅に強化しました",
+      "date": "2023-08-04",
+      "runner": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 130
+    },
+    {
       "title": "「いぶし銀プラグイン」企画集計結果発表（後編）",
       "date": "2023-08-21",
       "runner": "monaqa",
