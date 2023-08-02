@@ -553,6 +553,14 @@
       "issueNumber": 131
     },
     {
+      "title": "Vimでspaceなしで展開できるabbrevっぽいものを作る",
+      "date": "2023-08-09",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/8ecb641f0d286c",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 132
+    },
+    {
       "title": "「いぶし銀プラグイン」企画集計結果発表（後編）",
       "date": "2023-08-21",
       "runner": "monaqa",
