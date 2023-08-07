@@ -548,7 +548,7 @@
       "title": "Vimの検索で、都合がいいときだけ大文字小文字を区別する",
       "date": "2023-08-07",
       "runner": "igrep",
-      "url": null,
+      "url": "https://zenn.dev/igrep/articles/2023-08-vim-backslash-c",
       "githubUser": "igrep",
       "issueNumber": 131
     },
