@@ -577,10 +577,10 @@
       "issueNumber": 134
     },
     {
-      "title": "きっと、gitの記事を書きます",
+      "title": "「commit messageを考えてる間によしなに git hooks を実行しておいてね！」を実現するneovimの設定をかいた",
       "date": "2023-08-16",
       "runner": "ryoppippi",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/3b5125f9e06bf9",
       "githubUser": "ryoppippi",
       "issueNumber": 135
     },
