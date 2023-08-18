@@ -615,6 +615,14 @@
       "url": "https://www.gengo.cc/blog/artemis_bridging_cap.html",
       "githubUser": "tani",
       "issueNumber": 140
+    },
+    {
+      "title": "null-ls.nvimがアーカイブされちゃったので移行先としてefm-langserver(+nvim-lsp)を検討してみる)",
+      "date": "2023-09-01",
+      "runner": "koralle",
+      "url": null,
+      "githubUser": "koralle",
+      "issueNumber": 141
     }
   ]
 }
