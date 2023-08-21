@@ -609,6 +609,14 @@
       "issueNumber": 139
     },
     {
+      "title": "cmdwinっぽい物を数行で作る",
+      "date": "2023-08-25",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 142
+    },
+    {
       "title": "Artemis: Bridging gap between Vim and Neovim",
       "date": "2023-08-30",
       "runner": "tani",
