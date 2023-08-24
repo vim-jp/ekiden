@@ -617,6 +617,14 @@
       "issueNumber": 142
     },
     {
+      "title": "mecabを使って漢字をよみがなに変換するプラグインetc.",
+      "date": "2023-08-28",
+      "runner": "utubo",
+      "url": "https://zenn.dev/utubo/articles/20230828-vim-yomigana",
+      "githubUser": "utubo",
+      "issueNumber": 144
+    },
+    {
       "title": "Artemis: Bridging gap between Vim and Neovim",
       "date": "2023-08-30",
       "runner": "tani",
