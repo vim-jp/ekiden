@@ -647,6 +647,14 @@
       "url": null,
       "githubUser": "makizo",
       "issueNumber": 143
+    },
+    {
+      "title": "VimとIMEの仲を取り持つ",
+      "date": "2023-09-06",
+      "runner": "swnakamura",
+      "url": null,
+      "githubUser": "swnakamura",
+      "issueNumber": 145
     }
   ]
 }
