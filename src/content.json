@@ -633,6 +633,14 @@
       "issueNumber": 140
     },
     {
+      "title": "mini.surroundによるHTMLタグ編集のemmet対応",
+      "date": "2023-09-01",
+      "runner": "atusy",
+      "url": "https://blog.atusy.net/2023/09/01/mini-surround-emmet/",
+      "githubUser": "atusy",
+      "issueNumber": 146
+    },
+    {
       "title": "vim-jp-west 歓迎＆懇親会を開催しました",
       "date": "2023-09-04",
       "runner": "K Ikeda",
