@@ -633,14 +633,6 @@
       "issueNumber": 140
     },
     {
-      "title": "null-ls.nvimがアーカイブされちゃったので移行先としてefm-langserver(+nvim-lsp)を検討してみる)",
-      "date": "2023-09-01",
-      "runner": "koralle",
-      "url": null,
-      "githubUser": "koralle",
-      "issueNumber": 141
-    },
-    {
       "title": "vim-jp-west 歓迎＆懇親会を開催しました",
       "date": "2023-09-04",
       "runner": "K Ikeda",
@@ -655,6 +647,14 @@
       "url": null,
       "githubUser": "swnakamura",
       "issueNumber": 145
+    },
+    {
+      "title": "null-ls.nvimがアーカイブされちゃったので移行先としてefm-langserver(+nvim-lsp)を検討してみる)",
+      "date": "2023-09-08",
+      "runner": "koralle",
+      "url": null,
+      "githubUser": "koralle",
+      "issueNumber": 141
     }
   ]
 }
