@@ -671,6 +671,14 @@
       "url": null,
       "githubUser": "kuuote",
       "issueNumber": 149
+    },
+    {
+      "title": "Ubuntu でも最新のVimを使いたいなら、Dockerから拾えばいいでしょ",
+      "date": "2023-09-13",
+      "runner": "raa0121",
+      "url": null,
+      "githubUser": "raa0121",
+      "issueNumber": 150
     }
   ]
 }
