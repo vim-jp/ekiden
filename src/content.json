@@ -660,7 +660,7 @@
       "title": "null-ls.nvimがアーカイブされちゃったので移行先としてefm-langserver(+nvim-lsp)を検討してみる)",
       "date": "2023-09-08",
       "runner": "koralle",
-      "url": null,
+      "url": "https://zenn.dev/koralle/articles/c7f20d24904fa1",
       "githubUser": "koralle",
       "issueNumber": 141
     }
