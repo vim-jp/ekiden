@@ -663,6 +663,14 @@
       "url": "https://zenn.dev/koralle/articles/c7f20d24904fa1",
       "githubUser": "koralle",
       "issueNumber": 141
+    },
+    {
+      "title": "素早く安全にプラグインにパッチを打つ",
+      "date": "2023-09-11",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 149
     }
   ]
 }
