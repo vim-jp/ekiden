@@ -687,6 +687,14 @@
       "url": null,
       "githubUser": "NI57721",
       "issueNumber": 151
+    },
+    {
+      "title": "GhostText: Vim でブラウザのテキストエリアを入力する",
+      "date": "2023-09-18",
+      "runner": "Fohte",
+      "url": "https://fohte.net/blog/posts/2023-09-18-ghost-text-vim",
+      "githubUser": "fohte",
+      "issueNumber": 152
     }
   ]
 }
