@@ -676,7 +676,7 @@
       "title": "Ubuntu でも最新のVimを使いたいなら、Dockerから拾えばいいでしょ",
       "date": "2023-09-13",
       "runner": "raa0121",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/use-head-vim-on-ubuntu",
       "githubUser": "raa0121",
       "issueNumber": 150
     },
