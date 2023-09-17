@@ -695,6 +695,14 @@
       "url": "https://fohte.net/blog/posts/2023-09-18-ghost-text-vim",
       "githubUser": "fohte",
       "issueNumber": 152
+    },
+    {
+      "title": "Vimでインデント幅の単位で左右移動する",
+      "date": "2023-09-20",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/6027c57d34a142",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 153
     }
   ]
 }
