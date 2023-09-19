@@ -703,6 +703,14 @@
       "url": "https://zenn.dev/vim_jp/articles/6027c57d34a142",
       "githubUser": "kawarimidoll",
       "issueNumber": 153
+    },
+    {
+      "title": "luaとtsでddcを設定する",
+      "date": "2023-09-22",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 154
     }
   ]
 }
