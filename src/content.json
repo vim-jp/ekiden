@@ -705,7 +705,7 @@
       "issueNumber": 153
     },
     {
-      "title": "luaとtsでddcを設定する",
+      "title": "lua + tsでddc.vimのコマンドライン補完を動かす",
       "date": "2023-09-22",
       "runner": "staticWagomU",
       "url": null,
