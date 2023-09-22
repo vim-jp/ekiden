@@ -711,6 +711,14 @@
       "url": "https://wagomu.me/blog/2023-09-22",
       "githubUser": "staticWagomU",
       "issueNumber": 154
+    },
+    {
+      "title": "Quickfixの中身を表として書き出せると地味に便利",
+      "date": "2023-09-25",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 155
     }
   ]
 }
