@@ -735,6 +735,14 @@
       "url": null,
       "githubUser": "ryota2357",
       "issueNumber": 157
+    },
+    {
+      "title": "skkeletonのTips",
+      "date": "2023-10-02",
+      "runner": "slin",
+      "url": null,
+      "githubUser": "willelz",
+      "issueNumber": 158
     }
   ]
 }
