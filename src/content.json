@@ -727,6 +727,14 @@
       "url": null,
       "githubUser": "ryoppippi",
       "issueNumber": 156
+    },
+    {
+      "title": "textlintをefm-langserverとnvim-lspで導入してみた",
+      "date": "2023-09-29",
+      "runner": "ryota2357",
+      "url": null,
+      "githubUser": "ryota2357",
+      "issueNumber": 157
     }
   ]
 }
