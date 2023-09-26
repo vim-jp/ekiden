@@ -721,10 +721,10 @@
       "issueNumber": 155
     },
     {
-      "title": "Bunについてのなにか",
+      "title": "BunとNeovim",
       "date": "2023-09-27",
       "runner": "ryoppippi",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/c097917f163431",
       "githubUser": "ryoppippi",
       "issueNumber": 156
     },
