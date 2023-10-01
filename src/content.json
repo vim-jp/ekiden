@@ -743,6 +743,14 @@
       "url": null,
       "githubUser": "willelz",
       "issueNumber": 158
+    },
+    {
+      "title": "ddu.vimのアクション周りを便利にしよう",
+      "date": "2023-10-04",
+      "runner": "kamecha",
+      "url": null,
+      "githubUser": "kamecha",
+      "issueNumber": 159
     }
   ]
 }
