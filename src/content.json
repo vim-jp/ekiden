@@ -753,7 +753,7 @@
       "issueNumber": 159
     },
     {
-      "title": "vimでgit addする前にdry runして確認する",
+      "title": "vimで`git add`する前に`--dry-run`して確認する",
       "date": "2023-10-06",
       "runner": "utubo",
       "url": "https://zenn.dev/utubo/articles/20231006-dry-run-before-git-add",
