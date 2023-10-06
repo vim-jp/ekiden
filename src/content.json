@@ -769,6 +769,14 @@
       "issueNumber": 161
     },
     {
+      "title": ":terminal からファイルを開く(bash/zsh 編)",
+      "date": "2023-10-11",
+      "runner": "mityu",
+      "url": null,
+      "githubUser": "mityu",
+      "issueNumber": 164
+    },
+    {
       "title": "100 回記念",
       "date": "2023-10-18",
       "runner": "thinca",
