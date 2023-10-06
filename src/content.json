@@ -775,6 +775,14 @@
       "url": null,
       "githubUser": "thinca",
       "issueNumber": 162
+    },
+    {
+      "title": "できる！LSPクライアント（仮）",
+      "date": "2023-12-01",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 163
     }
   ]
 }
