@@ -793,6 +793,14 @@
       "issueNumber": 162
     },
     {
+      "title": "一歩ずつ始めるddu.vim",
+      "date": "2023-10-20",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 169
+    },
+    {
       "title": "できる！LSPクライアント（仮）",
       "date": "2023-12-01",
       "runner": "kuuote",
