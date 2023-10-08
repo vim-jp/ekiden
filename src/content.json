@@ -777,6 +777,14 @@
       "issueNumber": 164
     },
     {
+      "title": "Vimで直前の検索結果をQuickFixに格納する",
+      "date": "2023-10-13",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/7cc48a1df6aba5",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 170
+    },
+    {
       "title": "プラグインマネージャで暗黒に染まる",
       "date": "2023-10-16",
       "runner": "ryoppippi",
