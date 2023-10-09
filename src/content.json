@@ -761,7 +761,7 @@
       "issueNumber": 160
     },
     {
-      "title": "deno/nodeのlspスイッチング意外と気を遣うよと言う話",
+      "title": "denols/typescript-lsのLSPスイッチングは意外と気を遣うよという話",
       "date": "2023-10-09",
       "runner": "kyoh86",
       "url": "https://zenn.dev/vim_jp/articles/69d26e3f7b0e35",
