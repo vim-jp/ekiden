@@ -604,7 +604,7 @@
       "title": "Quickfix is all you need",
       "date": "2023-08-23",
       "runner": "tani",
-      "url": "https://www.gengo.cc/blog/quickfix_is_all_you_need.html",
+      "url": "https://www.gengo.cc/blog/quickfix_is_all_you_need/",
       "githubUser": "tani",
       "issueNumber": 139
     },
@@ -628,7 +628,7 @@
       "title": "Artemis: Bridging gap between Vim and Neovim",
       "date": "2023-08-30",
       "runner": "tani",
-      "url": "https://www.gengo.cc/blog/artemis_bridging_gap.html",
+      "url": "https://www.gengo.cc/blog/artemis_bridging_gap/",
       "githubUser": "tani",
       "issueNumber": 140
     },
