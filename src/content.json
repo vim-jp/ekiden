@@ -849,6 +849,14 @@
       "issueNumber": 180
     },
     {
+      "title": "Input Chinese Character using SKK",
+      "date": "2023-11-03",
+      "runner": "tani",
+      "url": null,
+      "githubUser": "tani",
+      "issueNumber": 181
+    },
+    {
       "title": "できる！LSPクライアント（仮）",
       "date": "2023-12-01",
       "runner": "kuuote",
