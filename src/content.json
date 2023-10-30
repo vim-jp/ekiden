@@ -836,7 +836,7 @@
       "title": ":terminal から親の Vim でファイルを開く(cmd.exe 編)",
       "date": "2023-10-30",
       "runner": "mityu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/drop-from-terminal-cmdexe",
       "githubUser": "mityu",
       "issueNumber": 179
     },
