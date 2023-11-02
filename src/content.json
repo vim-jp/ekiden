@@ -849,10 +849,10 @@
       "issueNumber": 180
     },
     {
-      "title": "Input Chinese Character using SKK",
+      "title": "SKKで簡体字を入力する。",
       "date": "2023-11-03",
       "runner": "tani",
-      "url": null,
+      "url": "https://www.gengo.cc/blog/skk_pinyin/",
       "githubUser": "tani",
       "issueNumber": 181
     },
