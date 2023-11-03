@@ -1,0 +1,123 @@
+---
+import dayjs, { Dayjs } from "dayjs";
+import content from "../content.json";
+
+export type Section = {
+  year: number;
+  season: 0 | 1 | 2 | 3;
+};
+
+export function getSectionArray() {
+  const oldestSection: Section = { year: 2023, season: 0 };
+
+  const newestSection = dateToSection(
+    content.articles
+      .map((article) => dayjs(article.date))
+      .reduce((max, date) => (date.isAfter(max) ? date : max))
+  );
+
+  function nextSection(section: Section): Section {
+    if (section.season === 3) {
+      return {
+        year: section.year + 1,
+        season: 0,
+      };
+    } else {
+      return {
+        year: section.year,
+        season: (section.season + 1) as 1 | 2 | 3,
+      };
+    }
+  }
+
+  let sectionArray: Section[] = [];
+  let section = oldestSection;
+  while (
+    section.year < newestSection.year ||
+    (section.year == newestSection.year &&
+      section.season <= newestSection.season)
+  ) {
+    sectionArray.push(section);
+    section = nextSection(section);
+  }
+
+  return sectionArray;
+}
+
+export function dateToSection(d: Dayjs): Section {
+  let year = d.year();
+  const month = d.month();
+
+  let season: 0 | 1 | 2 | 3;
+  switch (true) {
+    case month >= 0 && month <= 1:
+      year = year - 1;
+      season = 3;
+    case month >= 2 && month <= 4:
+      season = 0;
+      break;
+    case month >= 5 && month <= 7:
+      season = 1;
+      break;
+    case month >= 8 && month <= 10:
+      season = 2;
+      break;
+    default:
+      season = 3;
+      break;
+  }
+
+  return { year, season };
+}
+
+export const seasonCharMap = {
+  0: "春",
+  1: "夏",
+  2: "秋",
+  3: "冬",
+}
+
+export const seasonNameMap = {
+  0: "spring",
+  1: "summer",
+  2: "autumn",
+  3: "winter",
+}
+
+
+export const displaySectionName = (section: Section) =>
+  `${section.year}年度${seasonCharMap[section.season]}季`;
+
+export function sectionToSlug(section: Section): string {
+  const seasonName = seasonNameMap[section.season];
+  return `${section.year}${seasonName}`;
+}
+
+type Props = { selected?: Section };
+
+const { selected } = Astro.props;
+const sections  =getSectionArray();
+
+console.log(sections)
+---
+<div class="grid grid-cols-4 gap-4 my-6">
+  {
+    sections.map((section) => (
+      (selected !== undefined && sectionToSlug(section) == sectionToSlug(selected))
+        ?(
+        <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md">
+          {displaySectionName(section)}
+        </div>
+
+        )
+        : (
+
+      <a href={`/ekiden/archives/${sectionToSlug(section)}`}>
+        <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
+          {displaySectionName(section)}
+        </div>
+      </a>
+        )
+    ))
+  }
+</div>
