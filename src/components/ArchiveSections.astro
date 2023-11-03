@@ -75,15 +75,14 @@ export const seasonCharMap = {
   1: "夏",
   2: "秋",
   3: "冬",
-}
+};
 
 export const seasonNameMap = {
   0: "spring",
   1: "summer",
   2: "autumn",
   3: "winter",
-}
-
+};
 
 export const displaySectionName = (section: Section) =>
   `${section.year}年度${seasonCharMap[section.season]}季`;
@@ -96,28 +95,26 @@ export function sectionToSlug(section: Section): string {
 type Props = { selected?: Section };
 
 const { selected } = Astro.props;
-const sections  =getSectionArray();
+const sections = getSectionArray();
 
-console.log(sections)
+console.log(sections);
 ---
+
 <div class="grid grid-cols-4 gap-4 my-6">
   {
-    sections.map((section) => (
-      (selected !== undefined && sectionToSlug(section) == sectionToSlug(selected))
-        ?(
+    sections.map((section) =>
+      selected !== undefined &&
+      sectionToSlug(section) == sectionToSlug(selected) ? (
         <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md">
           {displaySectionName(section)}
         </div>
-
-        )
-        : (
-
-      <a href={`/ekiden/archives/${sectionToSlug(section)}`}>
-        <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
-          {displaySectionName(section)}
-        </div>
-      </a>
-        )
-    ))
+      ) : (
+        <a href={`/ekiden/archives/${sectionToSlug(section)}`}>
+          <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
+            {displaySectionName(section)}
+          </div>
+        </a>
+      )
+    )
   }
 </div>
