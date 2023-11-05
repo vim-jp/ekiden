@@ -2,13 +2,15 @@
 import dayjs, { Dayjs } from "dayjs";
 import content from "../content.json";
 
+type Season = 0 | 1 | 2 | 3;
+
 export type Section = {
-  year: number;
-  season: 0 | 1 | 2 | 3;
+  fiscalYear: number;
+  season: Season;
 };
 
 export function getSectionArray() {
-  const oldestSection: Section = { year: 2023, season: 0 };
+  const oldestSection: Section = { fiscalYear: 2023, season: 0 };
 
   const newestSection = dateToSection(
     content.articles
@@ -19,12 +21,12 @@ export function getSectionArray() {
   function nextSection(section: Section): Section {
     if (section.season === 3) {
       return {
-        year: section.year + 1,
+        fiscalYear: section.fiscalYear + 1,
         season: 0,
       };
     } else {
       return {
-        year: section.year,
+        fiscalYear: section.fiscalYear,
         season: (section.season + 1) as 1 | 2 | 3,
       };
     }
@@ -33,8 +35,8 @@ export function getSectionArray() {
   let sectionArray: Section[] = [];
   let section = oldestSection;
   while (
-    section.year < newestSection.year ||
-    (section.year == newestSection.year &&
+    section.fiscalYear < newestSection.fiscalYear ||
+    (section.fiscalYear == newestSection.fiscalYear &&
       section.season <= newestSection.season)
   ) {
     sectionArray.push(section);
@@ -48,7 +50,7 @@ export function dateToSection(d: Dayjs): Section {
   let year = d.year();
   const month = d.month();
 
-  let season: 0 | 1 | 2 | 3;
+  let season: Season;
   switch (true) {
     case month >= 0 && month <= 1:
       year = year - 1;
@@ -67,7 +69,7 @@ export function dateToSection(d: Dayjs): Section {
       break;
   }
 
-  return { year, season };
+  return { fiscalYear: year, season };
 }
 
 export const seasonCharMap = {
@@ -85,11 +87,11 @@ export const seasonNameMap = {
 };
 
 export const displaySectionName = (section: Section) =>
-  `${section.year}年度${seasonCharMap[section.season]}季`;
+  `${section.fiscalYear}年度${seasonCharMap[section.season]}季`;
 
 export function sectionToSlug(section: Section): string {
   const seasonName = seasonNameMap[section.season];
-  return `${section.year}${seasonName}`;
+  return `${section.fiscalYear}${seasonName}`;
 }
 
 type Props = { selected?: Section };
