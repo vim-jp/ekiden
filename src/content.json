@@ -881,6 +881,14 @@
       "issueNumber": 183
     },
     {
+      "title": "Vimで最近閉じたファイルを開こう",
+      "date": "2023-11-13",
+      "runner": "NI57721",
+      "url": null,
+      "githubUser": "NI57721",
+      "issueNumber": 186
+    },
+    {
       "title": "できる！LSPクライアント（仮）",
       "date": "2023-12-01",
       "runner": "kuuote",
