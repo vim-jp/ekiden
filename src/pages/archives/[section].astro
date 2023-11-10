@@ -1,7 +1,30 @@
 ---
 import dayjs from "dayjs";
-import content from "../content.json";
-import Base from "../layouts/Base.astro";
+import content from "../../content.json";
+import ArchiveSections, {
+  dateToSection,
+  displaySectionName,
+  getSectionArray,
+  sectionToSlug,
+  type Section,
+} from "../../components/ArchiveSections.astro";
+import Base from "../../layouts/Base.astro";
+
+export function getStaticPaths() {
+  return getSectionArray().map((section) => ({
+    params: {
+      section: sectionToSlug(section),
+    },
+    props: {
+      section,
+    },
+  }));
+}
+
+type Props = {
+  section: Section;
+};
+const { section } = Astro.props;
 
 const articles = content.articles
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
@@ -13,10 +36,21 @@ const articles = content.articles
       ? `/ekiden/runners/${article.githubUser}`
       : undefined,
     ...article,
-  }));
+  }))
+  .filter((article) => {
+    const articleSection = dateToSection(dayjs(article.date));
+    return (
+      articleSection.fiscalYear == section.fiscalYear &&
+      articleSection.season == section.season
+    );
+  });
 ---
 
-<Base title="Vim 駅伝 - アーカイブ" slug="/archive/">
+<Base
+  title={`Vim 駅伝 - アーカイブ - ${displaySectionName(section)}`}
+  slug="/archives/"
+>
+  <ArchiveSections selected={section} />
   {
     articles.map((article) => (
       <div
@@ -58,10 +92,3 @@ const articles = content.articles
     ))
   }
 </Base>
-
-<style>
-  h1 {
-    @apply text-4xl font-bold mt-4 mb-2;
-    font-family: "Kaushan Script", "Yuji Syuku", serif;
-  }
-</style>
