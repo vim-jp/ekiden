@@ -1,7 +1,7 @@
 {
   "name": "ekiden",
   "version": "0.0.1",
-  "packageManager": "pnpm@7.26.3",
+  "packageManager": "pnpm@8.10.2",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
