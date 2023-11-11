@@ -21,7 +21,7 @@ jobs:
       - name: Install, build, and upload your site
         uses: withastro/action@v0
         with:
-          version: pnpm@8.10.2
+          package-manager: pnpm@8.10.2
         env:
           TZ: 'Asia/Tokyo'
 
