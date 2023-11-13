@@ -881,10 +881,10 @@
       "issueNumber": 188
     },
     {
-      "title": "初心者なりに考えたNeovimのはじめ方",
+      "title": "Neovimのプラグインってどうやっていれるの？",
       "date": "2023-11-13",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20231113vim_ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 189
     },
