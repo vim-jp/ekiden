@@ -897,6 +897,14 @@
       "issueNumber": 187
     },
     {
+      "title": "treesitterでURIパーサーを作ってシンタックスハイライトする",
+      "date": "2023-11-17",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 195
+    },
+    {
       "title": "入れてよかったNeovimプラグイン",
       "date": "2023-11-20",
       "runner": "reisuta",
