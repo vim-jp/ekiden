@@ -937,6 +937,14 @@
       "issueNumber": 198
     },
     {
+      "title": "gin.vimのgit diffは快適だぞ",
+      "date": "2023-11-29",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 200
+    },
+    {
       "title": "できる！LSPクライアント（仮）",
       "date": "2023-12-01",
       "runner": "kuuote",
