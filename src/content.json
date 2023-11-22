@@ -961,6 +961,14 @@
       "issueNumber": 202
     },
     {
+      "title": "BiomeとNeovim",
+      "date": "2023-12-06",
+      "runner": "reyalka",
+      "url": null,
+      "githubUser": "reyalka",
+      "issueNumber": 203
+    },
+    {
       "title": "VimをDebugする",
       "date": "2023-12-20",
       "runner": "ぺりー",
