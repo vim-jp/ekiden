@@ -983,6 +983,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 201
+    },
+    {
+      "title": "Vim正規表現100本ノック",
+      "date": "2023-12-25",
+      "runner": "ぺりー",
+      "url": null,
+      "githubUser": "satorunooshie",
+      "issueNumber": 204
     }
   ]
 }
