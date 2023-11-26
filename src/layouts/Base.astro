@@ -4,6 +4,11 @@ import Footer from "../components/Footer.astro";
 
 type Props = { title: string; slug: string };
 const { title, slug } = Astro.props;
+
+const description =
+  "Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。";
+const url = `https://vim-jp.org/ekiden${slug}`;
+const ogImage = "https://vim-jp.org/ekiden/og-image.png";
 ---
 
 <html lang="ja" class="scroll-smooth">
@@ -13,36 +18,21 @@ const { title, slug } = Astro.props;
     <meta name="generator" content={Astro.generator} />
 
     <!-- HTML Meta Tags -->
-    <meta
-      name="description"
-      content="Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。"
-    />
+    <meta name="description" content={description} />
 
-    <meta property="og:url" content={`https://vim-jp.org/ekiden${slug}`}/>
+    <meta property="og:url" content={url} />
     <meta property="og:type" content="website" />
     <meta property="og:title" content={title} />
-    <meta
-      property="og:description"
-      content="Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。"
-    />
-    <meta
-      property="og:image"
-      content="https://vim-jp.org/ekiden/og-image.png"
-    />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta property="twitter:domain" content="vim-jp.org" />
-    <meta property="twitter:url" content={`https://vim-jp.org/ekiden${slug}`} />
+    <meta property="twitter:url" content={url} />
     <meta name="twitter:title" content={title} />
-    <meta
-      name="twitter:description"
-      content="Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。"
-    />
-    <meta
-      name="twitter:image"
-      content="https://vim-jp.org/ekiden/og-image.png"
-    />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
 
     <slot name="head" />
     <title>{title}</title>
