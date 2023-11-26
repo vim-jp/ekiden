@@ -11,6 +11,39 @@ const { title, slug } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- HTML Meta Tags -->
+    <meta
+      name="description"
+      content="Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。"
+    />
+
+    <meta property="og:url" content={`https://vim-jp.org/ekiden${slug}`}/>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta
+      property="og:description"
+      content="Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。"
+    />
+    <meta
+      property="og:image"
+      content="https://vim-jp.org/ekiden/og-image.png"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="vim-jp.org" />
+    <meta property="twitter:url" content={`https://vim-jp.org/ekiden${slug}`} />
+    <meta name="twitter:title" content={title} />
+    <meta
+      name="twitter:description"
+      content="Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://vim-jp.org/ekiden/og-image.png"
+    />
+
     <slot name="head" />
     <title>{title}</title>
   </head>
