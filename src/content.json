@@ -985,6 +985,14 @@
       "issueNumber": 209
     },
     {
+      "title": "指定した位置の `winline()` を取得する",
+      "date": "2023-12-13",
+      "runner": "gw31415",
+      "url": null,
+      "githubUser": "gw31415",
+      "issueNumber": 210
+    },
+    {
       "title": "VimをDebugする",
       "date": "2023-12-20",
       "runner": "ぺりー",
