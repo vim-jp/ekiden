@@ -985,7 +985,7 @@
       "issueNumber": 209
     },
     {
-      "title": "指定した位置の `winline()` を取得する",
+      "title": "位置を指定できる `winline()` を作成する",
       "date": "2023-12-13",
       "runner": "gw31415",
       "url": null,
