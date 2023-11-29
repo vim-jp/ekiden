@@ -937,10 +937,10 @@
       "issueNumber": 198
     },
     {
-      "title": "gin.vimのgit diffは快適だぞ",
+      "title": "gin.vimでgitの差分を快適に閲覧する",
       "date": "2023-11-29",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2023/11/29/gin-diff/",
       "githubUser": "atusy",
       "issueNumber": 200
     },
