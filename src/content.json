@@ -945,6 +945,14 @@
       "issueNumber": 200
     },
     {
+      "title": "アドベントカレンダーでVim駅伝を宣伝する記事",
+      "date": "2023-12-01",
+      "runner": "monaqa",
+      "url": "https://zenn.dev/vim_jp/articles/2023-12-01-vim-ekiden-and-advent",
+      "githubUser": "monaqa",
+      "issueNumber": 211
+    },
+    {
       "title": "前野菜？！VimConf前日の嵐の中行なわれた謎の会！",
       "date": "2023-12-04",
       "runner": "yasunori0418",
