@@ -945,14 +945,6 @@
       "issueNumber": 200
     },
     {
-      "title": "できる！LSPクライアント（仮）",
-      "date": "2023-12-01",
-      "runner": "kuuote",
-      "url": null,
-      "githubUser": "kuuote",
-      "issueNumber": 163
-    },
-    {
       "title": "前野菜？！VimConf前日の嵐の中行なわれた謎の会！",
       "date": "2023-12-04",
       "runner": "yasunori0418",
@@ -991,6 +983,14 @@
       "url": "https://zenn.dev/vim_jp/articles/custom-winline-with-args",
       "githubUser": "gw31415",
       "issueNumber": 210
+    },
+    {
+      "title": "できる！LSPクライアント（仮）",
+      "date": "2023-12-15",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 163
     },
     {
       "title": "VimをDebugする",
