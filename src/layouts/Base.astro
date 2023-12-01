@@ -4,6 +4,12 @@ import Footer from "../components/Footer.astro";
 
 type Props = { title: string; slug: string };
 const { title, slug } = Astro.props;
+
+const baseURL = `${import.meta.env.SITE}${import.meta.env.BASE_URL}`; // NOTE: Astro.site は末尾/を含む
+const description =
+  "Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。";
+const url = `${baseURL}${slug}`; // NOTE: Astro.Props.slug は先頭/を含む
+const ogImage = `${baseURL}/og-image.png`;
 ---
 
 <html lang="ja" class="scroll-smooth">
@@ -11,6 +17,24 @@ const { title, slug } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+
+    <!-- HTML Meta Tags -->
+    <meta name="description" content={description} />
+
+    <meta property="og:url" content={url} />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="vim-jp.org" />
+    <meta property="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <slot name="head" />
     <title>{title}</title>
   </head>
