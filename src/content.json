@@ -1001,6 +1001,14 @@
       "issueNumber": 163
     },
     {
+      "title": "VimGolfでVimテクニックを磨く",
+      "date": "2023-12-18",
+      "runner": "whtsht",
+      "url": null,
+      "githubUser": "whtsht",
+      "issueNumber": 212
+    },
+    {
       "title": "VimをDebugする",
       "date": "2023-12-20",
       "runner": "ぺりー",
