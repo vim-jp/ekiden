@@ -1031,6 +1031,14 @@
       "url": null,
       "githubUser": "satorunooshie",
       "issueNumber": 204
+    },
+    {
+      "title": "Vim scriptでいろいろな数値文字列変換",
+      "date": "2023-12-27",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/a1f91726d7e656",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 214
     }
   ]
 }
