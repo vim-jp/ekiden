@@ -977,10 +977,10 @@
       "issueNumber": 208
     },
     {
-      "title": "LSP周りで何か書いてみる",
+      "title": "Neovim の LSP を設定するための基本知識",
       "date": "2023-12-11",
       "runner": "sankantsu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/40b2c348386f88",
       "githubUser": "sankantsu",
       "issueNumber": 209
     },
