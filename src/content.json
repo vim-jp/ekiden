@@ -1039,6 +1039,14 @@
       "url": "https://zenn.dev/vim_jp/articles/a1f91726d7e656",
       "githubUser": "kawarimidoll",
       "issueNumber": 214
+    },
+    {
+      "title": "気がついたらNeovimだけで開発していた そんな2023年終わり",
+      "date": "2023-12-29",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 215
     }
   ]
 }
