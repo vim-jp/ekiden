@@ -993,6 +993,14 @@
       "issueNumber": 210
     },
     {
+      "title": "Vimで現在のファイルのgit diffを確認する",
+      "date": "2023-12-15",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/b15bbd5b682cd8",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 216
+    },
+    {
       "title": "VimGolfでVimテクニックを磨く",
       "date": "2023-12-18",
       "runner": "whtsht",
