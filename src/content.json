@@ -1047,6 +1047,14 @@
       "url": null,
       "githubUser": "tadashi-aikawa",
       "issueNumber": 215
+    },
+    {
+      "title": "FennelでNeovimプラグインを書こう",
+      "date": "2024-01-03",
+      "runner": "こまもか",
+      "url": "https://zenn.dev/comamoca/articles/lets-write-vim-plugin-with-fennel",
+      "githubUser": "Comamoca",
+      "issueNumber": 217
     }
   ]
 }
