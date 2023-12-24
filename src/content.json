@@ -1055,6 +1055,14 @@
       "url": "https://zenn.dev/comamoca/articles/lets-write-vim-plugin-with-fennel",
       "githubUser": "Comamoca",
       "issueNumber": 217
+    },
+    {
+      "title": "第4回vim-jp-westのオフ会幹事をしました",
+      "date": "2024-01-05",
+      "runner": "K Ikeda",
+      "url": null,
+      "githubUser": "makizo",
+      "issueNumber": 218
     }
   ]
 }
