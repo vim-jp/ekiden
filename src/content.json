@@ -1049,6 +1049,14 @@
       "issueNumber": 215
     },
     {
+      "title": "2023年のVim活を振り返る",
+      "date": "2024-01-01",
+      "runner": "ゴリゴリのゴリラ",
+      "url": null,
+      "githubUser": "skanehira",
+      "issueNumber": 220
+    },
+    {
       "title": "FennelでNeovimプラグインを書こう",
       "date": "2024-01-03",
       "runner": "こまもか",
