@@ -1087,6 +1087,14 @@
       "url": "https://blog.nsfisis.dev/posts/2023-01-10/neovim-insert-namespace-declaration-to-empty-php-file/",
       "githubUser": "nsfisis",
       "issueNumber": 222
+    },
+    {
+      "title": "なにか書く",
+      "date": "2024-01-31",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 223
     }
   ]
 }
