@@ -1079,6 +1079,14 @@
       "url": "https://zenn.dev/vim_jp/articles/47ede9b55bb0c7",
       "githubUser": "kyoh86",
       "issueNumber": 221
+    },
+    {
+      "title": "【Neovim】 空の PHP ファイルに namespace 宣言を挿入する",
+      "date": "2024-01-10",
+      "runner": "nsfisis",
+      "url": "https://blog.nsfisis.dev/posts/2023-01-10/neovim-insert-namespace-declaration-to-empty-php-file/",
+      "githubUser": "nsfisis",
+      "issueNumber": 222
     }
   ]
 }
