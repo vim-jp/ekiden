@@ -1097,6 +1097,14 @@
       "issueNumber": 224
     },
     {
+      "title": "プラグインマネージャをdpp.vimへ移行と設定方針やメモ",
+      "date": "2024-01-15",
+      "runner": "yasunori0418",
+      "url": null,
+      "githubUser": "yasunori0418",
+      "issueNumber": 225
+    },
+    {
       "title": "なにか書く",
       "date": "2024-01-31",
       "runner": "staticWagomU",
