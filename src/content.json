@@ -1105,6 +1105,14 @@
       "issueNumber": 225
     },
     {
+      "title": "stralnumcmp.vim",
+      "date": "2024-01-17",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/09c8be78d76119",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 226
+    },
+    {
       "title": "なにか書く",
       "date": "2024-01-31",
       "runner": "staticWagomU",
