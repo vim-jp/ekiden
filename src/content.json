@@ -1084,7 +1084,7 @@
       "title": "【Neovim】 空の PHP ファイルに namespace 宣言を挿入する",
       "date": "2024-01-10",
       "runner": "nsfisis",
-      "url": "https://blog.nsfisis.dev/posts/2023-01-10/neovim-insert-namespace-declaration-to-empty-php-file/",
+      "url": "https://blog.nsfisis.dev/posts/2024-01-10/neovim-insert-namespace-declaration-to-empty-php-file/",
       "githubUser": "nsfisis",
       "issueNumber": 222
     },
