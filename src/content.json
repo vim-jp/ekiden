@@ -1089,10 +1089,10 @@
       "issueNumber": 222
     },
     {
-      "title": "(Neo)vim で日本語を使うための工夫",
+      "title": "Vim で日本語を使うための工夫",
       "date": "2024-01-12",
       "runner": "sankantsu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/e038e42b0e78d5",
       "githubUser": "sankantsu",
       "issueNumber": 224
     },
