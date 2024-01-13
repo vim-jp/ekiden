@@ -1100,7 +1100,7 @@
       "title": "プラグインマネージャをdpp.vimへ移行と設定方針",
       "date": "2024-01-15",
       "runner": "yasunori0418",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/0006-migrate_plugin_manager_to_dpp",
       "githubUser": "yasunori0418",
       "issueNumber": 225
     },
