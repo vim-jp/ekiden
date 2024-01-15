@@ -44,8 +44,8 @@ devDependencies:
     specifier: ^5.3.3
     version: 5.3.3
   typescript-eslint-parser-for-extra-files:
-    specifier: ^0.2.0
-    version: 0.2.0(@typescript-eslint/parser@5.62.0)(typescript@5.3.3)
+    specifier: ^0.6.0
+    version: 0.6.0(@typescript-eslint/parser@5.62.0)(typescript@5.3.3)
 
 packages:
 
@@ -4500,8 +4500,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /typescript-eslint-parser-for-extra-files@0.2.0(@typescript-eslint/parser@5.62.0)(typescript@5.3.3):
-    resolution: {integrity: sha512-TvZRCDfdOCcsSgcRX33VGn/mspzCYTcfkCHmRQ1u47y7A8JRhvmvSDv6sWVLJsA0DOaPkbW5D9ZfX4SNd4GaZg==}
+  /typescript-eslint-parser-for-extra-files@0.6.0(@typescript-eslint/parser@5.62.0)(typescript@5.3.3):
+    resolution: {integrity: sha512-xJcBT4W0J0HUoz9GAuRYsywJGOGy9BGn548Gnbn5zLloe8kWDkPB5sYG+UsCSsHjn0oh/VBAQEK8WMnPgOAvoA==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@typescript-eslint/parser': '>=5.41.0'
@@ -4520,6 +4520,8 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/parser': 5.62.0(eslint@8.56.0)(typescript@5.3.3)
+      globby: 11.1.0
+      is-glob: 4.0.3
       typescript: 5.3.3
     dev: true
 
