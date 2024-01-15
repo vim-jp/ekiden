@@ -15,8 +15,8 @@ dependencies:
     specifier: ^3.4.3
     version: 3.4.3(typescript@5.3.3)
   dayjs:
-    specifier: ^1.11.7
-    version: 1.11.7
+    specifier: ^1.11.10
+    version: 1.11.10
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -1669,8 +1669,8 @@ packages:
     engines: {node: '>=4'}
     hasBin: true
 
-  /dayjs@1.11.7:
-    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+  /dayjs@1.11.10:
+    resolution: {integrity: sha512-vjAczensTgRcqDERK0SR2XMwsF/tSvnvlv6VcF2GIhg6Sx4yOIt/irsr1RDJsKiIyBzJDpCoXiWWq28MqH2cnQ==}
     dev: false
 
   /debug@2.6.9:

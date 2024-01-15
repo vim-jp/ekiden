@@ -17,7 +17,7 @@
     "@astrojs/rss": "^2.4.3",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^3.4.3",
-    "dayjs": "^1.11.7",
+    "dayjs": "^1.11.10",
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
