@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@astrojs/rss':
-    specifier: ^2.4.3
-    version: 2.4.3
+    specifier: ^4.0.2
+    version: 4.0.2
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@3.4.3)(tailwindcss@3.3.2)
@@ -114,8 +114,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/rss@2.4.3:
-    resolution: {integrity: sha512-Dc8lxsXiDlnxONVIUuc3ohO1+vV1Hp9fRFdUianOola0S9/xv/6FzIHhkQ62MkaFSlcZm5uIOllRWNKVvuFuoA==}
+  /@astrojs/rss@4.0.2:
+    resolution: {integrity: sha512-Hb9GKAyvsn5EUjZtB6SniesBScMQe7SQinEHLY5EFa74QEvgcWaXTmA0Mb0P3vqDSN3d/NTYbGivprrSAawfnA==}
     dependencies:
       fast-xml-parser: 4.2.7
       kleur: 4.1.5

@@ -14,7 +14,7 @@
     "prettier:fix": "prettier --write --plugin-search-dir=. src"
   },
   "dependencies": {
-    "@astrojs/rss": "^2.4.3",
+    "@astrojs/rss": "^4.0.2",
     "@astrojs/tailwind": "^5.1.0",
     "astro": "^3.4.3",
     "dayjs": "^1.11.10",
