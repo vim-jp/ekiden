@@ -67,8 +67,8 @@ jobs:
               };
 
               const { data: issue } = await github.rest.issues.get(issuePayload);
-              if (issue.state === "closed") {
-                console.log("Issue はすでに閉じられています。");
+              if (issue.state === "closed" && issue.state_reason !== "completed") {
+                console.log("Issue はすでに投稿完了前に閉じられています。");
                 return;
               }
 
