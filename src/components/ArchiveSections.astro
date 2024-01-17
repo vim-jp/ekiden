@@ -55,6 +55,7 @@ export function dateToSection(d: Dayjs): Section {
     case month >= 0 && month <= 1:
       year = year - 1;
       season = 3;
+      break;
     case month >= 2 && month <= 4:
       season = 0;
       break;
