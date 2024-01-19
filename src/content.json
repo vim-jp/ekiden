@@ -1137,6 +1137,14 @@
       "issueNumber": 251
     },
     {
+      "title": "Vim/Neovim でカーソル下のハイライトの情報を表示する",
+      "date": "2024-01-26",
+      "runner": "mityu",
+      "url": null,
+      "githubUser": "mityu",
+      "issueNumber": 252
+    },
+    {
       "title": "なにか書く",
       "date": "2024-01-31",
       "runner": "staticWagomU",
