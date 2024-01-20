@@ -1140,7 +1140,7 @@
       "title": "Vim/Neovim でカーソル下のハイライトの情報を表示する",
       "date": "2024-01-26",
       "runner": "mityu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/show-hlgroup-under-cursor",
       "githubUser": "mityu",
       "issueNumber": 252
     },
