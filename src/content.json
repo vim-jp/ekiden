@@ -1159,6 +1159,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 223
+    },
+    {
+      "title": "Thread pool in Neovim Lua",
+      "date": "2024-02-02",
+      "runner": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 255
     }
   ]
 }
