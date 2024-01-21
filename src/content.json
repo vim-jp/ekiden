@@ -1145,6 +1145,14 @@
       "issueNumber": 252
     },
     {
+      "title": "新世代のneovimプラグインマネージャlazy.nvimの紹介",
+      "date": "2024-01-29",
+      "runner": "Liquid_system",
+      "url": null,
+      "githubUser": "Liquid-system",
+      "issueNumber": 254
+    },
+    {
       "title": "なにか書く",
       "date": "2024-01-31",
       "runner": "staticWagomU",
