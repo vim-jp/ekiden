@@ -1161,7 +1161,7 @@
       "issueNumber": 223
     },
     {
-      "title": "Thread pool in Neovim Lua",
+      "title": "Neovim Lua でマルチスレッド",
       "date": "2024-02-02",
       "runner": "uga-rosa",
       "url": null,
