@@ -16,7 +16,7 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.2",
     "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.2.3",
+    "astro": "^4.2.6",
     "dayjs": "^1.11.10",
     "tailwindcss": "^3.4.1"
   },
