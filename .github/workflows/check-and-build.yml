@@ -1,4 +1,4 @@
-name: Check format
+name: Check format and test build
 'on':
   pull_request:
     types:
