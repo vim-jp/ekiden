@@ -1183,6 +1183,14 @@
       "url": null,
       "githubUser": "willelz",
       "issueNumber": 266
+    },
+    {
+      "title": "1年間ほとんどメンテしていなかったinit.luaを整理した話",
+      "date": "2024-02-12",
+      "runner": "ゴリラ",
+      "url": null,
+      "githubUser": "skanehira",
+      "issueNumber": 267
     }
   ]
 }
