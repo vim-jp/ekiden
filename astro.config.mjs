@@ -12,6 +12,5 @@ export default defineConfig({
   },
   redirects: {
     "/archive": "/ekiden/archives"
-  },
-  trailingSlash: 'always'
+  }
 });

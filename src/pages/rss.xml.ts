@@ -2,7 +2,7 @@ import rss from "@astrojs/rss";
 import dayjs from "dayjs";
 import content from "../content.json";
 
-export async function get(context: { site: string }) {
+export async function GET(context: { site: string }) {
   const today = dayjs();
   const articles = content.articles
     .filter((article) => article.url)
