@@ -1191,6 +1191,14 @@
       "url": null,
       "githubUser": "skanehira",
       "issueNumber": 267
+    },
+    {
+      "title": "VimによるToDo管理を支える技術",
+      "date": "2024-02-14",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 271
     }
   ]
 }
