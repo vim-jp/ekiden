@@ -1185,6 +1185,14 @@
       "issueNumber": 266
     },
     {
+      "title": "Vimで自動化を極める：入門者向けautocmdガイド",
+      "date": "2024-02-09",
+      "runner": "garchomp-game",
+      "url": "https://zenn.dev/garchomp_game/articles/12201d1b53c7fe",
+      "githubUser": "garchomp-game",
+      "issueNumber": 272
+    },
+    {
       "title": "1年間ほとんどメンテしていなかったinit.luaを整理した話",
       "date": "2024-02-12",
       "runner": "ゴリラ",
