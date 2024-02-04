@@ -1177,10 +1177,10 @@
       "issueNumber": 262
     },
     {
-      "title": "fidget.nvimについて",
+      "title": "新しくなったfidget.nvim",
       "date": "2024-02-07",
       "runner": "slin",
-      "url": null,
+      "url": "https://zenn.dev/slin/articles/2024-02-07-fidget",
       "githubUser": "willelz",
       "issueNumber": 266
     },
