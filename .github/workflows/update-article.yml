@@ -14,7 +14,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     if: |
       contains(github.event.issue.labels.*.name, 'article') && (
-        github.event.issue.state == 'open' || github.event.action == 'closed'
+        github.event.issue.state == 'open'  || github.event.action == 'closed' || github.event.issue.state_reason == 'completed'
       )
     permissions:
       issues: 'write'
@@ -34,7 +34,7 @@ jobs:
                deno --quiet run --allow-read --allow-write ./scripts/update-article.ts \
                --issueNumber '${{ github.event.issue.number }}' \
                --githubUser '${{ github.event.issue.user.login }}' \
-               ${{ github.event.action == 'closed' && 'delete' || '' }} \
+               ${{ github.event.issue.state == 'closed' && github.event.issue.state_reason != 'completed' && 'delete' || '' }} \
                2>> "${GITHUB_OUTPUT}"
           echo 'MESSAGE' >> "${GITHUB_OUTPUT}"
       - name: 'Push changes'
