@@ -1,0 +1,32 @@
+---
+import dayjs from "dayjs";
+import content from "../content.json";
+import Base from "../layouts/Base.astro";
+import ArchiveSections from "../components/ArchiveSections.astro";
+import RankChart from "../components/RankChart.svelte"
+
+const articles = content.articles
+  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
+  .map((article, index) => ({
+    index: index + 1,
+    published: dayjs(article.date) <= dayjs() && article.url !== null,
+    shortDate: dayjs(article.date).format("M/D"),
+    runnerPath: article.githubUser
+      ? `/ekiden/runners/${article.githubUser}`
+      : undefined,
+    ...article,
+  })) .filter(({published}) => published) ;
+
+---
+
+<Base title="Vim 駅伝 - ランキング" slug="/ranking/">
+  <!-- <ArchiveSections /> -->
+  <RankChart articles={articles} client:only="svelte" ></RankChart>
+</Base>
+
+<style>
+  h1 {
+    @apply text-4xl font-bold mt-4 mb-2;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
+  }
+</style>
