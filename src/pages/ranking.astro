@@ -2,7 +2,7 @@
 import dayjs from "dayjs";
 import content from "../content.json";
 import Base from "../layouts/Base.astro";
-import ArchiveSections from "../components/ArchiveSections.astro";
+import SeasonList from "../components/SeasonList.astro";
 import RankChart from "../components/RankChart.svelte"
 
 const articles = content.articles
@@ -20,13 +20,27 @@ const articles = content.articles
 ---
 
 <Base title="Vim 駅伝 - ランキング" slug="/ranking/">
-  <!-- <ArchiveSections /> -->
-  <RankChart articles={articles} client:only="svelte" ></RankChart>
+  <SeasonList linkDest="ranking" />
+
+  <section class="py-4">
+    <h2>記事投稿数ランキング（総合）</h2>
+    <RankChart articles={articles} client:only="svelte" ></RankChart>
+  </section>
+
 </Base>
 
 <style>
   h1 {
     @apply text-4xl font-bold mt-4 mb-2;
     font-family: "Kaushan Script", "Yuji Syuku", serif;
+  }
+
+  h2 {
+    @apply text-2xl font-bold mt-4 mb-2;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
+  }
+
+  section {
+    color: #666;
   }
 </style>

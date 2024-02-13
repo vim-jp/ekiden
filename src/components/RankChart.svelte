@@ -2,13 +2,8 @@
   import { Bar } from "svelte-chartjs";
   import { Chart as ChartJS } from "chart.js";
   import "chart.js/auto";
-  import type { ChartOptions } from "chart.js/auto";
+  import type { ChartData, ChartOptions } from "chart.js/auto";
 
-  // export let userRankings: {
-  //   user: string;
-  //   articleCount: number;
-  //   rank: number;
-  // }[];
   export let articles: {
     title: string;
     date: string;
@@ -54,8 +49,8 @@
       rank += users.length;
     });
 
-  // const rank_10_count = userRankings[10].articleCount;
   const ranking = userRankings.filter(({ rank }) => rank <= 10);
+  // const ranking = userRankings;
 
   const longestUsername = Math.max(...ranking.map(({ user }) => user.length));
   const rankingTick = ranking.map(({ user, rank }) => {
@@ -64,13 +59,29 @@
     return `${rank}. ${user}${padding}`;
   });
 
-  const data = {
+  const data: ChartData<"bar"> = {
     labels: rankingTick,
     datasets: [
       {
         label: "記事数",
         data: ranking.map(({ articleCount }) => articleCount),
         barThickness: 12,
+        backgroundColor: (ctx) => {
+          const rank = ranking[ctx.dataIndex].rank;
+          switch (rank) {
+            case 1:
+              return "#FFD700";
+            case 2:
+              return "#C0C0C0";
+            case 3:
+              return "#C47222";
+            default:
+              return "#6cb26a";
+          }
+        },
+        borderRadius: 5,
+        borderWidth: 0,
+        barPercentage: 0.5,
       },
     ],
   };
@@ -85,6 +96,7 @@
       },
     },
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         display: false,
@@ -111,7 +123,7 @@
   };
 </script>
 
-<div id="rankings-container">
+<div id="rankings-container" class="w-[90vw] max-w-3xl px-1">
   <div>
     <Bar {data} {options} height={600} />
   </div>
