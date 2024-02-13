@@ -1217,6 +1217,14 @@
       "issueNumber": 278
     },
     {
+      "title": "Vim 駅伝にランキングページを追加しました",
+      "date": "2024-02-19",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 286
+    },
+    {
       "title": "なんか書く",
       "date": "2024-02-21",
       "runner": "staticWagomU",
