@@ -11,6 +11,7 @@ const { slug } = Astro.props;
   <nav>
     <HeaderLink slug={slug} href="/">トップページ</HeaderLink>
     <HeaderLink slug={slug} href="/archives/">アーカイブ</HeaderLink>
+    <HeaderLink slug={slug} href="/ranking/">ランキング</HeaderLink>
   </nav>
 </div>
 
@@ -26,6 +27,6 @@ const { slug } = Astro.props;
     @apply text-4xl py-3 text-center;
   }
   nav {
-    @apply flex justify-center pb-2;
+    @apply flex justify-center pb-2 flex-col text-center md:flex-row;
   }
 </style>

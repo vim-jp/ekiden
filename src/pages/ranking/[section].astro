@@ -1,0 +1,75 @@
+---
+import dayjs from "dayjs";
+import content from "../../content.json";
+import SeasonList, {
+  dateToSection,
+  displaySectionName,
+  getSectionArray,
+  sectionToSlug,
+  type Section,
+} from "../../components/SeasonList.astro";
+import Base from "../../layouts/Base.astro";
+import RankChart from "../../components/RankChart.svelte";
+
+export function getStaticPaths() {
+  return getSectionArray().map((section) => ({
+    params: {
+      section: sectionToSlug(section),
+    },
+    props: {
+      section,
+    },
+  }));
+}
+
+type Props = {
+  section: Section;
+};
+const { section } = Astro.props;
+
+const articles = content.articles
+  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
+  .map((article, index) => ({
+    index: index + 1,
+    published: dayjs(article.date) <= dayjs() && article.url !== null,
+    shortDate: dayjs(article.date).format("M/D"),
+    runnerPath: article.githubUser
+      ? `/ekiden/runners/${article.githubUser}`
+      : undefined,
+    ...article,
+  }))
+  .filter((article) => {
+    const articleSection = dateToSection(dayjs(article.date));
+    return (
+      articleSection.fiscalYear == section.fiscalYear &&
+      articleSection.season == section.season
+    );
+  });
+---
+
+<Base
+  title={`Vim 駅伝 - ランキング - ${displaySectionName(section)}`}
+  slug={`/ranking/${sectionToSlug(section)}`}
+>
+  <SeasonList selected={section} linkDest="ranking" />
+  <section class="py-4">
+    <h2>記事投稿数ランキング（{displaySectionName(section)}）</h2>
+    <RankChart articles={articles} client:only="svelte" ></RankChart>
+  </section>
+</Base>
+
+<style>
+  h1 {
+    @apply text-4xl font-bold mt-4 mb-2;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
+  }
+
+  h2 {
+    @apply text-2xl font-bold mt-4 mb-2;
+    font-family: "Kaushan Script", "Yuji Syuku", serif;
+  }
+
+  section {
+    color: #666;
+  }
+</style>

@@ -1,13 +1,13 @@
 ---
 import dayjs from "dayjs";
 import content from "../../content.json";
-import ArchiveSections, {
+import SeasonList, {
   dateToSection,
   displaySectionName,
   getSectionArray,
   sectionToSlug,
   type Section,
-} from "../../components/ArchiveSections.astro";
+} from "../../components/SeasonList.astro";
 import Base from "../../layouts/Base.astro";
 
 export function getStaticPaths() {
@@ -48,9 +48,9 @@ const articles = content.articles
 
 <Base
   title={`Vim 駅伝 - アーカイブ - ${displaySectionName(section)}`}
-  slug="/archives/"
+  slug={`/archives/${sectionToSlug(section)}`}
 >
-  <ArchiveSections selected={section} />
+  <SeasonList selected={section} linkDest="archives" />
   {
     articles.map((article) => (
       <div

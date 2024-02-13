@@ -95,9 +95,9 @@ export function sectionToSlug(section: Section): string {
   return `${section.fiscalYear}${seasonName}`;
 }
 
-type Props = { selected?: Section };
+type Props = { selected?: Section, linkDest: string };
 
-const { selected } = Astro.props;
+const { selected, linkDest } = Astro.props;
 const sections = getSectionArray();
 ---
 
@@ -110,7 +110,7 @@ const sections = getSectionArray();
           {displaySectionName(section)}
         </div>
       ) : (
-        <a href={`/ekiden/archives/${sectionToSlug(section)}`}>
+        <a href={`/ekiden/${linkDest}/${sectionToSlug(section)}`}>
           <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
             {displaySectionName(section)}
           </div>
