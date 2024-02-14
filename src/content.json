@@ -1233,6 +1233,14 @@
       "issueNumber": 276
     },
     {
+      "title": "Vim meets Nix",
+      "date": "2024-02-23",
+      "runner": "natsukium",
+      "url": null,
+      "githubUser": "natsukium",
+      "issueNumber": 287
+    },
+    {
       "title": "ちょっと考え中",
       "date": "2024-02-28",
       "runner": "ぺりー",
