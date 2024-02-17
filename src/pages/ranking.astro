@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import content from "../content.json";
 import Base from "../layouts/Base.astro";
 import SeasonList from "../components/SeasonList.astro";
-import RankChart from "../components/RankChart.svelte"
+import RankChart from "../components/RankChart.svelte";
 
 const articles = content.articles
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
@@ -15,8 +15,8 @@ const articles = content.articles
       ? `/ekiden/runners/${article.githubUser}`
       : undefined,
     ...article,
-  })) .filter(({published}) => published) ;
-
+  }))
+  .filter(({ published }) => published);
 ---
 
 <Base title="Vim 駅伝 - ランキング" slug="/ranking/">
@@ -24,9 +24,8 @@ const articles = content.articles
 
   <section class="py-4">
     <h2>記事投稿数ランキング（総合）</h2>
-    <RankChart articles={articles} client:only="svelte" ></RankChart>
+    <RankChart articles={articles} client:only="svelte" />
   </section>
-
 </Base>
 
 <style>

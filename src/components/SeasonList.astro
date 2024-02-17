@@ -15,7 +15,7 @@ export function getSectionArray() {
   const newestSection = dateToSection(
     content.articles
       .map((article) => dayjs(article.date))
-      .reduce((max, date) => (date.isAfter(max) ? date : max))
+      .reduce((max, date) => (date.isAfter(max) ? date : max)),
   );
 
   function nextSection(section: Section): Section {
@@ -95,7 +95,7 @@ export function sectionToSlug(section: Section): string {
   return `${section.fiscalYear}${seasonName}`;
 }
 
-type Props = { selected?: Section, linkDest: string };
+type Props = { selected?: Section; linkDest: string };
 
 const { selected, linkDest } = Astro.props;
 const sections = getSectionArray();
@@ -115,7 +115,7 @@ const sections = getSectionArray();
             {displaySectionName(section)}
           </div>
         </a>
-      )
+      ),
     )
   }
 </div>
