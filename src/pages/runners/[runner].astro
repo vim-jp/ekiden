@@ -5,7 +5,7 @@ import Base from "../../layouts/Base.astro";
 
 export function getStaticPaths() {
   const paths = Array.from(
-    new Set(content.articles.map((article) => article.githubUser))
+    new Set(content.articles.map((article) => article.githubUser)),
   ).map((githubUser) => {
     return { params: { runner: githubUser } };
   });

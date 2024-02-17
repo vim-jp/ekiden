@@ -42,7 +42,8 @@ const articles = content.articles
     const articleSection = dateToSection(dayjs(article.date));
     return (
       articleSection.fiscalYear == section.fiscalYear &&
-      articleSection.season == section.season && article.published
+      articleSection.season == section.season &&
+      article.published
     );
   });
 ---
@@ -54,7 +55,7 @@ const articles = content.articles
   <SeasonList selected={section} linkDest="ranking" />
   <section class="py-4">
     <h2>記事投稿数ランキング（{displaySectionName(section)}）</h2>
-    <RankChart articles={articles} client:only="svelte" ></RankChart>
+    <RankChart articles={articles} client:only="svelte" />
   </section>
 </Base>
 
