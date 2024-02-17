@@ -103,6 +103,19 @@ const sections = getSectionArray();
 
 <div class="grid grid-cols-4 gap-4 my-6">
   {
+    selected === undefined ? (
+      <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md col-span-4">
+        総合
+      </div>
+    ) : (
+      <a href={`/ekiden/${linkDest}/`} class="col-span-4">
+        <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md ">
+          総合
+        </div>
+      </a>
+    )
+  }
+  {
     sections.map((section) =>
       selected !== undefined &&
       sectionToSlug(section) == sectionToSlug(selected) ? (
