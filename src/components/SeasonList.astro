@@ -99,12 +99,11 @@ type Props = { selected?: Section; linkDest: string };
 
 const { selected, linkDest } = Astro.props;
 const sections = getSectionArray();
-const pathname = new URL(Astro.request.url).pathname;
 ---
 
 <div class="grid grid-cols-4 gap-4 my-6">
   {
-    pathname === `/ekiden/${linkDest}/` ? (
+    selected === undefined ? (
       <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md col-span-4">
         総合
       </div>
