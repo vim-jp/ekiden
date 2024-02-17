@@ -106,6 +106,11 @@
       },
     },
     scales: {
+      x: {
+        ticks: {
+          stepSize: 1,
+        },
+      },
       y: {
         ticks: {
           autoSkip: false,
