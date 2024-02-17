@@ -1263,6 +1263,14 @@
       "url": "https://looxu.blogspot.com/2024/02/windowsgvim.html",
       "githubUser": "ArcCosine",
       "issueNumber": 289
+    },
+    {
+      "title": "Vim側の組み込みプラグインを無効化するハック",
+      "date": "2024-03-04",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 293
     }
   ]
 }
