@@ -104,12 +104,14 @@ const pathname = new URL(Astro.request.url).pathname;
 
 <div class="grid grid-cols-4 gap-4 my-6">
   {
-	pathname === `/ekiden/${linkDest}/` ? ( 
-      <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md">総合</div>
+    pathname === `/ekiden/${linkDest}/` ? (
+      <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md">
+        総合
+      </div>
     ) : (
       <a href={`/ekiden/${linkDest}/`}>
         <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
-		  総合
+          総合
         </div>
       </a>
     )
@@ -121,7 +123,7 @@ const pathname = new URL(Astro.request.url).pathname;
         <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md">
           {displaySectionName(section)}
         </div>
-) : (
+      ) : (
         <a href={`/ekiden/${linkDest}/${sectionToSlug(section)}`}>
           <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
             {displaySectionName(section)}
@@ -130,5 +132,4 @@ const pathname = new URL(Astro.request.url).pathname;
       ),
     )
   }
-
 </div>
