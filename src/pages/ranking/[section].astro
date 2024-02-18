@@ -12,7 +12,7 @@ import Base from "../../layouts/Base.astro";
 import RankChart from "../../components/RankChart.svelte";
 
 export function getStaticPaths() {
-  return getSectionArray().map((section) => ({
+  return getSectionArray(false).map((section) => ({
     params: {
       section: sectionToSlug(section),
     },
@@ -50,9 +50,13 @@ const articles = content.articles
 
 <Base
   title={`Vim 駅伝 - ランキング - ${displaySectionName(section)}`}
-  slug={`/ranking/${sectionToSlug(section)}`}
+  slug={`/ranking/`}
 >
-  <SeasonList selected={section} linkDest="ranking" />
+  <SeasonList
+    selected={section}
+    linkDest="ranking"
+    showUnpublishedSeason={false}
+  />
   <section class="py-4">
     <h2>記事投稿数ランキング（{displaySectionName(section)}）</h2>
     <RankChart articles={articles} client:only="svelte" />

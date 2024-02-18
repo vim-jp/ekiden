@@ -21,7 +21,7 @@ const runnersArticles = newArticles
   .filter((article) => article.githubUser === runner)
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
   .map((article, index) => ({
-    index: index + 1,
+    index: index,
     published: dayjs(article.date) <= dayjs() && article.url !== null,
     shortDate: dayjs(article.date).format("M/D"),
     year: dayjs(article.date).format("YYYY"),
@@ -36,7 +36,7 @@ const runnersArticles = newArticles
       <>
         <h2
           class={
-            article.index === 1 ||
+            article.index === 0 ||
             article.year !== runnersArticles[article.index - 1].year
               ? "text-2xl font-bold mt-8 mb-4"
               : "hidden"
