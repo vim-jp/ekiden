@@ -9,11 +9,18 @@ export type Section = {
   season: Season;
 };
 
-export function getSectionArray() {
+export function getSectionArray(showUnpublishedSeason: boolean) {
+
+  let articles = content.articles;
+  if (!showUnpublishedSeason) {
+    articles = articles
+      .filter((article) => dayjs(article.date) <= dayjs() && article.url !== null)
+  }
+
   const oldestSection: Section = { fiscalYear: 2023, season: 0 };
 
   const newestSection = dateToSection(
-    content.articles
+    articles
       .map((article) => dayjs(article.date))
       .reduce((max, date) => (date.isAfter(max) ? date : max)),
   );
@@ -95,10 +102,10 @@ export function sectionToSlug(section: Section): string {
   return `${section.fiscalYear}${seasonName}`;
 }
 
-type Props = { selected?: Section; linkDest: string };
+type Props = { selected?: Section; linkDest: string, showUnpublishedSeason?: boolean };
 
-const { selected, linkDest } = Astro.props;
-const sections = getSectionArray();
+const { selected, linkDest, showUnpublishedSeason } = Astro.props;
+const sections = getSectionArray(showUnpublishedSeason ?? true);
 ---
 
 <div class="grid grid-cols-4 gap-4 my-6">
