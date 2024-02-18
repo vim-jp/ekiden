@@ -52,7 +52,11 @@ const articles = content.articles
   title={`Vim 駅伝 - ランキング - ${displaySectionName(section)}`}
   slug={`/ranking/`}
 >
-  <SeasonList selected={section} linkDest="ranking" showUnpublishedSeason={false} />
+  <SeasonList
+    selected={section}
+    linkDest="ranking"
+    showUnpublishedSeason={false}
+  />
   <section class="py-4">
     <h2>記事投稿数ランキング（{displaySectionName(section)}）</h2>
     <RankChart articles={articles} client:only="svelte" />
