@@ -20,7 +20,7 @@
     "astro": "^4.3.6",
     "chart.js": "^4.4.1",
     "dayjs": "^1.11.10",
-    "svelte": "^4.2.10",
+    "svelte": "^4.2.11",
     "svelte-chartjs": "^3.1.5",
     "tailwindcss": "^3.4.1"
   },
