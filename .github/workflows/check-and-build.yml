@@ -16,7 +16,9 @@ jobs:
         with:
           version: 8.10.2
       - name: Install dependencies
-        run: pnpm i --frozen-lockfile
+        run: |
+          pnpm i --frozen-lockfile
+          sudo apt-get install fonts-noto-cjk
       - name: Run tests
         run: |
           pnpm run lint:check
