@@ -1,6 +1,5 @@
 <script lang="ts">
   import { Bar } from "svelte-chartjs";
-  import { Chart as ChartJS } from "chart.js";
   import "chart.js/auto";
   import type { ChartData, ChartOptions } from "chart.js/auto";
 
@@ -50,7 +49,6 @@
     });
 
   const ranking = userRankings.filter(({ rank }) => rank <= 10);
-  // const ranking = userRankings;
 
   const longestUsername = Math.max(...ranking.map(({ user }) => user.length));
   const rankingTick = ranking.map(({ user, rank }) => {
@@ -104,6 +102,18 @@
       title: {
         display: false,
       },
+    },
+    onClick: function(_, items) {
+      if(items.length > 0) {
+        const item = items[0];
+        if(data.labels === null || data.labels![item.index] === null) return;
+        const labelText = data.labels![item.index] + '';
+
+        const matched = /^\d+\.\s+(\S+)/.exec(labelText);
+        if(matched === null) return;
+        const githubUser = matched[1];
+        window.location.href=`/ekiden/runners/${githubUser}`;
+      }
     },
     scales: {
       x: {
