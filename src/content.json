@@ -1233,10 +1233,10 @@
       "issueNumber": 276
     },
     {
-      "title": "Vim meets Nix",
+      "title": "一般構築魔法(Nix)のVimへの応用について",
       "date": "2024-02-23",
       "runner": "natsukium",
-      "url": null,
+      "url": "https://zenn.dev/natsukium/articles/b4899d7b1e6a9a",
       "githubUser": "natsukium",
       "issueNumber": 287
     },
