@@ -3,23 +3,16 @@ type Props = { slug: string; href: string };
 const { slug, href } = Astro.props;
 ---
 
-<span>
+<span class="px-4 py-2">
   {
     slug === href ? (
-      <span class="underline">
+      <span class="underline px-4 py-2">
         <slot />
       </span>
     ) : (
-      <a href={"/ekiden" + href}>
+      <a class="px-4 py-2" href={"/ekiden" + href}>
         <slot />
       </a>
     )
   }
 </span>
-
-<style>
-  span,
-  a {
-    @apply px-4 py-2;
-  }
-</style>

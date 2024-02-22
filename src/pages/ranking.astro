@@ -22,24 +22,10 @@ const articles = content.articles
 <Base title="Vim 駅伝 - ランキング" slug="/ranking/">
   <SeasonList linkDest="ranking" showUnpublishedSeason={false} />
 
-  <section class="py-4">
-    <h2>記事投稿数ランキング（総合）</h2>
+  <section class="py-4 text-ekiden-gray-500">
+    <h2 class="font-ekiden-heading text-2xl font-bold mt-4 mb-2">
+      記事投稿数ランキング（総合）
+    </h2>
     <RankChart articles={articles} client:only="svelte" />
   </section>
 </Base>
-
-<style>
-  h1 {
-    @apply text-4xl font-bold mt-4 mb-2;
-    font-family: "Kaushan Script", "Yuji Syuku", serif;
-  }
-
-  h2 {
-    @apply text-2xl font-bold mt-4 mb-2;
-    font-family: "Kaushan Script", "Yuji Syuku", serif;
-  }
-
-  section {
-    color: #666;
-  }
-</style>

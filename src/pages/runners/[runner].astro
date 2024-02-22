@@ -30,7 +30,11 @@ const runnersArticles = newArticles
 ---
 
 <Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runners/">
-  <h1>{runner}</h1>
+  <h1
+    class="text-3xl font-bold mt-4 mb-4 border-l-[24px] border-l-ekiden-green-500 border-b border-b-ekiden-green-500 pl-4"
+  >
+    {runner}
+  </h1>
   {
     runnersArticles.map((article) => (
       <>
@@ -69,9 +73,9 @@ const runnersArticles = newArticles
                 <div
                   class={article.published ? "text-gray-700" : "text-gray-500"}
                 >
-                  <h2 class="text-md md:text-lg font-bold mb-1">
+                  <h3 class="text-md md:text-lg font-bold mb-1">
                     {article.title}
-                  </h2>
+                  </h3>
                   <p class="text-sm md:text-md">{article.author}</p>
                 </div>
               </div>
@@ -82,9 +86,3 @@ const runnersArticles = newArticles
     ))
   }
 </Base>
-<style>
-  h1 {
-    @apply text-3xl font-bold mt-4 mb-4 border-l-[24px] border-b pl-4;
-    border-color: #477745;
-  }
-</style>

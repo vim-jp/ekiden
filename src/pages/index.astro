@@ -22,8 +22,10 @@ const newestArticle = content.articles
     href={`${import.meta.env.BASE_URL}rss.xml`}
   />
 
-  <section class="py-4">
-    <h2>Vim 駅伝とは</h2>
+  <section class="py-4 text-ekiden-gray-500">
+    <h2 class="font-ekiden-heading text-2xl font-bold mt-4 mb-2">
+      Vim 駅伝とは
+    </h2>
     <p>
       Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。
       GitHub のアカウントさえあれば誰でも投稿できます。
@@ -31,7 +33,7 @@ const newestArticle = content.articles
       Vim またはテクノロジーに関連していればどんな些細な内容でもかまいません。
       皆さんの手で、Vim 駅伝を盛り上げていきましょう！
     </p>
-    <h2>参加方法</h2>
+    <h2 class="font-ekiden-heading text-2xl font-bold mt-4 mb-2">参加方法</h2>
     <p>
       本ページの下のスケジュールのうち、「募集中」となっている日付が登録可能です。好きな日を選んで「参加登録」をクリックしてください。
       すると GitHub の issue 作成ページに遷移しますので、タイトル等を埋め issue
@@ -39,11 +41,12 @@ const newestArticle = content.articles
     </p>
     <p>
       詳しくは<a
+        class="text-blue-500"
         href="https://thinca.hatenablog.com/entry/vim-ekiden-is-launched"
         >Vim 駅伝初日の記事</a
       >を参照してください。
     </p>
-    <h2>注意事項</h2>
+    <h2 class="font-ekiden-heading text-2xl font-bold mt-4 mb-2">注意事項</h2>
     <ul>
       <li>
         個人攻撃や差別的な内容を含む記事、公序良俗に反する不適切な記事の投稿を禁止します。
@@ -52,37 +55,21 @@ const newestArticle = content.articles
       </li>
     </ul>
   </section>
-  <section class="news">
+  <section
+    class="news mt-3 p-5 border-2 border-ekiden-gray-500 rounded-xl text-ekiden-gray-500"
+  >
     {
       newestArticle && (
         <p>
           <b>News</b>:{dayjs(newestArticle.date).format("M/D")}
           の記事 「
-          <a href={`#article-${newestArticle.date}`}>{newestArticle.title}</a>」
-          が公開されました！
+          <a class="text-blue-500" href={`#article-${newestArticle.date}`}>
+            {newestArticle.title}
+          </a>
+          」 が公開されました！
         </p>
       )
     }
   </section>
   <Articles articles={articles} />
 </Base>
-
-<style>
-  section {
-    color: #666;
-  }
-  .news {
-    margin-top: 10px;
-    padding: 20px;
-    border: 3px solid #666;
-    border-radius: 10px;
-    background: rgba(244, 244, 244, 1);
-  }
-  h2 {
-    @apply text-2xl font-bold mt-4 mb-2;
-    font-family: "Kaushan Script", "Yuji Syuku", serif;
-  }
-  a {
-    @apply text-blue-500;
-  }
-</style>
