@@ -1,4 +1,6 @@
 ---
+import { ViewTransitions } from "astro:transitions";
+
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import "@fontsource/kaushan-script";
@@ -39,6 +41,7 @@ const ogImage = `${baseURL}/og-image.png`;
 
     <slot name="head" />
     <title>{title}</title>
+    <ViewTransitions />
   </head>
   <body class="font-ekiden-base bg-neutral-50">
     <main class="flex justify-center items-center flex-col p-0 m-0">
