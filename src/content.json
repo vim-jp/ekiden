@@ -1271,6 +1271,14 @@
       "url": null,
       "githubUser": "kuuote",
       "issueNumber": 293
+    },
+    {
+      "title": "Vimで衝撃を受けた人",
+      "date": "2024-03-06",
+      "runner": "ineda",
+      "url": "https://zenn.dev/ineda/articles/6f5f7a489e0328",
+      "githubUser": "wineda",
+      "issueNumber": 303
     }
   ]
 }
