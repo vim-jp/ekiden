@@ -1,15 +1,15 @@
 ---
 import dayjs from "dayjs";
-import content from "../../content.json";
+import content from "@/content.json";
 import SeasonList, {
   dateToSection,
   displaySectionName,
   getSectionArray,
   sectionToSlug,
   type Section,
-} from "../../components/SeasonList.astro";
-import Base from "../../layouts/Base.astro";
-import RankChart from "../../components/RankChart.svelte";
+} from "@/components/SeasonList.astro";
+import Base from "@/layouts/Base.astro";
+import RankChart from "@/components/RankChart.svelte";
 
 export function getStaticPaths() {
   return getSectionArray(false).map((section) => ({
