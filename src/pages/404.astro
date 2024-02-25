@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+import RunnerImage from "/public/1f3c3.svg";
+---
+
+<Base title="Vim 駅伝" slug="">
+  <div
+    class="py-4 mx-[calc(50%-50vw)] leading-4 border-2 border-x-0 border-t-transparent"
+  >
+    <img src={RunnerImage.src} class="runner [--i:1] absolute w-4" />
+    <img src={RunnerImage.src} class="runner [--i:2] absolute w-4" />
+    <img src={RunnerImage.src} class="runner [--i:3] absolute w-4" />
+    <img
+      src={RunnerImage.src}
+      class="runner [--i:4] absolute w-4 max-md:hidden"
+    />
+    <img
+      src={RunnerImage.src}
+      class="runner [--i:5] absolute w-4 max-md:hidden"
+    />
+    <img
+      src={RunnerImage.src}
+      class="runner [--i:6] absolute w-4 max-md:hidden"
+    />
+  </div>
+  <p class="mx-[calc(50%-50vw)] text-center py-4">
+    E149: お探しのページが見つかりません。
+  </p>
+</Base>
+<style>
+  .runner {
+    animation: moveLeft 5s infinite linear;
+    animation-delay: calc(var(--i) * 0.5s);
+  }
+  @keyframes moveLeft {
+    from {
+      right: 0;
+    }
+    to {
+      right: 100%;
+    }
+  }
+</style>
