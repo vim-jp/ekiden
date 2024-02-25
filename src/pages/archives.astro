@@ -1,8 +1,8 @@
 ---
 import dayjs from "dayjs";
-import content from "../content.json";
-import Base from "../layouts/Base.astro";
-import SeasonList from "../components/SeasonList.astro";
+import content from "@/content.json";
+import Base from "@/layouts/Base.astro";
+import SeasonList from "@/components/SeasonList.astro";
 
 const articles = content.articles
   .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
