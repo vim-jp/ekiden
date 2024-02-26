@@ -1287,6 +1287,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 304
+    },
+    {
+      "title": "gyでクリップボードにヤンクする",
+      "date": "2024-03-11",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 307
     }
   ]
 }
