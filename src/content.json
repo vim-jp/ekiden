@@ -1295,6 +1295,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 307
+    },
+    {
+      "title": "(仮) Git操作を快適にするddu.vimの設定",
+      "date": "2024-03-13",
+      "runner": "Peacock",
+      "url": null,
+      "githubUser": "peacock0803sz",
+      "issueNumber": 311
     }
   ]
 }
