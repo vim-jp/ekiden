@@ -112,14 +112,14 @@ const { selected, linkDest, showUnpublishedSeason } = Astro.props;
 const sections = getSectionArray(showUnpublishedSeason ?? true);
 ---
 
-<div class="grid grid-cols-4 gap-4 my-6">
+<div class="grid grid-cols-1 gap-4 my-6 sm:grid-cols-4">
   {
     selected === undefined ? (
-      <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md col-span-4">
+      <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md sm:col-span-4">
         総合
       </div>
     ) : (
-      <a href={`/ekiden/${linkDest}/`} class="col-span-4">
+      <a href={`/ekiden/${linkDest}/`} class="sm:col-span-4">
         <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md ">
           総合
         </div>
