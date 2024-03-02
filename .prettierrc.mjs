@@ -4,7 +4,7 @@ export default {
   plugins: ["prettier-plugin-astro"],
   overrides: [
     {
-      files: "*.astro",
+      files: ["*.astro", "*.svelte"],
       options: {
         parser: "astro",
       },
