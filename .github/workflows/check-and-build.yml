@@ -21,4 +21,5 @@ jobs:
         run: |
           pnpm run lint:check
           pnpm run prettier:check
+          pnpm run check
           pnpm run build
