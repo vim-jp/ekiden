@@ -1,14 +1,9 @@
 import rss from "@astrojs/rss";
 import dayjs from "dayjs";
-import content from "../content.json";
+import { getArticles } from "@/lib/article";
 
 export async function GET(context: { site: string }) {
-  const today = dayjs();
-  const articles = content.articles
-    .filter((article) => article.url)
-    .filter((article) => today >= dayjs(article.date))
-    .sort((a, b) => dayjs(b.date).unix() - dayjs(a.date).unix())
-    .slice(0, 10);
+  const articles = getArticles({ isPublished: true }).slice(0, 10);
 
   return rss({
     title: "Vim 駅伝",

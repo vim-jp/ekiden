@@ -1,15 +1,12 @@
 ---
 import dayjs from "dayjs";
+import { getArticles } from "@/lib/article.js";
 import Articles from "@/components/Articles.astro";
-import content from "@/content.json";
 import Base from "@/layouts/Base.astro";
 
-const articles = content.articles;
+const articles = getArticles();
 
-const newestArticle = content.articles
-  .filter((article) => dayjs(article.date) <= dayjs() && article.url !== null)
-  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
-  .pop();
+const newestArticle = getArticles({ isPublished: true }).at(-1);
 ---
 
 <Base title="Vim 駅伝" slug="/">

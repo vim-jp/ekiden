@@ -1,6 +1,5 @@
 ---
 import dayjs from "dayjs";
-import content from "@/content.json";
 import SeasonList, {
   dateToSection,
   displaySectionName,
@@ -9,6 +8,7 @@ import SeasonList, {
   type Section,
 } from "@/components/SeasonList.astro";
 import Base from "@/layouts/Base.astro";
+import { getArticles } from "@/lib/article";
 
 export function getStaticPaths() {
   return getSectionArray(true).map((section) => ({
@@ -26,24 +26,13 @@ type Props = {
 };
 const { section } = Astro.props;
 
-const articles = content.articles
-  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
-  .map((article, index) => ({
-    index: index + 1,
-    published: dayjs(article.date) <= dayjs() && article.url !== null,
-    shortDate: dayjs(article.date).format("M/D"),
-    runnerPath: article.githubUser
-      ? `/ekiden/runners/${article.githubUser}`
-      : undefined,
-    ...article,
-  }))
-  .filter((article) => {
-    const articleSection = dateToSection(dayjs(article.date));
-    return (
-      articleSection.fiscalYear == section.fiscalYear &&
-      articleSection.season == section.season
-    );
-  });
+const articles = getArticles().filter((article) => {
+  const articleSection = dateToSection(dayjs(article.date));
+  return (
+    articleSection.fiscalYear == section.fiscalYear &&
+    articleSection.season == section.season
+  );
+});
 ---
 
 <Base
@@ -71,7 +60,9 @@ const articles = content.articles
                 }
               >
                 <div class="text-center">
-                  <div class="text-lg font-bold">#{article.index}</div>
+                  <div class="text-lg font-bold">
+                    #{article.originalIndex + 1}
+                  </div>
                   <div class="text-sm">{article.shortDate}</div>
                 </div>
               </div>

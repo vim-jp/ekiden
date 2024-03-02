@@ -1,32 +1,20 @@
 ---
-import dayjs from "dayjs";
-import content from "@/content.json";
+import { getArticles } from "@/lib/article";
 import Base from "@/layouts/Base.astro";
 
+const { runner } = Astro.params;
+
 export function getStaticPaths() {
+  const articles = getArticles();
   const paths = Array.from(
-    new Set(content.articles.map((article) => article.githubUser)),
+    new Set(articles.map((article) => article.githubUser)),
   ).map((githubUser) => {
     return { params: { runner: githubUser } };
   });
   return paths;
 }
 
-const { runner } = Astro.params;
-const newArticles = content.articles.map((article, index) => ({
-  contentIndex: index + 1,
-  ...article,
-}));
-const runnersArticles = newArticles
-  .filter((article) => article.githubUser === runner)
-  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
-  .map((article, index) => ({
-    index: index,
-    published: dayjs(article.date) <= dayjs() && article.url !== null,
-    shortDate: dayjs(article.date).format("M/D"),
-    year: dayjs(article.date).format("YYYY"),
-    ...article,
-  }));
+const runnersArticles = getArticles({ runner });
 ---
 
 <Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runners/">
@@ -36,12 +24,11 @@ const runnersArticles = newArticles
     {runner}
   </h1>
   {
-    runnersArticles.map((article) => (
+    runnersArticles.map((article, index, articles) => (
       <>
         <h2
           class={
-            article.index === 0 ||
-            article.year !== runnersArticles[article.index - 1].year
+            index === 0 || article.year !== articles.at(index - 1)?.year
               ? "text-2xl font-bold mt-8 mb-4"
               : "hidden"
           }
@@ -66,7 +53,9 @@ const runnersArticles = newArticles
                   }
                 >
                   <div class="text-center">
-                    <div class="text-lg font-bold">#{article.contentIndex}</div>
+                    <div class="text-lg font-bold">
+                      #{article.originalIndex + 1}
+                    </div>
                     <div class="text-sm">{article.shortDate}</div>
                   </div>
                 </div>
