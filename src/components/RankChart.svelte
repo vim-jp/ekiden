@@ -1,9 +1,14 @@
 <script lang="ts">
   import { Bar } from "svelte-chartjs";
-  import { Chart as ChartJS, CategoryScale, LinearScale, BarElement } from 'chart.js'
+  import {
+    Chart as ChartJS,
+    CategoryScale,
+    LinearScale,
+    BarElement,
+  } from "chart.js";
   import type { ChartData, ChartOptions } from "chart.js";
 
-  ChartJS.register(CategoryScale, LinearScale, BarElement)
+  ChartJS.register(CategoryScale, LinearScale, BarElement);
 
   export let articles: {
     title: string;
@@ -105,16 +110,16 @@
         display: false,
       },
     },
-    onClick: function(_, items) {
-      if(items.length > 0) {
+    onClick: function (_, items) {
+      if (items.length > 0) {
         const item = items[0];
-        if(data.labels === null || data.labels![item.index] === null) return;
-        const labelText = data.labels![item.index] + '';
+        if (data.labels === null || data.labels![item.index] === null) return;
+        const labelText = data.labels![item.index] + "";
 
         const matched = /^\d+\.\s+(\S+)/.exec(labelText);
-        if(matched === null) return;
+        if (matched === null) return;
         const githubUser = matched[1];
-        window.location.href=`/ekiden/runners/${githubUser}`;
+        window.location.href = `/ekiden/runners/${githubUser}`;
       }
     },
     scales: {
