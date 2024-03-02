@@ -1,7 +1,9 @@
 <script lang="ts">
   import { Bar } from "svelte-chartjs";
-  import "chart.js/auto";
-  import type { ChartData, ChartOptions } from "chart.js/auto";
+  import { Chart as ChartJS, CategoryScale, LinearScale, BarElement } from 'chart.js'
+  import type { ChartData, ChartOptions } from "chart.js";
+
+  ChartJS.register(CategoryScale, LinearScale, BarElement)
 
   export let articles: {
     title: string;
