@@ -1303,6 +1303,14 @@
       "url": null,
       "githubUser": "peacock0803sz",
       "issueNumber": 311
+    },
+    {
+      "title": "git操作から始めるNeovim",
+      "date": "2024-03-29",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 320
     }
   ]
 }
