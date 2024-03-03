@@ -1305,6 +1305,14 @@
       "issueNumber": 311
     },
     {
+      "title": "gin.vimで捗るgitのログ改竄 (instant fixup)",
+      "date": "2024-03-15",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 321
+    },
+    {
       "title": "git操作から始めるNeovim",
       "date": "2024-03-29",
       "runner": "staticWagomU",
