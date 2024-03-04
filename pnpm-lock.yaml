@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.4)(tailwindcss@3.4.1)
   '@fontsource/kaushan-script':
-    specifier: ^5.0.18
-    version: 5.0.18
+    specifier: ^5.0.19
+    version: 5.0.19
   '@fontsource/yuji-syuku':
     specifier: ^5.0.12
     version: 5.0.12
@@ -724,8 +724,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/kaushan-script@5.0.18:
-    resolution: {integrity: sha512-TMorUNI3ogObqHhAmztt2eB+9iN6p50xM+k08qhkhWy+DwBhAQZzBsah2OrPVCSctOB5wViuzmift4sVlUHfsA==}
+  /@fontsource/kaushan-script@5.0.19:
+    resolution: {integrity: sha512-9cT2rC29REAWyynmifTGHtpNGPwendEjfl+Lj5jRy1xxOoPpXdemHP8u07jLgCJTNXfmJfLBu+UKB+FhkJ/DZA==}
     dev: false
 
   /@fontsource/yuji-syuku@5.0.12:
