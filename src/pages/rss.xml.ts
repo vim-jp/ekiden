@@ -3,7 +3,7 @@ import dayjs from "dayjs";
 import { getArticles } from "@/lib/article";
 
 export async function GET(context: { site: string }) {
-  const articles = getArticles({ isPublished: true }).slice(0, 10);
+  const articles = getArticles({ isPublished: true }).reverse().slice(0, 10);
 
   return rss({
     title: "Vim 駅伝",
