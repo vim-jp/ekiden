@@ -1268,7 +1268,7 @@
       "title": "Vim側の組み込みプラグインを無効化するハック",
       "date": "2024-03-04",
       "runner": "kuuote",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20240304_ekiden_disable_plugin",
       "githubUser": "kuuote",
       "issueNumber": 293
     },
