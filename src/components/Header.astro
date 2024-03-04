@@ -7,10 +7,10 @@ const { slug } = Astro.props;
 ---
 
 <div
-  class="w-full font-ekiden-heading bg-ekiden-green-500 text-ekiden-white-500"
+  class="w-full bg-ekiden-green-500 font-ekiden-heading text-ekiden-white-500"
 >
-  <h1 class="text-4xl py-3 text-center"><a href="/ekiden/">Vim 駅伝</a></h1>
-  <nav class="flex justify-center pb-2 flex-col text-center md:flex-row">
+  <h1 class="py-3 text-center text-4xl"><a href="/ekiden/">Vim 駅伝</a></h1>
+  <nav class="flex flex-col justify-center pb-2 text-center md:flex-row">
     <HeaderLink slug={slug} href="/">トップページ</HeaderLink>
     <HeaderLink slug={slug} href="/archives/">アーカイブ</HeaderLink>
     <HeaderLink slug={slug} href="/ranking/">ランキング</HeaderLink>

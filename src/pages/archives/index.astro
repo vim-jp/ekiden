@@ -13,7 +13,7 @@ const articles = getArticles();
       <div
         class={
           article.published
-            ? "w-full hover:shadow-md hover:bg-[#efefef]"
+            ? "w-full hover:bg-[#efefef] hover:shadow-md"
             : "w-full"
         }
       >
@@ -23,8 +23,8 @@ const articles = getArticles();
               <div
                 class={
                   article.published
-                    ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
-                    : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"
+                    ? "mr-4 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-[#477745] text-white"
+                    : "mr-4 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-[#477745] text-[#477745]"
                 }
               >
                 <div class="text-center">
@@ -37,10 +37,10 @@ const articles = getArticles();
               <div
                 class={article.published ? "text-gray-700" : "text-gray-500"}
               >
-                <h2 class="text-md md:text-lg font-bold mb-1">
+                <h2 class="text-md mb-1 font-bold md:text-lg">
                   {article.title}
                 </h2>
-                <p class="text-sm md:text-md">
+                <p class="md:text-md text-sm">
                   <a href={article.runnerPath}>{article.runner}</a>
                 </p>
               </div>
