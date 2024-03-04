@@ -32,7 +32,7 @@ export function getArticles(options: ReturnArticlesFilterOptions = {}) {
          */
         published: dayjs(article.date) <= today && article.url != null,
         shortDate: dayjs(article.date).format("M/D"),
-        year: dayjs(article.date).format("YYYY"),
+        year: dayjs(article.date).year(),
         /** index は記事のインデックス番号。０から始まる */
         originalIndex: index,
         runnerPath: article.githubUser

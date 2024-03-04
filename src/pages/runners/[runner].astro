@@ -28,7 +28,7 @@ const runnersArticles = getArticles({ runner });
       <>
         <h2
           class={
-            index === 0 || article.year !== articles.at(index - 1)?.year
+            index === 0 || article.year > articles.at(index - 1)?.year
               ? "text-2xl font-bold mt-8 mb-4"
               : "hidden"
           }
