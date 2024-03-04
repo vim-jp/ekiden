@@ -12,23 +12,23 @@ dependencies:
     specifier: ^4.0.5
     version: 4.0.5
   '@astrojs/svelte':
-    specifier: ^5.0.3
-    version: 5.0.3(astro@4.4.9)(svelte@4.2.12)(typescript@5.3.3)(vite@5.1.4)
+    specifier: ^5.2.0
+    version: 5.2.0(astro@4.4.4)(svelte@4.2.12)(typescript@5.3.3)(vite@5.1.4)
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.4.9)(tailwindcss@3.4.1)
   '@fontsource/kaushan-script':
-    specifier: ^5.0.18
-    version: 5.0.18
+    specifier: ^5.0.19
+    version: 5.0.19
   '@fontsource/yuji-syuku':
-    specifier: ^5.0.11
-    version: 5.0.11
+    specifier: ^5.0.12
+    version: 5.0.12
   astro:
     specifier: ^4.4.9
     version: 4.4.9(typescript@5.3.3)
   chart.js:
-    specifier: ^4.4.1
-    version: 4.4.1
+    specifier: ^4.4.2
+    version: 4.4.2
   dayjs:
     specifier: ^1.11.10
     version: 1.11.10
@@ -37,7 +37,7 @@ dependencies:
     version: 4.2.12
   svelte-chartjs:
     specifier: ^3.1.5
-    version: 3.1.5(chart.js@4.4.1)(svelte@4.2.12)
+    version: 3.1.5(chart.js@4.4.2)(svelte@4.2.12)
   tailwindcss:
     specifier: ^3.4.1
     version: 3.4.1
@@ -184,20 +184,21 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/svelte@5.0.3(astro@4.4.9)(svelte@4.2.12)(typescript@5.3.3)(vite@5.1.4):
-    resolution: {integrity: sha512-6TUBRUxmsEczKPBT6oDUAfvzuFCmITuhZfKPT5ZtOOyj9XOVnEnj/Iobd3ajKUbpWNYX7qZVAd1KMkmJc1Nhsg==}
+  /@astrojs/svelte@5.2.0(astro@4.4.4)(svelte@4.2.12)(typescript@5.3.3)(vite@5.1.4):
+    resolution: {integrity: sha512-GmwbXks2WMkmAfl0rlPM/2gA1RtmZzjGV2mOceV3g7QNyjIsSYBPKrlEnSFnuR+YMvlAtWdbMFBsb3gtGxnTTg==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       astro: ^4.0.0
-      svelte: ^4.0.0 || ^5.0.0-next.1
+      svelte: ^4.0.0 || ^5.0.0-next.56
+      typescript: ^5.3.3
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.2(svelte@4.2.12)(vite@5.1.4)
       astro: 4.4.9(typescript@5.3.3)
       svelte: 4.2.12
       svelte2tsx: 0.6.27(svelte@4.2.12)(typescript@5.3.3)
+      typescript: 5.3.3
     transitivePeerDependencies:
       - supports-color
-      - typescript
       - vite
     dev: false
 
@@ -718,12 +719,12 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/kaushan-script@5.0.18:
-    resolution: {integrity: sha512-TMorUNI3ogObqHhAmztt2eB+9iN6p50xM+k08qhkhWy+DwBhAQZzBsah2OrPVCSctOB5wViuzmift4sVlUHfsA==}
+  /@fontsource/kaushan-script@5.0.19:
+    resolution: {integrity: sha512-9cT2rC29REAWyynmifTGHtpNGPwendEjfl+Lj5jRy1xxOoPpXdemHP8u07jLgCJTNXfmJfLBu+UKB+FhkJ/DZA==}
     dev: false
 
-  /@fontsource/yuji-syuku@5.0.11:
-    resolution: {integrity: sha512-d3FV7bLGz3Ly2UWljYj2YeGgvDwbCVgNxhx+0erIfaykbnlvaJK2DIMSEHidAzxu8pq+OmnU80m/PcyHsxIEjw==}
+  /@fontsource/yuji-syuku@5.0.12:
+    resolution: {integrity: sha512-Llz0s1DczXL7FaTKwEdNB2U5DlMFRl2fGwLCWr6vjBL28sbNSPmbuf9EZ6YMagn4WJQlCcLjkFrnzcjhQGlskA==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
@@ -1664,9 +1665,9 @@ packages:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
     dev: false
 
-  /chart.js@4.4.1:
-    resolution: {integrity: sha512-C74QN1bxwV1v2PEujhmKjOZ7iUM4w6BWs23Md/6aOZZSlwMzeCIDGuZay++rBgChYru7/+QFeoQW0fQoP534Dg==}
-    engines: {pnpm: '>=7'}
+  /chart.js@4.4.2:
+    resolution: {integrity: sha512-6GD7iKwFpP5kbSD4MeRRRlTnQvxfQREy36uEtm1hzHzcOqwWx0YEHuspuoNlslu+nciLIB7fjjsHkUv/FzFcOg==}
+    engines: {pnpm: '>=8'}
     dependencies:
       '@kurkle/color': 0.3.2
     dev: false
@@ -4387,13 +4388,13 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /svelte-chartjs@3.1.5(chart.js@4.4.1)(svelte@4.2.12):
+  /svelte-chartjs@3.1.5(chart.js@4.4.2)(svelte@4.2.12):
     resolution: {integrity: sha512-ka2zh7v5FiwfAX1oMflZ0HkNkgjHjFqANgRyC+vNYXfxtx2ku68Zo+2KgbKeBH2nS1ThDqkIACPzGxy4T0UaoA==}
     peerDependencies:
       chart.js: ^3.5.0 || ^4.0.0
       svelte: ^4.0.0
     dependencies:
-      chart.js: 4.4.1
+      chart.js: 4.4.2
       svelte: 4.2.12
     dev: false
 
