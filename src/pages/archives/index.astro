@@ -1,20 +1,9 @@
 ---
-import dayjs from "dayjs";
-import content from "@/content.json";
 import Base from "@/layouts/Base.astro";
 import SeasonList from "@/components/SeasonList.astro";
+import { getArticles } from "@/lib/article";
 
-const articles = content.articles
-  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
-  .map((article, index) => ({
-    index: index + 1,
-    published: dayjs(article.date) <= dayjs() && article.url !== null,
-    shortDate: dayjs(article.date).format("M/D"),
-    runnerPath: article.githubUser
-      ? `/ekiden/runners/${article.githubUser}`
-      : undefined,
-    ...article,
-  }));
+const articles = getArticles();
 ---
 
 <Base title="Vim 駅伝 - アーカイブ" slug="/archives/">
@@ -39,7 +28,9 @@ const articles = content.articles
                 }
               >
                 <div class="text-center">
-                  <div class="text-lg font-bold">#{article.index}</div>
+                  <div class="text-lg font-bold">
+                    #{article.originalIndex + 1}
+                  </div>
                   <div class="text-sm">{article.shortDate}</div>
                 </div>
               </div>

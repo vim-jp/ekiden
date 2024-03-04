@@ -1,6 +1,6 @@
 ---
 import dayjs, { Dayjs } from "dayjs";
-import content from "@/content.json";
+import { getArticles } from "@/lib/article";
 
 type Season = 0 | 1 | 2 | 3;
 
@@ -9,13 +9,12 @@ export type Section = {
   season: Season;
 };
 
+/**
+ * @description すべての記事から、最も古い記事の日付から最も新しい記事の日付までの期間を取得し、その期間に含まれる全てのセクションを返す
+ * @param {boolean} showUnpublishedSeason - 未公開のセクションを含めるかどうか
+ */
 export function getSectionArray(showUnpublishedSeason: boolean) {
-  let articles = content.articles;
-  if (!showUnpublishedSeason) {
-    articles = articles.filter(
-      (article) => dayjs(article.date) <= dayjs() && article.url !== null,
-    );
-  }
+  const articles = getArticles({ isPublished: showUnpublishedSeason });
 
   const oldestSection: Section = { fiscalYear: 2023, season: 0 };
 

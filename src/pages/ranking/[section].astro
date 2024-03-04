@@ -1,6 +1,5 @@
 ---
 import dayjs from "dayjs";
-import content from "@/content.json";
 import SeasonList, {
   dateToSection,
   displaySectionName,
@@ -8,6 +7,7 @@ import SeasonList, {
   sectionToSlug,
   type Section,
 } from "@/components/SeasonList.astro";
+import { getArticles } from "@/lib/article";
 import Base from "@/layouts/Base.astro";
 import RankChart from "@/components/RankChart.svelte";
 
@@ -27,25 +27,13 @@ type Props = {
 };
 const { section } = Astro.props;
 
-const articles = content.articles
-  .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
-  .map((article, index) => ({
-    index: index + 1,
-    published: dayjs(article.date) <= dayjs() && article.url !== null,
-    shortDate: dayjs(article.date).format("M/D"),
-    runnerPath: article.githubUser
-      ? `/ekiden/runners/${article.githubUser}`
-      : undefined,
-    ...article,
-  }))
-  .filter((article) => {
-    const articleSection = dateToSection(dayjs(article.date));
-    return (
-      articleSection.fiscalYear == section.fiscalYear &&
-      articleSection.season == section.season &&
-      article.published
-    );
-  });
+const articles = getArticles({ isPublished: true }).filter((article) => {
+  const articleSection = dateToSection(dayjs(article.date));
+  return (
+    articleSection.fiscalYear == section.fiscalYear &&
+    articleSection.season == section.season
+  );
+});
 ---
 
 <Base
