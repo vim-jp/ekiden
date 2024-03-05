@@ -26,9 +26,10 @@ const runnersArticles = getArticles({ runner });
   {
     runnersArticles.map((article, index, articles) => (
       <>
-        {index === 0 || article.year !== articles.at(index - 1)?.year ? (
+        {/* 一番最初、または年が変わるときに年を表示 */}
+        {(index === 0 || article.year !== articles.at(index - 1)?.year) && (
           <h2 class="mb-4 mt-8 text-2xl font-bold">{article.year}年</h2>
-        ) : undefined}
+        )}
         <div
           class={
             article.published
