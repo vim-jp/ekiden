@@ -111,15 +111,15 @@ const { selected, linkDest, showUnpublishedSeason } = Astro.props;
 const sections = getSectionArray(showUnpublishedSeason ?? true);
 ---
 
-<div class="grid grid-cols-1 gap-4 my-6 sm:grid-cols-4">
+<div class="my-6 grid grid-cols-1 gap-4 sm:grid-cols-4">
   {
     selected === undefined ? (
-      <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md sm:col-span-4">
+      <div class="rounded-md bg-[#477745] p-4 text-center text-gray-100 sm:col-span-4">
         総合
       </div>
     ) : (
       <a href={`/ekiden/${linkDest}/`} class="sm:col-span-4">
-        <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md ">
+        <div class="rounded-md bg-gray-200 p-4 text-center hover:bg-[#97c795] ">
           総合
         </div>
       </a>
@@ -129,12 +129,12 @@ const sections = getSectionArray(showUnpublishedSeason ?? true);
     sections.map((section) =>
       selected !== undefined &&
       sectionToSlug(section) == sectionToSlug(selected) ? (
-        <div class="p-4 bg-[#477745] text-gray-100 text-center rounded-md">
+        <div class="rounded-md bg-[#477745] p-4 text-center text-gray-100">
           {displaySectionName(section)}
         </div>
       ) : (
         <a href={`/ekiden/${linkDest}/${sectionToSlug(section)}`}>
-          <div class="p-4 bg-gray-200 text-center hover:bg-[#97c795] rounded-md">
+          <div class="rounded-md bg-gray-200 p-4 text-center hover:bg-[#97c795]">
             {displaySectionName(section)}
           </div>
         </a>

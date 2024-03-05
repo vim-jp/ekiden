@@ -6,7 +6,7 @@ const { slug, href } = Astro.props;
 <span class="px-4 py-2">
   {
     slug === href ? (
-      <span class="underline px-4 py-2">
+      <span class="px-4 py-2 underline">
         <slot />
       </span>
     ) : (

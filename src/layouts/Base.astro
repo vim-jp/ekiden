@@ -43,12 +43,12 @@ const ogImage = `${baseURL}/og-image.png`;
     <title>{title}</title>
     <ViewTransitions />
   </head>
-  <body class="font-ekiden-base bg-neutral-50">
+  <body class="bg-neutral-50 font-ekiden-base">
     <main
-      class="flex justify-center items-center flex-col p-0 m-0 min-h-screen"
+      class="m-0 flex min-h-screen flex-col items-center justify-center p-0"
     >
       <Header slug={slug} />
-      <div class="max-w-4xl flex-1 px-4 w-full">
+      <div class="w-full max-w-4xl flex-1 px-4">
         <slot />
       </div>
       <Footer />
