@@ -1327,6 +1327,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 320
+    },
+    {
+      "title": "NeoVim + Docker + LilyPondで作る楽譜入り書類執筆環境",
+      "date": "2024-04-01",
+      "runner": "Haru",
+      "url": null,
+      "githubUser": "Haru-0205",
+      "issueNumber": 335
     }
   ]
 }
