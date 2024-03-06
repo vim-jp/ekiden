@@ -50,3 +50,6 @@ export function getArticles(options: ReturnArticlesFilterOptions = {}) {
       )
   );
 }
+
+/** 処理された記事の型 */
+export type ProcessedArticle = ReturnType<typeof getArticles>[number];
