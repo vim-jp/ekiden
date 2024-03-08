@@ -1,0 +1,37 @@
+---
+import type { ProcessedArticle } from "@/lib/article.js";
+import type { SetOptional } from "type-fest";
+
+type Props = SetOptional<ProcessedArticle, "runner">;
+
+const { title, url, originalIndex, runner, published, shortDate } = Astro.props;
+---
+
+<div class={published ? "w-full hover:bg-[#efefef] hover:shadow-md" : "w-full"}>
+  <a href={published ? url : undefined}>
+    <div class="p-4">
+      <div class="flex items-center">
+        <div
+          class={published
+            ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
+            : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"}
+        >
+          <div class="text-center">
+            {
+              originalIndex !== undefined && (
+                <div class="text-lg font-bold">#{originalIndex + 1}</div>
+              )
+            }
+            <div class="text-sm">{shortDate}</div>
+          </div>
+        </div>
+        <div class={published ? "text-gray-700" : "text-gray-500"}>
+          <h3 class="text-md mb-1 font-bold md:text-lg">
+            {title}
+          </h3>
+          {runner !== undefined && <p class=" md:text-md text-sm">{runner}</p>}
+        </div>
+      </div>
+    </div>
+  </a>
+</div>
