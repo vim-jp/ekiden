@@ -1,5 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
+import ArticleinArchive from "@/components/ArticleInArchive.astro";
+
 import SeasonList from "@/components/SeasonList.astro";
 import { getArticles } from "@/lib/article";
 
@@ -8,46 +10,5 @@ const articles = getArticles();
 
 <Base title="Vim 駅伝 - アーカイブ" slug="/archives/">
   <SeasonList linkDest="archives" />
-  {
-    articles.map((article) => (
-      <div
-        class={
-          article.published
-            ? "w-full hover:bg-[#efefef] hover:shadow-md"
-            : "w-full"
-        }
-      >
-        <a href={article.published ? article.url : undefined}>
-          <div class="p-4">
-            <div class="flex items-center">
-              <div
-                class={
-                  article.published
-                    ? "mr-4 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-[#477745] text-white"
-                    : "mr-4 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-[#477745] text-[#477745]"
-                }
-              >
-                <div class="text-center">
-                  <div class="text-lg font-bold">
-                    #{article.originalIndex + 1}
-                  </div>
-                  <div class="text-sm">{article.shortDate}</div>
-                </div>
-              </div>
-              <div
-                class={article.published ? "text-gray-700" : "text-gray-500"}
-              >
-                <h2 class="text-md mb-1 font-bold md:text-lg">
-                  {article.title}
-                </h2>
-                <p class="md:text-md text-sm">
-                  <a href={article.runnerPath}>{article.runner}</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </a>
-      </div>
-    ))
-  }
+  {articles.map((article) => <ArticleinArchive {...article} />)}
 </Base>
