@@ -31,7 +31,7 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
             {title}
           </h3>
           {
-            runner !== undefined && (
+            runner !== undefined && runnerPath !== undefined && (
               <a href={runnerPath} class="md:text-md text-sm">
                 {runner}
               </a>
