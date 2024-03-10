@@ -4,7 +4,8 @@ import type { SetOptional } from "type-fest";
 
 type Props = SetOptional<ProcessedArticle, "runner">;
 
-const { title, url, originalIndex, runner, published, shortDate } = Astro.props;
+const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
+  Astro.props;
 ---
 
 <div class={published ? "w-full hover:bg-[#efefef] hover:shadow-md" : "w-full"}>
@@ -29,7 +30,13 @@ const { title, url, originalIndex, runner, published, shortDate } = Astro.props;
           <h3 class="text-md mb-1 font-bold md:text-lg">
             {title}
           </h3>
-          {runner !== undefined && <p class=" md:text-md text-sm">{runner}</p>}
+          {
+            runner !== undefined && (
+              <a href={runnerPath} class="md:text-md text-sm">
+                {runner}
+              </a>
+            )
+          }
         </div>
       </div>
     </div>
