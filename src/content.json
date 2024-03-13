@@ -1321,6 +1321,14 @@
       "issueNumber": 322
     },
     {
+      "title": "誰でも簡単手作りわくわくオペレータ作成Neovimプラグイン",
+      "date": "2024-03-20",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 344
+    },
+    {
       "title": "git操作から始めるNeovim",
       "date": "2024-03-29",
       "runner": "staticWagomU",
