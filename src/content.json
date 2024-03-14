@@ -1343,6 +1343,14 @@
       "url": null,
       "githubUser": "Haru-0205",
       "issueNumber": 335
+    },
+    {
+      "title": "Neovimのコマンドラインにエスケープ済みのいろいろを展開する",
+      "date": "2024-04-03",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/a0d3d0c7434901",
+      "githubUser": "kyoh86",
+      "issueNumber": 345
     }
   ]
 }
