@@ -1329,6 +1329,14 @@
       "issueNumber": 344
     },
     {
+      "title": "Vim scriptで関数のdebounceとthrottle",
+      "date": "2024-03-22",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/9b1db46217a27d",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 346
+    },
+    {
       "title": "git操作から始めるNeovim",
       "date": "2024-03-29",
       "runner": "staticWagomU",
