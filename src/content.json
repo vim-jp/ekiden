@@ -1345,6 +1345,14 @@
       "issueNumber": 347
     },
     {
+      "title": "あまり紹介されていないけど かけがえのないNeovimプラグインたち",
+      "date": "2024-03-27",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 348
+    },
+    {
       "title": "git操作から始めるNeovim",
       "date": "2024-03-29",
       "runner": "staticWagomU",
