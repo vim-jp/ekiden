@@ -1,6 +1,7 @@
 ---
 import type { ProcessedArticle } from "@/lib/article.js";
 import type { SetOptional } from "type-fest";
+import RunnerImage from "/public/1f3c3.svg";
 
 type Props = SetOptional<ProcessedArticle, "runner">;
 
@@ -8,37 +9,44 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
   Astro.props;
 ---
 
-<div class={published ? "w-full hover:bg-[#efefef] hover:shadow-md" : "w-full"}>
-  <a href={published ? url : undefined}>
-    <div class="p-4">
-      <div class="flex items-center">
-        <div
-          class={published
-            ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
-            : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"}
-        >
-          <div class="text-center">
-            {
-              originalIndex !== undefined && (
-                <div class="text-lg font-bold">#{originalIndex + 1}</div>
-              )
-            }
-            <div class="text-sm">{shortDate}</div>
+<div>
+  <div
+    class={published ? "w-full hover:bg-[#efefef] hover:shadow-md" : "w-full"}
+  >
+    <a href={published ? url : undefined}>
+      <div class="pl-2 pr-2 pt-2">
+        <div class="flex items-center">
+          <div
+            class={published
+              ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
+              : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"}
+          >
+            <div class="text-center">
+              {
+                originalIndex !== undefined && (
+                  <div class="text-lg font-bold">#{originalIndex + 1}</div>
+                )
+              }
+              <div class="text-sm">{shortDate}</div>
+            </div>
+          </div>
+          <div class={published ? "text-gray-700" : "text-gray-500"}>
+            <h3 class="text-md mb-1 font-bold md:text-lg">
+              {title}
+            </h3>
           </div>
         </div>
-        <div class={published ? "text-gray-700" : "text-gray-500"}>
-          <h3 class="text-md mb-1 font-bold md:text-lg">
-            {title}
-          </h3>
-          {
-            runner !== undefined && runnerPath !== undefined && (
-              <a href={runnerPath} class="md:text-md text-sm">
-                {runner}
-              </a>
-            )
-          }
-        </div>
       </div>
-    </div>
-  </a>
+    </a>
+  </div>
+  {
+    runner !== undefined && runnerPath !== undefined && (
+      <div class="mb-4 w-full text-right">
+        <a href={runnerPath} class="md:text-md inline-block text-sm">
+          <img src={RunnerImage.src} class="inline w-4 [--i:1]" />
+          &nbsp;<span class="underline">{runner}</span>
+        </a>
+      </div>
+    )
+  }
 </div>
