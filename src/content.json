@@ -1324,7 +1324,7 @@
       "title": "誰でも簡単手作りわくわくオペレータ作成Neovimプラグイン",
       "date": "2024-03-20",
       "runner": "monaqa",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/2024-03-20-vim-operator-general-converter",
       "githubUser": "monaqa",
       "issueNumber": 344
     },
