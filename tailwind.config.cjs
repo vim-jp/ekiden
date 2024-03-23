@@ -25,6 +25,7 @@ module.exports = {
     fontFamily: {
       "ekiden-heading": ["Kaushan Script", "Yuji Syuku", "serif"],
       "ekiden-base": ["sans-serif"],
+      "ekiden-mono": ["DejaVu Sans Mono", "monospace"]
     }
   },
   plugins: [],
