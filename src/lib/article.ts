@@ -14,7 +14,7 @@ export type ReturnArticlesFilterOptions = {
 /**
  * 記事の一覧を返す
  * @param {ReturnArticlesOptions} options
- * @param {boolean} options.fileterByIsPublished
+ * @param {boolean} options.isPublished
  * @param {string} options.runner
  */
 export function getArticles(options: ReturnArticlesFilterOptions = {}) {
