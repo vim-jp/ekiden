@@ -1353,10 +1353,10 @@
       "issueNumber": 348
     },
     {
-      "title": "git操作から始めるNeovim",
+      "title": "mini.depsが初心者にも扱いやすいのではないかという提案",
       "date": "2024-03-29",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://wagomu.me/blog/2024-03-29-vim-ekiden/",
       "githubUser": "staticWagomU",
       "issueNumber": 320
     },
