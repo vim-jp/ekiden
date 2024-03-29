@@ -8,12 +8,17 @@ const articles = getArticles();
 const publishedArticles = getArticles({ isPublished: true });
 const runnersWithDuplicate = articles.map((article) => article.githubUser);
 const runners = [...new Set(runnersWithDuplicate)];
+/** 走者ごとの記事数 */
 const runnersWithCount = runners.map((runner) => {
   return {
     name: runner,
     count: runnersWithDuplicate.filter((r) => r === runner).length,
   };
 });
+/** 一本以上記事を投稿した走者の数 */
+const runnersWithArticles = [
+  ...new Set(publishedArticles.map((article) => article.githubUser)),
+];
 
 const records: RecordType[] = [
   {
@@ -28,12 +33,14 @@ const records: RecordType[] = [
   },
   {
     title: "総ランナー数",
-    records: [runners.length],
+    records: [runnersWithArticles.length],
     unit: "人",
   },
   {
     title: "平均投稿数",
-    records: [Math.round((articles.length / runners.length) * 100) / 100],
+    records: [
+      Math.round((articles.length / runnersWithArticles.length) * 100) / 100,
+    ],
     unit: "本/人",
   },
   {
@@ -46,7 +53,7 @@ const records: RecordType[] = [
       ),
     ].map((runner) => runner.name),
     unit: "さん",
-    noDegitHighlight: true,
+    enabledDigitHighlight: false,
   },
   {
     title: "経過日数",
@@ -63,14 +70,14 @@ const records: RecordType[] = [
 
 <Base slug="statistics" title="Vim駅伝 - 統計">
   <h2 class="my-5 w-full text-center font-ekiden-heading text-4xl">統計</h2>
-  <div class="my-5 flex flex-col gap-3 pb-10">
+  <div class="my-5 flex flex-col gap-8 pb-10">
     {
       records.map((record) => (
         <RecordCard
           title={record.title}
           records={record.records}
           unit={record.unit}
-          noDegitHighlight={record.noDegitHighlight}
+          enabledDigitHighlight={record.enabledDigitHighlight}
         />
       ))
     }
