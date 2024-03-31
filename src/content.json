@@ -1375,6 +1375,14 @@
       "url": "https://zenn.dev/vim_jp/articles/a0d3d0c7434901",
       "githubUser": "kyoh86",
       "issueNumber": 345
+    },
+    {
+      "title": "Neovimプラグインの遅延読み込みについて",
+      "date": "2024-04-05",
+      "runner": "futsuuu",
+      "url": "https://zenn.dev/futsuuu/articles/nvim_plugin_lazy_loading",
+      "githubUser": "futsuuu",
+      "issueNumber": 360
     }
   ]
 }
