@@ -37,7 +37,7 @@
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
     "prettier-plugin-svelte": "^3.2.2",
-    "prettier-plugin-tailwindcss": "^0.5.12",
+    "prettier-plugin-tailwindcss": "^0.5.13",
     "type-fest": "^4.14.0",
     "typescript": "^5.4.3",
     "typescript-eslint-parser-for-extra-files": "^0.6.0"
