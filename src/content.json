@@ -1383,6 +1383,14 @@
       "url": "https://zenn.dev/futsuuu/articles/nvim_plugin_lazy_loading",
       "githubUser": "futsuuu",
       "issueNumber": 360
+    },
+    {
+      "title": "ddu-gh_project作った&GitHub-Cliにコントリビュートした",
+      "date": "2024-04-08",
+      "runner": "yasunori0418",
+      "url": null,
+      "githubUser": "yasunori0418",
+      "issueNumber": 365
     }
   ]
 }
