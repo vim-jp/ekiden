@@ -1391,6 +1391,14 @@
       "url": null,
       "githubUser": "yasunori0418",
       "issueNumber": 365
+    },
+    {
+      "title": "nvim-lspの作用に少し凝ったカスタマイズを加える旅",
+      "date": "2024-04-10",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 366
     }
   ]
 }
