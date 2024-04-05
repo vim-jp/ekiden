@@ -1399,6 +1399,14 @@
       "url": "https://zenn.dev/vim_jp/articles/c62b397647e3c9",
       "githubUser": "kyoh86",
       "issueNumber": 366
+    },
+    {
+      "title": "Neovim：一定時間操作が無かったら何かやる設定の作り方",
+      "date": "2024-04-12",
+      "runner": "名無し｡",
+      "url": "https://zenn.dev/mnonamer/articles/neovim-on-afk",
+      "githubUser": "sevenc-nanashi",
+      "issueNumber": 368
     }
   ]
 }
