@@ -1407,6 +1407,14 @@
       "url": "https://zenn.dev/mnonamer/articles/neovim-on-afk",
       "githubUser": "sevenc-nanashi",
       "issueNumber": 368
+    },
+    {
+      "title": "Nagoya.vim #4を開催した",
+      "date": "2024-04-15",
+      "runner": "mimikun",
+      "url": null,
+      "githubUser": "mimikun",
+      "issueNumber": 369
     }
   ]
 }
