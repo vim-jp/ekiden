@@ -1415,6 +1415,14 @@
       "url": null,
       "githubUser": "mimikun",
       "issueNumber": 369
+    },
+    {
+      "title": "とりあえずvimを使えるようになりたい人のための記事",
+      "date": "2024-04-17",
+      "runner": "yasunori0418",
+      "url": null,
+      "githubUser": "yasunori0418",
+      "issueNumber": 370
     }
   ]
 }
