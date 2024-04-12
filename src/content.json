@@ -1423,6 +1423,14 @@
       "url": null,
       "githubUser": "yasunori0418",
       "issueNumber": 370
+    },
+    {
+      "title": "git操作から始めるNeovim入門",
+      "date": "2024-04-26",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 376
     }
   ]
 }
