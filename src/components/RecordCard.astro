@@ -1,0 +1,60 @@
+---
+export type RecordType = {
+  title: string;
+  records: number[] | string[];
+  unit: string;
+  /**
+   * 桁ごとの下線の強調が有効になる
+   * 文字列の表示の場合は無効にする
+   * @default true
+   */
+  enabledDigitHighlight?: boolean;
+};
+
+type Props = RecordType;
+const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
+---
+
+<div class="flex w-full flex-col gap-2 sm:flex-row">
+  <div class="flex flex-1 justify-center self-center sm:self-start">
+    <div
+      class="inline-box w-56 justify-self-center rounded bg-ekiden-green-500 px-3 py-2 text-center font-ekiden-heading text-3xl text-ekiden-white-500"
+    >
+      {title}
+    </div>
+  </div>
+  <div
+    class="flex flex-1 flex-col items-center gap-2 self-center justify-self-start"
+  >
+    {
+      records.map((record) => {
+        return (
+          <div class="flex gap-2">
+            <div>
+              {enabledDigitHighlight ? (
+                <div class="flex items-center gap-2">
+                  {[...record.toString()].map((digit) => {
+                    return digit === "." ? (
+                      <span class="font-ekiden-mono text-4xl font-extrabold">
+                        .
+                      </span>
+                    ) : (
+                      <span class="border-b-2 border-b-gray-500 font-ekiden-mono text-4xl font-thin">
+                        {digit}
+                      </span>
+                    );
+                  })}
+                </div>
+              ) : (
+                <span class="border-b-2 border-b-gray-500 font-ekiden-mono text-4xl font-thin">
+                  {record}
+                </span>
+              )}
+            </div>
+            <div class="self-end font-ekiden-base text-xl">{unit}</div>
+          </div>
+        );
+      })
+    }
+  </div>
+</div>
