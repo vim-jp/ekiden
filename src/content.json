@@ -1441,6 +1441,14 @@
       "issueNumber": 378
     },
     {
+      "title": "macOS + Neovim + 画像表示",
+      "date": "2024-04-24",
+      "runner": "ryoppippi",
+      "url": null,
+      "githubUser": "ryoppippi",
+      "issueNumber": 384
+    },
+    {
       "title": "git操作から始めるNeovim入門",
       "date": "2024-04-26",
       "runner": "staticWagomU",
