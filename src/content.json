@@ -1455,6 +1455,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 376
+    },
+    {
+      "title": "自作Vimプラグイン用に作ったヘルプファイルフォーマッタ",
+      "date": "2024-04-29",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/76cce9e5c72582",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 385
     }
   ]
 }
