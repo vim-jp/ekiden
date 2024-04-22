@@ -71,8 +71,8 @@ devDependencies:
     specifier: ^0.5.14
     version: 0.5.14(prettier-plugin-astro@0.13.0)(prettier-plugin-svelte@3.2.3)(prettier@3.2.5)
   type-fest:
-    specifier: ^4.15.0
-    version: 4.15.0
+    specifier: ^4.16.0
+    version: 4.16.0
   typescript:
     specifier: ^5.4.4
     version: 5.4.4
@@ -4969,8 +4969,8 @@ packages:
     engines: {node: '>=12.20'}
     dev: false
 
-  /type-fest@4.15.0:
-    resolution: {integrity: sha512-tB9lu0pQpX5KJq54g+oHOLumOx+pMep4RaM6liXh2PKmVRFF+/vAtUP0ZaJ0kOySfVNjF6doBWPHhBhISKdlIA==}
+  /type-fest@4.16.0:
+    resolution: {integrity: sha512-z7Rf5PXxIhbI6eJBTwdqe5bO02nUUmctq4WqviFSstBAWV0YNtEQRhEnZw73WJ8sZOqgFG6Jdl8gYZu7NBJZnA==}
     engines: {node: '>=16'}
     dev: true
 
