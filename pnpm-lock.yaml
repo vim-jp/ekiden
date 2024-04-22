@@ -13,10 +13,10 @@ dependencies:
     version: 4.0.5
   '@astrojs/svelte':
     specifier: ^5.4.0
-    version: 5.4.0(astro@4.6.1)(svelte@4.2.15)(typescript@5.4.4)(vite@5.2.8)
+    version: 5.4.0(astro@4.6.3)(svelte@4.2.15)(typescript@5.4.4)(vite@5.2.8)
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.0(astro@4.6.1)(tailwindcss@3.4.3)
+    version: 5.1.0(astro@4.6.3)(tailwindcss@3.4.3)
   '@fontsource/kaushan-script':
     specifier: ^5.0.19
     version: 5.0.19
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.0.13
     version: 5.0.13
   astro:
-    specifier: ^4.6.1
-    version: 4.6.1(typescript@5.4.4)
+    specifier: ^4.6.3
+    version: 4.6.3(typescript@5.4.4)
   chart.js:
     specifier: ^4.4.2
     version: 4.4.2
@@ -203,7 +203,7 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/svelte@5.4.0(astro@4.6.1)(svelte@4.2.15)(typescript@5.4.4)(vite@5.2.8):
+  /@astrojs/svelte@5.4.0(astro@4.6.3)(svelte@4.2.15)(typescript@5.4.4)(vite@5.2.8):
     resolution: {integrity: sha512-D9/CVJ+Fy3fu+FzJ7x+0GnRUhHsJKsU6tW/xQQ1QzrFMABuEoM5U4YKTYtxWkqB4B4jNb7gbA4p9ZtEhYZ3/+w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
@@ -212,7 +212,7 @@ packages:
       typescript: ^5.3.3
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.2(svelte@4.2.15)(vite@5.2.8)
-      astro: 4.6.1(typescript@5.4.4)
+      astro: 4.6.3(typescript@5.4.4)
       svelte: 4.2.15
       svelte2tsx: 0.6.27(svelte@4.2.15)(typescript@5.4.4)
       typescript: 5.4.4
@@ -221,13 +221,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.6.1)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.6.3)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.6.1(typescript@5.4.4)
+      astro: 4.6.3(typescript@5.4.4)
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.2(postcss@8.4.31)
@@ -1233,6 +1233,10 @@ packages:
       '@babel/types': 7.24.0
     dev: false
 
+  /@types/cookie@0.5.4:
+    resolution: {integrity: sha512-7z/eR6O859gyWIAjuvBWFzNURmf2oPBmJlfVWkwehU5nzIyjwBsTh7WMmEEV4JFnHuQ3ex4oyTvfKzcyJVDBNA==}
+    dev: false
+
   /@types/debug@4.1.8:
     resolution: {integrity: sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==}
     dependencies:
@@ -1607,8 +1611,8 @@ packages:
       - typescript
     dev: true
 
-  /astro@4.6.1(typescript@5.4.4):
-    resolution: {integrity: sha512-gcL22NEhuRi4wu9/x5Kn2eJf7nT6GeU5BxdN6AHbUnX6UzEDIWtpgHs5lBIZYExKbHKN9PjEGXWQzQtFwLU+5g==}
+  /astro@4.6.3(typescript@5.4.4):
+    resolution: {integrity: sha512-p2zs1Gac+ysdc/yFCoc8pOXTZE5L9foAtmqUzUVL22WX68bYTRovd03GRs7J1MDpwzsl9kJtlK20ROpjyIFpNw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
@@ -1623,6 +1627,7 @@ packages:
       '@babel/traverse': 7.24.1
       '@babel/types': 7.24.0
       '@types/babel__core': 7.20.5
+      '@types/cookie': 0.5.4
       acorn: 8.11.2
       aria-query: 5.3.0
       axobject-query: 4.0.0
