@@ -21,8 +21,8 @@ dependencies:
     specifier: ^5.0.19
     version: 5.0.19
   '@fontsource/yuji-syuku':
-    specifier: ^5.0.12
-    version: 5.0.12
+    specifier: ^5.0.13
+    version: 5.0.13
   astro:
     specifier: ^4.6.1
     version: 4.6.1(typescript@5.4.4)
@@ -961,8 +961,8 @@ packages:
     resolution: {integrity: sha512-9cT2rC29REAWyynmifTGHtpNGPwendEjfl+Lj5jRy1xxOoPpXdemHP8u07jLgCJTNXfmJfLBu+UKB+FhkJ/DZA==}
     dev: false
 
-  /@fontsource/yuji-syuku@5.0.12:
-    resolution: {integrity: sha512-Llz0s1DczXL7FaTKwEdNB2U5DlMFRl2fGwLCWr6vjBL28sbNSPmbuf9EZ6YMagn4WJQlCcLjkFrnzcjhQGlskA==}
+  /@fontsource/yuji-syuku@5.0.13:
+    resolution: {integrity: sha512-Kaau4tNPcs/ekbCztRb3VdngytXg8S5bwpHhjpdQO2NgHte6FLCutGnJ8/JhqzwBLiky/jfAKwqrhvkITEWGaA==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
