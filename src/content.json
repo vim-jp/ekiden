@@ -1441,10 +1441,10 @@
       "issueNumber": 378
     },
     {
-      "title": "macOS + Neovim + 画像表示",
+      "title": "Neovim + oil.nvim + Weztermで頑張って画像を表示する",
       "date": "2024-04-24",
       "runner": "ryoppippi",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/5b5f704de07673",
       "githubUser": "ryoppippi",
       "issueNumber": 384
     },
