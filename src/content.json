@@ -1463,6 +1463,14 @@
       "url": "https://zenn.dev/vim_jp/articles/76cce9e5c72582",
       "githubUser": "kawarimidoll",
       "issueNumber": 385
+    },
+    {
+      "title": "そこそこ試して選んだNeovimプラグインを紹介するよ",
+      "date": "2024-05-06",
+      "runner": "lighttiger2505",
+      "url": null,
+      "githubUser": "lighttiger2505",
+      "issueNumber": 391
     }
   ]
 }
