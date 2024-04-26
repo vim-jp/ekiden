@@ -1449,10 +1449,10 @@
       "issueNumber": 384
     },
     {
-      "title": "git操作から始めるNeovim入門",
+      "title": "gitツールとしてのNeovim",
       "date": "2024-04-26",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://wagomu.me/blog/2024-04-26-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 376
     },
