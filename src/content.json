@@ -1473,6 +1473,14 @@
       "issueNumber": 392
     },
     {
+      "title": "nvim_set_option_valueでsetlocalっぽい挙動にしたいとき",
+      "date": "2024-05-03",
+      "runner": "sys9kdr",
+      "url": "https://gist.github.com/sys9kdr/3e57e650deda1301a45dfe5873e68dd4",
+      "githubUser": "sys9kdr",
+      "issueNumber": 393
+    },
+    {
       "title": "そこそこ試して選んだNeovimプラグインを紹介するよ",
       "date": "2024-05-06",
       "runner": "lighttiger2505",
