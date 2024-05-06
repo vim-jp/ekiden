@@ -1489,6 +1489,14 @@
       "issueNumber": 391
     },
     {
+      "title": "自動補完の未来: 操作の補完 dmacro への招待",
+      "date": "2024-05-08",
+      "runner": "tani",
+      "url": "https://zenn.dev/dog/articles/dmacrod_2024",
+      "githubUser": "tani",
+      "issueNumber": 401
+    },
+    {
       "title": "vimtutorの次（その2）",
       "date": "2024-05-13",
       "runner": "K Ikeda",
