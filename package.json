@@ -19,7 +19,7 @@
     "@astrojs/rss": "^4.0.5",
     "@astrojs/svelte": "^5.4.0",
     "@astrojs/tailwind": "^5.1.0",
-    "@fontsource/kaushan-script": "^5.0.20",
+    "@fontsource/kaushan-script": "^5.0.21",
     "@fontsource/yuji-syuku": "^5.0.13",
     "astro": "^4.7.0",
     "chart.js": "^4.4.2",

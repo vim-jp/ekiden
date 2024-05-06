@@ -18,8 +18,8 @@ dependencies:
     specifier: ^5.1.0
     version: 5.1.0(astro@4.7.0)(tailwindcss@3.4.3)
   '@fontsource/kaushan-script':
-    specifier: ^5.0.20
-    version: 5.0.20
+    specifier: ^5.0.21
+    version: 5.0.21
   '@fontsource/yuji-syuku':
     specifier: ^5.0.13
     version: 5.0.13
@@ -514,7 +514,7 @@ packages:
     resolution: {integrity: sha512-3bfqkzuR1KLx57nZfjr2NLnFOobvyS0aTszaEGCGqmYMVDRaGvgIZbjGSV/MHSSmLgQ/b9JFHQ5xm5WRZYd+XQ==}
     requiresBuild: true
     dependencies:
-      tslib: 2.5.2
+      tslib: 2.6.2
     dev: false
     optional: true
 
@@ -762,8 +762,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: true
 
-  /@fontsource/kaushan-script@5.0.20:
-    resolution: {integrity: sha512-D6LETuctosn/S5PUFBZFBwxcDt/IuDlh671DL5hwbPD4SP55MoXoe1Gd2YlzcCdtHP6yPai//bkGruQKALd+FA==}
+  /@fontsource/kaushan-script@5.0.21:
+    resolution: {integrity: sha512-1I+HzmqorWm7rzttyEuQJvb3ermeEHkH/+kY+S0Naes34HD4r0QRcd0TJYOI2hcEGldxsSP03bG8eC+19Heg4A==}
     dev: false
 
   /@fontsource/yuji-syuku@5.0.13:
@@ -3062,7 +3062,7 @@ packages:
   /lower-case@2.0.2:
     resolution: {integrity: sha512-7fm3l3NAF9WfN6W3JOmf5drwpVqX78JtoGJ3A6W0a6ZnldM41w2fV5D490psKFTpMds8TJse/eHLFFsNHHjHgg==}
     dependencies:
-      tslib: 2.5.2
+      tslib: 2.6.2
     dev: false
 
   /lru-cache@5.1.1:
@@ -3566,7 +3566,7 @@ packages:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
     dependencies:
       lower-case: 2.0.2
-      tslib: 2.5.2
+      tslib: 2.6.2
     dev: false
 
   /node-releases@2.0.14:
@@ -4617,7 +4617,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /tsutils@3.21.0(typescript@5.4.5):
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
