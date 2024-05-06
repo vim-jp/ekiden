@@ -81,7 +81,7 @@ jobs:
               if (context.payload.action === "opened") {
                 github.rest.issues.createComment({
                   ...issue,
-                  body: `エントリーしました。\n${process.env.COMMIT_HASH}`
+                  body: `エントリーしました。\nキャンセルしたい場合は、Issue を `Close as not planned` で閉じてください。\n${process.env.COMMIT_HASH}`
                 });
               } else if (context.payload.action === "closed") {
                 github.rest.issues.update({
