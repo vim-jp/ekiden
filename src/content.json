@@ -1511,6 +1511,14 @@
       "url": null,
       "githubUser": "makizo",
       "issueNumber": 399
+    },
+    {
+      "title": "MastodonのVimプラグインを作成した際の設計・実装で工夫したこと",
+      "date": "2024-05-15",
+      "runner": "gw31415",
+      "url": "https://zenn.dev/gw31415/articles/mstdn-vim-release",
+      "githubUser": "gw31415",
+      "issueNumber": 411
     }
   ]
 }
