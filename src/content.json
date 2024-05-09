@@ -1519,6 +1519,14 @@
       "url": "https://zenn.dev/gw31415/articles/mstdn-vim-release",
       "githubUser": "gw31415",
       "issueNumber": 411
+    },
+    {
+      "title": "なんか書く",
+      "date": "2024-05-17",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 412
     }
   ]
 }
