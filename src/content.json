@@ -1527,6 +1527,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 412
+    },
+    {
+      "title": "Neovim の Markdown ビューアとして Obsidian を使う",
+      "date": "2024-05-20",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 413
     }
   ]
 }
