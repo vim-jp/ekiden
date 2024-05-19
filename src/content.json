@@ -1535,6 +1535,14 @@
       "url": null,
       "githubUser": "delphinus",
       "issueNumber": 413
+    },
+    {
+      "title": "H/LとPageUp/PageDownを共存させる設定",
+      "date": "2024-05-22",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 420
     }
   ]
 }
