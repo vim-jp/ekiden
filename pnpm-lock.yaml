@@ -27,8 +27,8 @@ dependencies:
     specifier: ^4.8.2
     version: 4.8.2(typescript@5.4.5)
   chart.js:
-    specifier: ^4.4.2
-    version: 4.4.2
+    specifier: ^4.4.3
+    version: 4.4.3
   dayjs:
     specifier: ^1.11.11
     version: 1.11.11
@@ -37,7 +37,7 @@ dependencies:
     version: 4.2.15
   svelte-chartjs:
     specifier: ^3.1.5
-    version: 3.1.5(chart.js@4.4.2)(svelte@4.2.15)
+    version: 3.1.5(chart.js@4.4.3)(svelte@4.2.15)
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
@@ -2131,8 +2131,8 @@ packages:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
     dev: false
 
-  /chart.js@4.4.2:
-    resolution: {integrity: sha512-6GD7iKwFpP5kbSD4MeRRRlTnQvxfQREy36uEtm1hzHzcOqwWx0YEHuspuoNlslu+nciLIB7fjjsHkUv/FzFcOg==}
+  /chart.js@4.4.3:
+    resolution: {integrity: sha512-qK1gkGSRYcJzqrrzdR6a+I0vQ4/R+SoODXyAjscQ/4mzuNzySaMCd+hyVxitSY1+L2fjPD1Gbn+ibNqRmwQeLw==}
     engines: {pnpm: '>=8'}
     dependencies:
       '@kurkle/color': 0.3.2
@@ -4719,13 +4719,13 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /svelte-chartjs@3.1.5(chart.js@4.4.2)(svelte@4.2.15):
+  /svelte-chartjs@3.1.5(chart.js@4.4.3)(svelte@4.2.15):
     resolution: {integrity: sha512-ka2zh7v5FiwfAX1oMflZ0HkNkgjHjFqANgRyC+vNYXfxtx2ku68Zo+2KgbKeBH2nS1ThDqkIACPzGxy4T0UaoA==}
     peerDependencies:
       chart.js: ^3.5.0 || ^4.0.0
       svelte: ^4.0.0
     dependencies:
-      chart.js: 4.4.2
+      chart.js: 4.4.3
       svelte: 4.2.15
     dev: false
 
