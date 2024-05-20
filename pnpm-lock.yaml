@@ -13,10 +13,10 @@ dependencies:
     version: 4.0.6
   '@astrojs/svelte':
     specifier: ^5.4.0
-    version: 5.4.0(astro@4.8.2)(svelte@4.2.17)(typescript@5.4.5)(vite@5.2.11)
+    version: 5.4.0(astro@4.8.6)(svelte@4.2.17)(typescript@5.4.5)(vite@5.2.11)
   '@astrojs/tailwind':
     specifier: ^5.1.0
-    version: 5.1.0(astro@4.8.2)(tailwindcss@3.4.3)
+    version: 5.1.0(astro@4.8.6)(tailwindcss@3.4.3)
   '@fontsource/kaushan-script':
     specifier: ^5.0.21
     version: 5.0.21
@@ -24,8 +24,8 @@ dependencies:
     specifier: ^5.0.13
     version: 5.0.13
   astro:
-    specifier: ^4.8.2
-    version: 4.8.2(typescript@5.4.5)
+    specifier: ^4.8.6
+    version: 4.8.6(typescript@5.4.5)
   chart.js:
     specifier: ^4.4.3
     version: 4.4.3
@@ -199,7 +199,7 @@ packages:
       kleur: 4.1.5
     dev: false
 
-  /@astrojs/svelte@5.4.0(astro@4.8.2)(svelte@4.2.17)(typescript@5.4.5)(vite@5.2.11):
+  /@astrojs/svelte@5.4.0(astro@4.8.6)(svelte@4.2.17)(typescript@5.4.5)(vite@5.2.11):
     resolution: {integrity: sha512-D9/CVJ+Fy3fu+FzJ7x+0GnRUhHsJKsU6tW/xQQ1QzrFMABuEoM5U4YKTYtxWkqB4B4jNb7gbA4p9ZtEhYZ3/+w==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
@@ -208,7 +208,7 @@ packages:
       typescript: ^5.3.3
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.0.2(svelte@4.2.17)(vite@5.2.11)
-      astro: 4.8.2(typescript@5.4.5)
+      astro: 4.8.6(typescript@5.4.5)
       svelte: 4.2.17
       svelte2tsx: 0.6.27(svelte@4.2.17)(typescript@5.4.5)
       typescript: 5.4.5
@@ -217,13 +217,13 @@ packages:
       - vite
     dev: false
 
-  /@astrojs/tailwind@5.1.0(astro@4.8.2)(tailwindcss@3.4.3):
+  /@astrojs/tailwind@5.1.0(astro@4.8.6)(tailwindcss@3.4.3):
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
     peerDependencies:
       astro: ^3.0.0 || ^4.0.0
       tailwindcss: ^3.0.24
     dependencies:
-      astro: 4.8.2(typescript@5.4.5)
+      astro: 4.8.6(typescript@5.4.5)
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.2(postcss@8.4.31)
@@ -342,13 +342,6 @@ packages:
       '@babel/types': 7.24.5
     dev: false
 
-  /@babel/helper-module-imports@7.22.15:
-    resolution: {integrity: sha512-0pYVBnDKZO2fnSPCrgM/6WMc7eS20Fbok+0r88fp+YtWVLZrp4CkafFGIp+W0VKw4a22sgebPT99y+FDNMdP4w==}
-    engines: {node: '>=6.9.0'}
-    dependencies:
-      '@babel/types': 7.24.5
-    dev: false
-
   /@babel/helper-module-imports@7.24.3:
     resolution: {integrity: sha512-viKb0F9f2s0BCS22QSF308z/+1YWKV/76mwt61NBzS5izMzDPwdq1pTrzf+Li3npBWX9KdQbkeCt1jSAM7lZqg==}
     engines: {node: '>=6.9.0'}
@@ -394,11 +387,6 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: false
 
-  /@babel/helper-validator-identifier@7.22.20:
-    resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
-    engines: {node: '>=6.9.0'}
-    dev: false
-
   /@babel/helper-validator-identifier@7.24.5:
     resolution: {integrity: sha512-3q93SSKX2TWCG30M2G2kwaKeTYgEUp5Snjuj8qm729SObL6nbtUldAi37qbxkD5gg3xnBio+f9nqpSepGZMvxA==}
     engines: {node: '>=6.9.0'}
@@ -424,7 +412,7 @@ packages:
     resolution: {integrity: sha512-Yac1ao4flkTxTteCDZLEvdxg2fZfz1v8M4QpaGypq/WPDqg3ijHYbDfs+LG5hvzSoqaSZ9/Z9lKSP3CjZjv+pA==}
     engines: {node: '>=6.9.0'}
     dependencies:
-      '@babel/helper-validator-identifier': 7.22.20
+      '@babel/helper-validator-identifier': 7.24.5
       chalk: 2.4.2
       js-tokens: 4.0.0
       picocolors: 1.0.0
@@ -456,7 +444,7 @@ packages:
     dependencies:
       '@babel/core': 7.24.5
       '@babel/helper-annotate-as-pure': 7.22.5
-      '@babel/helper-module-imports': 7.22.15
+      '@babel/helper-module-imports': 7.24.3
       '@babel/helper-plugin-utils': 7.24.0
       '@babel/plugin-syntax-jsx': 7.24.1(@babel/core@7.24.5)
       '@babel/types': 7.24.5
@@ -1874,8 +1862,8 @@ packages:
       - typescript
     dev: true
 
-  /astro@4.8.2(typescript@5.4.5):
-    resolution: {integrity: sha512-WBrnNePQ03cF5c+9sjD3TeyJodWMuPCwygDOUo7r+7LbKDN9TJK+KxIxo01AOX4HcexhxcLiTVVCBLSsi+OX9A==}
+  /astro@4.8.6(typescript@5.4.5):
+    resolution: {integrity: sha512-psHIfK+e+bMPhRwghV9yCGH/uc1jvY4DHmDZdoEepax9yA7kzYH0wt3dpkqlcrO2zxl5jzSC3DmqZfkD6wnW9A==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
     dependencies:
