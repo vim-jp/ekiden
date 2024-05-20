@@ -1543,6 +1543,14 @@
       "url": null,
       "githubUser": "kuuote",
       "issueNumber": 420
+    },
+    {
+      "title": "50行くらいでvim-qfedit的なquickfix編集機能を作る",
+      "date": "2024-05-24",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/669aa445a3f20b",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 426
     }
   ]
 }
