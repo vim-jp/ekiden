@@ -1553,7 +1553,7 @@
       "issueNumber": 426
     },
     {
-      "title": "tree-sitterとPythonのインデント計算",
+      "title": "nvim-treesitter は Python のインデントを壊す (共存方法まで紹介)",
       "date": "2024-05-27",
       "runner": "uga-rosa",
       "url": null,
