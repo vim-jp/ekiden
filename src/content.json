@@ -1551,6 +1551,14 @@
       "url": "https://zenn.dev/vim_jp/articles/669aa445a3f20b",
       "githubUser": "kawarimidoll",
       "issueNumber": 426
+    },
+    {
+      "title": "tree-sitterとPythonのインデント計算",
+      "date": "2024-05-27",
+      "runner": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 427
     }
   ]
 }
