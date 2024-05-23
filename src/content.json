@@ -1567,6 +1567,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 431
+    },
+    {
+      "title": "Vimの起動時間の履歴を残す",
+      "date": "2024-05-31",
+      "runner": "ぺりー",
+      "url": null,
+      "githubUser": "satorunooshie",
+      "issueNumber": 432
     }
   ]
 }
