@@ -1,4 +1,4 @@
-name: "Auto-merge PRs (updating patch-version) made by dependabot"
+name: "Auto-merge PRs (updating minor or patch version) made by dependabot"
 on:
   pull_request:
 
