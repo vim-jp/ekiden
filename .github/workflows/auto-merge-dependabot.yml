@@ -16,8 +16,16 @@ jobs:
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
 
-      - shell: bash
+      - name: Approve a PR
+        shell: bash
         if: steps.metadata.outputs.update-type == 'version-update:semver-patch' || steps.metadata.outputs.update-type == 'version-update:semver-minor'
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: "${{ github.event.pull_request.html_url }}"
+          GH_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Merge a PR
+        shell: bash
         run: gh pr merge --auto --merge "$PR_URL"
         env:
           PR_URL: "${{ github.event.pull_request.html_url }}"
