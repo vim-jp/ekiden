@@ -1575,6 +1575,14 @@
       "url": null,
       "githubUser": "satorunooshie",
       "issueNumber": 432
+    },
+    {
+      "title": "Meguro.vim #23 を開催しました",
+      "date": "2024-06-03",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2024/06/megurovim-23",
+      "githubUser": "thinca",
+      "issueNumber": 435
     }
   ]
 }
