@@ -1583,6 +1583,14 @@
       "url": "https://thinca.hatenablog.com/entry/2024/06/megurovim-23",
       "githubUser": "thinca",
       "issueNumber": 435
+    },
+    {
+      "title": "中級 Vim 操作",
+      "date": "2024-06-05",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 436
     }
   ]
 }
