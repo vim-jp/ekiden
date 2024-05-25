@@ -77,7 +77,7 @@ function descriptionToArticle(
   };
 
   sections.forEach((section) => {
-    const matched = section.match(/([^\r\n]+)[\r\n]*(.*)/);
+    const matched = section.match(/([^\r\n]+)[\r\n]*(.*)/s);
     if (!matched) {
       throw new ValidationError(`不正な形式のセクションです。: ${section}`);
     }
