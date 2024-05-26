@@ -59,7 +59,7 @@ function validatePublishDate(date: string) {
 }
 
 function unescapeContent(s: string): string {
-  return /^(`*)(.*)\1$/.exec(s)![2].trim();
+  return /^(`*)(.*)\1$/.exec(s)![2].trim().replaceAll(/[\r\n]/g, "");
 }
 
 function descriptionToArticle(
@@ -77,7 +77,7 @@ function descriptionToArticle(
   };
 
   sections.forEach((section) => {
-    const matched = section.match(/([^\r\n]+)[\r\n]*(.*)/);
+    const matched = section.match(/([^\r\n]+)[\r\n]*(.*)/s);
     if (!matched) {
       throw new ValidationError(`不正な形式のセクションです。: ${section}`);
     }
