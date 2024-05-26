@@ -59,7 +59,7 @@ function validatePublishDate(date: string) {
 }
 
 function unescapeContent(s: string): string {
-  return /^(`*)(.*)\1$/.exec(s)![2].trim().replaceAll(/[\r\n]/g, "");
+  return /^(`*)(.*)\1$/s.exec(s)![2].trim().replaceAll(/[\r\n]/g, "");
 }
 
 function descriptionToArticle(
