@@ -1591,6 +1591,14 @@
       "url": null,
       "githubUser": "monaqa",
       "issueNumber": 436
+    },
+    {
+      "title": "psdのdiffをvimから見やすくしてみた",
+      "date": "2024-06-07",
+      "runner": "kamecha",
+      "url": null,
+      "githubUser": "kamecha",
+      "issueNumber": 438
     }
   ]
 }
