@@ -7,6 +7,7 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://vim-jp.org",
   base: "/ekiden",
+  trailingSlash: "always",
   integrations: [tailwind(), svelte()],
   server: {
     host: true,
