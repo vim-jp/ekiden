@@ -18,19 +18,19 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
         <div class="flex items-center">
           <div
             class={published
-              ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-[#477745] text-white"
-              : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-[#477745] border border-[#477745]"}
+              ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-ekiden-green-500 text-white"
+              : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-ekiden-green-500 border border-ekiden-green-500"}
           >
-            <div class="text-center">
+            <div class="text-center font-ekiden-heading">
               {
                 originalIndex !== undefined && (
-                  <div class="text-lg font-bold">#{originalIndex + 1}</div>
+                  <div class="text-lg font-bold">{originalIndex + 1}</div>
                 )
               }
-              <div class="text-sm">{shortDate}</div>
+              <div class="font-ekiden-heading text-sm">{shortDate}</div>
             </div>
           </div>
-          <div class={published ? "text-gray-700" : "text-gray-500"}>
+          <div class={published ? "text-ekiden-black" : "text-ekiden-gray-500"}>
             <h3 class="text-md mb-1 font-bold md:text-lg">
               {title}
             </h3>

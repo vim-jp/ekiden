@@ -19,17 +19,20 @@ const runnersArticles = getArticles({ runner });
 ---
 
 <Base title={`Vim 駅伝 - ${runner ?? ""}の記事一覧`} slug="/runners/">
-  <h1
-    class="mb-4 mt-4 border-b border-l-[24px] border-b-ekiden-green-500 border-l-ekiden-green-500 pl-4 text-3xl font-bold"
+  <h2
+    class="mb-4 mt-4 border-b border-b-ekiden-green-500 py-2 pl-4 text-3xl font-bold text-ekiden-gray-500"
   >
-    {runner}
-  </h1>
+    {`${runner ?? ""}の記事一覧`}
+  </h2>
   {
     runnersArticles.map((article, index, articles) => (
       <>
         {/* 一番最初、または年が変わるときに年を表示 */}
         {(index === 0 || article.year !== articles.at(index - 1)?.year) && (
-          <h2 class="mb-4 mt-8 text-2xl font-bold">{article.year}年</h2>
+          <h3 class="mb-4 mt-8 font-ekiden-heading text-3xl font-bold text-ekiden-gray-500">
+            {article.year}
+            <span class="ml-1">年</span>
+          </h3>
         )}
         <ArticleinArchive {...article} />
       </>
