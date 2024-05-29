@@ -36,7 +36,7 @@ export function getArticles(options: ReturnArticlesFilterOptions = {}) {
         /** index は記事のインデックス番号。０から始まる */
         originalIndex: index,
         runnerPath: article.githubUser
-          ? `/ekiden/runners/${article.githubUser}`
+          ? `/ekiden/runners/${article.githubUser}/`
           : undefined,
       }))
       /** githubUser が runner と一致するものを抽出. もし runner が undefined なら全ての記事を抽出 */

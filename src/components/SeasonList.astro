@@ -133,7 +133,7 @@ const sections = getSectionArray(showUnpublishedSeason ?? true);
           {displaySectionName(section)}
         </div>
       ) : (
-        <a href={`/ekiden/${linkDest}/${sectionToSlug(section)}`}>
+        <a href={`/ekiden/${linkDest}/${sectionToSlug(section)}/`}>
           <div class="rounded-md bg-gray-200 p-4 text-center hover:bg-[#97c795]">
             {displaySectionName(section)}
           </div>

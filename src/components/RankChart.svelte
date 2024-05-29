@@ -119,7 +119,7 @@
         const matched = /^\d+\.\s+(\S+)/.exec(labelText);
         if (matched === null) return;
         const githubUser = matched[1];
-        window.location.href = `/ekiden/runners/${githubUser}`;
+        window.location.href = `/ekiden/runners/${githubUser}/`;
       }
     },
     scales: {
