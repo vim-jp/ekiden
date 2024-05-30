@@ -1569,7 +1569,7 @@
       "issueNumber": 431
     },
     {
-      "title": "Vimの起動時間の履歴を残す",
+      "title": "GitHub ActionsでVimの起動速度の履歴を管理する",
       "date": "2024-05-31",
       "runner": "ぺりー",
       "url": null,
