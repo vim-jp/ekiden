@@ -1607,6 +1607,14 @@
       "url": null,
       "githubUser": "ryoppippi",
       "issueNumber": 443
+    },
+    {
+      "title": "neovim 0.10 の注目機能",
+      "date": "2024-06-12",
+      "runner": "swnakamura",
+      "url": null,
+      "githubUser": "swnakamura",
+      "issueNumber": 445
     }
   ]
 }
