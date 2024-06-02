@@ -12,6 +12,7 @@ module.exports = {
         },
         "ekiden-green": {
           500: "#477745",
+          600: "#97C795",
         },
         "ekiden-blue": {
           500: "#2a9bdd",
