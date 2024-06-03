@@ -1615,6 +1615,14 @@
       "url": null,
       "githubUser": "swnakamura",
       "issueNumber": 445
+    },
+    {
+      "title": "ddu関連でなにか書く",
+      "date": "2024-06-17",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 446
     }
   ]
 }
