@@ -1609,6 +1609,14 @@
       "issueNumber": 443
     },
     {
+      "title": "j/kを加速させるサブモード",
+      "date": "2024-06-12",
+      "runner": "Atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 448
+    },
+    {
       "title": "ddu関連でなにか書く",
       "date": "2024-06-17",
       "runner": "staticWagomU",
