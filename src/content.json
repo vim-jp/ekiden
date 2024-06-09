@@ -1603,8 +1603,8 @@
     {
       "title": "なんかかく",
       "date": "2024-06-10",
-      "runner": "ryoppippi",
-      "url": null,
+      "runner": "CopilotChatとNeovimでGitの効率を上げる",
+      "url": "https://zenn.dev/vim_jp/articles/041300c0f9cc50",
       "githubUser": "ryoppippi",
       "issueNumber": 443
     },
