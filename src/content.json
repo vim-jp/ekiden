@@ -1625,10 +1625,10 @@
       "issueNumber": 449
     },
     {
-      "title": "ddu関連でなにか書く",
+      "title": "dduでお気に入りリストを実現させるためにddu-filterを作った",
       "date": "2024-06-17",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://wagomu.me/blog/2024-06-17-vim-ekiden/",
       "githubUser": "staticWagomU",
       "issueNumber": 446
     },
