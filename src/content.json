@@ -1641,6 +1641,14 @@
       "issueNumber": 450
     },
     {
+      "title": "skkeletonに接頭辞と接尾辞の変換機能を実装した",
+      "date": "2024-06-21",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 451
+    },
+    {
       "title": "Meguro.vim #24 を開催しました",
       "date": "2024-07-29",
       "runner": "thinca",
