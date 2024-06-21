@@ -1641,10 +1641,10 @@
       "issueNumber": 450
     },
     {
-      "title": "skkeletonに接頭辞と接尾辞の変換機能を実装した",
+      "title": "SKKの接頭辞・接尾辞変換をvim-skk/skkeletonに追加した",
       "date": "2024-06-21",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2024/06/21/skkeleton-affix/",
       "githubUser": "atusy",
       "issueNumber": 451
     },
