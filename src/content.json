@@ -1673,10 +1673,10 @@
       "issueNumber": 454
     },
     {
-      "title": "何か書く",
+      "title": "NeovimでREACT_EDITORを設定する",
       "date": "2024-07-01",
       "runner": "kyoh86",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/5a245a6c278929",
       "githubUser": "kyoh86",
       "issueNumber": 456
     },
