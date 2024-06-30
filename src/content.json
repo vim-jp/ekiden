@@ -1681,6 +1681,14 @@
       "issueNumber": 456
     },
     {
+      "title": "Conventional Commitsのprefixが覚えられないので、cmpのソースを作ったはなし",
+      "date": "2024-07-03",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 457
+    },
+    {
       "title": "マイナーなプラグイン構成を試してみる",
       "date": "2024-07-12",
       "runner": "staticWagomU",
