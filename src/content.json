@@ -1697,6 +1697,14 @@
       "issueNumber": 458
     },
     {
+      "title": "Vimの正規表現は強い",
+      "date": "2024-07-08",
+      "runner": "uga-rosa",
+      "url": null,
+      "githubUser": "uga-rosa",
+      "issueNumber": 459
+    },
+    {
       "title": "マイナーなプラグイン構成を試してみる",
       "date": "2024-07-12",
       "runner": "staticWagomU",
