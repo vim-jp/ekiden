@@ -79,8 +79,8 @@ importers:
         specifier: ^5.4.5
         version: 5.4.5
       typescript-eslint-parser-for-extra-files:
-        specifier: ^0.6.0
-        version: 0.6.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.0))(svelte2tsx@0.6.27(svelte@4.2.17)(typescript@5.4.5))(typescript@5.4.5)
+        specifier: ^0.7.0
+        version: 0.7.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.0))(typescript@5.4.5)
 
 packages:
 
@@ -2496,13 +2496,13 @@ packages:
   typescript-auto-import-cache@0.3.2:
     resolution: {integrity: sha512-+laqe5SFL1vN62FPOOJSUDTZxtgsoOXjneYOXIpx5rQ4UMiN89NAtJLpqLqyebv9fgQ/IMeeTX+mQyRnwvJzvg==}
 
-  typescript-eslint-parser-for-extra-files@0.6.0:
-    resolution: {integrity: sha512-xJcBT4W0J0HUoz9GAuRYsywJGOGy9BGn548Gnbn5zLloe8kWDkPB5sYG+UsCSsHjn0oh/VBAQEK8WMnPgOAvoA==}
+  typescript-eslint-parser-for-extra-files@0.7.0:
+    resolution: {integrity: sha512-dNjuJCeGHA2yreEzQC8NRrZylgrJKZJ/kpLNusbRqEUAJfwJo2eOALpr2vsxcoqAzDyi72T8FQypSVhAOAaJrw==}
     engines: {node: '>=16.0.0'}
     peerDependencies:
       '@typescript-eslint/parser': '>=5.41.0'
       astrojs-compiler-sync: '>=0.3.1'
-      svelte2tsx: '>=0.5.20'
+      svelte2tsx: '>=0.7.9'
       typescript: '>=4.8.4'
       vue: ^3.2.45
     peerDependenciesMeta:
@@ -5562,14 +5562,13 @@ snapshots:
     dependencies:
       semver: 7.6.2
 
-  typescript-eslint-parser-for-extra-files@0.6.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.0))(svelte2tsx@0.6.27(svelte@4.2.17)(typescript@5.4.5))(typescript@5.4.5):
+  typescript-eslint-parser-for-extra-files@0.7.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.4.5))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.0))(typescript@5.4.5):
     dependencies:
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.4.5)
       globby: 11.1.0
       is-glob: 4.0.3
     optionalDependencies:
       astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.8.0)
-      svelte2tsx: 0.6.27(svelte@4.2.17)(typescript@5.4.5)
       typescript: 5.4.5
 
   typescript@5.4.5: {}
