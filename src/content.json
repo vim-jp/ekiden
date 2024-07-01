@@ -1721,6 +1721,14 @@
       "issueNumber": 455
     },
     {
+      "title": "VHS で楽に Neovim のデモ動画を録る",
+      "date": "2024-07-15",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 474
+    },
+    {
       "title": "Meguro.vim #24 を開催しました",
       "date": "2024-07-29",
       "runner": "thinca",
