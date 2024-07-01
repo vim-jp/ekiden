@@ -1705,6 +1705,14 @@
       "issueNumber": 459
     },
     {
+      "title": "Vimでvim-jpラジオを聞く",
+      "date": "2024-07-10",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/8cdd74125fa39e",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 473
+    },
+    {
       "title": "マイナーなプラグイン構成を試してみる",
       "date": "2024-07-12",
       "runner": "staticWagomU",
