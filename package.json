@@ -30,7 +30,7 @@
     "dayjs": "^1.11.11",
     "svelte": "^4.2.18",
     "svelte-chartjs": "^3.1.5",
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.4"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.8.0",
