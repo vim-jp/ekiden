@@ -43,7 +43,7 @@
     "prettier-plugin-svelte": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.5",
     "type-fest": "^4.20.1",
-    "typescript": "^5.4.5",
+    "typescript": "^5.5.2",
     "typescript-eslint-parser-for-extra-files": "^0.7.0"
   }
 }
