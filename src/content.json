@@ -1729,6 +1729,14 @@
       "issueNumber": 474
     },
     {
+      "title": "AutoHotkeyが織りなすNeovimの魅力",
+      "date": "2024-07-17",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 475
+    },
+    {
       "title": "Meguro.vim #24 を開催しました",
       "date": "2024-07-29",
       "runner": "thinca",
