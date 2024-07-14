@@ -1724,7 +1724,7 @@
       "title": "VHS で楽に Neovim のデモ動画を録る",
       "date": "2024-07-15",
       "runner": "monaqa",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/2024-07-15-vim-vhs-and-neovim",
       "githubUser": "monaqa",
       "issueNumber": 474
     },
