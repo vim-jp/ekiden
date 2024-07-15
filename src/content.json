@@ -1737,10 +1737,10 @@
       "issueNumber": 475
     },
     {
-      "title": "TBD",
+      "title": "reparojson: 文法エラーを直すだけの JSON フォーマッタを作った",
       "date": "2024-07-19",
       "runner": "nsfisis",
-      "url": null,
+      "url": "https://blog.nsfisis.dev/posts/2024-07-19/reparojson-fix-only-json-formatter/",
       "githubUser": "nsfisis",
       "issueNumber": 480
     },
