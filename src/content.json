@@ -1753,6 +1753,14 @@
       "issueNumber": 485
     },
     {
+      "title": "クリップボードを使わずにVimのインスタンス間でレジスタを共有する",
+      "date": "2024-07-24",
+      "runner": "kuuote",
+      "url": "https://zenn.dev/vim_jp/articles/20240724_vim_register_share",
+      "githubUser": "kuuote",
+      "issueNumber": 487
+    },
+    {
       "title": "Meguro.vim #24 を開催しました",
       "date": "2024-07-29",
       "runner": "thinca",
