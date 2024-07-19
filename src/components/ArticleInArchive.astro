@@ -9,7 +9,7 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
   Astro.props;
 ---
 
-<div class="mb-4 border-b pb-2">
+<div class="mb-4 [&+div]:border-t pb-2">
   <div
     class={published ? "w-full hover:bg-[#efefef] hover:shadow-md" : "w-full"}
   >
@@ -43,7 +43,7 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
     runner !== undefined && runnerPath !== undefined && (
       <div class="w-full text-right">
         <a href={runnerPath} class="md:text-md inline-block text-sm">
-          <img src={RunnerImage.src} class="inline w-6 [--i:1]" />
+          <img src={RunnerImage.src} class="inline w-6" />
           &nbsp;<span class="underline">{runner}</span>
         </a>
       </div>
