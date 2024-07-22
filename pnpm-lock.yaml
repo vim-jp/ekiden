@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@astrojs/check':
         specifier: ^0.8.2
-        version: 0.8.2(prettier-plugin-astro@0.14.0)(prettier@3.3.3)(typescript@5.5.3)
+        version: 0.8.2(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.3)
       '@astrojs/rss':
         specifier: ^4.0.7
         version: 4.0.7
@@ -64,14 +64,14 @@ importers:
         specifier: ^3.3.3
         version: 3.3.3
       prettier-plugin-astro:
-        specifier: ^0.14.0
-        version: 0.14.0
+        specifier: ^0.14.1
+        version: 0.14.1
       prettier-plugin-svelte:
         specifier: ^3.2.6
         version: 3.2.6(prettier@3.3.3)(svelte@4.2.18)
       prettier-plugin-tailwindcss:
         specifier: ^0.6.5
-        version: 0.6.5(prettier-plugin-astro@0.14.0)(prettier-plugin-svelte@3.2.6(prettier@3.3.3)(svelte@4.2.18))(prettier@3.3.3)
+        version: 0.6.5(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.6(prettier@3.3.3)(svelte@4.2.18))(prettier@3.3.3)
       type-fest:
         specifier: ^4.22.1
         version: 4.22.1
@@ -80,7 +80,7 @@ importers:
         version: 5.5.3
       typescript-eslint-parser-for-extra-files:
         specifier: ^0.7.0
-        version: 0.7.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.3))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.1))(svelte2tsx@0.7.13(svelte@4.2.18)(typescript@5.5.3))(typescript@5.5.3)
+        version: 0.7.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.3))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.9.2))(svelte2tsx@0.7.13(svelte@4.2.18)(typescript@5.5.3))(typescript@5.5.3)
 
 packages:
 
@@ -101,9 +101,6 @@ packages:
     hasBin: true
     peerDependencies:
       typescript: ^5.0.0
-
-  '@astrojs/compiler@1.8.2':
-    resolution: {integrity: sha512-o/ObKgtMzl8SlpIdzaxFnt7SATKPxu4oIP/1NL+HDJRzxfJcAkOTAb/ZKMRyULbz4q+1t2/DAebs2Z1QairkZw==}
 
   '@astrojs/compiler@2.8.1':
     resolution: {integrity: sha512-NGfPAgU/9rvDEwsXu82RI1AxiivaxtEYBK9saW1f+2fTHUUqCJQ27HYtb2akG2QxCmFikgZ9zk26BEWgiHho1Q==}
@@ -2075,8 +2072,8 @@ packages:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
 
-  prettier-plugin-astro@0.14.0:
-    resolution: {integrity: sha512-7jRGJsexaRIyUzTk8uzXlP45cw6DQ5Ci4bTe0xCBCcuO1Fff8jJy9oI+kRCQKSdDFTSAArMSg8GpvzlKBtSaZA==}
+  prettier-plugin-astro@0.14.1:
+    resolution: {integrity: sha512-RiBETaaP9veVstE4vUwSIcdATj6dKmXljouXc/DDNwBSPTp8FRkLGDSGFClKsAFeeg+13SB0Z1JZvbD76bigJw==}
     engines: {node: ^14.15.0 || >=16.0.0}
 
   prettier-plugin-svelte@3.2.6:
@@ -2764,9 +2761,9 @@ snapshots:
       '@jridgewell/gen-mapping': 0.3.5
       '@jridgewell/trace-mapping': 0.3.25
 
-  '@astrojs/check@0.8.2(prettier-plugin-astro@0.14.0)(prettier@3.3.3)(typescript@5.5.3)':
+  '@astrojs/check@0.8.2(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.3)':
     dependencies:
-      '@astrojs/language-server': 2.12.1(prettier-plugin-astro@0.14.0)(prettier@3.3.3)(typescript@5.5.3)
+      '@astrojs/language-server': 2.12.1(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.3)
       chokidar: 3.6.0
       fast-glob: 3.3.2
       kleur: 4.1.5
@@ -2776,15 +2773,13 @@ snapshots:
       - prettier
       - prettier-plugin-astro
 
-  '@astrojs/compiler@1.8.2': {}
-
   '@astrojs/compiler@2.8.1': {}
 
   '@astrojs/compiler@2.9.2': {}
 
   '@astrojs/internal-helpers@0.4.1': {}
 
-  '@astrojs/language-server@2.12.1(prettier-plugin-astro@0.14.0)(prettier@3.3.3)(typescript@5.5.3)':
+  '@astrojs/language-server@2.12.1(prettier-plugin-astro@0.14.1)(prettier@3.3.3)(typescript@5.5.3)':
     dependencies:
       '@astrojs/compiler': 2.9.2
       '@jridgewell/sourcemap-codec': 1.4.15
@@ -2805,7 +2800,7 @@ snapshots:
       vscode-uri: 3.0.8
     optionalDependencies:
       prettier: 3.3.3
-      prettier-plugin-astro: 0.14.0
+      prettier-plugin-astro: 0.14.1
     transitivePeerDependencies:
       - typescript
 
@@ -3626,11 +3621,11 @@ snapshots:
 
   astro-eslint-parser@1.0.2(typescript@5.5.3):
     dependencies:
-      '@astrojs/compiler': 2.8.1
+      '@astrojs/compiler': 2.9.2
       '@typescript-eslint/scope-manager': 7.7.1
       '@typescript-eslint/types': 7.7.1
       '@typescript-eslint/typescript-estree': 7.7.1(typescript@5.5.3)
-      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.8.1)
+      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.9.2)
       debug: 4.3.5
       entities: 4.5.0
       eslint-scope: 8.0.1
@@ -3720,9 +3715,9 @@ snapshots:
       - terser
       - typescript
 
-  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.1):
+  astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.9.2):
     dependencies:
-      '@astrojs/compiler': 2.8.1
+      '@astrojs/compiler': 2.9.2
       synckit: 0.9.0
 
   autoprefixer@10.4.16(postcss@8.4.31):
@@ -5081,9 +5076,9 @@ snapshots:
 
   prelude-ls@1.2.1: {}
 
-  prettier-plugin-astro@0.14.0:
+  prettier-plugin-astro@0.14.1:
     dependencies:
-      '@astrojs/compiler': 1.8.2
+      '@astrojs/compiler': 2.9.2
       prettier: 3.3.3
       sass-formatter: 0.7.6
 
@@ -5092,11 +5087,11 @@ snapshots:
       prettier: 3.3.3
       svelte: 4.2.18
 
-  prettier-plugin-tailwindcss@0.6.5(prettier-plugin-astro@0.14.0)(prettier-plugin-svelte@3.2.6(prettier@3.3.3)(svelte@4.2.18))(prettier@3.3.3):
+  prettier-plugin-tailwindcss@0.6.5(prettier-plugin-astro@0.14.1)(prettier-plugin-svelte@3.2.6(prettier@3.3.3)(svelte@4.2.18))(prettier@3.3.3):
     dependencies:
       prettier: 3.3.3
     optionalDependencies:
-      prettier-plugin-astro: 0.14.0
+      prettier-plugin-astro: 0.14.1
       prettier-plugin-svelte: 3.2.6(prettier@3.3.3)(svelte@4.2.18)
 
   prettier@3.3.3: {}
@@ -5523,13 +5518,13 @@ snapshots:
     dependencies:
       semver: 7.6.2
 
-  typescript-eslint-parser-for-extra-files@0.7.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.3))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.8.1))(svelte2tsx@0.7.13(svelte@4.2.18)(typescript@5.5.3))(typescript@5.5.3):
+  typescript-eslint-parser-for-extra-files@0.7.0(@typescript-eslint/parser@5.62.0(eslint@8.57.0)(typescript@5.5.3))(astrojs-compiler-sync@1.0.0(@astrojs/compiler@2.9.2))(svelte2tsx@0.7.13(svelte@4.2.18)(typescript@5.5.3))(typescript@5.5.3):
     dependencies:
       '@typescript-eslint/parser': 5.62.0(eslint@8.57.0)(typescript@5.5.3)
       globby: 11.1.0
       is-glob: 4.0.3
     optionalDependencies:
-      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.8.1)
+      astrojs-compiler-sync: 1.0.0(@astrojs/compiler@2.9.2)
       svelte2tsx: 0.7.13(svelte@4.2.18)(typescript@5.5.3)
       typescript: 5.5.3
 
