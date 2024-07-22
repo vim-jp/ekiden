@@ -15,8 +15,8 @@ importers:
         specifier: ^4.0.7
         version: 4.0.7
       '@astrojs/svelte':
-        specifier: ^5.6.0
-        version: 5.6.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.2)
+        specifier: ^5.7.0
+        version: 5.7.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.2)
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.11.5(typescript@5.5.3))(tailwindcss@3.4.4)
@@ -133,12 +133,12 @@ packages:
   '@astrojs/rss@4.0.7':
     resolution: {integrity: sha512-ZEG55XFB19l+DplUvBISmz04UbjDtKliRO4Y5+ERRhAMjgCVVobEBNE6ZwWG1h6orWUocy4nfPihKXDyB73x9g==}
 
-  '@astrojs/svelte@5.6.0':
-    resolution: {integrity: sha512-rdHBlqMQE6UOA1ySF1t3sdb6pf44yP8Dd0TqxGO0yR4HAgbtKtW8XToJ3mQ1PmuRmf5fisH9xzt3EEx7NAQuZg==}
+  '@astrojs/svelte@5.7.0':
+    resolution: {integrity: sha512-pC/xM5ejDzqIhfr8e6gbjBkIwyTQDLuOH778LfH0EiVlTq5H0WUHCnIcjFBvcaJv9ye8AR0TlGvQmZtkt9x3Eg==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
     peerDependencies:
       astro: ^4.0.0
-      svelte: ^4.0.0 || ^5.0.0-next.90
+      svelte: ^4.0.0 || ^5.0.0-next.190
       typescript: ^5.3.3
 
   '@astrojs/tailwind@5.1.0':
@@ -2836,7 +2836,7 @@ snapshots:
       fast-xml-parser: 4.4.0
       kleur: 4.1.5
 
-  '@astrojs/svelte@5.6.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.2)':
+  '@astrojs/svelte@5.7.0(astro@4.11.5(typescript@5.5.3))(svelte@4.2.18)(typescript@5.5.3)(vite@5.3.2)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.1(svelte@4.2.18)(vite@5.3.2)
       astro: 4.11.5(typescript@5.5.3)
