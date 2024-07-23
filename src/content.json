@@ -1761,10 +1761,10 @@
       "issueNumber": 487
     },
     {
-      "title": "なんか書く",
+      "title": "Neovimでefmの設定管理を考える",
       "date": "2024-07-26",
       "runner": "yasunori0418",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/0012-my-efm-configs",
       "githubUser": "yasunori0418",
       "issueNumber": 489
     },
