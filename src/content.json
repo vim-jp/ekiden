@@ -1791,6 +1791,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 500
+    },
+    {
+      "title": "脱mason.nvim: nvim_lspconfigのLSPをnix (with flakes)で管理する",
+      "date": "2024-08-05",
+      "runner": "Peacock",
+      "url": null,
+      "githubUser": "peacock0803sz",
+      "issueNumber": 501
     }
   ]
 }
