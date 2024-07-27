@@ -79,7 +79,7 @@ jobs:
               if ((context.payload.action === "opened" || context.payload.action === "reopened") && scriptResult.action === "insert") {
                 github.rest.issues.createComment({
                   ...issue,
-                  body: `エントリーしました。\nキャンセルしたい場合は、記事 URL が入力されていない状態で Issue を \`Close as not planned\` で閉じてください。\n${process.env.COMMIT_HASH}`
+                  body: `エントリーしました。\nキャンセルしたい場合は、Issue を \`Close as not planned\` で閉じてください。\n${process.env.COMMIT_HASH}`,
                 });
               } else if (context.payload.action === "closed" && scriptResult.action === "delete") {
                 github.rest.issues.update({
