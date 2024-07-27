@@ -1,11 +1,13 @@
-import { getStdin } from "https://deno.land/x/get_stdin@v1.1.0/mod.ts";
-import { parse } from "https://deno.land/std@0.177.0/flags/mod.ts";
 import { sprintf } from "https://deno.land/std@0.177.0/fmt/printf.ts";
+
+function readJSONFile(path: string) {
+  return JSON.parse(Deno.readTextFileSync(path));
+}
 
 const CONTENT_JSON_PATH = "./src/content.json";
 
 function readContentJSON() {
-  return JSON.parse(Deno.readTextFileSync(CONTENT_JSON_PATH));
+  return readJSONFile(CONTENT_JSON_PATH);
 }
 
 function writeContentJSON(o: unknown) {
@@ -194,22 +196,16 @@ function deleteArticleFromContents(articles: Article[], newArticle: Article) {
   }
 }
 
-async function main() {
-  const parsedArgs = parse(Deno.args);
-  const description = await getStdin({ exitOnEnter: false });
-  const { githubUser } = parsedArgs;
-  if (!githubUser) {
-    throw new Error("--githubUser required.");
-  }
+function main() {
+  const { issue } = readJSONFile(Deno.args[0]);
+  const description = `公開日\n${issue.title}\n${issue.body}`;
+  const githubUser = issue.user.login;
   const article = descriptionToArticle(description, githubUser);
 
-  const issueNumber = Number(parsedArgs.issueNumber);
-  if (issueNumber) {
-    article.issueNumber = issueNumber;
-  }
+  article.issueNumber = issue.number;
 
   const contents = readContentJSON();
-  if (parsedArgs._[0] === "delete") {
+  if (issue.state === "closed" && issue.state_reason === "completed") {
     deleteArticleFromContents(contents.articles, article);
   } else {
     insertArticleToContents(contents.articles, article);
@@ -218,7 +214,7 @@ async function main() {
 }
 
 try {
-  await main();
+  main();
 } catch (e) {
   if (e instanceof ValidationError) {
     console.error(e.message);
