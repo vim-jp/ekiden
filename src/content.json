@@ -1799,6 +1799,14 @@
       "url": null,
       "githubUser": "peacock0803sz",
       "issueNumber": 501
+    },
+    {
+      "title": "Vimから外部コマンドを呼び出してバッファをフォーマットする",
+      "date": "2024-08-07",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/f480fbad7572b7",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 506
     }
   ]
 }
