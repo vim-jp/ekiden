@@ -1815,6 +1815,14 @@
       "url": null,
       "githubUser": "ArcCosine",
       "issueNumber": 507
+    },
+    {
+      "title": "Vim scriptを書きやすくする設定",
+      "date": "2024-08-12",
+      "runner": "9yokuro",
+      "url": null,
+      "githubUser": "9yokuro",
+      "issueNumber": 508
     }
   ]
 }
