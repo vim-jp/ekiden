@@ -1823,6 +1823,14 @@
       "url": null,
       "githubUser": "9yokuro",
       "issueNumber": 508
+    },
+    {
+      "title": "lualine.nvimをカスタマイズして作業を便利にする",
+      "date": "2024-08-14",
+      "runner": "苔コッコー",
+      "url": null,
+      "githubUser": "Kokecoco",
+      "issueNumber": 511
     }
   ]
 }
