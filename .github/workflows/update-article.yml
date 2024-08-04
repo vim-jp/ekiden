@@ -29,15 +29,15 @@ jobs:
       - name: 'Run script'
         id: 'script'
         run: |
-          echo 'ERROR_MESSAGE<<MESSAGE' >> "${GITHUB_OUTPUT}"
+          echo 'RESULT<<MESSAGE' >> "${GITHUB_OUTPUT}"
                deno --quiet run --allow-read --allow-write ./scripts/update-article.ts \
                "${GITHUB_EVENT_PATH}" \
-               2>> "${GITHUB_OUTPUT}" && true
+               >> "${GITHUB_OUTPUT}" && true
           echo 'MESSAGE' >> "${GITHUB_OUTPUT}"
       - name: 'Push changes'
         id: 'push'
         if:
-          steps.script.outputs.ERROR_MESSAGE == ''
+          fromJSON(steps.script.outputs.RESULT).error == ''
         env:
           GIT_AUTHOR_NAME: '${{ github.event.issue.user.login }}'
           GIT_AUTHOR_EMAIL: '${{ github.event.issue.user.login }}@users.noreply.github.com'
@@ -54,7 +54,7 @@ jobs:
       - name: 'Report'
         uses: 'actions/github-script@v7'
         env:
-          ERROR_MESSAGE: '${{ steps.script.outputs.ERROR_MESSAGE }}'
+          SCRIPT_RESULT: '${{ steps.script.outputs.RESULT }}'
           COMMIT_HASH: '${{ steps.push.outputs.COMMIT_HASH }}'
         with:
           script: |
@@ -62,25 +62,26 @@ jobs:
               ...context.repo,
               issue_number: context.issue.number,
             };
-            if (process.env.ERROR_MESSAGE) {
+            const scriptResult = JSON.parse(process.env.SCRIPT_RESULT);
+            if (scriptResult.error) {
               if (context.payload.action !== "closed") {
                 github.rest.issues.createComment({
                   ...issue,
-                  body: `エラーが発生しました。\n\n- ${process.env.ERROR_MESSAGE}`,
+                  body: `エラーが発生しました。\n\n- ${scriptResult.error}`,
                 });
               } else {
                 github.rest.issues.createComment({
                   ...issue,
-                  body: `エラーが発生しました。\n\n- ${process.env.ERROR_MESSAGE}\n\n問題を解消したら再オープンしてから再び閉じてください。`,
+                  body: `エラーが発生しました。\n\n- ${scriptResult.error}\n\n問題を解消したら再オープンしてから再び閉じてください。`,
                 });
               }
             } else if (process.env.COMMIT_HASH) {
-              if (context.payload.action === "opened") {
+              if ((context.payload.action === "opened" || context.payload.action === "reopened") && scriptResult.action === "insert") {
                 github.rest.issues.createComment({
                   ...issue,
                   body: `エントリーしました。\nキャンセルしたい場合は、記事 URL が入力されていない状態で Issue を \`Close as not planned\` で閉じてください。\n${process.env.COMMIT_HASH}`
                 });
-              } else if (context.payload.action === "closed") {
+              } else if (context.payload.action === "closed" && scriptResult.action === "delete") {
                 github.rest.issues.update({
                   ...issue,
                   state_reason: "not_planned",
