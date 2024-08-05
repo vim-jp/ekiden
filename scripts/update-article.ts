@@ -259,6 +259,5 @@ try {
     console.log(JSON.stringify({
       error: `Fatal error: ${e}`,
     }));
-    Deno.exit(1);
   }
 }

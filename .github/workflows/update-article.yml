@@ -32,7 +32,7 @@ jobs:
           echo 'RESULT<<MESSAGE' >> "${GITHUB_OUTPUT}"
                deno --quiet run --allow-read --allow-write ./scripts/update-article.ts \
                "${GITHUB_EVENT_PATH}" \
-               >> "${GITHUB_OUTPUT}" && true
+               >> "${GITHUB_OUTPUT}"
           echo 'MESSAGE' >> "${GITHUB_OUTPUT}"
       - name: 'Push changes'
         id: 'push'
