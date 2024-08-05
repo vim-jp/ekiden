@@ -1796,7 +1796,7 @@
       "title": "脱mason.nvim: nvim-lspconfigのLSPをnix (with flakes)で管理する",
       "date": "2024-08-05",
       "runner": "Peacock",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/volar-for-nvim-lsp-with-nix",
       "githubUser": "peacock0803sz",
       "issueNumber": 501
     },
