@@ -1809,10 +1809,10 @@
       "issueNumber": 506
     },
     {
-      "title": "何か書く",
+      "title": "ChromeOSでNeovim環境を構築する",
       "date": "2024-08-09",
       "runner": "ArcCosine",
-      "url": null,
+      "url": "https://looxu.blogspot.com/2024/08/chromeosneovim.html",
       "githubUser": "ArcCosine",
       "issueNumber": 507
     },
