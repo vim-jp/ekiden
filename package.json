@@ -41,12 +41,10 @@
     "astro-eslint-parser": "^1.0.2",
     "eslint": "^9.8.0",
     "eslint-plugin-astro": "^1.2.3",
-    "eslint-plugin-svelte": "^2.43.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.2.6",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "svelte-eslint-parser": "^0.41.0",
     "type-fest": "^4.23.0",
     "typescript": "^5.5.4",
     "typescript-eslint": "^8.0.1"
