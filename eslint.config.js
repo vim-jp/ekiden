@@ -7,6 +7,7 @@ import eslintPluginAstro from "eslint-plugin-astro";
 import astroEslintParser from "astro-eslint-parser";
 
 import eslintPluginSvelte from "eslint-plugin-svelte";
+import svelteEslintParser from "svelte-eslint-parser";
 
 const astroConfig = tsEslint.config({
   files: ["*.astro"],
@@ -38,7 +39,7 @@ const svelteConfig = tsEslint.config({
     ...eslintPluginSvelte.configs["flat/recommended"],
   ],
   languageOptions: {
-    parser: tsEslintParser,
+    parser: svelteEslintParser,
     parserOptions: {
       parser: tsEslintParser,
       extraFileExtensions: [".svelte"],
