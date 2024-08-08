@@ -17,9 +17,12 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
       <div class="p-2">
         <div class="flex items-center">
           <div
-            class={published
-              ? "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 bg-ekiden-green-500 text-white"
-              : "rounded-full flex-shrink-0 w-16 h-16 flex items-center justify-center mr-4 text-ekiden-green-500 border border-ekiden-green-500"}
+            class:list={[
+              "mr-4 flex h-16 w-16 flex-shrink-0 items-center justify-center rounded-full",
+              published
+                ? "bg-ekiden-green-500 text-white"
+                : "border border-ekiden-green-500 text-ekiden-green-500",
+            ]}
           >
             <div class="text-center font-ekiden-heading">
               {
