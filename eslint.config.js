@@ -6,6 +6,8 @@ import tsEslintParser from "@typescript-eslint/parser";
 import eslintPluginAstro from "eslint-plugin-astro";
 import astroEslintParser from "astro-eslint-parser";
 
+import eslintPluginSvelte from "eslint-plugin-svelte";
+
 const astroConfig = tsEslint.config({
   files: ["*.astro"],
   extends: [
@@ -29,6 +31,21 @@ const astroConfig = tsEslint.config({
   },
 });
 
+const svelteConfig = tsEslint.config({
+  files: ["*.svelte"],
+  extends: [
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+    ...eslintPluginSvelte.configs["flat/recommended"],
+  ],
+  languageOptions: {
+    parser: tsEslintParser,
+    parserOptions: {
+      parser: tsEslintParser,
+      extraFileExtensions: [".svelte"],
+    },
+  },
+});
+
 const tsConfig = tsEslint.config({
   extends: [
     tsEslint.configs.eslintRecommended,
@@ -49,4 +66,5 @@ export default tsEslint.config(
   eslint.configs.recommended,
   ...tsConfig,
   ...astroConfig,
+  ...svelteConfig,
 );
