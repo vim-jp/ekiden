@@ -2,6 +2,7 @@
   "$schema": "https://json.schemastore.org/package.json",
   "name": "ekiden",
   "version": "0.0.1",
+  "type": "module",
   "engines": {
     "node": ">=20.0.0",
     "pnpm": ">=9.0.0"
@@ -34,16 +35,20 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.9.1",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
-    "@typescript-eslint/parser": "^5.62.0",
-    "eslint": "^8.57.0",
+    "@eslint/js": "^9.8.0",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/utils": "^8.0.1",
+    "astro-eslint-parser": "^1.0.2",
+    "eslint": "^9.8.0",
     "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-svelte": "^2.43.0",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.2.6",
     "prettier-plugin-tailwindcss": "^0.6.5",
+    "svelte-eslint-parser": "^0.41.0",
     "type-fest": "^4.23.0",
     "typescript": "^5.5.4",
-    "typescript-eslint-parser-for-extra-files": "^0.7.0"
+    "typescript-eslint": "^8.0.1"
   }
 }
