@@ -16,10 +16,10 @@ importers:
         version: 4.0.7
       '@astrojs/svelte':
         specifier: ^5.7.0
-        version: 5.7.0(astro@4.13.1(typescript@5.5.4))(svelte@4.2.18)(typescript@5.5.4)(vite@5.4.0)
+        version: 5.7.0(astro@4.13.3(typescript@5.5.4))(svelte@4.2.18)(typescript@5.5.4)(vite@5.4.0)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.13.1(typescript@5.5.4))(tailwindcss@3.4.8)
+        version: 5.1.0(astro@4.13.3(typescript@5.5.4))(tailwindcss@3.4.8)
       '@fontsource/kaushan-script':
         specifier: ^5.0.21
         version: 5.0.21
@@ -27,8 +27,8 @@ importers:
         specifier: ^5.0.13
         version: 5.0.13
       astro:
-        specifier: ^4.13.1
-        version: 4.13.1(typescript@5.5.4)
+        specifier: ^4.13.3
+        version: 4.13.3(typescript@5.5.4)
       chart.js:
         specifier: ^4.4.3
         version: 4.4.3
@@ -923,8 +923,8 @@ packages:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.13.1:
-    resolution: {integrity: sha512-VnMjAc+ykFsIVjgbu9Mt/EA1fMIcPMXbU89h3ATwGOzSIKDsQH72bDgfJkWiwk6u0OE90GeP5EPhAT28Twf9oA==}
+  astro@4.13.3:
+    resolution: {integrity: sha512-MyhmM0v5sphiVwxAm5jjKxWeuPZijWPJ8Ajdign9QzEmLWSH8vUYIJWx/dWRQ6vF1I0jXrksoj3wtw5nzXt9nw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2762,10 +2762,10 @@ snapshots:
       fast-xml-parser: 4.4.1
       kleur: 4.1.5
 
-  '@astrojs/svelte@5.7.0(astro@4.13.1(typescript@5.5.4))(svelte@4.2.18)(typescript@5.5.4)(vite@5.4.0)':
+  '@astrojs/svelte@5.7.0(astro@4.13.3(typescript@5.5.4))(svelte@4.2.18)(typescript@5.5.4)(vite@5.4.0)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.1(svelte@4.2.18)(vite@5.4.0)
-      astro: 4.13.1(typescript@5.5.4)
+      astro: 4.13.3(typescript@5.5.4)
       svelte: 4.2.18
       svelte2tsx: 0.7.15(svelte@4.2.18)(typescript@5.5.4)
       typescript: 5.5.4
@@ -2773,9 +2773,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.13.1(typescript@5.5.4))(tailwindcss@3.4.8)':
+  '@astrojs/tailwind@5.1.0(astro@4.13.3(typescript@5.5.4))(tailwindcss@3.4.8)':
     dependencies:
-      astro: 4.13.1(typescript@5.5.4)
+      astro: 4.13.3(typescript@5.5.4)
       autoprefixer: 10.4.20(postcss@8.4.41)
       postcss: 8.4.41
       postcss-load-config: 4.0.2(postcss@8.4.41)
@@ -3566,7 +3566,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.13.1(typescript@5.5.4):
+  astro@4.13.3(typescript@5.5.4):
     dependencies:
       '@astrojs/compiler': 2.10.2
       '@astrojs/internal-helpers': 0.4.1
