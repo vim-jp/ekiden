@@ -1833,6 +1833,14 @@
       "issueNumber": 511
     },
     {
+      "title": "NeoVimに閉じ籠る為のToggletermとGit, DockerのTUIを紹介",
+      "date": "2024-08-16",
+      "runner": "fujitani sora",
+      "url": null,
+      "githubUser": "fs0414",
+      "issueNumber": 527
+    },
+    {
       "title": "なんか書く",
       "date": "2024-08-26",
       "runner": "staticWagomU",
