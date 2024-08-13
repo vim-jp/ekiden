@@ -1,16 +1,29 @@
-import { getStdin } from "https://deno.land/x/get_stdin@v1.1.0/mod.ts";
-import { parse } from "https://deno.land/std@0.177.0/flags/mod.ts";
 import { sprintf } from "https://deno.land/std@0.177.0/fmt/printf.ts";
+
+function readJSONFile(path: string) {
+  return JSON.parse(Deno.readTextFileSync(path));
+}
 
 const CONTENT_JSON_PATH = "./src/content.json";
 
 function readContentJSON() {
-  return JSON.parse(Deno.readTextFileSync(CONTENT_JSON_PATH));
+  return readJSONFile(CONTENT_JSON_PATH);
 }
 
 function writeContentJSON(o: unknown) {
   Deno.writeTextFileSync(CONTENT_JSON_PATH, JSON.stringify(o, null, 2) + "\n");
 }
+
+type Issue = {
+  number: number;
+  title: string;
+  body: string;
+  state: string;
+  state_reason: string;
+  user: {
+    login: string;
+  };
+};
 
 type Article = {
   title: string;
@@ -19,6 +32,13 @@ type Article = {
   url: string | null;
   githubUser: string;
   issueNumber?: number;
+};
+
+type Action = "insert" | "delete" | null;
+
+type Result = {
+  action?: Action;
+  error: string | null;
 };
 
 class ValidationError extends Error {
@@ -37,6 +57,12 @@ function weekdayNumToStr(weekday: number): string {
     "金曜日",
     "土曜日",
   ][weekday];
+}
+
+function todayInJST(): string {
+  const d = new Date();
+  d.setHours(d.getHours() + 9);
+  return d.toISOString().split("T")[0];
 }
 
 function validatePublishDate(date: string) {
@@ -152,7 +178,7 @@ function checkOverwritable(existanceArticle: Article, newArticle: Article) {
   return existanceArticle.runner === newArticle.runner;
 }
 
-function insertArticleToContents(articles: Article[], newArticle: Article) {
+function insertArticleToContents(articles: Article[], newArticle: Article): Action {
   const existenceSameIssueArticleIndex = articles.findIndex((a) =>
     a.issueNumber === newArticle.issueNumber
   );
@@ -178,53 +204,60 @@ function insertArticleToContents(articles: Article[], newArticle: Article) {
     articles.push(newArticle);
   }
   articles.sort((a, b) => a.date.localeCompare(b.date));
+  return 0 <= existenceSameIssueArticleIndex ? null : "insert";
 }
 
-function deleteArticleFromContents(articles: Article[], newArticle: Article) {
+function deleteArticleFromContents(articles: Article[], newArticle: Article): Action {
   const existenceArticleIndex = articles.findIndex((a) =>
     a.issueNumber === newArticle.issueNumber
   );
-  if (newArticle.url) {
-    throw new ValidationError(
-      "URL が登録されている場合はクローズでのエントリー解除はできません。エントリー解除がしたい場合は URL を空にしてからやり直してください。",
-    );
-  }
   if (0 <= existenceArticleIndex) {
     articles.splice(existenceArticleIndex, 1);
+    return "delete";
   }
+  return null;
 }
 
-async function main() {
-  const parsedArgs = parse(Deno.args);
-  const description = await getStdin({ exitOnEnter: false });
-  const { githubUser } = parsedArgs;
-  if (!githubUser) {
-    throw new Error("--githubUser required.");
-  }
+function isFulfillCancelCondition(issue: Issue, article: Article) {
+  return issue.state === "closed" &&
+    (article.url == null || todayInJST().localeCompare(article.date) < 0 ||
+      issue.state_reason === "not_planned");
+}
+
+function main() {
+  const result: Result = {
+    error: null,
+  };
+  const { issue } = readJSONFile(Deno.args[0]) as { issue: Issue };
+  const description = `公開日\n${issue.title}\n${issue.body}`;
+  const githubUser = issue.user.login;
   const article = descriptionToArticle(description, githubUser);
 
-  const issueNumber = Number(parsedArgs.issueNumber);
-  if (issueNumber) {
-    article.issueNumber = issueNumber;
-  }
+  article.issueNumber = issue.number;
 
   const contents = readContentJSON();
-  if (parsedArgs._[0] === "delete") {
-    deleteArticleFromContents(contents.articles, article);
+  if (isFulfillCancelCondition(issue, article)) {
+    // キャンセル条件を満たしていた場合は記事を削除する
+    result.action = deleteArticleFromContents(contents.articles, article);
   } else {
-    insertArticleToContents(contents.articles, article);
+    // それ以外の場合は記事を追加または更新する
+    result.action = insertArticleToContents(contents.articles, article);
   }
   writeContentJSON(contents);
+  return result;
 }
 
 try {
-  await main();
+  const result = main();
+  console.log(JSON.stringify(result));
 } catch (e) {
   if (e instanceof ValidationError) {
-    console.error(e.message);
+    console.log(JSON.stringify({
+      error: e.message,
+    }));
   } else {
-    console.error("Fatal error:");
-    console.error(e);
-    Deno.exit(1);
+    console.log(JSON.stringify({
+      error: `Fatal error: ${e}`,
+    }));
   }
 }
