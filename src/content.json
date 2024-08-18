@@ -1841,6 +1841,14 @@
       "issueNumber": 527
     },
     {
+      "title": "Neovim + nvim-lspconfigで `gq` を使う際は気をつけよう",
+      "date": "2024-08-19",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 529
+    },
+    {
       "title": "なんか書く",
       "date": "2024-08-26",
       "runner": "staticWagomU",
