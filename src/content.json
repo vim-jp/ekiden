@@ -1849,14 +1849,6 @@
       "issueNumber": 529
     },
     {
-      "title": "【toridori.ts】NeoVimでprisma-language-serverを適用する手順",
-      "date": "2024-08-21",
-      "runner": "fs0414",
-      "url": null,
-      "githubUser": "fs0414",
-      "issueNumber": 530
-    },
-    {
       "title": "Vimで記号や演算子をサクッと補完する",
       "date": "2024-08-23",
       "runner": "kawarimidoll",
