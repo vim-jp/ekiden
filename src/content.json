@@ -1871,6 +1871,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 512
+    },
+    {
+      "title": "Neovim `nvim-cmp`(`cmp-cmdline`) + `gin.vim` の action 補完ソースを書いた",
+      "date": "2024-08-28",
+      "runner": "teramako",
+      "url": null,
+      "githubUser": "teramako",
+      "issueNumber": 532
     }
   ]
 }
