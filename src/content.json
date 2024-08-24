@@ -1873,10 +1873,10 @@
       "issueNumber": 512
     },
     {
-      "title": "Neovim nvim-cmp(cmp-cmdline) + gin.vim の action 補完ソースを書いた",
+      "title": "Neovim nvim-cmp の補完ソースプラグインと gin.vim の action 補完ソースを書いた話",
       "date": "2024-08-28",
       "runner": "teramako",
-      "url": null,
+      "url": "https://teramako.github.io/2024/08/28/nvim-cmp_and_gin.vim_completion_sources.html",
       "githubUser": "teramako",
       "issueNumber": 532
     }
