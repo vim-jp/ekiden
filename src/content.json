@@ -1879,6 +1879,14 @@
       "url": "https://teramako.github.io/2024/08/28/nvim-cmp_and_gin.vim_completion_sources.html",
       "githubUser": "teramako",
       "issueNumber": 532
+    },
+    {
+      "title": "なんか書きます",
+      "date": "2024-08-30",
+      "runner": "eetann",
+      "url": null,
+      "githubUser": "eetann",
+      "issueNumber": 545
     }
   ]
 }
