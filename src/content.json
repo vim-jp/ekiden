@@ -1887,6 +1887,14 @@
       "url": null,
       "githubUser": "eetann",
       "issueNumber": 545
+    },
+    {
+      "title": "Vim を pager にしたら filetype の決め方に少し詳しくなった",
+      "date": "2024-09-02",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 546
     }
   ]
 }
