@@ -28,7 +28,7 @@
     "@fontsource/yuji-syuku": "^5.0.14",
     "astro": "^4.14.2",
     "chart.js": "^4.4.4",
-    "dayjs": "^1.11.12",
+    "dayjs": "^1.11.13",
     "svelte": "^4.2.19",
     "svelte-chartjs": "^3.1.5",
     "tailwindcss": "^3.4.9"
