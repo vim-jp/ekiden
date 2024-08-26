@@ -30,8 +30,8 @@ importers:
         specifier: ^4.14.2
         version: 4.14.2(rollup@4.14.1)(typescript@5.5.4)
       chart.js:
-        specifier: ^4.4.3
-        version: 4.4.3
+        specifier: ^4.4.4
+        version: 4.4.4
       dayjs:
         specifier: ^1.11.12
         version: 1.11.12
@@ -40,7 +40,7 @@ importers:
         version: 4.2.19
       svelte-chartjs:
         specifier: ^3.1.5
-        version: 3.1.5(chart.js@4.4.3)(svelte@4.2.19)
+        version: 3.1.5(chart.js@4.4.4)(svelte@4.2.19)
       tailwindcss:
         specifier: ^3.4.9
         version: 3.4.10
@@ -1077,8 +1077,8 @@ packages:
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
-  chart.js@4.4.3:
-    resolution: {integrity: sha512-qK1gkGSRYcJzqrrzdR6a+I0vQ4/R+SoODXyAjscQ/4mzuNzySaMCd+hyVxitSY1+L2fjPD1Gbn+ibNqRmwQeLw==}
+  chart.js@4.4.4:
+    resolution: {integrity: sha512-emICKGBABnxhMjUjlYRR12PmOXhJ2eJjEHL2/dZlWjxRAZT1D8xplLFq5M0tMQK8ja+wBS/tuVEJB5C6r7VxJA==}
     engines: {pnpm: '>=8'}
 
   chokidar@3.6.0:
@@ -4004,7 +4004,7 @@ snapshots:
 
   character-entities@2.0.2: {}
 
-  chart.js@4.4.3:
+  chart.js@4.4.4:
     dependencies:
       '@kurkle/color': 0.3.2
 
@@ -5605,9 +5605,9 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  svelte-chartjs@3.1.5(chart.js@4.4.3)(svelte@4.2.19):
+  svelte-chartjs@3.1.5(chart.js@4.4.4)(svelte@4.2.19):
     dependencies:
-      chart.js: 4.4.3
+      chart.js: 4.4.4
       svelte: 4.2.19
 
   svelte-hmr@0.16.0(svelte@4.2.19):
