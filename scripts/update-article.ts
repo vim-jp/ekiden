@@ -1,4 +1,4 @@
-import { sprintf } from "jsr:@std@1.0.0/fmt/printf";
+import { sprintf } from "jsr:@std/fmt@1.0.0/printf";
 
 function readJSONFile(path: string) {
   return JSON.parse(Deno.readTextFileSync(path));
