@@ -11,7 +11,7 @@ const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
 
 <div class="mb-4 pb-2 [&+div]:border-t">
   <div
-    class={published ? "w-full hover:bg-[#efefef] hover:shadow-md" : "w-full"}
+    class:list={["w-full", published && "hover:bg-[#efefef] hover:shadow-md"]}
   >
     <a href={published ? url : undefined}>
       <div class="p-2">
