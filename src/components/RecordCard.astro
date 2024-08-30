@@ -33,17 +33,17 @@ const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
             <div>
               {enabledDigitHighlight ? (
                 <div class="flex items-center gap-2">
-                  {[...record.toString()].map((digit) => {
-                    return digit === "." ? (
-                      <span class="font-ekiden-mono text-2xl font-extrabold">
-                        .
-                      </span>
-                    ) : (
-                      <span class="border-b-2 border-b-ekiden-black-500 font-ekiden-mono text-2xl font-thin">
-                        {digit}
-                      </span>
-                    );
-                  })}
+                  {[...record.toString()].map((digit) => (
+                    <span
+                      class:list={[
+                        "font-ekiden-mono text-2xl",
+                        digit === "." ? "font-extrabold" : "font-thin",
+                        digit !== "." && "border-b-2 border-b-ekiden-black-500",
+                      ]}
+                    >
+                      {digit}
+                    </span>
+                  ))}
                 </div>
               ) : (
                 <span class="border-b-2 border-b-ekiden-black-500 font-ekiden-mono text-2xl font-thin">
