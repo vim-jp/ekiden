@@ -1911,6 +1911,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 557
+    },
+    {
+      "title": "lazy.nvim で dependencies を使うのはやめよう",
+      "date": "2024-09-09",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 561
     }
   ]
 }
