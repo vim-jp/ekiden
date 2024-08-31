@@ -8,7 +8,7 @@ const props = isLink ? { href: `/ekiden${href}` } : {};
 ---
 
 <span class="px-4 py-2">
-  <Tag class="px-4 py-2 underline" {...props}>
+  <Tag class:list={[!isLink && "underline", "px-4 py-2"]} {...props}>
     <slot />
   </Tag>
 </span>
