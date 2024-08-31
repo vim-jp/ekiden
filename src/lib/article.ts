@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import contents from "@/content.json";
 
-export type Content = (typeof contents)["articles"][number];
+export type Article = (typeof contents)["articles"][number];
 
 /** 記事のフィルタリング条件 */
 export type ReturnArticlesFilterOptions = {
