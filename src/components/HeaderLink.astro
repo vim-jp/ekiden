@@ -1,18 +1,14 @@
 ---
 type Props = { slug: string; href: string };
 const { slug, href } = Astro.props;
+
+const isLink = slug !== href;
+const Tag = isLink ? "a" : "span";
+const props = isLink ? { href: `/ekiden${href}` } : {};
 ---
 
 <span class="px-4 py-2">
-  {
-    slug === href ? (
-      <span class="px-4 py-2 underline">
-        <slot />
-      </span>
-    ) : (
-      <a class="px-4 py-2" href={"/ekiden" + href}>
-        <slot />
-      </a>
-    )
-  }
+  <Tag class="px-4 py-2 underline" {...props}>
+    <slot />
+  </Tag>
 </span>
