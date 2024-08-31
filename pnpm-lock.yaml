@@ -87,6 +87,9 @@ importers:
       typescript-eslint:
         specifier: ^8.2.0
         version: 8.2.0(eslint@9.9.1(jiti@1.21.0))(typescript@5.5.4)
+      ufo:
+        specifier: ^1.5.4
+        version: 1.5.4
 
 packages:
 
@@ -2547,6 +2550,9 @@ packages:
     resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
     engines: {node: '>=14.17'}
     hasBin: true
+
+  ufo@1.5.4:
+    resolution: {integrity: sha512-UsUk3byDzKd04EyoZ7U4DOlxQaD14JUKQl6/P7wiX4FNvUfm3XL246n9W5AmqwW5RSFJ27NAuM0iLscAOYUiGQ==}
 
   unified@11.0.5:
     resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
@@ -5647,6 +5653,8 @@ snapshots:
       - supports-color
 
   typescript@5.5.4: {}
+
+  ufo@1.5.4: {}
 
   unified@11.0.5:
     dependencies:
