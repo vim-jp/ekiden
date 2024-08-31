@@ -38,7 +38,7 @@ const articles = getArticles().filter((article) => {
 
 <Base
   title={`Vim 駅伝 - アーカイブ - ${displaySectionName(section)}`}
-  slug={`/archives/`}
+  slug="/archives"
 >
   <SeasonList selected={section} linkDest="archives" />
   {articles.map((article) => <ArticleinArchive {...article} />)}
