@@ -20,7 +20,7 @@ function joinURLWithTrailingSlash(baseURL: string, ...paths: string[]): string {
 const baseURL = joinURLWithTrailingSlash(
   import.meta.env.SITE,
   import.meta.env.BASE_URL,
-); // NOTE: Astro.site は末尾/を含む
+);
 const description =
   "Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。";
 const url = joinURLWithTrailingSlash(baseURL, slug);
