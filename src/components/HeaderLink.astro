@@ -1,8 +1,11 @@
 ---
+import { isEqual } from "ufo";
+
 type Props = { slug: string; href: string };
 const { slug, href } = Astro.props;
 
-const isLink = slug !== href;
+/* path が一致しないかを判定。slash のある無しは区別しない */
+const isLink = !isEqual(slug, href);
 const Tag = isLink ? "a" : "span";
 const props = isLink ? { href: `/ekiden${href}` } : {};
 ---
