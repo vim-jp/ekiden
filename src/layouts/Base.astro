@@ -3,19 +3,12 @@ import { ViewTransitions } from "astro:transitions";
 
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import { joinURLWithTrailingSlash } from "@/lib/url.js";
 import "@fontsource/kaushan-script";
 import "@fontsource/yuji-syuku";
-import * as ufo from "ufo";
 
 type Props = { title: string; slug: string };
 const { title, slug } = Astro.props;
-
-/**
- * URL を結合して末尾にスラッシュを付与する
- */
-function joinURLWithTrailingSlash(baseURL: string, ...paths: string[]): string {
-  return ufo.withTrailingSlash(ufo.joinURL(baseURL, ...paths));
-}
 
 const baseURL = joinURLWithTrailingSlash(
   import.meta.env.SITE,
