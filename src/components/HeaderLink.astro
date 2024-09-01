@@ -1,13 +1,14 @@
 ---
-import { isEqual } from "ufo";
+import * as ufo from "ufo";
+import { joinURLWithTrailingSlash } from "@/lib/url.js";
 
 type Props = { slug: string; href: string };
 const { slug, href } = Astro.props;
 
 /* path が一致しないかを判定。slash のある無しは区別しない */
-const isLink = !isEqual(slug, href);
+const isLink = !ufo.isEqual(slug, href);
 const Tag = isLink ? "a" : "span";
-const props = isLink ? { href: `/ekiden${href}` } : {};
+const props = isLink ? { href: joinURLWithTrailingSlash("/ekiden", href) } : {};
 ---
 
 <span class="px-4 py-2">
