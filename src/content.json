@@ -1927,6 +1927,14 @@
       "url": null,
       "githubUser": "ryoppippi",
       "issueNumber": 569
+    },
+    {
+      "title": "Vimで使っている簡単キーマッピングたちを共有",
+      "date": "2024-09-13",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/43d021f461f3a4",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 570
     }
   ]
 }
