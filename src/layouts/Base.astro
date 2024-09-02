@@ -3,17 +3,21 @@ import { ViewTransitions } from "astro:transitions";
 
 import Header from "@/components/Header.astro";
 import Footer from "@/components/Footer.astro";
+import { joinURLWithTrailingSlash } from "@/lib/url.js";
 import "@fontsource/kaushan-script";
 import "@fontsource/yuji-syuku";
 
 type Props = { title: string; slug: string };
 const { title, slug } = Astro.props;
 
-const baseURL = `${import.meta.env.SITE}${import.meta.env.BASE_URL}`; // NOTE: Astro.site は末尾/を含む
+const baseURL = joinURLWithTrailingSlash(
+  import.meta.env.SITE,
+  import.meta.env.BASE_URL,
+);
 const description =
   "Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。";
-const url = `${baseURL}${slug}`; // NOTE: Astro.Props.slug は先頭/を含む
-const ogImage = `${baseURL}/og-image.png`;
+const url = joinURLWithTrailingSlash(baseURL, slug);
+const ogImage = joinURLWithTrailingSlash(baseURL, "og-image.png");
 ---
 
 <html lang="ja" class="scroll-smooth">

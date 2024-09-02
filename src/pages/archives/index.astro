@@ -8,7 +8,7 @@ import { getArticles } from "@/lib/article";
 const articles = getArticles();
 ---
 
-<Base title="Vim 駅伝 - アーカイブ" slug="/archives/">
+<Base title="Vim 駅伝 - アーカイブ" slug="/archives">
   <SeasonList linkDest="archives" />
   {articles.map((article) => <ArticleinArchive {...article} />)}
 </Base>
