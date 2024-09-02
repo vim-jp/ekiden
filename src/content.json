@@ -1919,6 +1919,14 @@
       "url": null,
       "githubUser": "delphinus",
       "issueNumber": 561
+    },
+    {
+      "title": "vim-cord",
+      "date": "2024-09-11",
+      "runner": "ryoppippi",
+      "url": null,
+      "githubUser": "ryoppippi",
+      "issueNumber": 569
     }
   ]
 }
