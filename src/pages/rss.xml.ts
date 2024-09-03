@@ -14,9 +14,7 @@ export async function GET(context: { site: string }) {
       title: article.title,
       description: `By ${article.runner}`,
       pubDate: dayjs(article.date).toDate(),
-      // article.url が null なものは除いているため本当はいらないのだが、
-      // 型チェックを通すために仕方なく
-      link: article.url ?? "",
+      link: article.url,
     })),
   });
 }
