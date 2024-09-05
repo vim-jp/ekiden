@@ -1935,6 +1935,14 @@
       "url": "https://zenn.dev/vim_jp/articles/43d021f461f3a4",
       "githubUser": "kawarimidoll",
       "issueNumber": 570
+    },
+    {
+      "title": "Slackに進捗状況を共有できるNeovimプラグインをつくってみた",
+      "date": "2024-09-18",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 572
     }
   ]
 }
