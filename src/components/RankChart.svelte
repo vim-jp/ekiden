@@ -64,7 +64,7 @@
     return `${rank}. ${user}${padding}`;
   });
 
-  const data: ChartData<"bar"> = {
+  const data = {
     labels: rankingTick,
     datasets: [
       {
@@ -89,7 +89,7 @@
         barPercentage: 0.5,
       },
     ],
-  };
+  } as const satisfies ChartData<"bar">;
 
   const options: ChartOptions<"bar"> = {
     indexAxis: "y",
