@@ -1905,10 +1905,10 @@
       "issueNumber": 556
     },
     {
-      "title": "Visual modeのzfの挙動をちょっとだけ直感的にするマッピング",
+      "title": "zfをline-wise化して直感的な挙動にするマッピング",
       "date": "2024-09-06",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2024/09/06/linewise-zf/",
       "githubUser": "atusy",
       "issueNumber": 557
     },
