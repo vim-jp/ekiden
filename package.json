@@ -25,7 +25,7 @@
     "@astrojs/svelte": "^5.7.0",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/kaushan-script": "^5.0.23",
-    "@fontsource/yuji-syuku": "^5.0.14",
+    "@fontsource/yuji-syuku": "^5.0.15",
     "astro": "^4.15.4",
     "chart.js": "^4.4.4",
     "dayjs": "^1.11.13",
