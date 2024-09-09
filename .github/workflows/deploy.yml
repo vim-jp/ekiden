@@ -23,7 +23,7 @@ jobs:
         with:
           node-version: 20
       - name: Install, build, and upload your site
-        uses: withastro/action@v2
+        uses: withastro/action@v3
         with:
           package-manager: pnpm@9.1.2
         env:
