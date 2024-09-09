@@ -7,17 +7,12 @@
     BarElement,
   } from "chart.js";
   import type { ChartData, ChartOptions } from "chart.js";
+  import type { ProcessedArticle } from "@/lib/article";
 
   ChartJS.register(CategoryScale, LinearScale, BarElement);
 
-  export let articles: {
-    title: string;
-    date: string;
-    runner: string;
-    url: string | null;
-    githubUser: string;
-    issueNumber: number;
-  }[];
+  /** published な記事のみを抽出 */
+  export let articles: ProcessedArticle<true>[];
 
   // GitHubユーザーごとの記事数をカウント
   const userCounts: { [user: string]: number } = {};

@@ -1,15 +1,37 @@
 import dayjs from "dayjs";
 import contents from "@/content.json";
-
-export type Content = (typeof contents)["articles"][number];
+import type { IsStringLiteral, OverrideProperties } from "type-fest";
+import type { Article } from "./type.js";
 
 /** 記事のフィルタリング条件 */
-export type ReturnArticlesFilterOptions = {
+export type ReturnArticlesFilterOptions<T extends boolean, U extends string> = {
   /** 記事が公開されているかどうか */
-  isPublished?: boolean;
+  isPublished?: T;
   /** runner が指定されている場合、その runner の記事のみを抽出 */
-  runner?: string;
+  runner?: U;
 };
+
+/** 処理された記事の型 */
+export type ProcessedArticle<
+  T extends boolean | undefined = undefined,
+  U extends string = string,
+> = OverrideProperties<
+  Article & {
+    published: boolean;
+    shortDate: string;
+    year: string;
+    originalIndex: number;
+    runnerPath?: string;
+  },
+  {
+    /** isPublished が true なら url は必ず存在する */
+    url: T extends true ? string : string | null;
+    /** isPublished が true なら published は必ず true になる */
+    published: T extends true ? true : boolean;
+    /* runner が指定されている場合、runner はそのliteral string と一致する */
+    runner: U extends IsStringLiteral<T> ? T : string;
+  }
+>;
 
 /**
  * 記事の一覧を返す
@@ -17,10 +39,13 @@ export type ReturnArticlesFilterOptions = {
  * @param {boolean} options.isPublished
  * @param {string} options.runner
  */
-export function getArticles(options: ReturnArticlesFilterOptions = {}) {
+export function getArticles<T extends boolean, U extends string>(
+  options: ReturnArticlesFilterOptions<T, U> = {},
+): ProcessedArticle<T, U>[] {
   const today = dayjs();
+  const articles: Article[] = contents.articles;
   return (
-    contents.articles
+    articles
       /** 記事の日付を昇順に並び替え */
       .sort((a, b) => dayjs(a.date).unix() - dayjs(b.date).unix())
       /** 記事の日付をフォーマット */
@@ -47,9 +72,6 @@ export function getArticles(options: ReturnArticlesFilterOptions = {}) {
       /** もし fileterByIsPublished が undefined なら全ての記事を抽出. もし、true なら published が true の記事を抽出 */
       .filter(
         (article) => options.isPublished === undefined || article.published,
-      )
+      ) as ProcessedArticle<T, U>[]
   );
 }
-
-/** 処理された記事の型 */
-export type ProcessedArticle = ReturnType<typeof getArticles>[number];

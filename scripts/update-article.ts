@@ -1,4 +1,5 @@
 import { sprintf } from "jsr:@std/fmt@1.0.0/printf";
+import type { Article } from "../src/lib/type.ts";
 
 function readJSONFile(path: string) {
   return JSON.parse(Deno.readTextFileSync(path));
@@ -23,15 +24,6 @@ type Issue = {
   user: {
     login: string;
   };
-};
-
-type Article = {
-  title: string;
-  date: string;
-  runner: string;
-  url: string | null;
-  githubUser: string;
-  issueNumber?: number;
 };
 
 type Action = "insert" | "delete" | null;
