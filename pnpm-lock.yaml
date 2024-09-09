@@ -21,8 +21,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0(astro@4.15.1(rollup@4.21.2)(typescript@5.5.4))(tailwindcss@3.4.10)
       '@fontsource/kaushan-script':
-        specifier: ^5.0.22
-        version: 5.0.22
+        specifier: ^5.0.23
+        version: 5.0.23
       '@fontsource/yuji-syuku':
         specifier: ^5.0.14
         version: 5.0.14
@@ -450,8 +450,8 @@ packages:
     resolution: {integrity: sha512-BsWiH1yFGjXXS2yvrf5LyuoSIIbPrGUWob917o+BTKuZ7qJdxX8aJLRxs1fS9n6r7vESrq1OUqb68dANcFXuQQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource/kaushan-script@5.0.22':
-    resolution: {integrity: sha512-9PaVGLUOI9cC3a+p6hAOQO16ZskNgWQLq15aDvsvdRUO0qH45q7ESdw3P01v8JBlZdil4y3hxJq2zzoLuPnVQA==}
+  '@fontsource/kaushan-script@5.0.23':
+    resolution: {integrity: sha512-BVAdUUhf86iG7wLo7cVUACu7D3+FEmiJ7iHLD8dqiCzBI23UFM2KqGepxB/acjcUVjqN0LqiJsnQrDCnnj3ieg==}
 
   '@fontsource/yuji-syuku@5.0.14':
     resolution: {integrity: sha512-r9EsB0AFkwc0Q9oEc+Vjh+EallAD4hLJuXZz0ailXyds8CJqTksDlTy3p215FbtJC8WzhyzdsS/UcSzKpuDJVg==}
@@ -3257,7 +3257,7 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@fontsource/kaushan-script@5.0.22': {}
+  '@fontsource/kaushan-script@5.0.23': {}
 
   '@fontsource/yuji-syuku@5.0.14': {}
 
