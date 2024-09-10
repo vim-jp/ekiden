@@ -1943,6 +1943,14 @@
       "url": null,
       "githubUser": "tadashi-aikawa",
       "issueNumber": 572
+    },
+    {
+      "title": "`vif`でメソッド内を範囲選択する方法",
+      "date": "2024-09-20",
+      "runner": "ysmb_wtsg",
+      "url": null,
+      "githubUser": "ysmb-wtsg",
+      "issueNumber": 584
     }
   ]
 }
