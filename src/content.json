@@ -1921,10 +1921,10 @@
       "issueNumber": 561
     },
     {
-      "title": "vim-cord",
+      "title": "Neovimで記録したマクロを後から編集する",
       "date": "2024-09-11",
       "runner": "ryoppippi",
-      "url": null,
+      "url": "https://zenn.dev/ryoppippi/articles/e2ad1047bc950c",
       "githubUser": "ryoppippi",
       "issueNumber": 569
     },
