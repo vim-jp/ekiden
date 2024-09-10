@@ -1937,6 +1937,14 @@
       "issueNumber": 570
     },
     {
+      "title": "Neovimのコメントアウトプラグインの選び方",
+      "date": "2024-09-16",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 586
+    },
+    {
       "title": "Slackに進捗状況を共有できるNeovimプラグインをつくってみた",
       "date": "2024-09-18",
       "runner": "tadashi-aikawa",
