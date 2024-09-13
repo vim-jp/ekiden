@@ -59,7 +59,7 @@
     return `${rank}. ${user}${padding}`;
   });
 
-  const data: ChartData<"bar"> = {
+  const data = {
     labels: rankingTick,
     datasets: [
       {
@@ -84,9 +84,9 @@
         barPercentage: 0.5,
       },
     ],
-  };
+  } as const satisfies ChartData<"bar">;
 
-  const options: ChartOptions<"bar"> = {
+  const options = {
     indexAxis: "y",
     // Elements options apply to all of the options unless overridden in a dataset
     // In this case, we are setting the border of each horizontal bar to be 2px wide
@@ -137,7 +137,7 @@
         },
       },
     },
-  };
+  } as const satisfies ChartOptions<"bar">;
 </script>
 
 <div id="rankings-container" class="w-[90vw] max-w-3xl px-1">
