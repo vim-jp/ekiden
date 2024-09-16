@@ -40,7 +40,7 @@
     "@typescript-eslint/utils": "^8.4.0",
     "astro-eslint-parser": "^1.0.2",
     "eslint": "^9.10.0",
-    "eslint-plugin-astro": "^1.2.3",
+    "eslint-plugin-astro": "^1.2.4",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.2.6",
