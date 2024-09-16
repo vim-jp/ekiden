@@ -64,8 +64,8 @@ importers:
         specifier: ^9.10.0
         version: 9.10.0(jiti@1.21.0)
       eslint-plugin-astro:
-        specifier: ^1.2.3
-        version: 1.2.3(eslint@9.10.0(jiti@1.21.0))(typescript@5.5.4)
+        specifier: ^1.2.4
+        version: 1.2.4(eslint@9.10.0(jiti@1.21.0))(typescript@5.5.4)
       prettier:
         specifier: ^3.3.3
         version: 3.3.3
@@ -587,9 +587,6 @@ packages:
   '@jridgewell/set-array@1.2.1':
     resolution: {integrity: sha512-R8gLRTZeyp03ymzP/6Lil/28tGeGEzhx1q2k703KGWRAI1VdvPIXdG70VJc2pAMw3NA6JKL5hhFu1sJX0Mnn/A==}
     engines: {node: '>=6.0.0'}
-
-  '@jridgewell/sourcemap-codec@1.4.15':
-    resolution: {integrity: sha512-eF2rxCRulEKXHTRiDrDy6erMYWqNw4LPdQ8UQA4huuxaQsVeRPFl2oM8oDGxMFhJUWZf9McpLtJasDDZb/Bpeg==}
 
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
@@ -1271,8 +1268,8 @@ packages:
     peerDependencies:
       eslint: '>=6.0.0'
 
-  eslint-plugin-astro@1.2.3:
-    resolution: {integrity: sha512-asHT0VUs68oppVnTHfp/WgLqs0yCx9kG9AC/PKLmp+87imeh3nGHMdFm0qP46vHxTM0NLDEhvmjFdAVAqw+QPQ==}
+  eslint-plugin-astro@1.2.4:
+    resolution: {integrity: sha512-45uXKW6lxmYEa8Gkh5lCfwAnOyQD90AaMS2Bu9ans88f+pFkliqjGeexiKv73oiTcY3I0vlzTUk5GlqvYlkjyA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -3311,8 +3308,6 @@ snapshots:
 
   '@jridgewell/set-array@1.2.1': {}
 
-  '@jridgewell/sourcemap-codec@1.4.15': {}
-
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
   '@jridgewell/trace-mapping@0.3.25':
@@ -4099,16 +4094,16 @@ snapshots:
       eslint: 9.10.0(jiti@1.21.0)
       semver: 7.6.3
 
-  eslint-plugin-astro@1.2.3(eslint@9.10.0(jiti@1.21.0))(typescript@5.5.4):
+  eslint-plugin-astro@1.2.4(eslint@9.10.0(jiti@1.21.0))(typescript@5.5.4):
     dependencies:
       '@eslint-community/eslint-utils': 4.4.0(eslint@9.10.0(jiti@1.21.0))
-      '@jridgewell/sourcemap-codec': 1.4.15
-      '@typescript-eslint/types': 7.7.1
+      '@jridgewell/sourcemap-codec': 1.5.0
+      '@typescript-eslint/types': 8.4.0
       astro-eslint-parser: 1.0.2(typescript@5.5.4)
       eslint: 9.10.0(jiti@1.21.0)
       eslint-compat-utils: 0.5.0(eslint@9.10.0(jiti@1.21.0))
       globals: 15.1.0
-      postcss: 8.4.38
+      postcss: 8.4.41
       postcss-selector-parser: 6.0.13
     transitivePeerDependencies:
       - supports-color
