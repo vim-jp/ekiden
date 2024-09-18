@@ -38,10 +38,12 @@
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.2",
     "@eslint/js": "^9.11.0",
+    "@std/collections": "npm:@jsr/std__collections@^1.0.6",
     "@types/eslint__js": "^8.42.3",
     "@typescript-eslint/utils": "^8.6.0",
     "astro-eslint-parser": "^1.0.3",
     "eslint": "^9.11.0",
+    "@unocss/reset": "^0.62.4",
     "eslint-plugin-astro": "^1.2.4",
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
@@ -50,7 +52,8 @@
     "type-fest": "^4.26.1",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.5.0",
-    "ufo": "^1.5.4"
+    "ufo": "^1.5.4",
+    "unocss": "^0.62.4"
   },
   "private": true,
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
