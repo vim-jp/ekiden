@@ -10,8 +10,13 @@ import {
   transformerVariantGroup,
 } from "unocss";
 import { createLocalFontProcessor } from "@unocss/preset-web-fonts/local";
+import { joinURL } from "ufo";
+
+import AstroConfig from "./astro.config.mjs";
 
 const isDevelopment = process.env.NODE_ENV === "development";
+
+const fontAssetsDir = `assets/fonts`;
 
 export default defineConfig({
   presets: [
@@ -30,8 +35,8 @@ export default defineConfig({
         "ekiden-mono": ["DejaVu Sans Mono", "monospace"],
       },
       processors: createLocalFontProcessor({
-        fontAssetsDir: "public/assets/fonts",
-        fontServeBaseUrl: "/ekiden/assets/fonts",
+        fontAssetsDir: joinURL(AstroConfig.publicDir as string, fontAssetsDir),
+        fontServeBaseUrl: joinURL(AstroConfig.base as string, fontAssetsDir),
       }), // fontをgithub pagesでhostするためにlocalへとダウンロードする https://unocss.dev/presets/web-fonts#serve-fonts-locally
     }), // web font を使うための設定。 https://unocss.dev/presets/web-fonts
   ],

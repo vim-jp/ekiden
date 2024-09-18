@@ -7,6 +7,7 @@ import UnoCSS from "unocss/astro";
 export default defineConfig({
   site: "https://vim-jp.org",
   base: "/ekiden",
+  publicDir: "./public",
   trailingSlash: "always",
   integrations: [
     UnoCSS({
