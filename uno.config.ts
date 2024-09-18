@@ -1,3 +1,4 @@
+import process from "node:process";
 import { deepMerge } from "@std/collections/deep-merge";
 import {
   defineConfig,
