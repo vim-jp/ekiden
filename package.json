@@ -25,15 +25,13 @@
     "@astrojs/check": "^0.9.3",
     "@astrojs/rss": "^4.0.7",
     "@astrojs/svelte": "^5.7.1",
-    "@astrojs/tailwind": "^5.1.1",
     "@fontsource/kaushan-script": "^5.1.0",
     "@fontsource/yuji-syuku": "^5.1.0",
     "astro": "^4.15.8",
     "chart.js": "^4.4.4",
     "dayjs": "^1.11.13",
     "svelte": "^4.2.19",
-    "svelte-chartjs": "^3.1.5",
-    "tailwindcss": "^3.4.12"
+    "svelte-chartjs": "^3.1.5"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.2",
@@ -48,7 +46,6 @@
     "prettier": "^3.3.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-svelte": "^3.2.6",
-    "prettier-plugin-tailwindcss": "^0.6.6",
     "type-fest": "^4.26.1",
     "typescript": "^5.6.2",
     "typescript-eslint": "^8.5.0",
