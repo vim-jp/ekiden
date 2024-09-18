@@ -11,7 +11,7 @@ const articles = getArticles({ isPublished: true });
   <SeasonList linkDest="ranking" showUnpublishedSeason={false} />
 
   <section class="py-4 text-ekiden-gray-500">
-    <h2 class="mb-2 mt-4 font-ekiden-heading text-2xl font-bold">
+    <h2 class="mb-2 mt-4 text-2xl font-bold font-ekiden-heading">
       記事投稿数ランキング（総合）
     </h2>
     <RankChart articles={articles} client:only="svelte" />
