@@ -9,6 +9,7 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from "unocss";
+import { createLocalFontProcessor } from "@unocss/preset-web-fonts/local";
 
 const isDevelopment = process.env.NODE_ENV === "development";
 
@@ -28,6 +29,10 @@ export default defineConfig({
         "ekiden-base": ["sans-serif"],
         "ekiden-mono": ["DejaVu Sans Mono", "monospace"],
       },
+      processors: createLocalFontProcessor({
+        fontAssetsDir: "public/assets/fonts",
+        fontServeBaseUrl: "/ekiden/assets/fonts",
+      }), // fontをgithub pagesでhostするためにlocalへとダウンロードする https://unocss.dev/presets/web-fonts#serve-fonts-locally
     }), // web font を使うための設定。 https://unocss.dev/presets/web-fonts
   ],
   transformers: [
