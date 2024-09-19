@@ -29,4 +29,3 @@ jobs:
         run: pnpm check
       - name: Run Build
         run: pnpm build
-
