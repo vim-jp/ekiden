@@ -18,13 +18,9 @@ export default defineConfig({
     presetAttributify(), // class ではなく属性でスタイルを適用するための設定。 https://unocss.dev/presets/attributify
     presetIcons({ autoInstall: isDevelopment }), // icon を使うための設定。 https://unocss.dev/presets/icons
     presetWebFonts({
-      provider: "none", // defaultをnoneにして、必要な場合のみgoogle fontを使うようにする https://unocss.dev/presets/web-fonts#google-fonts
+      provider: "none", //TODO: google fontsからfetchできるようにしたい https://github.com/unocss/unocss/issues/4146
       fonts: {
-        "ekiden-heading": [
-          { name: "Kaushan Script", provider: "google" },
-          { name: "Yuji Syuku", provider: "google" },
-          "serif",
-        ],
+        "ekiden-heading": ["Kaushan Script", "Yuji Syuku", "serif"],
         "ekiden-base": ["sans-serif"],
         "ekiden-mono": ["DejaVu Sans Mono", "monospace"],
       },
