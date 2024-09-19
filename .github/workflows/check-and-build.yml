@@ -20,6 +20,6 @@ jobs:
       - name: Run Prettier
         run: pnpm prettier:check
       - name: Run Astro Check
-        run: pnpm check
+        run: pnpm astro:check
       - name: Run Build
         run: pnpm build
