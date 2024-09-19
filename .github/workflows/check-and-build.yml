@@ -15,9 +15,11 @@ jobs:
         uses: pnpm/action-setup@v4.0.0
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
-      - name: Run tests
-        run: |
-          pnpm run lint:check
-          pnpm run prettier:check
-          pnpm run check
-          pnpm run build
+      - name: Run ESLint
+        run: pnpm lint:check
+      - name: Run Prettier
+        run: pnpm prettier:check
+      - name: Run Astro Check
+        run: pnpm check
+      - name: Run Build
+        run: pnpm build
