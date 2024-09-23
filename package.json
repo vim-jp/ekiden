@@ -3,10 +3,6 @@
   "name": "ekiden",
   "version": "0.0.1",
   "type": "module",
-  "engines": {
-    "node": ">=20.0.0",
-    "pnpm": ">=9.0.0"
-  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -19,7 +15,8 @@
     "lint:check": "eslint --cache src",
     "lint:fix": "eslint --cache --fix src",
     "prettier:check": "prettier --cache --check --plugin-search-dir=. src",
-    "prettier:fix": "prettier --cache --write --plugin-search-dir=. src"
+    "prettier:fix": "prettier --cache --write --plugin-search-dir=. src",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
