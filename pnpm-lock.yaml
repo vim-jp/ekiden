@@ -16,10 +16,10 @@ importers:
         version: 4.0.7
       '@astrojs/svelte':
         specifier: ^5.7.1
-        version: 5.7.1(astro@4.15.6(rollup@4.21.2)(typescript@5.6.2))(svelte@4.2.19)(typescript@5.6.2)(vite@5.4.5)
+        version: 5.7.1(astro@4.15.8(rollup@4.21.2)(typescript@5.6.2))(svelte@4.2.19)(typescript@5.6.2)(vite@5.4.5)
       '@astrojs/tailwind':
         specifier: ^5.1.0
-        version: 5.1.0(astro@4.15.6(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.12)
+        version: 5.1.0(astro@4.15.8(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.12)
       '@fontsource/kaushan-script':
         specifier: ^5.1.0
         version: 5.1.0
@@ -27,8 +27,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       astro:
-        specifier: ^4.15.6
-        version: 4.15.6(rollup@4.21.2)(typescript@5.6.2)
+        specifier: ^4.15.8
+        version: 4.15.8(rollup@4.21.2)(typescript@5.6.2)
       chart.js:
         specifier: ^4.4.4
         version: 4.4.4
@@ -954,8 +954,8 @@ packages:
     resolution: {integrity: sha512-AGsGgcg7Jg9UpyCDgvl/EkdYpe1oMkFdmC2Zl+KWneoieLCtQIFjmcY8yt41gcNx4mby0w8BBJQcBmPuf8UAoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@4.15.6:
-    resolution: {integrity: sha512-SWcUNwm8CiVRaIbh4w5byh62BNihpsovlCd4ElvC7cL/53D24HcI7AaGFsPrromCamQklwQmIan/QS7x/3lLuQ==}
+  astro@4.15.8:
+    resolution: {integrity: sha512-pdXjtRF6O1xChiPAUF32R7oVRTW7AK1/Oy/JqPNhLfbelO0l6C7cLdSEuSLektwOEnMhOVXqccetjBs7HPaoxA==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -2006,9 +2006,6 @@ packages:
   path-parse@1.0.7:
     resolution: {integrity: sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==}
 
-  path-to-regexp@6.2.2:
-    resolution: {integrity: sha512-GQX3SSMokngb36+whdpRXE+3f9V8UzyAorlYvOGx87ufGHehNTn5lCxrKtLyZ4Yl/wEKnNnr98ZzOwwDZV5ogw==}
-
   path-type@4.0.0:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
@@ -2899,10 +2896,10 @@ snapshots:
       fast-xml-parser: 4.4.1
       kleur: 4.1.5
 
-  '@astrojs/svelte@5.7.1(astro@4.15.6(rollup@4.21.2)(typescript@5.6.2))(svelte@4.2.19)(typescript@5.6.2)(vite@5.4.5)':
+  '@astrojs/svelte@5.7.1(astro@4.15.8(rollup@4.21.2)(typescript@5.6.2))(svelte@4.2.19)(typescript@5.6.2)(vite@5.4.5)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 3.1.2(svelte@4.2.19)(vite@5.4.5)
-      astro: 4.15.6(rollup@4.21.2)(typescript@5.6.2)
+      astro: 4.15.8(rollup@4.21.2)(typescript@5.6.2)
       svelte: 4.2.19
       svelte2tsx: 0.7.19(svelte@4.2.19)(typescript@5.6.2)
       typescript: 5.6.2
@@ -2910,9 +2907,9 @@ snapshots:
       - supports-color
       - vite
 
-  '@astrojs/tailwind@5.1.0(astro@4.15.6(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.12)':
+  '@astrojs/tailwind@5.1.0(astro@4.15.8(rollup@4.21.2)(typescript@5.6.2))(tailwindcss@3.4.12)':
     dependencies:
-      astro: 4.15.6(rollup@4.21.2)(typescript@5.6.2)
+      astro: 4.15.8(rollup@4.21.2)(typescript@5.6.2)
       autoprefixer: 10.4.16(postcss@8.4.31)
       postcss: 8.4.31
       postcss-load-config: 4.0.2(postcss@8.4.31)
@@ -3727,7 +3724,7 @@ snapshots:
       - supports-color
       - typescript
 
-  astro@4.15.6(rollup@4.21.2)(typescript@5.6.2):
+  astro@4.15.8(rollup@4.21.2)(typescript@5.6.2):
     dependencies:
       '@astrojs/compiler': 2.10.3
       '@astrojs/internal-helpers': 0.4.1
@@ -3775,7 +3772,6 @@ snapshots:
       ora: 8.1.0
       p-limit: 6.1.0
       p-queue: 8.0.1
-      path-to-regexp: 6.2.2
       preferred-pm: 4.0.0
       prompts: 2.4.2
       rehype: 13.0.1
@@ -4586,7 +4582,7 @@ snapshots:
     dependencies:
       '@babel/parser': 7.25.6
       '@babel/types': 7.25.6
-      source-map-js: 1.2.0
+      source-map-js: 1.2.1
 
   markdown-table@3.0.3: {}
 
@@ -5048,8 +5044,6 @@ snapshots:
   path-key@3.1.1: {}
 
   path-parse@1.0.7: {}
-
-  path-to-regexp@6.2.2: {}
 
   path-type@4.0.0: {}
 
