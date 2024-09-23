@@ -16,10 +16,10 @@
     "fix": "pnpm '/^.*:fix/'",
     "astro": "astro",
     "astro:check": "astro check",
-    "lint:check": "eslint src",
-    "lint:fix": "eslint --fix src",
-    "prettier:check": "prettier --check --plugin-search-dir=. src",
-    "prettier:fix": "prettier --write --plugin-search-dir=. src"
+    "lint:check": "eslint --cache src",
+    "lint:fix": "eslint --cache --fix src",
+    "prettier:check": "prettier --cache --check --plugin-search-dir=. src",
+    "prettier:fix": "prettier --cache --write --plugin-search-dir=. src"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
