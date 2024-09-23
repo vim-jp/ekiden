@@ -12,7 +12,16 @@ const props = isLink ? { href: joinURLWithTrailingSlash("/ekiden", href) } : {};
 ---
 
 <span class="px-4 py-2">
-  <Tag class:list={[!isLink && "underline", "px-4 py-2"]} {...props}>
+  <Tag class="fcol px-4 py-2" {...props}>
     <slot />
+    <span
+      class:list={[
+        !isLink
+          ? ["view-transition--nav-underline", "bg-ekiden-white-500"]
+          : "bg-transparent",
+        "h-0.5",
+        "mxa",
+        "w-full",
+      ]}></span>
   </Tag>
 </span>

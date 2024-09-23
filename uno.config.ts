@@ -55,4 +55,7 @@ export default defineConfig({
         },
       },
     }),
+  shortcuts: {
+    fcol: "flex flex-col",
+  },
 });
