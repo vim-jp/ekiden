@@ -49,10 +49,10 @@ const ogImage = joinURLWithTrailingSlash(baseURL, "og-image.png");
   </head>
   <body class="overflow-y-scroll bg-neutral-50 font-ekiden-base">
     <main
-      class="m-0 flex min-h-screen flex-col items-center justify-center p-0 text-ekiden-black-500"
+      class="m-0 min-h-screen flex flex-col items-center justify-center p-0 text-ekiden-black-500"
     >
       <Header slug={slug} />
-      <div class="w-full max-w-4xl flex-1 px-4">
+      <div class="max-w-4xl w-full flex-1 px-4">
         <slot />
       </div>
       <Footer />

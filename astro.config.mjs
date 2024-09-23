@@ -1,14 +1,19 @@
 import { defineConfig } from "astro/config";
 import svelte from "@astrojs/svelte";
 
-// https://astro.build/config
-import tailwind from "@astrojs/tailwind";
+// https://unocss.dev/integrations/astro
+import UnoCSS from "unocss/astro";
 
 export default defineConfig({
   site: "https://vim-jp.org",
   base: "/ekiden",
   trailingSlash: "always",
-  integrations: [tailwind(), svelte()],
+  integrations: [
+    UnoCSS({
+      injectReset: true, // Inject the reset css. When passing `true`, `@unocss/reset/tailwind.css` will be used
+    }),
+    svelte(),
+  ],
   server: {
     host: true,
   },

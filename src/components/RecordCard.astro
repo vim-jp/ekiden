@@ -16,15 +16,15 @@ const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
 ---
 
 <div class="flex flex-col gap-2 sm:flex-row">
-  <div class="flex flex-1 justify-center self-center sm:self-start">
+  <div class="flex flex-1 self-center justify-center sm:self-start">
     <div
-      class="inline-box w-40 justify-self-center rounded bg-ekiden-green-500 px-3 py-2 text-center font-ekiden-heading text-xl text-ekiden-white-500"
+      class="inline-box w-40 justify-self-center rounded bg-ekiden-green-500 px-3 py-2 text-center text-xl text-ekiden-white-500 font-ekiden-heading"
     >
       {title}
     </div>
   </div>
   <div
-    class="flex flex-1 flex-col items-center gap-2 self-center justify-self-start"
+    class="flex flex-1 flex-col items-center self-center justify-self-start gap-2"
   >
     {
       records.map((record) => {
@@ -46,12 +46,12 @@ const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
                   ))}
                 </div>
               ) : (
-                <span class="border-b-2 border-b-ekiden-black-500 font-ekiden-mono text-2xl font-thin">
+                <span class="border-b-2 border-b-ekiden-black-500 text-2xl font-thin font-ekiden-mono">
                   {record}
                 </span>
               )}
             </div>
-            <div class="self-end font-ekiden-base text-xl">{unit}</div>
+            <div class="self-end text-xl font-ekiden-base">{unit}</div>
           </div>
         );
       })
