@@ -15,7 +15,8 @@
     "lint:check": "eslint src",
     "lint:fix": "eslint --fix src",
     "prettier:check": "prettier --check --plugin-search-dir=. src",
-    "prettier:fix": "prettier --write --plugin-search-dir=. src"
+    "prettier:fix": "prettier --write --plugin-search-dir=. src",
+    "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
