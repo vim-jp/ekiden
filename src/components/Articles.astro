@@ -7,22 +7,29 @@ type Props = {
 };
 
 let initialDay = dayjs().subtract(1, "M");
-const diff =
-  initialDay.day() === 0
-    ? 1
-    : initialDay.day() === 1
-      ? 0
-      : initialDay.day() === 2
-        ? 1
-        : initialDay.day() === 3
-          ? 0
-          : initialDay.day() === 4
-            ? 1
-            : initialDay.day() === 5
-              ? 0
-              : initialDay.day() === 6
-                ? 2
-                : 0;
+
+let diff: number;
+
+const _initalDay = initialDay.day();
+switch (_initalDay) {
+  case 0:
+  case 2:
+  case 4:
+    diff = 1;
+    break;
+  case 1:
+  case 3:
+  case 5:
+    diff = 0;
+    break;
+  case 6:
+    diff = 2;
+    break;
+  default:
+    /* _initalDay は never になるので、exhaustive になる */
+    return _initalDay satisfies never;
+}
+
 initialDay = initialDay.add(diff, "d");
 let today = initialDay;
 let yesterday = initialDay.subtract(1, "M");
