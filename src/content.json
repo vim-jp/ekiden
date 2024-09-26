@@ -1996,7 +1996,7 @@
       "title": "Neovimが入れ子になるのを防ぐ",
       "date": "2024-10-02",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/do-not-nest-neovim",
       "githubUser": "yuys13",
       "issueNumber": 615
     }
