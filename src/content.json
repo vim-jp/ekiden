@@ -1991,6 +1991,14 @@
       "url": "https://thinca.hatenablog.com/entry/2024/09/megurovim-25",
       "githubUser": "thinca",
       "issueNumber": 614
+    },
+    {
+      "title": "Neovimが入れ子になるのを防ぐ",
+      "date": "2024-10-02",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 615
     }
   ]
 }
