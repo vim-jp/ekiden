@@ -1983,6 +1983,14 @@
       "url": null,
       "githubUser": "kuuote",
       "issueNumber": 612
+    },
+    {
+      "title": "Meguro.vim #25 を開催しました",
+      "date": "2024-09-30",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2024/09/megurovim-25",
+      "githubUser": "thinca",
+      "issueNumber": 614
     }
   ]
 }
