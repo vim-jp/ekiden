@@ -109,56 +109,56 @@ type Props = {
 
 const { selected, linkDest, showUnpublishedSeason } = Astro.props;
 const sections = getSectionArray(showUnpublishedSeason ?? true);
+
+/**
+ * 総合セクションかどうかを判定
+ */
+const isTotalSection = selected === undefined;
+
+/**
+ * 現在のセクションが選択されているかどうかを判定
+ */
+function isSelectedSection(section: Section): boolean {
+  return (
+    selected !== undefined && sectionToSlug(section) == sectionToSlug(selected)
+  );
+}
 ---
 
 <div class="grid grid-cols-1 my-6 gap-4 sm:grid-cols-4">
+  <a
+    href={!isTotalSection ? `/ekiden/${linkDest}/` : undefined}
+    class:list={[
+      "sm:col-span-4",
+      "rounded-md p-4 text-center",
+      isTotalSection
+        ? "bg-ekiden-green-500 text-gray-100"
+        : "bg-gray-200 hover:bg-ekiden-green-600",
+    ]}
+  >
+    総合
+  </a>
+
   {
-    selected === undefined ? (
-      <div
-        class:list={[
-          "rounded-md p-4 text-center",
-          "bg-ekiden-green-500 text-gray-100 sm:col-span-4",
-        ]}
+    sections.map((section) => (
+      <a
+        href={
+          !isSelectedSection(section)
+            ? `/ekiden/${linkDest}/${sectionToSlug(section)}/`
+            : undefined
+        }
       >
-        総合
-      </div>
-    ) : (
-      <a href={`/ekiden/${linkDest}/`} class="sm:col-span-4">
         <div
           class:list={[
             "rounded-md p-4 text-center",
-            "bg-gray-200 hover:bg-ekiden-green-600",
-          ]}
-        >
-          総合
-        </div>
-      </a>
-    )
-  }
-  {
-    sections.map((section) =>
-      selected !== undefined &&
-      sectionToSlug(section) == sectionToSlug(selected) ? (
-        <div
-          class:list={[
-            "rounded-md p-4 text-center",
-            "bg-ekiden-green-500 text-gray-100",
+            isSelectedSection(section)
+              ? "bg-ekiden-green-500 text-gray-100"
+              : "bg-gray-200 hover:bg-ekiden-green-600",
           ]}
         >
           {displaySectionName(section)}
         </div>
-      ) : (
-        <a href={`/ekiden/${linkDest}/${sectionToSlug(section)}/`}>
-          <div
-            class:list={[
-              "rounded-md p-4 text-center",
-              "bg-gray-200 hover:bg-ekiden-green-600",
-            ]}
-          >
-            {displaySectionName(section)}
-          </div>
-        </a>
-      ),
-    )
+      </a>
+    ))
   }
 </div>

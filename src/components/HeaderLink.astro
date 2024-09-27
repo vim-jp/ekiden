@@ -7,12 +7,13 @@ const { slug, href } = Astro.props;
 
 /* path が一致しないかを判定。slash のある無しは区別しない */
 const isLink = !ufo.isEqual(slug, href);
-const Tag = isLink ? "a" : "span";
-const props = isLink ? { href: joinURLWithTrailingSlash("/ekiden", href) } : {};
 ---
 
 <span class="px-4 py-2">
-  <Tag class="fcol px-4 py-2" {...props}>
+  <a
+    class="fcol px-4 py-2"
+    href={isLink ? joinURLWithTrailingSlash("/ekiden", href) : undefined}
+  >
     <slot />
     <span
       class:list={[
@@ -23,5 +24,5 @@ const props = isLink ? { href: joinURLWithTrailingSlash("/ekiden", href) } : {};
         "mxa",
         "w-full",
       ]}></span>
-  </Tag>
+  </a>
 </span>
