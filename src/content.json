@@ -1980,7 +1980,7 @@
       "title": "NixOSで最新のVimをビルドする",
       "date": "2024-09-27",
       "runner": "kuuote",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20240927_nix_vim_build",
       "githubUser": "kuuote",
       "issueNumber": 612
     },
