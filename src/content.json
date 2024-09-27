@@ -1999,6 +1999,14 @@
       "url": "https://zenn.dev/vim_jp/articles/do-not-nest-neovim",
       "githubUser": "yuys13",
       "issueNumber": 615
+    },
+    {
+      "title": "Visual Studio で Vim をビルドする",
+      "date": "2024-10-04",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 616
     }
   ]
 }
