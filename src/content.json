@@ -2007,6 +2007,14 @@
       "url": "https://mikoto2000.blogspot.com/2024/10/visual-studio-vim.html",
       "githubUser": "mikoto2000",
       "issueNumber": 616
+    },
+    {
+      "title": "Vim で挿入モードから抜けることなく直前の単語を UPPER CASE にする",
+      "date": "2024-10-07",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 618
     }
   ]
 }
