@@ -2015,6 +2015,14 @@
       "url": null,
       "githubUser": "monaqa",
       "issueNumber": 618
+    },
+    {
+      "title": "devcontainer.vim で、コンテナ上の Vim に引きこもって作業を行う(ゼロから環境構築をしてみよう編)",
+      "date": "2024-10-09",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 619
     }
   ]
 }
