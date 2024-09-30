@@ -24,8 +24,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       '@unocss/reset':
-        specifier: ^0.62.4
-        version: 0.62.4
+        specifier: ^0.63.1
+        version: 0.63.1
       astro:
         specifier: ^4.15.8
         version: 4.15.8(@types/node@22.7.4)(rollup@4.21.2)(typescript@5.6.2)
@@ -1143,9 +1143,6 @@ packages:
 
   '@unocss/preset-wind@0.63.1':
     resolution: {integrity: sha512-L/Pyz55NC55K2+zJX9b3cC23tMZzh/a2jUUfoiJAHudsSPjAvP/PJ31Nc+27FFMbqZXhGQ50CBq8geq51O4PKQ==}
-
-  '@unocss/reset@0.62.4':
-    resolution: {integrity: sha512-CtxjeDgN39fY/eZDLIXN4wy7C8W7+SD+41AlzGVU5JwhcXmnb1XoDpOd2lzMxc/Yy3F5dIJt2+MRDj9RnpX9Ew==}
 
   '@unocss/reset@0.63.1':
     resolution: {integrity: sha512-gjSF0LeWwkNCYZ4Z/AnQXGCIOPUGL5Ll1IIDfwnKZeFGCj9QmcV1hki4xf/7N8mNHhfP0nYdJpdAfiznhKdkwQ==}
@@ -4082,8 +4079,6 @@ snapshots:
       '@unocss/core': 0.63.1
       '@unocss/preset-mini': 0.63.1
       '@unocss/rule-utils': 0.63.1
-
-  '@unocss/reset@0.62.4': {}
 
   '@unocss/reset@0.63.1': {}
 
