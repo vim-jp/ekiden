@@ -2023,6 +2023,14 @@
       "url": null,
       "githubUser": "mikoto2000",
       "issueNumber": 619
+    },
+    {
+      "title": "0.10 時代の Neovim Lua",
+      "date": "2024-10-11",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 629
     }
   ]
 }
