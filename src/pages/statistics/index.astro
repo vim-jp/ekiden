@@ -1,6 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
 import { getArticles } from "@/lib/article";
+import { joinURLWithTrailingSlash } from "@/lib/url.js";
 import RecordCard, { type RecordType } from "@/components/RecordCard.astro";
 import dayjs from "dayjs";
 
@@ -19,6 +20,19 @@ const runnersWithCount = runners.map((runner) => {
 const runnersWithArticles = [
   ...new Set(publishedArticles.map((article) => article.githubUser)),
 ];
+/** 最多投稿者 */
+const mostPostedRunner = runnersWithCount.reduce((prev, current) =>
+  prev.count > current.count ? prev : current,
+);
+const baseURL = joinURLWithTrailingSlash(
+  import.meta.env.SITE,
+  import.meta.env.BASE_URL,
+);
+const mostRunnersPage = joinURLWithTrailingSlash(
+  baseURL,
+  "runners",
+  mostPostedRunner.name,
+);
 
 const records: RecordType[] = [
   {
@@ -45,15 +59,10 @@ const records: RecordType[] = [
   },
   {
     title: "最多投稿者",
-    records: [
-      ...runnersWithCount.filter(
-        (runner) =>
-          runner.count ===
-          Math.max(...runnersWithCount.map((runner) => runner.count)),
-      ),
-    ].map((runner) => runner.name),
+    records: [mostPostedRunner.name],
     unit: "さん",
     enabledDigitHighlight: false,
+    href: mostRunnersPage,
   },
   {
     title: "経過日数",
@@ -70,7 +79,7 @@ const records: RecordType[] = [
 
 <Base slug="/statistics" title="Vim駅伝 - 統計">
   <h2
-    class="my-5 w-full text-center text-2xl text-ekiden-gray-500 font-ekiden-heading"
+    class="my-5 w-full text-center text-2xl text-ekiden-gray-500 font-bold font-ekiden-heading"
   >
     統計
   </h2>
@@ -82,6 +91,7 @@ const records: RecordType[] = [
           records={record.records}
           unit={record.unit}
           enabledDigitHighlight={record.enabledDigitHighlight}
+          href={record.href}
         />
       ))
     }
