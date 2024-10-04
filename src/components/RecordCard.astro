@@ -9,10 +9,17 @@ export type RecordType = {
    * @default true
    */
   enabledDigitHighlight?: boolean;
+  href?: string;
 };
 
 type Props = RecordType;
-const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
+const {
+  title,
+  records,
+  unit,
+  enabledDigitHighlight = true,
+  href,
+} = Astro.props;
 ---
 
 <div class="flex flex-col gap-2 sm:flex-row">
@@ -30,7 +37,7 @@ const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
       records.map((record) => {
         return (
           <div class="flex gap-2">
-            <div>
+            <a href={href ? href : undefined}>
               {enabledDigitHighlight ? (
                 <div class="flex items-center gap-2">
                   {[...record.toString()].map((digit) => (
@@ -50,7 +57,7 @@ const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
                   {record}
                 </span>
               )}
-            </div>
+            </a>
             <div class="self-end text-xl font-ekiden-base">{unit}</div>
           </div>
         );
@@ -58,3 +65,12 @@ const { title, records, unit, enabledDigitHighlight = true } = Astro.props;
     }
   </div>
 </div>
+
+<style>
+  a[href]:hover {
+    @apply text-ekiden-green-500;
+    & * {
+      @apply border-b-2 border-b-ekiden-green-500;
+    }
+  }
+</style>
