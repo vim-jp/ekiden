@@ -2033,6 +2033,14 @@
       "issueNumber": 629
     },
     {
+      "title": "NeoVimで翻訳したろ",
+      "date": "2024-10-14",
+      "runner": "mozumasu",
+      "url": "https://zenn.dev/mozumasu/articles/mozumasu-translate-in-vim",
+      "githubUser": "mozumasu",
+      "issueNumber": 632
+    },
+    {
       "title": "なごやvimについて仮",
       "date": "2024-10-21",
       "runner": "mimikun",
