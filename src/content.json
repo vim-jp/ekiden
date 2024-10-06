@@ -2009,10 +2009,10 @@
       "issueNumber": 616
     },
     {
-      "title": "Vim で挿入モードから抜けることなく直前の単語を UPPER CASE にする",
+      "title": "Vim でアルファベット大文字の単語を楽に打つ裏技",
       "date": "2024-10-07",
       "runner": "monaqa",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/2024-10-07-vim-insert-uppercase",
       "githubUser": "monaqa",
       "issueNumber": 618
     },
