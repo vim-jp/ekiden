@@ -40,7 +40,7 @@
     "@typescript-eslint/utils": "^8.8.0",
     "@types/node": "^22.7.4",
     "@unocss/eslint-config": "^0.63.1",
-    "@unocss/preset-web-fonts": "^0.63.1",
+    "@unocss/preset-web-fonts": "^0.63.3",
     "@unocss/reset": "^0.63.1",
     "astro-eslint-parser": "^1.0.3",
     "eslint": "^9.11.1",
