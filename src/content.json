@@ -2079,6 +2079,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 645
+    },
+    {
+      "title": "Meguro.vim #26 を開催しました",
+      "date": "2024-12-02",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2024/12/megurovim-26",
+      "githubUser": "thinca",
+      "issueNumber": 647
     }
   ]
 }
