@@ -2049,6 +2049,14 @@
       "issueNumber": 633
     },
     {
+      "title": "Vimで自動保存メモ",
+      "date": "2024-10-18",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/d4f89682bebd9f",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 646
+    },
+    {
       "title": "なごやvimについて仮",
       "date": "2024-10-21",
       "runner": "mimikun",
