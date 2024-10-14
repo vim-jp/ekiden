@@ -49,8 +49,8 @@ importers:
         specifier: ^9.12.0
         version: 9.12.0
       '@iconify-json/radix-icons':
-        specifier: ^1.2.0
-        version: 1.2.0
+        specifier: ^1.2.1
+        version: 1.2.1
       '@std/collections':
         specifier: npm:@jsr/std__collections@^1.0.6
         version: '@jsr/std__collections@1.0.6'
@@ -624,8 +624,8 @@ packages:
     resolution: {integrity: sha512-d2CGZR2o7fS6sWB7DG/3a95bGKQyHMACZ5aW8qGkkqQpUoZV6C0X7Pc7l4ZNMZkfNBf4VWNe9E1jRsf0G146Ew==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/radix-icons@1.2.0':
-    resolution: {integrity: sha512-HO2ydGjQG43tLy/X0BGb+4mJZZZ5KBAzTRGnwtPl+2uH48gv1o6Q4iA1PIJHU/8WkZ2cW4nibWzieztDer4nxg==}
+  '@iconify-json/radix-icons@1.2.1':
+    resolution: {integrity: sha512-glzHFq3Sj9QKUQG7u2dnlC+KPJGpGM1GhyUIrFFWhXqr9CZgkUPnF5n/6YlbCkYGMa+feSwdhwroLTfKvaAaVA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3504,7 +3504,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.3.0': {}
 
-  '@iconify-json/radix-icons@1.2.0':
+  '@iconify-json/radix-icons@1.2.1':
     dependencies:
       '@iconify/types': 2.0.0
 
