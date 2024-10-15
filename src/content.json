@@ -2081,6 +2081,14 @@
       "issueNumber": 645
     },
     {
+      "title": "WezTerm 上の Vim で ALT 系のマッピングを使いたい",
+      "date": "2024-10-28",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 658
+    },
+    {
       "title": "Meguro.vim #26 を開催しました",
       "date": "2024-12-02",
       "runner": "thinca",
