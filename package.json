@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/rss": "^4.0.7",
+    "@astrojs/rss": "^4.0.9",
     "@astrojs/svelte": "^5.7.2",
     "@fontsource/kaushan-script": "^5.1.0",
     "@fontsource/yuji-syuku": "^5.1.0",
