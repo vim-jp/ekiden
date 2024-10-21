@@ -2057,6 +2057,14 @@
       "issueNumber": 646
     },
     {
+      "title": "なんか書く",
+      "date": "2024-10-21",
+      "runner": "ryoppippi",
+      "url": null,
+      "githubUser": "ryoppippi",
+      "issueNumber": 660
+    },
+    {
       "title": "osyo-manga/vim-operator-stay-cursor に PR した",
       "date": "2024-10-23",
       "runner": "hokorobi",
