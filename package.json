@@ -32,7 +32,7 @@
     "svelte-chartjs": "^3.1.5"
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.2",
+    "@astrojs/ts-plugin": "^1.10.3",
     "@eslint/js": "^9.13.0",
     "@iconify-json/radix-icons": "^1.2.1",
     "@std/collections": "npm:@jsr/std__collections@^1.0.6",
