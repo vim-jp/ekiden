@@ -2089,6 +2089,14 @@
       "issueNumber": 658
     },
     {
+      "title": "Neovimを喋らせたろ",
+      "date": "2024-10-30",
+      "runner": "mozumasu",
+      "url": null,
+      "githubUser": "mozumasu",
+      "issueNumber": 672
+    },
+    {
       "title": "Meguro.vim #26 を開催しました",
       "date": "2024-12-02",
       "runner": "thinca",
