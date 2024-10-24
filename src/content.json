@@ -2073,10 +2073,10 @@
       "issueNumber": 634
     },
     {
-      "title": "なんか書くよ",
+      "title": "個人的にいいと思うVim_Neovimの始め方",
       "date": "2024-10-25",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://zenn.dev/wagomu/articles/20241025vim_ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 645
     },
