@@ -2129,6 +2129,14 @@
       "issueNumber": 676
     },
     {
+      "title": "qfscope.nvimでtelescope.nvimの検索結果を絞り込む",
+      "date": "2024-11-11",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 686
+    },
+    {
       "title": "Meguro.vim #26 を開催しました",
       "date": "2024-12-02",
       "runner": "thinca",
