@@ -2137,6 +2137,14 @@
       "issueNumber": 686
     },
     {
+      "title": "dpp.vimの設定でハマったアホな話",
+      "date": "2024-11-13",
+      "runner": "ArcCosine",
+      "url": "https://looxu.blogspot.com/2024/11/dppvim.html",
+      "githubUser": "ArcCosine",
+      "issueNumber": 687
+    },
+    {
       "title": "Meguro.vim #26 を開催しました",
       "date": "2024-12-02",
       "runner": "thinca",
