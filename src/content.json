@@ -2167,6 +2167,14 @@
       "url": "https://thinca.hatenablog.com/entry/2024/12/megurovim-26",
       "githubUser": "thinca",
       "issueNumber": 647
+    },
+    {
+      "title": "lazyvimの遅延読み込み (lazyvim load lazy)",
+      "date": "2024-12-04",
+      "runner": "tositada",
+      "url": null,
+      "githubUser": "tositada17",
+      "issueNumber": 697
     }
   ]
 }
