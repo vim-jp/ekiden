@@ -2153,7 +2153,7 @@
       "issueNumber": 695
     },
     {
-      "title": ":termianlの中からNeovimにコマンドの終了を通知すると便利",
+      "title": ":terminalの中からNeovimにコマンドの終了を通知すると便利",
       "date": "2024-11-18",
       "runner": "kyoh86",
       "url": null,
