@@ -2169,6 +2169,14 @@
       "issueNumber": 696
     },
     {
+      "title": "mason.nvim にインストールしたいパッケージを追加する",
+      "date": "2024-11-22",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 708
+    },
+    {
       "title": "Meguro.vim #26 を開催しました",
       "date": "2024-12-02",
       "runner": "thinca",
