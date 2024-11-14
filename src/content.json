@@ -2153,10 +2153,10 @@
       "issueNumber": 695
     },
     {
-      "title": ":terminalの中からNeovimにコマンドの終了を通知すると便利",
+      "title": ":terminalのZSHからNeovimにコマンドの終了を通知すると便利",
       "date": "2024-11-18",
       "runner": "kyoh86",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/2d192656cad3e0",
       "githubUser": "kyoh86",
       "issueNumber": 698
     },
