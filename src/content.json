@@ -2185,6 +2185,14 @@
       "issueNumber": 709
     },
     {
+      "title": "mini.aiで日本語の括弧の中身をrepeatableに編集する",
+      "date": "2024-11-27",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 711
+    },
+    {
       "title": "Meguro.vim #26 を開催しました",
       "date": "2024-12-02",
       "runner": "thinca",
