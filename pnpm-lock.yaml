@@ -24,8 +24,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       '@unocss/reset':
-        specifier: ^0.64.0
-        version: 0.64.0
+        specifier: ^0.64.1
+        version: 0.64.1
       astro:
         specifier: ^4.16.10
         version: 4.16.10(@types/node@22.9.0)(rollup@4.24.0)(typescript@5.6.3)
@@ -1158,8 +1158,8 @@ packages:
   '@unocss/preset-wind@0.64.1':
     resolution: {integrity: sha512-IpAfsi2tI4elb2uZzc3BSZgbi0axgwgJLPFW0BtZQe4u1J+zrUIOvjCu/2jmiB7LR05IShCyMKIz9Vi4EJm+gQ==}
 
-  '@unocss/reset@0.64.0':
-    resolution: {integrity: sha512-75SiDtRX/mtg/7GWeoLfDfdWF4z59zF1XesL46FNd2hDZL36a+SZHIKB/J+PPzLyX9irqm3mAETS2PNfynuJpA==}
+  '@unocss/reset@0.64.1':
+    resolution: {integrity: sha512-xx36rWcrIpyvI1l/v+szQLrxWAgsmk6GH85QQ5iE1qccQbL9IlhWHB1KEd3cRbJ1TFeZ2Mzca/qsjg0LU9ZVnA==}
 
   '@unocss/reset@0.64.1':
     resolution: {integrity: sha512-xx36rWcrIpyvI1l/v+szQLrxWAgsmk6GH85QQ5iE1qccQbL9IlhWHB1KEd3cRbJ1TFeZ2Mzca/qsjg0LU9ZVnA==}
@@ -4151,7 +4151,7 @@ snapshots:
       '@unocss/preset-mini': 0.64.1
       '@unocss/rule-utils': 0.64.1
 
-  '@unocss/reset@0.64.0': {}
+  '@unocss/reset@0.64.1': {}
 
   '@unocss/reset@0.64.1': {}
 
