@@ -2207,6 +2207,14 @@
       "url": null,
       "githubUser": "tositada17",
       "issueNumber": 697
+    },
+    {
+      "title": "neovimプラグインの作成 lua",
+      "date": "2024-12-11",
+      "runner": "tositada",
+      "url": null,
+      "githubUser": "tositada17",
+      "issueNumber": 722
     }
   ]
 }
