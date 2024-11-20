@@ -1,0 +1,29 @@
+---
+import { joinURLWithTrailingSlash } from "@/lib/url.js";
+import * as ufo from "ufo";
+
+type Props = { slug: string; href: string; invert?: boolean };
+const { slug, href, invert = false } = Astro.props;
+
+/* path が一致しないかを判定。slash のある無しは区別しない */
+const isLink = !ufo.isEqual(slug, href);
+---
+
+<a
+  class="flex flex-col py-2"
+  href={isLink ? joinURLWithTrailingSlash("/ekiden", href) : undefined}
+>
+  <slot />
+  <span
+    class:list={[
+      !isLink
+        ? [
+            "view-transition--nav-underline",
+            invert ? "bg-ekiden-white-500" : "bg-ekiden-green-500",
+          ]
+        : "bg-transparent",
+      "h-0.5",
+      "mxa",
+      "w-full",
+    ]}></span>
+</a>

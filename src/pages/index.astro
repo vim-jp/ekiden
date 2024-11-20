@@ -1,8 +1,11 @@
 ---
-import dayjs from "dayjs";
-import { getArticles } from "@/lib/article.js";
+import { Picture } from "astro:assets";
 import Articles from "@/components/Articles.astro";
 import Base from "@/layouts/Base.astro";
+import { getArticles } from "@/lib/article.js";
+import dayjs from "dayjs";
+import kvImage from "../assets/key-visual.webp";
+import ConversionButton from "../components/ConversionButton.astro";
 
 const articles = getArticles();
 
@@ -19,64 +22,44 @@ const newestArticle = getArticles({ isPublished: true }).at(-1);
     href={`${import.meta.env.BASE_URL}rss.xml`}
   />
 
-  <section class="py-4">
-    <h2
-      class="mb-2 mt-4 text-2xl text-ekiden-gray-500 font-bold font-ekiden-heading"
+  <div class="relative">
+    <Picture src={kvImage} formats={["avif", "webp"]} alt="Vim-JP" />
+    <div
+      class="[text-shadow:_0_4px_6px_rgb(0_0_0_/_60%)] absolute inset-0 content-center p-l-3rem text-5xl text-ekiden-white-500 font-bold font-ekiden-heading"
     >
-      Vim 駅伝とは
-    </h2>
-    <p>
-      Vimmerを中心に技術的なコンテンツを持ち寄り、リレー形式で記事をリンクする営みです。
-      GitHub のアカウントさえあれば誰でも投稿できます。
-      小さなノウハウ、ちょっとした気づき、作ったプラグイン、開発の苦労話など、
-      Vim またはテクノロジーに関連していればどんな些細な内容でもかまいません。
-      皆さんの手で、Vim 駅伝を盛り上げていきましょう！
-    </p>
-    <h2
-      class="mb-2 mt-4 text-2xl text-ekiden-gray-500 font-bold font-ekiden-heading"
-    >
-      参加方法
-    </h2>
-    <p>
-      本ページの下のスケジュールのうち、「募集中」となっている日付が登録可能です。好きな日を選んで「参加登録」をクリックしてください。
-      すると GitHub の issue 作成ページに遷移しますので、タイトル等を埋め issue
-      を作成すれば登録完了です。
-    </p>
-    <p>
-      詳しくは<a
-        class="text-blue-500"
-        href="https://thinca.hatenablog.com/entry/vim-ekiden-is-launched"
-        >Vim 駅伝初日の記事</a
-      >を参照してください。
-    </p>
-    <h2
-      class="mb-2 mt-4 text-2xl text-ekiden-gray-500 font-bold font-ekiden-heading"
-    >
-      注意事項
-    </h2>
-    <ul>
-      <li>
-        個人攻撃や差別的な内容を含む記事、公序良俗に反する不適切な記事の投稿を禁止します。
-        明らかに不適切と判断された記事については、GitHub
-        経由での通告のもと本ページからリンクを削除する場合があります。
-      </li>
-    </ul>
-  </section>
+      Vimで<br />技術を繋ぐ
+    </div>
+  </div>
+  <div
+    class="flex flex-row items-center gap-x-4 bg-ekiden-green-500 p-4 text-ekiden-white-500 font-bold"
+  >
+    <ConversionButton href="#first-slot" />
+    あなたもVimやテクノロジーに関する記事を書いて、リレーを繋ごう！
+  </div>
   <section
-    class="news mt-3 border-2 border-ekiden-gray-500 rounded-xl p-5 text-ekiden-gray-500"
+    class="news mt-3 border border-ekiden-black-500 rounded p-3 text-ekiden-black-500"
   >
     {
       newestArticle && (
         <p>
-          <b>News</b>:{dayjs(newestArticle.date).format("M/D")}
-          の記事 「
-          <a class="text-blue-500" href={`#article-${newestArticle.date}`}>
+          <b>News</b>: {dayjs(newestArticle.date).format("M/D")}
+          の記事
+          <a
+            class="text-ekiden-green-500 font-bold underline"
+            href={`#article-${newestArticle.date}`}
+          >
             {newestArticle.title}
           </a>
-          」 が公開されました！
+          が公開されました！
         </p>
       )
     }
   </section>
   <Articles articles={articles} />
 </Base>
+
+<style>
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+</style>

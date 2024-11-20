@@ -1,5 +1,8 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import { Picture } from "astro:assets";
+import logoImage from "../assets/vim-jp-icon.png";
+import ConversionButton from "./ConversionButton.astro";
+import PageLink from "./PageLink.astro";
 
 type Props = { slug: string };
 
@@ -7,13 +10,30 @@ const { slug } = Astro.props;
 ---
 
 <div
-  class="w-full bg-ekiden-green-500 text-ekiden-white-500 font-ekiden-heading"
+  class="w-full content-center border-b-4 border-ekiden-green-500 text-ekiden-green-500"
 >
-  <h1 class="py-3 text-center text-4xl"><a href="/ekiden/">Vim 駅伝</a></h1>
-  <nav class="flex flex-col justify-center pb-2 text-center md:flex-row">
-    <HeaderLink slug={slug} href="/">トップページ</HeaderLink>
-    <HeaderLink slug={slug} href="/archives/">アーカイブ</HeaderLink>
-    <HeaderLink slug={slug} href="/ranking/">ランキング</HeaderLink>
-    <HeaderLink slug={slug} href="/statistics/">統計</HeaderLink>
-  </nav>
+  <div
+    class="mx-auto max-w-screen-lg flex flex-row flex-wrap items-center gap-2 px-3 py-2"
+  >
+    <Picture
+      src={logoImage}
+      formats={["avif", "webp"]}
+      alt="Vim-JP"
+      class="h-[64px] w-[64px]"
+    />
+    <h1 class="text-center text-nowrap text-4xl font-bold font-ekiden-heading">
+      <a href="/ekiden/">Vim駅伝</a>
+    </h1>
+    <nav
+      class="flex grow-x flex-row flex-wrap gap-4 py-4 text-center text-nowrap font-bold"
+    >
+      <PageLink slug={slug} href="/">トップページ</PageLink>
+      <PageLink slug={slug} href="/archives/">アーカイブ</PageLink>
+      <PageLink slug={slug} href="/ranking/">ランキング</PageLink>
+      <PageLink slug={slug} href="/statistics/">統計</PageLink>
+    </nav>
+    <div>
+      <ConversionButton href="#first-slot" />
+    </div>
+  </div>
 </div>

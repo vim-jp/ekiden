@@ -51,6 +51,9 @@ importers:
       '@iconify-json/radix-icons':
         specifier: ^1.2.1
         version: 1.2.1
+      '@iconify-json/tabler':
+        specifier: ^1.2.8
+        version: 1.2.8
       '@std/collections':
         specifier: npm:@jsr/std__collections@^1.0.6
         version: '@jsr/std__collections@1.0.9'
@@ -635,6 +638,9 @@ packages:
 
   '@iconify-json/radix-icons@1.2.1':
     resolution: {integrity: sha512-glzHFq3Sj9QKUQG7u2dnlC+KPJGpGM1GhyUIrFFWhXqr9CZgkUPnF5n/6YlbCkYGMa+feSwdhwroLTfKvaAaVA==}
+
+  '@iconify-json/tabler@1.2.8':
+    resolution: {integrity: sha512-xvi/UKhLiFRnutSo6xuHxvOGmskYEoC2St4WDVsU9WAW1DRG1EkBUk/Zy1TpeSsBKMQfyqtdjjx9Cf4ZezOK2w==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3543,6 +3549,10 @@ snapshots:
   '@humanwhocodes/retry@0.4.1': {}
 
   '@iconify-json/radix-icons@1.2.1':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/tabler@1.2.8':
     dependencies:
       '@iconify/types': 2.0.0
 

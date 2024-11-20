@@ -1,130 +1,66 @@
 ---
 import dayjs from "dayjs";
+import ArticleMonth from "./ArticleMonth.astro";
 
 export type ArticleProps = {
-  title: string;
   date: string;
+  firstDay: boolean;
+
+  title: string;
   runner: string;
   url: string | null;
-  firstDay?: boolean;
-  opened?: boolean;
-  githubUser?: string;
-  issueNumber?: number;
 };
 
 type Props = ArticleProps;
 
-const { title, date, runner, url, firstDay, opened } = Astro.props;
-
-const published = dayjs() >= dayjs(date);
+const { firstDay, title, date, runner, url } = Astro.props;
 ---
 
 <div class="container" id={`article-${date}`}>
-  {
-    firstDay && (
-      <div class="month">
-        <div class="date opened">{dayjs(date).month() + 1}月</div>
-      </div>
-    )
-  }
-  <a href={published || opened ? url : undefined} class="article">
-    <div class:list={["date", { opened, published }]}>
+  {firstDay && <ArticleMonth month={dayjs(date).month() + 1} />}
+  <a href={url} class="article">
+    <div class="line">
+      <div class="marker"></div>
+    </div>
+    <div class="date">
       {dayjs(date).date()}日
     </div>
     <div class="metadata">
-      <div class="runner">{runner}</div>
       <div class="title">{title}</div>
+      <div class="pb-1 pl-3 text-sm">by {runner}</div>
     </div>
   </a>
 </div>
 
 <style>
-  :root {
-    --light-gray: #666;
-    --text-black: #333;
-  }
-  .opened {
-    background: var(--light-gray) !important;
-  }
-
-  .published {
-    background: #2a9bdd !important;
-    box-shadow: 2px 2px 2px #444;
-  }
-
-  .container {
-    --date-r: 20px;
-    --date-my: 40px;
-    --date-mx: 40px;
-    --date-fs: 1rem;
-    --timeline-w: 10px;
-    --timeline-m: calc(var(--date-r) - var(--timeline-w) / 2);
-    --runner-h: 30px;
-    --triangle-h: calc(var(--date-my) + var(--date-r) - var(--runner-h));
-    --triangle-w: calc(var(--date-mx) + var(--date-r));
-    --triangle-a: calc(0deg - atan2(var(--triangle-h), var(--triangle-w)));
-    --triangle-l: calc(var(--triangle-w) / cos(var(--triangle-a)));
-    @apply relative overflow-hidden;
-  }
-
-  .container::before {
-    content: " ";
-    background: var(--light-gray);
-    width: var(--timeline-w);
-    z-index: -1;
-    left: calc(var(--date-r) + var(--date-mx) - var(--timeline-w) / 2);
-    @apply absolute min-h-screen;
-  }
-
-  .month {
-    --date-r: 40px;
-    --date-mx: 20px;
-    --date-my: 20px;
-    --date-fs: 1.4rem;
-  }
-
-  .article,
-  .month {
-    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-    @apply relative flex items-start overflow-hidden;
+  .article {
+    @apply flex flex-row items-center gap-2 pr-0 pl-16;
+    --bg-color: theme("colors.ekiden.white.500");
+    --fg-color: theme("colors.ekiden.green.500");
+    --fg-black: theme("colors.ekiden.black.500");
+    background: var(--bg-color);
+    color: var(--fg-black);
   }
 
   .article:hover {
-    --date-r: 30px;
-    --date-mx: 30px;
-    --date-my: 30px;
-    --date-fs: 1.4rem;
+    --bg-color: theme("colors.ekiden.green.500");
+    --fg-color: theme("colors.ekiden.white.500");
+    --fg-black: theme("colors.ekiden.white.500");
   }
 
+  .line {
+    @apply py-4 self-stretch flex flex-row items-center;
+    background: var(--fg-color);
+  }
+  .marker {
+    @apply h-6 w-6 rounded-3xl;
+    background: var(--bg-color);
+  }
   .date {
-    font-family: "Kaushan Script", "Yuji Syuku", serif;
-    background: #11405b;
-    font-size: var(--date-fs);
-    min-width: calc(var(--date-r) * 2);
-    min-height: calc(var(--date-r) * 2);
-    margin: var(--date-my) var(--date-mx);
-    transition: all 0.3s;
-    @apply flex items-center justify-center rounded-full text-white;
+    @apply min-w-10 w-10 text-right font-bold;
+    color: var(--fg-color);
   }
-
-  .article .date::after {
-    content: " ";
-    background: var(--text-black);
-    width: var(--triangle-l);
-    transform: rotate(var(--triangle-a)) translate(50%, 0);
-    z-index: -1;
-    @apply absolute h-px;
-  }
-
-  .metadata {
-    min-height: calc(var(--date-my) * 2 + var(--date-r) * 2);
-    color: var(--text-black);
-    @apply w-full;
-  }
-
-  .runner {
-    height: var(--runner-h);
-    border-bottom: 1px var(--text-black) solid;
-    @apply flex items-end;
+  .title {
+    @apply pt-1;
   }
 </style>

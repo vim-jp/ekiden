@@ -1,5 +1,24 @@
+---
+import PageLink from "./PageLink.astro";
+const { slug } = Astro.props;
+---
+
 <footer class="w-full bg-ekiden-green-500 px-8 py-4 text-ekiden-white-500">
-  <div class="mx-auto h-10 w-full md:w-2/3">
+  <div
+    class="mx-auto max-w-screen-lg flex flex-row flex-wrap items-center gap-2 px-3 py-2"
+  >
+    <h1 class="text-center text-nowrap text-2xl font-bold font-ekiden-heading">
+      <a href="/ekiden/">Vim駅伝</a>
+    </h1>
+    <nav
+      class="flex grow-x flex-row flex-wrap gap-4 py-4 text-center text-nowrap font-bold"
+    >
+      <PageLink slug={slug} invert={true} href="/">トップページ</PageLink>
+      <PageLink slug={slug} invert={true} href="/archives/">アーカイブ</PageLink
+      >
+      <PageLink slug={slug} invert={true} href="/ranking/">ランキング</PageLink>
+      <PageLink slug={slug} invert={true} href="/statistics/">統計</PageLink>
+    </nav>
     <a href="https://github.com/vim-jp/ekiden">
       <div class="flex flex-row items-center">
         <span i-radix-icons-github-logo w-7 h-7></span>
@@ -7,18 +26,23 @@
     </a>
   </div>
 
-  <div class="mx-auto w-full md:w-2/3">
+  <div
+    class="mx-auto max-w-screen-lg flex flex-row items-center gap-2 px-3 py-2 align-middle"
+  >
     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
       ><img
-        class="mb-4 border-0"
+        class="max-h-[31px] max-w-[88px] min-h-[31px] min-w-[88px] border-0"
         alt="クリエイティブ・コモンズ・ライセンス"
         src="https://i.creativecommons.org/l/by/4.0/88x31.png"
       /></a
-    >この 作品 は <a
-      rel="license"
-      href="http://creativecommons.org/licenses/by/4.0/"
-      >クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a
-    >の下に提供されています。
-    ただし、各記事の内容やタイトルの権利は執筆者に帰属します。
+    >
+    <div>
+      この 作品 は <a
+        rel="license"
+        href="http://creativecommons.org/licenses/by/4.0/"
+        >クリエイティブ・コモンズ 表示 4.0 国際 ライセンス</a
+      >の下に提供されています。
+      ただし、各記事の内容やタイトルの権利は執筆者に帰属します。
+    </div>
   </div>
 </footer>

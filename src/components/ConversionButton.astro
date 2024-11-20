@@ -1,0 +1,36 @@
+---
+type Props = {
+  href: string;
+  mini?: boolean;
+};
+const { href, mini = false } = Astro.props;
+---
+
+<a
+  {href}
+  aria-label="参加する"
+  class:list={[
+    "flex",
+    "flex-row",
+    "flex-nowrap",
+    "cursor-pointer",
+    "items-center",
+    "gap-x-1",
+    "whitespace-nowrap",
+    "border",
+    "border-b-4",
+    "border-ekiden-green-900",
+    "rounded",
+    "bg-ekiden-white-500",
+    "text-ekiden-green-500",
+    "font-bold",
+    "hover:border-ekiden-green-500",
+    "hover:bg-ekiden-green-900",
+    ...(mini
+      ? ["px-2", "py-1", "text-sm"]
+      : ["px-4", "py-2", "drop-shadow-md", "text-lg"]),
+  ]}
+>
+  <div class="i-tabler-hand-finger"></div>
+  参加する
+</a>
