@@ -1,0 +1,159 @@
+---
+import Base from "@/layouts/Base.astro";
+---
+
+<Base title="Vim 駅伝 - Vim 駅伝について" slug="/ranking">
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">Vim駅伝について</h2>
+  <div class="my-4">
+    <p>
+      <a href="/ekiden/">Vim駅伝</a>とは、 Vimmerを中心に集まっている<a
+        href="https://vim-jp.org/">vim-jp</a
+      >コミュニティが運営する、
+      <strong>リレー形式で記事のリンクを連ねる</strong
+      >アドベントカレンダーのような営みです。
+    </p>
+    <p>
+      あらかじめ設けられた日付の枠に対して、参加者が思い思いの記事を用意して、
+      URLリンクを載せていくことで、さながら駅伝のようにバトンを繋いでいます。
+    </p>
+  </div>
+  <div class="my-4">
+    <p>
+      誰でも参加することができますが、GitHubのアカウントが参加申し込みに必要です。ただし、著者名はGitHubアカウントの名前とは別に設定することができます。
+    </p>
+    <p>
+      駅伝というコンセプトのもと、区間賞よろしく季節ごとに<a href="/ranking/"
+        >投稿数ランキング</a
+      >が集計され、特に多くの記事を載せてくださった方は、ランキングにその名を連ねることができます。
+    </p>
+  </div>
+  <div class="my-4">
+    <p>
+      （事の始まりについて気になるかたは<a
+        href="https://thinca.hatenablog.com/entry/vim-ekiden-is-launched"
+        >Vim駅伝1日目、発案者のthincaさんの記事</a
+      >をぜひ読んでみてください）
+    </p>
+  </div>
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
+    どんなものを書けば良いの？
+  </h2>
+  <div class="my-4">
+    <p>
+      基本的には、Vimまたはテクノロジーに関連した内容を書けば、なんでも構いません。
+    </p>
+    <ul class="list-disc list-inside">
+      <li>
+        誰かに教えてもらった小さなTIPS、自分だけのノウハウ、ちょっとした気づき
+      </li>
+      <li>日頃使っている、あるいは自分で作ったプラグインの紹介</li>
+      <li>Emacs、VSCode、などなど他のテキストエディタの話</li>
+      <li>普段の開発の苦労話</li>
+      <li>Vimを歌ってみた、Vimを踊ってみた、Vimになってみた話</li>
+    </ul>
+    <p>などなど。</p>
+  </div>
+  <div class="my-4">
+    <p>分量も一切自由です。</p>
+    <p>
+      ショートテキストブログのような、140文字程度のちょっとしたつぶやきでも、数万文字を超える超大作でもかまいません。ですが、長くなる場合はシリーズ化すると読み手に優しいかもしれません。
+    </p>
+  </div>
+  <div class="my-4">
+    <p>
+      コンテンツは、インターネット上で閲覧可能な場所に公開してください。コンテンツホスティングはしていない（URLを集めているだけ）ため、
+    </p>
+    <ul class="list-disc list-inside">
+      <li>技術記事の投稿サービス</li>
+      <li>自前のブログ</li>
+      <li>スニペットサービス</li>
+    </ul>
+    など、公開コンテンツとして載せたもののURLを寄せてください。
+  </div>
+  <div class="my-4">
+    <p>記事の公開は可能な限り当日の午前中に行ってください</p>
+  </div>
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
+    参加するためにはどうすればいいの？
+  </h2>
+  <div class="my-4">
+    <p>
+      <a href="/ekiden/">スケジュール</a
+      >のうち、「募集中」となっている日付から「参加する」ボタンをクリックしてください。GitHubのIssue作成画面（テンプレート付き）にジャンプします。
+    </p>
+    <p>フォーマットに従ってIssueを作成してください。</p>
+  </div>
+  <div class="my-4">
+    <p>
+      Issueタイトルに公開年月日が埋め込まれています。そのままにしてください。
+    </p>
+    <p>
+      記事のタイトルは仮のものを設定してください。公開日までに正式なものに書き換えれば大丈夫です。
+    </p>
+    <p>
+      公開先がすでに決まっている場合はそのURLを記入してください。こちらも空欄にしておいて、公開日までに正式なものに書き換えれば問題ありません。
+    </p>
+  </div>
+  <div class="my-4">
+    <p>
+      Issueを作ると、スケジュールに公開予定の記事として反映されます。あとから決まった内容は、IssueのDescriptionを編集すれば同じくスケジュールに反映されます。
+    </p>
+    <p>
+      IssueのDescriptionを編集する際は、内容のフォーマットを崩さないように注意してください。
+    </p>
+  </div>
+  <div class="my-4">
+    <p>
+      記事が公開された場合は、その当日にIssueが自動でCloseされます。公開されていない場合は、Issueにメンションつきのコメントにより通知されますので公開を急ぎましょう。
+    </p>
+  </div>
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
+    参加をキャンセルしたいんだけど…
+  </h2>
+  <div class="my-4">
+    <p>
+      参加登録したものの、やはりキャンセルしたい、という場合はIssueを`Close as
+      not planned`でCloseしてください。
+    </p>
+    <p>
+      スケジュール上の予定がキャンセルされ、再び参加を受け付けられるようになります。
+    </p>
+  </div>
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">注意事項！</h2>
+  <div class="my-4">
+    <p>
+      個人攻撃や差別的な内容を含む記事、公序良俗に反する不適切な記事の投稿を禁止します。
+    </p>
+    <p>
+      明らかに不適切と判断された記事については、GitHub経由での通告のうえ、本ページからリンクを削除する場合があります。
+    </p>
+  </div>
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
+    運営へのコントリビュートも募集中です
+  </h2>
+  <div class="my-4">
+    <p>
+      Webサイトの整備や参加希望者への案内する人員は、いつでも不足しています。こちらの運営自体にも参加可能ですので、
+    </p>
+    <ul class="list-disc list-inside">
+      <li>vim-jp Slack内の #event-vim-ekiden</li>
+      <li>GitHubリポジトリのIssue</li>
+    </ul>
+    <p>などからご意見、リクエストを頂ければ幸いです。</p>
+  </div>
+</Base>
+
+<style>
+  a {
+    @apply font-bold underline;
+  }
+  a:link {
+    @apply text-ekiden-green-500;
+  }
+  a:visited {
+    @apply text-ekiden-gray-500;
+  }
+  a:hover {
+    @apply bg-ekiden-green-500 text-ekiden-white-500;
+  }
+</style>
