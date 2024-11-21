@@ -18,15 +18,18 @@ const { firstDay, title, date, runner, url } = Astro.props;
 
 <div class="container" id={`article-${date}`}>
   {firstDay && <ArticleMonth month={dayjs(date).month() + 1} />}
-  <a href={url} class="article">
-    <div class="line">
-      <div class="marker"></div>
+  <a
+    href={url}
+    class="article flex flex-row items-center gap-2 bg-[--bg-color] pl-16 pr-0 text-[--fg-black]"
+  >
+    <div class="flex flex-row items-center self-stretch bg-[--fg-color] py-4">
+      <div class="h-6 w-6 rounded-3xl bg-[--bg-color]"></div>
     </div>
-    <div class="date">
+    <div class="min-w-10 w-10 text-right text-[--fg-color] font-bold">
       {dayjs(date).date()}日
     </div>
     <div class="metadata">
-      <div class="title">{title}</div>
+      <div class="pt-1">{title}</div>
       <div class="pb-1 pl-3 text-sm">by {runner}</div>
     </div>
   </a>
@@ -34,33 +37,14 @@ const { firstDay, title, date, runner, url } = Astro.props;
 
 <style>
   .article {
-    @apply flex flex-row items-center gap-2 pr-0 pl-16;
     --bg-color: theme("colors.ekiden.white.500");
     --fg-color: theme("colors.ekiden.green.500");
     --fg-black: theme("colors.ekiden.black.500");
-    background: var(--bg-color);
-    color: var(--fg-black);
   }
 
   .article:hover {
     --bg-color: theme("colors.ekiden.green.500");
     --fg-color: theme("colors.ekiden.white.500");
     --fg-black: theme("colors.ekiden.white.500");
-  }
-
-  .line {
-    @apply py-4 self-stretch flex flex-row items-center;
-    background: var(--fg-color);
-  }
-  .marker {
-    @apply h-6 w-6 rounded-3xl;
-    background: var(--bg-color);
-  }
-  .date {
-    @apply min-w-10 w-10 text-right font-bold;
-    color: var(--fg-color);
-  }
-  .title {
-    @apply pt-1;
   }
 </style>
