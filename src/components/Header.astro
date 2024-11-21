@@ -13,16 +13,18 @@ const { slug } = Astro.props;
   class="w-full content-center border-b-4 border-ekiden-green-500 text-ekiden-green-500"
 >
   <div
-    class="mx-auto max-w-screen-lg flex flex-row flex-wrap items-center gap-2 px-3 py-2"
+    class="mx-auto max-w-screen-lg flex flex-row flex-wrap items-center gap-3 px-3 py-2"
   >
-    <Picture
-      src={logoImage}
-      formats={["avif", "webp"]}
-      alt="Vim-JP"
-      class="h-[64px] w-[64px]"
-    />
     <h1 class="text-center text-nowrap text-4xl font-bold font-ekiden-heading">
-      <a href="/ekiden/">Vim駅伝</a>
+      <a class="flex flex-row items-center gap-2" href="/ekiden/">
+        <Picture
+          src={logoImage}
+          formats={["avif", "webp"]}
+          alt="Vim-JP"
+          class="h-[64px] w-[64px]"
+        />
+        Vim駅伝
+      </a>
     </h1>
     <nav
       class="flex grow-x flex-row flex-wrap gap-4 py-4 text-center text-nowrap font-bold"
