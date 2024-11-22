@@ -20,8 +20,8 @@ export default defineConfig({
     presetWebFonts({
       provider: "none", //TODO: google fontsからfetchできるようにしたい https://github.com/unocss/unocss/issues/4146
       fonts: {
-        "ekiden-heading": ["Kaushan Script", "Yuji Syuku", "serif"],
-        "ekiden-base": ["sans-serif"],
+        "ekiden-heading": ["Noto Serif JP", "serif"],
+        "ekiden-base": ["Noto Sans JP", "sans-serif"],
         "ekiden-mono": ["DejaVu Sans Mono", "monospace"],
       },
     }), // web font を使うための設定。 https://unocss.dev/presets/web-fonts
@@ -37,25 +37,24 @@ export default defineConfig({
       colors: {
         ekiden: {
           black: {
-            500: "#333",
+            500: "#222222",
           },
           gray: {
             500: "#666",
+            600: "#979381",
           },
           green: {
             500: "#477745",
             600: "#97C795",
+            900: "#C4DFC3",
           },
           blue: {
             500: "#2a9bdd",
           },
           white: {
-            500: "#efefef",
+            500: "#FDFBF7",
           },
         },
       },
     }),
-  shortcuts: {
-    fcol: "flex flex-col",
-  },
 });

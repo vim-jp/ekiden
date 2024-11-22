@@ -1,0 +1,35 @@
+---
+import dayjs from "dayjs";
+import ArticleMonth from "./ArticleMonth.astro";
+import ConversionButton from "./ConversionButton.astro";
+
+export type ArticleSlotProps = {
+  date: string;
+  firstDay: boolean;
+  firstSlot: boolean;
+};
+
+type Props = ArticleSlotProps;
+
+const { date, firstDay, firstSlot } = Astro.props;
+const href = `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${date}`;
+---
+
+<div class="container" id={firstSlot ? "first-slot" : undefined}>
+  {firstDay && <ArticleMonth month={dayjs(date).month() + 1} />}
+  <div
+    class="flex flex-row items-center gap-2 bg-ekiden-green-500 pr-0 text-ekiden-white-500"
+  >
+    <div class="min-w-14 w-14 text-right text-sm">(未定)</div>
+    <div class="self-stretch bg-ekiden-white-500 py-4">
+      <div class="h-6 w-6 rounded-3xl bg-ekiden-green-500"></div>
+    </div>
+    <div class="min-w-10 w-10 text-right text-ekiden-white-500 font-bold">
+      {dayjs(date).date()}日
+    </div>
+    <div class="flex flex-row items-center gap-2 font-bold">
+      投稿者募集中！
+      <ConversionButton {href} mini={true} />
+    </div>
+  </div>
+</div>

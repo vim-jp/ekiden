@@ -1,9 +1,12 @@
 ---
-import Article, { type ArticleProps } from "./Article.astro";
 import dayjs from "dayjs";
+import Article, { type ArticleProps } from "./Article.astro";
+import ArticleBooked from "./ArticleBooked.astro";
+import ArticleSlot from "./ArticleSlot.astro";
+import type { ArticleSlotProps } from "./ArticleSlot.astro";
 
 type Props = {
-  articles: ArticleProps[];
+  articles: Omit<ArticleProps, "firstDay">[];
 };
 
 let initialDay = dayjs().subtract(1, "M");
@@ -31,28 +34,55 @@ switch (_initalDay) {
 }
 
 initialDay = initialDay.add(diff, "d");
+type ArticleEntry = {
+  state: "published" | "booked";
+  article: ArticleProps;
+};
+type ArticleSlotEntry = {
+  state: "empty";
+  article: ArticleSlotProps;
+};
+const entries: (ArticleEntry | ArticleSlotEntry)[] = [];
 let today = initialDay;
 let yesterday = initialDay.subtract(1, "M");
-const articles = [];
+let firstSlot = true;
 while (initialDay.add(2, "M") >= today) {
-  let article: ArticleProps = {
-    opened: true,
-    runner: "募集中",
-    title: "記事を投稿する",
-    date: today.format("YYYY-MM-DD"),
-    url: `https://github.com/vim-jp/ekiden/issues/new?labels=article&template=article.yml&title=${today.format(
-      "YYYY-MM-DD",
-    )}`,
-  };
-  article =
-    Astro.props.articles.find(
-      ({ date }) => date === today.format("YYYY-MM-DD"),
-    ) ?? article;
-  article.firstDay = today.month() !== yesterday.month();
-  articles.push(article);
+  const todayStr = today.format("YYYY-MM-DD");
+  const article = Astro.props.articles.find(({ date }) => date === todayStr);
+  const entry: ArticleEntry | ArticleSlotEntry = article
+    ? {
+        state: today > dayjs() ? ("booked" as const) : ("published" as const),
+        article: {
+          ...article,
+          date: todayStr,
+          firstDay: today.month() !== yesterday.month(),
+        },
+      }
+    : {
+        state: "empty" as const,
+        article: {
+          date: todayStr,
+          firstDay: today.month() !== yesterday.month(),
+          firstSlot,
+        },
+      };
+  firstSlot = firstSlot && entry.state !== "empty";
+  entries.push(entry);
   yesterday = today;
   today = today.add(today.day() >= 4 ? 3 : 2, "d");
 }
 ---
 
-{articles.map((article) => <Article {...article} />)}
+{
+  entries.map((entry) =>
+    entry.state === "published" ? (
+      <Article {...entry.article} />
+    ) : entry.state === "booked" ? (
+      <ArticleBooked {...entry.article} />
+    ) : entry.state == "empty" ? (
+      <ArticleSlot {...entry.article} />
+    ) : (
+      <div />
+    ),
+  )
+}

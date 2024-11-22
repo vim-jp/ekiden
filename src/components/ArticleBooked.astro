@@ -1,0 +1,28 @@
+---
+import dayjs from "dayjs";
+import type { ArticleProps } from "./Article.astro";
+import ArticleMonth from "./ArticleMonth.astro";
+
+type Props = ArticleProps;
+
+const { firstDay, title, date, runner } = Astro.props;
+---
+
+<div class="container" id={`article-${date}`}>
+  {firstDay && <ArticleMonth month={dayjs(date).month() + 1} />}
+  <div
+    class="flex flex-row items-center gap-2 bg-ekiden-white-500 pr-0 text-ekiden-gray-600"
+  >
+    <div class="min-w-14 w-14 text-right text-sm">(予定)</div>
+    <div class="self-stretch bg-ekiden-green-500 py-4">
+      <div class="h-6 w-6 rounded-3xl bg-ekiden-green-900"></div>
+    </div>
+    <div class="min-w-10 w-10 text-right text-ekiden-green-500 font-bold">
+      {dayjs(date).date()}日
+    </div>
+    <div>
+      <div class="pt-1">{title}</div>
+      <div class="pb-1 pl-3 text-sm">by {runner}</div>
+    </div>
+  </div>
+</div>
