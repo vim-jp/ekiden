@@ -69,8 +69,7 @@ function validatePublishDate(date: string) {
   if (!VALID_WEEKDAYS.includes(weekday)) {
     const VALID_WEEKDAY_STRS = VALID_WEEKDAYS.map(weekdayNumToStr).join("、");
     throw new ValidationError(
-      `公開日は${VALID_WEEKDAY_STRS}のいずれかである必要があります。: ${date} (${
-        weekdayNumToStr(weekday)
+      `公開日は${VALID_WEEKDAY_STRS}のいずれかである必要があります。: ${date} (${weekdayNumToStr(weekday)
       })`,
     );
   }
@@ -84,7 +83,10 @@ function descriptionToArticle(
   description: string,
   githubUser: string,
 ): Article {
-  let title, runner, date, url = null;
+  let title: string | null = null
+  let runner: string | null = null
+  let date: string | null = null
+  let url: string | null = null;
 
   const sections = description.split("\n###").map((s) => s.trim()).filter((s) =>
     s != ""
@@ -107,13 +109,14 @@ function descriptionToArticle(
         if (!matchedDate) {
           throw new ValidationError(`公開日が不正です。: ${content}`);
         }
-        date = sprintf(
+        const d = sprintf(
           "%04d-%02d-%02d",
           matchedDate[1],
           matchedDate[2],
           matchedDate[3],
         );
-        validatePublishDate(date);
+        validatePublishDate(d);
+        date = d
         break;
       }
       case "執筆者名": {
@@ -132,6 +135,10 @@ function descriptionToArticle(
         } else if (!isEmpty(unescaped)) {
           throw new ValidationError(`記事 URL の形式が不正です。: ${content}`);
         }
+        break;
+      }
+      case "注意事項の確認": {
+        // noop
         break;
       }
       default:
