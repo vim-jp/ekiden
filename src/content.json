@@ -2217,10 +2217,10 @@
       "issueNumber": 697
     },
     {
-      "title": "lazy loadするプラグインのヘルプを読めるようにする",
+      "title": "Neovimでlazy loadするプラグインのヘルプを読めるようにする",
       "date": "2024-12-06",
       "runner": "kyoh86",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/9a5258067a3132",
       "githubUser": "kyoh86",
       "issueNumber": 728
     },
