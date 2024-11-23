@@ -2217,6 +2217,14 @@
       "issueNumber": 697
     },
     {
+      "title": "lazy loadするプラグインのヘルプを読めるようにする",
+      "date": "2024-12-06",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 728
+    },
+    {
       "title": "neovimプラグインの作成 lua",
       "date": "2024-12-11",
       "runner": "tositada",
