@@ -2239,6 +2239,14 @@
       "url": null,
       "githubUser": "tositada17",
       "issueNumber": 722
+    },
+    {
+      "title": "2024年 Neovim成長日記",
+      "date": "2024-12-23",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 730
     }
   ]
 }
