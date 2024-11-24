@@ -2225,6 +2225,14 @@
       "issueNumber": 728
     },
     {
+      "title": "Neovim でコマンドの実行結果をバッファに出力する方法",
+      "date": "2024-12-09",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 729
+    },
+    {
       "title": "neovimプラグインの作成 lua",
       "date": "2024-12-11",
       "runner": "tositada",
