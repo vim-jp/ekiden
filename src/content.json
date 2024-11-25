@@ -2241,6 +2241,14 @@
       "issueNumber": 722
     },
     {
+      "title": "vim-jp radioについて何か書く",
+      "date": "2024-12-13",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 732
+    },
+    {
       "title": "2024年 Neovim成長日記",
       "date": "2024-12-23",
       "runner": "tadashi-aikawa",
