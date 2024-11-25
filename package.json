@@ -25,7 +25,7 @@
     "@fontsource/kaushan-script": "^5.1.0",
     "@fontsource/yuji-syuku": "^5.1.0",
     "@unocss/reset": "^0.64.1",
-    "astro": "^4.16.10",
+    "astro": "^4.16.14",
     "chart.js": "^4.4.6",
     "dayjs": "^1.11.13",
     "sharp": "^0.33.5",
