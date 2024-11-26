@@ -2249,6 +2249,14 @@
       "issueNumber": 732
     },
     {
+      "title": "Vim 本体に evalfunc (Vim script 関数) を追加する",
+      "date": "2024-12-16",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 738
+    },
+    {
       "title": "2024年 Neovim成長日記",
       "date": "2024-12-23",
       "runner": "tadashi-aikawa",
