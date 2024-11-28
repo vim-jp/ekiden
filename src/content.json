@@ -2257,7 +2257,7 @@
       "issueNumber": 738
     },
     {
-      "title": "vimでTextObjの末尾や先頭に移動する",
+      "title": "VimでTextObjの末尾や先頭に移動する",
       "date": "2024-12-20",
       "runner": "utubo",
       "url": "https://zenn.dev/utubo/articles/vim-move-to-head-of-textobj",
