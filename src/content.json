@@ -2257,6 +2257,14 @@
       "issueNumber": 738
     },
     {
+      "title": "vimでTextObjの末尾や先頭に移動する",
+      "date": "2024-12-20",
+      "runner": "utubo",
+      "url": "https://zenn.dev/utubo/articles/vim-move-to-head-of-textobj",
+      "githubUser": "utubo",
+      "issueNumber": 739
+    },
+    {
       "title": "2024年 Neovim成長日記",
       "date": "2024-12-23",
       "runner": "tadashi-aikawa",
