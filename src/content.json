@@ -2279,6 +2279,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 731
+    },
+    {
+      "title": "プラグインなしでVimを使うためのいろいろ",
+      "date": "2024-12-27",
+      "runner": "PicricAcid",
+      "url": null,
+      "githubUser": "PicricAcid",
+      "issueNumber": 740
     }
   ]
 }
