@@ -24,9 +24,7 @@ export function* generate({
 }: {
   start?: dayjs.Dayjs;
 }): Generator<dayjs.Dayjs, void, unknown> {
-  let initialDay = calcFirstDate(start ?? dayjs());
-
-  let cur = initialDay;
+  let cur = calcFirstDate(start ?? dayjs());
   while (true) {
     yield cur;
     cur = cur.add(cur.day() >= 4 ? 3 : 2, "d");
