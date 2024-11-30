@@ -2257,6 +2257,14 @@
       "issueNumber": 738
     },
     {
+      "title": "ちょっと面倒だなぁ～ってテキスト編集をなんとかする使い捨て十徳ナイフの作り方",
+      "date": "2024-12-18",
+      "runner": "kamecha",
+      "url": null,
+      "githubUser": "kamecha",
+      "issueNumber": 741
+    },
+    {
       "title": "VimでTextObjの末尾や先頭に移動する",
       "date": "2024-12-20",
       "runner": "utubo",
