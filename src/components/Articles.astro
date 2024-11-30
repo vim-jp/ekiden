@@ -1,5 +1,6 @@
 ---
 import dayjs from "dayjs";
+import { generate } from "../lib/schedule.ts";
 import Article, { type ArticleProps } from "./Article.astro";
 import ArticleBooked from "./ArticleBooked.astro";
 import ArticleSlot from "./ArticleSlot.astro";
@@ -9,38 +10,6 @@ type Props = {
   articles: Omit<ArticleProps, "firstDay">[];
 };
 
-/**
- * トップページに表示する日付を生成する。
- * 生成規則は以下の通り。
- *
- * 開始日: 現在の日付より1ヶ月前
- * 毎週月曜日・水曜日・金曜日
- */
-let initialDay = dayjs().subtract(1, "M");
-
-let diff: number;
-
-const _initalDay = initialDay.day();
-switch (_initalDay) {
-  case 0:
-  case 2:
-  case 4:
-    diff = 1;
-    break;
-  case 1:
-  case 3:
-  case 5:
-    diff = 0;
-    break;
-  case 6:
-    diff = 2;
-    break;
-  default:
-    /* _initalDay は never になるので、exhaustive になる */
-    return _initalDay satisfies never;
-}
-
-initialDay = initialDay.add(diff, "d");
 type ArticleEntry = {
   state: "published" | "booked";
   article: ArticleProps;
@@ -49,34 +18,50 @@ type ArticleSlotEntry = {
   state: "empty";
   article: ArticleSlotProps;
 };
+
+/**
+ * 以下条件を満たすようにスケジュールを表示する
+ *
+ * - 月・水・金曜日のみ表示する
+ * - 1ヶ月前からの日付を表示する
+ * - 最低でも5つの空き枠を表示する
+ * - 最低でも1ヶ月先までは表示する
+ */
+const START_DATE = dayjs().subtract(1, "M");
+const LEAST_SLOT_COUNT = 5;
+const LEAST_DATE = dayjs().add(1, "M");
+
 const entries: (ArticleEntry | ArticleSlotEntry)[] = [];
-let today = initialDay;
-let yesterday = initialDay.subtract(1, "M");
-let firstSlot = true;
-while (initialDay.add(2, "M") >= today) {
-  const todayStr = today.format("YYYY-MM-DD");
+let prevDate: dayjs.Dayjs | null = null;
+let slotCount = 0;
+for (const date of generate({
+  start: START_DATE,
+})) {
+  const todayStr = date.format("YYYY-MM-DD");
   const article = Astro.props.articles.find(({ date }) => date === todayStr);
   const entry: ArticleEntry | ArticleSlotEntry = article
     ? {
-        state: today > dayjs() ? ("booked" as const) : ("published" as const),
+        state: date > dayjs() ? ("booked" as const) : ("published" as const),
         article: {
           ...article,
           date: todayStr,
-          firstDay: today.month() !== yesterday.month(),
+          firstDay: prevDate === null || date.month() !== prevDate.month(),
         },
       }
     : {
         state: "empty" as const,
         article: {
           date: todayStr,
-          firstDay: today.month() !== yesterday.month(),
-          firstSlot,
+          firstDay: prevDate === null || date.month() !== prevDate.month(),
+          firstSlot: slotCount == 0,
         },
       };
-  firstSlot = firstSlot && entry.state !== "empty";
+  slotCount += entry.state === "empty" ? 1 : 0;
   entries.push(entry);
-  yesterday = today;
-  today = today.add(today.day() >= 4 ? 3 : 2, "d");
+  prevDate = date;
+  if (date >= LEAST_DATE && slotCount >= LEAST_SLOT_COUNT) {
+    break;
+  }
 }
 ---
 
