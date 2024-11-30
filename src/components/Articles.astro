@@ -9,6 +9,13 @@ type Props = {
   articles: Omit<ArticleProps, "firstDay">[];
 };
 
+/**
+ * トップページに表示する日付を生成する。
+ * 生成規則は以下の通り。
+ *
+ * 開始日: 現在の日付より1ヶ月前
+ * 毎週月曜日・水曜日・金曜日
+ */
 let initialDay = dayjs().subtract(1, "M");
 
 let diff: number;
