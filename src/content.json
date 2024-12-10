@@ -2303,6 +2303,14 @@
       "url": null,
       "githubUser": "NI57721",
       "issueNumber": 749
+    },
+    {
+      "title": "NeoVimで書き初め(という名の書類作成)をする",
+      "date": "2025-01-01",
+      "runner": "Kleha",
+      "url": null,
+      "githubUser": "Haru-0205",
+      "issueNumber": 773
     }
   ]
 }
