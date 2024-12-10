@@ -41,7 +41,10 @@ for (const date of generate({
   const article = Astro.props.articles.find(({ date }) => date === todayStr);
   const entry: ArticleEntry | ArticleSlotEntry = article
     ? {
-        state: date > dayjs() ? ("booked" as const) : ("published" as const),
+        state:
+          date > dayjs() || !article.url
+            ? ("booked" as const)
+            : ("published" as const),
         article: {
           ...article,
           date: todayStr,
