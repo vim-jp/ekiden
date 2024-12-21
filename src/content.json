@@ -2313,6 +2313,14 @@
       "issueNumber": 773
     },
     {
+      "title": "NeovimのDiagnosticのfloating windowの中に入る",
+      "date": "2025-01-03",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 784
+    },
+    {
       "title": "lazyvimに2ヶ月入って、vscodeに戻ってみる。",
       "date": "2025-01-08",
       "runner": "tositada",
