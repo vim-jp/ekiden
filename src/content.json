@@ -2316,7 +2316,7 @@
       "title": "NeovimのDiagnosticのfloating windowの中に入る",
       "date": "2025-01-03",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/entering-neovim-diagnosic-floating-window",
       "githubUser": "yuys13",
       "issueNumber": 784
     },
