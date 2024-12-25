@@ -2321,6 +2321,14 @@
       "issueNumber": 784
     },
     {
+      "title": "telescope.nvim で最後に開いた picker の次/前の候補を開く",
+      "date": "2025-01-06",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 793
+    },
+    {
       "title": "lazyvimに2ヶ月入って、vscodeに戻ってみる。",
       "date": "2025-01-08",
       "runner": "tositada",
