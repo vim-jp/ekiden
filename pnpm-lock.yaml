@@ -18,8 +18,8 @@ importers:
         specifier: ^5.7.3
         version: 5.7.3(astro@4.16.18(@types/node@22.10.2)(rollup@4.27.3)(typescript@5.7.2))(svelte@4.2.19)(typescript@5.7.2)(vite@5.4.11(@types/node@22.10.2))
       '@fontsource/kaushan-script':
-        specifier: ^5.1.0
-        version: 5.1.0
+        specifier: ^5.1.1
+        version: 5.1.1
       '@fontsource/yuji-syuku':
         specifier: ^5.1.1
         version: 5.1.1
@@ -604,8 +604,8 @@ packages:
     resolution: {integrity: sha512-2b/g5hRmpbb1o4GnTZax9N9m0FXzz9OV42ZzI4rDDMDuHUqigAiQCEWChBWCY4ztAGVRjoWT19v0yMmc5/L5kA==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@fontsource/kaushan-script@5.1.0':
-    resolution: {integrity: sha512-8eT0mcM2H1K9UAzVu6eagE9E83DxsUeD190BJcb2GxtjM9ZUOGRnvWFj50T5hBQsVT6/KGYrLZ9WDDnVN24kJA==}
+  '@fontsource/kaushan-script@5.1.1':
+    resolution: {integrity: sha512-LXU9Py+y9lS9dtgPc/XKiFlSx/IQF9WHTkGZQq6ZP7GuGYkvJ80+Up8/4mLc3Ms3z4Ir61mBmCh7J70iWlz0FA==}
 
   '@fontsource/yuji-syuku@5.1.1':
     resolution: {integrity: sha512-lG4H0Aab4vX3s+II5DmwUtRs98u7JhTvm0P1X7MbF9Yq3nP+272NYfYv7a/KWag77rKlKCA9ItipR16N/4GQRA==}
@@ -3514,7 +3514,7 @@ snapshots:
     dependencies:
       levn: 0.4.1
 
-  '@fontsource/kaushan-script@5.1.0': {}
+  '@fontsource/kaushan-script@5.1.1': {}
 
   '@fontsource/yuji-syuku@5.1.1': {}
 
