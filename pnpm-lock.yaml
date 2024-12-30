@@ -21,8 +21,8 @@ importers:
         specifier: ^5.1.0
         version: 5.1.0
       '@fontsource/yuji-syuku':
-        specifier: ^5.1.0
-        version: 5.1.0
+        specifier: ^5.1.1
+        version: 5.1.1
       '@unocss/reset':
         specifier: ^0.65.2
         version: 0.65.2
@@ -607,8 +607,8 @@ packages:
   '@fontsource/kaushan-script@5.1.0':
     resolution: {integrity: sha512-8eT0mcM2H1K9UAzVu6eagE9E83DxsUeD190BJcb2GxtjM9ZUOGRnvWFj50T5hBQsVT6/KGYrLZ9WDDnVN24kJA==}
 
-  '@fontsource/yuji-syuku@5.1.0':
-    resolution: {integrity: sha512-gDL9wRdIs3rWXGxW6O8PLCvCTUhrCQfQXBMjzxsv7GEz6FuBWjyfzXDEBmUm7D8CcvY39qOJQq6Jte93BaQqbQ==}
+  '@fontsource/yuji-syuku@5.1.1':
+    resolution: {integrity: sha512-lG4H0Aab4vX3s+II5DmwUtRs98u7JhTvm0P1X7MbF9Yq3nP+272NYfYv7a/KWag77rKlKCA9ItipR16N/4GQRA==}
 
   '@humanfs/core@0.19.1':
     resolution: {integrity: sha512-5DyQ4+1JEUzejeK1JGICcideyfUbGixgS9jNgex5nqkW+cY7WZhxBigmieN5Qnw9ZosSNVC9KQKyb+GUaGyKUA==}
@@ -3538,7 +3538,7 @@ snapshots:
 
   '@fontsource/kaushan-script@5.1.0': {}
 
-  '@fontsource/yuji-syuku@5.1.0': {}
+  '@fontsource/yuji-syuku@5.1.1': {}
 
   '@humanfs/core@0.19.1': {}
 
