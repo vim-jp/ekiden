@@ -2351,6 +2351,14 @@
       "url": "https://blog.yasunori0418.dev/p/combining_vim_regex_and_macros/",
       "githubUser": "yasunori0418",
       "issueNumber": 804
+    },
+    {
+      "title": "Neovim内で翻訳できるプラグインを作ってみる",
+      "date": "2025-01-15",
+      "runner": "苔コッコー",
+      "url": null,
+      "githubUser": "Kokecoco",
+      "issueNumber": 805
     }
   ]
 }
