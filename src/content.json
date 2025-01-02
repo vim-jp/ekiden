@@ -2343,6 +2343,14 @@
       "url": "https://shizukani-cp.github.io/blog/articles/20250110/",
       "githubUser": "shizukani-cp",
       "issueNumber": 794
+    },
+    {
+      "title": "Vim正規表現とマクロの組合せ",
+      "date": "2025-01-13",
+      "runner": "yasunori0418",
+      "url": "https://blog.yasunori0418.dev/p/combining_vim_regex_and_macros/",
+      "githubUser": "yasunori0418",
+      "issueNumber": 804
     }
   ]
 }
