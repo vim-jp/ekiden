@@ -9,3 +9,6 @@
 
 * @thinca @monaqa @kyoh86 @peacock0803sz @ryoppippi @staticWagomU
 src/content.json @thinca @kyoh86
+
+# to avoiding make many review requests with dependabot PRs
+package-*.json
