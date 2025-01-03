@@ -11,4 +11,5 @@
 src/content.json @thinca @kyoh86
 
 # to avoiding make many review requests with dependabot PRs
-package-*.json
+package.json
+pnpm-lock.yaml
