@@ -36,7 +36,7 @@
     "@astrojs/ts-plugin": "^1.10.4",
     "@eslint/js": "^9.17.0",
     "@iconify-json/radix-icons": "^1.2.2",
-    "@iconify-json/tabler": "^1.2.13",
+    "@iconify-json/tabler": "^1.2.14",
     "@std/collections": "npm:@jsr/std__collections@^1.0.6",
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.10.5",
