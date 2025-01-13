@@ -41,7 +41,7 @@
     "@types/eslint__js": "^8.42.3",
     "@types/node": "^22.10.5",
     "@typescript-eslint/utils": "^8.19.1",
-    "@unocss/eslint-config": "^0.65.3",
+    "@unocss/eslint-config": "^65.4.0",
     "@unocss/preset-web-fonts": "^65.4.0",
     "@unocss/reset": "^65.4.0",
     "astro-eslint-parser": "^1.0.3",
