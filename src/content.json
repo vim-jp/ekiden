@@ -2415,6 +2415,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 807
+    },
+    {
+      "title": "なんとなくRustで書いたNeovimプラグイン - cargo.nvim の話",
+      "date": "2025-02-03",
+      "runner": "nwiizo",
+      "url": "https://syu-m-5151.hatenablog.com/entry/2025/01/15/110831",
+      "githubUser": "nwiizo",
+      "issueNumber": 827
     }
   ]
 }
