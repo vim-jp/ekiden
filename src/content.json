@@ -2423,6 +2423,14 @@
       "url": "https://syu-m-5151.hatenablog.com/entry/2025/01/15/110831",
       "githubUser": "nwiizo",
       "issueNumber": 827
+    },
+    {
+      "title": "ファイル切り替えを楽にする vim-rule-switcherプラグイン",
+      "date": "2025-02-05",
+      "runner": "takets",
+      "url": "https://zenn.dev/takets/articles/eab18374e758f5",
+      "githubUser": "nekowasabi",
+      "issueNumber": 828
     }
   ]
 }
