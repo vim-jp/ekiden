@@ -2441,6 +2441,14 @@
       "issueNumber": 829
     },
     {
+      "title": "Vimでz連打でカーソル行を画面中央・上・下に移動させる",
+      "date": "2025-02-10",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/67ec77641af3f2",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 840
+    },
+    {
       "title": "Meguro.vim #28 を開催しました",
       "date": "2025-03-10",
       "runner": "thinca",
