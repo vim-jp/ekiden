@@ -2348,7 +2348,7 @@
       "title": "Vim正規表現の\\zsと\\zeが便利って話",
       "date": "2025-01-13",
       "runner": "yasunori0418",
-      "url": "https://blog.yasunori0418.dev/p/combining_vim_regex_and_macros/",
+      "url": "https://blog.yasunori0418.dev/p/vim_regex_are_useful/",
       "githubUser": "yasunori0418",
       "issueNumber": 804
     },
