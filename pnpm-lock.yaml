@@ -24,8 +24,8 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
       '@unocss/reset':
-        specifier: ^65.4.2
-        version: 65.4.2
+        specifier: ^65.4.3
+        version: 65.4.3
       astro:
         specifier: ^4.16.18
         version: 4.16.18(@types/node@22.10.7)(rollup@4.27.3)(typescript@5.7.3)
