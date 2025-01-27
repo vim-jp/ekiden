@@ -73,8 +73,8 @@ importers:
         specifier: ^65.4.2
         version: 65.4.2(eslint@9.18.0(jiti@2.4.2))(typescript@5.7.3)
       '@unocss/preset-web-fonts':
-        specifier: ^65.4.2
-        version: 65.4.2
+        specifier: ^65.4.3
+        version: 65.4.3
       astro-eslint-parser:
         specifier: ^1.0.3
         version: 1.1.0(typescript@5.7.3)
@@ -1319,17 +1319,11 @@ packages:
   '@unocss/preset-uno@65.4.3':
     resolution: {integrity: sha512-gxELOQwR3YbMLR+WjYz3m/Zb6VXa8O0Xln0rfS2TI7OXXoQ1twak5zwYPrOI5fJF8lJ5yyKUiXiOR8UEPBpoCQ==}
 
-  '@unocss/preset-web-fonts@65.4.2':
-    resolution: {integrity: sha512-YVgjB3igldU5uKgwkDXNvxe9cISiLBnaKwW2bjJJyyTZ3QbjbYklgI4LyakxtnY4hf6U1vO+1W83/GIhl2RAdw==}
-
   '@unocss/preset-web-fonts@65.4.3':
     resolution: {integrity: sha512-edkyohQ4+qjuOxIJf+NeQiEayB47A9eA2NhBLbcqZ0OfMpN8tRZPVW5cyB3b5Ef253NGMd4S8H/96vGTBpqOBA==}
 
   '@unocss/preset-wind@65.4.3':
     resolution: {integrity: sha512-KM13xIARNeZ/ZKJr33fZ89l79wgI+1Oo8VPJzmckLjbH9IGOhcH2GON7wVIxQqqqM9IM3vALEqw2KNdM6ontWw==}
-
-  '@unocss/reset@65.4.2':
-    resolution: {integrity: sha512-Sas0lTGEgzdWKafSiT+dyhhrUOkOpPbhJYbPMgjW6Ol/tB5JXhdlCNm90Xue1wt453P8O3J4v+dQcyrdRSq0Ig==}
 
   '@unocss/reset@65.4.3':
     resolution: {integrity: sha512-f9QnMtY1yPS1HEIkeKmSwUYcp4QS6zdo9ZcIFE9PDSLOcns3v+M1lTQg8mLChxJHVl73Cf6PofWVh5tmnxV53Q==}
@@ -2460,8 +2454,8 @@ packages:
   no-case@3.0.4:
     resolution: {integrity: sha512-fgAN3jGAh+RoxUGZHTSOLJIqUc2wmoBwGR4tbpNAKmmovFoWq0OdRkb0VkldReO2a2iBT/OEulG9XSUc10r3zg==}
 
-  node-fetch-native@1.6.4:
-    resolution: {integrity: sha512-IhOigYzAKHd244OC0JIMIUrjzctirCmPkaIfhDeGcEETWof5zKYUW7e7MYvChGWh/4CJeXEgsRyGzuF334rOOQ==}
+  node-fetch-native@1.6.6:
+    resolution: {integrity: sha512-8Mc2HhqPdlIfedsuZoc3yioPuzp6b+L5jRCRY1QzuWZh2EGJVQrGppC6V6cF0bLdbW0+O2YpqCA25aF/1lvipQ==}
 
   node-releases@2.0.18:
     resolution: {integrity: sha512-d9VeXT4SJ7ZeOqGX6R5EM022wpL+eWPooLI+5UpWn2jCT1aosUQEhQP214x33Wkwx3JQMvIm+tIoVOdodFS40g==}
@@ -4459,11 +4453,6 @@ snapshots:
       '@unocss/preset-wind': 65.4.3
       '@unocss/rule-utils': 65.4.3
 
-  '@unocss/preset-web-fonts@65.4.2':
-    dependencies:
-      '@unocss/core': 65.4.2
-      ofetch: 1.4.1
-
   '@unocss/preset-web-fonts@65.4.3':
     dependencies:
       '@unocss/core': 65.4.3
@@ -4474,8 +4463,6 @@ snapshots:
       '@unocss/core': 65.4.3
       '@unocss/preset-mini': 65.4.3
       '@unocss/rule-utils': 65.4.3
-
-  '@unocss/reset@65.4.2': {}
 
   '@unocss/reset@65.4.3': {}
 
@@ -5988,7 +5975,7 @@ snapshots:
       lower-case: 2.0.2
       tslib: 2.8.1
 
-  node-fetch-native@1.6.4: {}
+  node-fetch-native@1.6.6: {}
 
   node-releases@2.0.18: {}
 
@@ -5997,7 +5984,7 @@ snapshots:
   ofetch@1.4.1:
     dependencies:
       destr: 2.0.3
-      node-fetch-native: 1.6.4
+      node-fetch-native: 1.6.6
       ufo: 1.5.4
 
   onetime@7.0.0:
