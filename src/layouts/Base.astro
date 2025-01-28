@@ -1,5 +1,5 @@
 ---
-import { ViewTransitions } from "astro:transitions";
+import { ClientRouter } from "astro:transitions";
 
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
@@ -45,7 +45,7 @@ const ogImage = joinURLWithTrailingSlash(baseURL, "og-image.png");
 
     <slot name="head" />
     <title>{title}</title>
-    <ViewTransitions />
+    <ClientRouter />
   </head>
   <body class="overflow-y-scroll bg-ekiden-white-500 font-ekiden-base">
     <main
