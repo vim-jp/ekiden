@@ -18,52 +18,56 @@
   };
   const { articles }: Props = $props();
 
-  // GitHubユーザーごとの記事数をカウント
-  const userCounts: { [user: string]: number } = {};
-  articles.forEach((article) => {
-    const user = article.githubUser;
-    if (userCounts[user]) {
-      userCounts[user]++;
-    } else {
-      userCounts[user] = 1;
-    }
-  });
-
-  // 同率のユーザーをグループ化
-  const groupedUsers: { [count: number]: { rank: number; users: string[] } } =
-    {};
-  Object.entries(userCounts).forEach(([user, count]) => {
-    if (!groupedUsers[count]) {
-      groupedUsers[count] = { rank: 0, users: [] };
-    }
-    groupedUsers[count].users.push(user);
-  });
-
-  // ランキングを計算し、1つの配列にまとめる
-  const userRankings: { user: string; articleCount: number; rank: number }[] =
-    [];
-  let rank = 1;
-  Object.keys(groupedUsers)
-    .map(Number)
-    .sort((a, b) => b - a)
-    .forEach((count) => {
-      const users = groupedUsers[count].users;
-      users.forEach((user) => {
-        userRankings.push({ user, articleCount: count, rank });
-      });
-      rank += users.length;
+  /** ランキングを計算し、1つの配列にまとめる */
+  const ranking = $derived.by(() => {
+    /** GitHubユーザーごとの記事数をカウント */
+    const userCounts: { [user: string]: number } = {};
+    articles.forEach((article) => {
+      const user = article.githubUser;
+      if (userCounts[user]) {
+        userCounts[user]++;
+      } else {
+        userCounts[user] = 1;
+      }
     });
 
-  const ranking = userRankings.filter(({ rank }) => rank <= 10);
+    /** 同率のユーザーをグループ化 */
+    const groupedUsers: { [count: number]: { users: string[] } } = {};
+    Object.entries(userCounts).forEach(([user, count]) => {
+      if (!groupedUsers[count]) {
+        groupedUsers[count] = { users: [] };
+      }
+      groupedUsers[count].users.push(user);
+    });
 
-  const longestUsername = Math.max(...ranking.map(({ user }) => user.length));
-  const rankingTick = ranking.map(({ user, rank }) => {
-    // FIXME: 左揃えにする方法がわからなかった
-    const padding = " ".repeat(longestUsername - user.length);
-    return `${rank}. ${user}${padding}`;
+    const userRankings: { user: string; articleCount: number; rank: number }[] =
+      [];
+    let rank = 1;
+    Object.keys(groupedUsers)
+      .map(Number)
+      .sort((a, b) => b - a)
+      .forEach((count) => {
+        const users = groupedUsers[count].users;
+        users.forEach((user) => {
+          userRankings.push({ user, articleCount: count, rank });
+        });
+        rank += users.length;
+      });
+
+    return userRankings.filter(({ rank }) => rank <= 10);
   });
 
-  const data = {
+  const rankingTick = $derived.by(() => {
+    const longestUsername = Math.max(...ranking.map(({ user }) => user.length));
+
+    return ranking.map(({ user, rank }) => {
+      // FIXME: 左揃えにする方法がわからなかった
+      const padding = " ".repeat(longestUsername - user.length);
+      return `${rank}. ${user}${padding}`;
+    });
+  });
+
+  const data = $derived({
     labels: rankingTick,
     datasets: [
       {
@@ -88,7 +92,7 @@
         barPercentage: 0.5,
       },
     ],
-  } as const satisfies ChartData<"bar">;
+  } as const satisfies ChartData<"bar">);
 
   const options = {
     indexAxis: "y",
