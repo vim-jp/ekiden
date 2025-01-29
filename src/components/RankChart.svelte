@@ -1,15 +1,16 @@
 <script lang="ts">
-  import { Bar } from "svelte-chartjs";
   import {
     Chart as ChartJS,
     CategoryScale,
+    BarController,
     LinearScale,
     BarElement,
   } from "chart.js";
   import type { ChartData, ChartOptions } from "chart.js";
   import type { ProcessedArticle } from "@/lib/article";
+  import { onMount } from "svelte";
 
-  ChartJS.register(CategoryScale, LinearScale, BarElement);
+  let canvas: HTMLCanvasElement | undefined;
 
   /** published な記事のみを抽出 */
   export let articles: ProcessedArticle<true>[];
@@ -138,10 +139,31 @@
       },
     },
   } as const satisfies ChartOptions<"bar">;
+
+  // グラフの描画
+  onMount(() => {
+    // Register the custom scales and elements
+    ChartJS.register(CategoryScale, LinearScale, BarElement, BarController);
+
+    const ctx = canvas?.getContext("2d");
+    if (ctx == null) {
+      return;
+    }
+
+    const chart = new ChartJS(ctx, {
+      type: "bar",
+      data,
+      options,
+    });
+
+    // グラフの破棄
+    return () => {
+      chart.destroy();
+      ChartJS.unregister(BarController, BarElement, LinearScale, CategoryScale);
+    };
+  });
 </script>
 
 <div id="rankings-container" class="w-[90vw] max-w-3xl px-1">
-  <div>
-    <Bar {data} {options} height={600} />
-  </div>
+  <canvas bind:this={canvas} id="myChart" height={600} />
 </div>

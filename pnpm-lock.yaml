@@ -41,9 +41,6 @@ importers:
       svelte:
         specifier: ^5.19.5
         version: 5.19.5
-      svelte-chartjs:
-        specifier: ^3.1.5
-        version: 3.1.5(chart.js@4.4.7)(svelte@5.19.5)
     devDependencies:
       '@astrojs/ts-plugin':
         specifier: ^1.10.4
@@ -2374,12 +2371,6 @@ packages:
   supports-color@7.2.0:
     resolution: {integrity: sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==}
     engines: {node: '>=8'}
-
-  svelte-chartjs@3.1.5:
-    resolution: {integrity: sha512-ka2zh7v5FiwfAX1oMflZ0HkNkgjHjFqANgRyC+vNYXfxtx2ku68Zo+2KgbKeBH2nS1ThDqkIACPzGxy4T0UaoA==}
-    peerDependencies:
-      chart.js: ^3.5.0 || ^4.0.0
-      svelte: ^4.0.0
 
   svelte2tsx@0.7.34:
     resolution: {integrity: sha512-WTMhpNhFf8/h3SMtR5dkdSy2qfveomkhYei/QW9gSPccb0/b82tjHvLop6vT303ZkGswU/da1s6XvrLgthQPCw==}
@@ -5598,11 +5589,6 @@ snapshots:
   supports-color@7.2.0:
     dependencies:
       has-flag: 4.0.0
-
-  svelte-chartjs@3.1.5(chart.js@4.4.7)(svelte@5.19.5):
-    dependencies:
-      chart.js: 4.4.7
-      svelte: 5.19.5
 
   svelte2tsx@0.7.34(svelte@5.19.5)(typescript@5.7.3):
     dependencies:
