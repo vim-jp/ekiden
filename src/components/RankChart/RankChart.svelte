@@ -8,6 +8,7 @@
   } from "chart.js";
   import { getData, getOptions, getRanking } from "./utils.js";
   import type { Article } from "./types.js";
+  import { onMount } from "svelte";
 
   let canvas: HTMLCanvasElement | undefined;
 
@@ -24,7 +25,7 @@
   const options = $derived(getOptions(data));
 
   // effect が実行される前に Chart.js のカスタムスケールと要素を登録
-  $effect.pre(() => {
+  onMount(() => {
     // Register the custom scales and elements
     ChartJS.register(CategoryScale, LinearScale, BarElement, BarController);
 
