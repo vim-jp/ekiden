@@ -9,7 +9,7 @@ import SeasonList, {
 } from "@/components/SeasonList.astro";
 import { getArticles } from "@/lib/article";
 import Base from "@/layouts/Base.astro";
-import RankChart from "@/components/RankChart.svelte";
+import { RankChart } from "@/components/RankChart";
 
 export function getStaticPaths() {
   return getSectionArray(false).map((section) => ({

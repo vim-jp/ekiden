@@ -1,7 +1,7 @@
 ---
 import Base from "@/layouts/Base.astro";
 import SeasonList from "@/components/SeasonList.astro";
-import RankChart from "@/components/RankChart.svelte";
+import { RankChart } from "@/components/RankChart";
 import { getArticles } from "@/lib/article";
 
 const articles = getArticles({ isPublished: true });

@@ -8,7 +8,6 @@
   } from "chart.js";
   import type { ChartData, ChartOptions } from "chart.js";
   import type { ProcessedArticle } from "@/lib/article";
-  import { onMount } from "svelte";
 
   let canvas: HTMLCanvasElement | undefined;
 
@@ -147,11 +146,19 @@
     },
   } as const satisfies ChartOptions<"bar">;
 
-  // グラフの描画
-  onMount(() => {
+  // effect が実行される前に Chart.js のカスタムスケールと要素を登録
+  $effect.pre(() => {
     // Register the custom scales and elements
     ChartJS.register(CategoryScale, LinearScale, BarElement, BarController);
 
+    // Unregister the custom scales and elements
+    return () => {
+      ChartJS.unregister(BarController, BarElement, LinearScale, CategoryScale);
+    };
+  });
+
+  // グラフの描画。jsが読み込まれた後に実行される。
+  $effect(() => {
     const ctx = canvas?.getContext("2d");
     if (ctx == null) {
       return;
@@ -166,7 +173,6 @@
     // グラフの破棄
     return () => {
       chart.destroy();
-      ChartJS.unregister(BarController, BarElement, LinearScale, CategoryScale);
     };
   });
 </script>
