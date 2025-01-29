@@ -13,7 +13,10 @@
   let canvas: HTMLCanvasElement | undefined;
 
   /** published な記事のみを抽出 */
-  export let articles: ProcessedArticle<true>[];
+  type Props = {
+    articles: ProcessedArticle<true>[];
+  };
+  const { articles }: Props = $props();
 
   // GitHubユーザーごとの記事数をカウント
   const userCounts: { [user: string]: number } = {};
@@ -165,5 +168,6 @@
 </script>
 
 <div id="rankings-container" class="w-[90vw] max-w-3xl px-1">
+  <!-- svelte-ignore element_invalid_self_closing_tag -->
   <canvas bind:this={canvas} id="myChart" height={600} />
 </div>
