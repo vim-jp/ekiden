@@ -47,6 +47,6 @@ const articles = getArticles({ isPublished: true }).filter((article) => {
   />
   <section class="py-4">
     <h2>記事投稿数ランキング（{displaySectionName(section)}）</h2>
-    <RankChart articles={articles} client:only="svelte" />
+    <RankChart articles={articles} client:visible />
   </section>
 </Base>

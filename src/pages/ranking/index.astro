@@ -14,6 +14,6 @@ const articles = getArticles({ isPublished: true });
     <h2 class="mb-2 mt-4 text-2xl font-bold font-ekiden-heading">
       記事投稿数ランキング（総合）
     </h2>
-    <RankChart articles={articles} client:only="svelte" />
+    <RankChart articles={articles} client:visible />
   </section>
 </Base>
