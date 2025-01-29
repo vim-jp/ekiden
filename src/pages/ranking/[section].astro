@@ -9,7 +9,7 @@ import SeasonList, {
 } from "@/components/SeasonList.astro";
 import { getArticles } from "@/lib/article";
 import Base from "@/layouts/Base.astro";
-import RankChart from "@/components/RankChart.svelte";
+import { RankChart } from "@/components/RankChart";
 
 export function getStaticPaths() {
   return getSectionArray(false).map((section) => ({
@@ -47,6 +47,6 @@ const articles = getArticles({ isPublished: true }).filter((article) => {
   />
   <section class="py-4">
     <h2>記事投稿数ランキング（{displaySectionName(section)}）</h2>
-    <RankChart articles={articles} client:only="svelte" />
+    <RankChart articles={articles} client:visible />
   </section>
 </Base>
