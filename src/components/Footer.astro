@@ -30,13 +30,19 @@ const { slug } = Astro.props;
   <div
     class="mx-auto max-w-screen-lg flex flex-row items-center gap-2 px-3 py-2 align-middle"
   >
-    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"
-      ><img
-        class="max-h-[31px] max-w-[88px] min-h-[31px] min-w-[88px] border-0"
+    <a
+      rel="license"
+      href="http://creativecommons.org/licenses/by/4.0/"
+      class="shrink-0"
+    >
+      <img
+        class="border-0"
         alt="クリエイティブ・コモンズ・ライセンス"
         src="https://i.creativecommons.org/l/by/4.0/88x31.png"
-      /></a
-    >
+        width={88}
+        height={31}
+      />
+    </a>
     <div>
       この 作品 は <a
         rel="license"
