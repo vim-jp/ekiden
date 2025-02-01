@@ -2449,6 +2449,14 @@
       "issueNumber": 840
     },
     {
+      "title": "Windows で Vim を使った fuzzy find な定型文コピー",
+      "date": "2025-02-12",
+      "runner": "hokorobi",
+      "url": null,
+      "githubUser": "hokorobi",
+      "issueNumber": 859
+    },
+    {
       "title": "Meguro.vim #28 を開催しました",
       "date": "2025-03-10",
       "runner": "thinca",
