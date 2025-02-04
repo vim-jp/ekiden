@@ -21,7 +21,10 @@
   /** ランキングを計算し、1つの配列にまとめる */
   const ranking = $derived(getRanking(articles));
 
-  const data = $derived(getData(ranking));
+  /** ランキングの上位10件のみを抽出. 同じランキングのユーザが複数いる場合は10を超えることがある */
+  const top10Ranking = $derived(ranking.filter(({ rank }) => rank <= 10));
+
+  const data = $derived(getData(top10Ranking));
   const options = $derived(getOptions(data));
 
   // effect が実行される前に Chart.js のカスタムスケールと要素を登録
