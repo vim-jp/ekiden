@@ -6,7 +6,7 @@
     LinearScale,
     BarElement,
   } from "chart.js";
-  import { getData, getOptions, getRanking } from "./utils.js";
+  import { getData, getOptions, getRanking, getTopNRanking } from "./utils.js";
   import type { Article } from "./types.js";
   import { onMount } from "svelte";
 
@@ -22,7 +22,7 @@
   const ranking = $derived(getRanking(articles));
 
   /** ランキングの上位10件のみを抽出. 同じランキングのユーザが複数いる場合は10を超えることがある */
-  const top10Ranking = $derived(ranking.filter(({ rank }) => rank <= 10));
+  const top10Ranking = $derived(getTopNRanking(ranking, 10));
 
   const data = $derived(getData(top10Ranking));
   const options = $derived(getOptions(data));
