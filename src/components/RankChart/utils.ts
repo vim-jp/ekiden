@@ -43,16 +43,6 @@ export function getRanking(articles: Article[]): Ranking[] {
 }
 
 /**
- *  ランキングの上位N件を取得. 同じランクのものが複数ある場合はn件を超える場合がある.
- *
- * @param ranking ランキング
- * @param n ランキングがn位までのユーザーを取得
- */
-export function getTopNRanking(ranking: Ranking[], n: number) {
-  return ranking.filter(({ rank }) => rank <= n);
-}
-
-/**
  * getOptions returns the options for the bar chart.
  */
 export function getOptions(data: ChartData<"bar">) {
