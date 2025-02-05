@@ -21,5 +21,7 @@ jobs:
         run: pnpm prettier:check
       - name: Run Astro Check
         run: pnpm astro:check
+      - name: Run test
+        run: pnpm test
       - name: Run Build
         run: pnpm build
