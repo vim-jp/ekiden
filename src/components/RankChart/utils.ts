@@ -26,7 +26,7 @@ export function getRanking(articles: Article[]): Ranking[] {
       /** ランクを計算。同じ記事数の場合は同じランクにする */
       .reduce((acc, currentRankedUser, index) => {
         /** 1つ前のユーザー */
-        const prevRankedUser = acc[index - 1];
+        const prevRankedUser = acc.at(index - 1);
 
         /** 
           もし前の要素が存在し、記事数が同じ場合は同じランクにする 
