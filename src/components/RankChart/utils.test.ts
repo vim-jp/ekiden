@@ -16,10 +16,47 @@ describe("RankChart utils.ts", () => {
   });
 
   it("getRanking", () => {
-    expect(RANKING).toMatchSnapshot(); // Snapshotが大きいので別途ファイルに保存
+    const publishedFirst50Articles = getArticles({
+      isPublished: true,
+    }).slice(0, 50);
+    const ranking = utils.getRanking(publishedFirst50Articles);
+
+    /** ランクが1から始まっているか */
+    expect(ranking[0].rank).toBe(1);
+
+    /** 同じ記事数の場合は同じランクになるか.ソートされているか.上位10件のみで検証 */
+    Array.from({ length: 10 }).forEach((_, i) => {
+      const current = ranking[i];
+      const prev = ranking[i - 1];
+
+      /** どちらかが存在しない場合はスキップ */
+      if (!(current && prev)) {
+        return;
+      }
+
+      if (prev && prev.articleCount === current.articleCount) {
+        expect(current.rank).toBe(prev.rank);
+      } else {
+        expect(current.rank).toBeGreaterThan(prev.rank);
+      }
+    });
+
+    /** 記事数で降順ソートされているか */
+    expect(ranking).toEqual(
+      ranking.toSorted((a, b) => b.articleCount - a.articleCount),
+    );
+
+    /** 記事数の合計が50であるか */
+    const totalArticleCount = ranking.reduce(
+      (acc, { articleCount }) => acc + articleCount,
+      0,
+    );
+
+    expect(totalArticleCount).toBe(50);
   });
 
   it("get to 10 ranking using getTopNRanking", () => {
+    expect(TOP_10_RANKING.at(-1)?.rank).toBeLessThanOrEqual(10);
     expect(TOP_10_RANKING).toMatchInlineSnapshot(`
       [
         {
