@@ -24,7 +24,7 @@ export function getRanking(articles: Article[]): Ranking[] {
       .toSorted((a, b) => b.articleCount - a.articleCount)
 
       /** ランクを計算。同じ記事数の場合は同じランクにする */
-      .reduce((acc, current, index) => {
+      .reduce((acc, currentRankedUser, index) => {
         /** 1つ前のユーザー */
         const prevRankedUser = acc.at(index - 1);
 
@@ -33,11 +33,11 @@ export function getRanking(articles: Article[]): Ranking[] {
           それ以外の場合はインデックス+1をランクとする
         */
         const rank =
-          prevRankedUser?.articleCount === current.articleCount
+          prevRankedUser?.articleCount === currentRankedUser.articleCount
             ? prevRankedUser.rank
             : index + 1;
 
-        return [...acc, { ...current, rank }];
+        return [...acc, { ...currentRankedUser, rank }];
       }, [] as Ranking[])
   );
 }
