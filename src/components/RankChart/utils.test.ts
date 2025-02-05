@@ -24,8 +24,8 @@ describe("RankChart utils.ts", () => {
     /** ランクが1から始まっているか */
     expect(ranking[0].rank).toBe(1);
 
-    /** 同じ記事数の場合は同じランクになるか.ソートされているか.上位10件のみで検証 */
-    Array.from({ length: 10 }).forEach((_, i) => {
+    /** 同じ記事数の場合は同じランクになるか.ソートされているか. */
+    Array.from({ length: 50 }).forEach((_, i) => {
       const current = ranking[i];
       const prev = ranking[i - 1];
 
@@ -40,11 +40,6 @@ describe("RankChart utils.ts", () => {
         expect(current.rank).toBeGreaterThan(prev.rank);
       }
     });
-
-    /** 記事数で降順ソートされているか */
-    expect(ranking).toEqual(
-      ranking.toSorted((a, b) => b.articleCount - a.articleCount),
-    );
 
     /** 記事数の合計が50であるか */
     const totalArticleCount = ranking.reduce(
