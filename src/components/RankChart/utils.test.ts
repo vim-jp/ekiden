@@ -1,15 +1,25 @@
+import type { Ranking } from "./types";
 import * as utils from "./utils";
 import { getArticles } from "@/lib/article";
 
-const PUBLISHED_FIRST_50_ARTICLES = getArticles({ isPublished: true }).slice(
-  0,
-  50,
-);
-
 describe("RankChart utils.ts", () => {
-  it("get to 10 ranking", () => {
-    const ranking = utils.getRanking(PUBLISHED_FIRST_50_ARTICLES);
-    expect(ranking).toMatchInlineSnapshot(`
+  let RANKING: Ranking[];
+  let TOP_10_RANKING: Ranking[];
+  beforeEach(() => {
+    const PUBLISHED_FIRST_50_ARTICLES = getArticles({
+      isPublished: true,
+    }).slice(0, 50);
+    RANKING = utils.getRanking(PUBLISHED_FIRST_50_ARTICLES);
+    TOP_10_RANKING = utils.getTopNRanking(RANKING, 10);
+    Object.freeze(TOP_10_RANKING); // Ensure that the array is not mutated
+  });
+
+  it("getRanking", () => {
+    expect(RANKING).toMatchSnapshot(); // Snapshotが大きいので別途ファイルに保存
+  });
+
+  it("get to 10 ranking using getTopNRanking", () => {
+    expect(TOP_10_RANKING).toMatchInlineSnapshot(`
       [
         {
           "articleCount": 5,
@@ -71,8 +81,7 @@ describe("RankChart utils.ts", () => {
   });
 
   it("getData", () => {
-    const ranking = utils.getRanking(PUBLISHED_FIRST_50_ARTICLES);
-    const data = utils.getData(ranking);
+    const data = utils.getData(TOP_10_RANKING);
     expect(data).toMatchInlineSnapshot(`
       {
         "datasets": [
@@ -116,7 +125,7 @@ describe("RankChart utils.ts", () => {
   });
 
   it("getOptions", () => {
-    const data = utils.getData(utils.getRanking(PUBLISHED_FIRST_50_ARTICLES));
+    const data = utils.getData(TOP_10_RANKING);
     const options = utils.getOptions(data);
     expect(options).toMatchInlineSnapshot(`
       {

@@ -1,0 +1,146 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RankChart utils.ts > getRanking 1`] = `
+[
+  {
+    "articleCount": 5,
+    "rank": 1,
+    "user": "staticWagomU",
+  },
+  {
+    "articleCount": 5,
+    "rank": 1,
+    "user": "uga-rosa",
+  },
+  {
+    "articleCount": 4,
+    "rank": 3,
+    "user": "monaqa",
+  },
+  {
+    "articleCount": 3,
+    "rank": 4,
+    "user": "atusy",
+  },
+  {
+    "articleCount": 3,
+    "rank": 4,
+    "user": "ryoppippi",
+  },
+  {
+    "articleCount": 3,
+    "rank": 4,
+    "user": "kyoh86",
+  },
+  {
+    "articleCount": 2,
+    "rank": 7,
+    "user": "thinca",
+  },
+  {
+    "articleCount": 2,
+    "rank": 7,
+    "user": "matoruru",
+  },
+  {
+    "articleCount": 2,
+    "rank": 7,
+    "user": "ArcCosine",
+  },
+  {
+    "articleCount": 2,
+    "rank": 7,
+    "user": "eihigh",
+  },
+  {
+    "articleCount": 2,
+    "rank": 7,
+    "user": "skanehira",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "tani",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "kuuote",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "Liquid-system",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "fuzmare",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "tadashi-aikawa",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "get-me-power",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "hokorobi",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "willelz",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "kamecha",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "ryota2357",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "ikorihn",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "mityu",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "sontixyou",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "yukimemi",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "uhooi",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "kawarimidoll",
+  },
+  {
+    "articleCount": 1,
+    "rank": 12,
+    "user": "futsuuu",
+  },
+]
+`;
