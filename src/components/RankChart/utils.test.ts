@@ -6,6 +6,7 @@ describe("RankChart utils.ts", () => {
   let RANKING: Ranking[];
   let TOP_10_RANKING: Ranking[];
   beforeEach(() => {
+    /** テストの結果が変わらないように、最初の50記事のみを取得 */
     const PUBLISHED_FIRST_50_ARTICLES = getArticles({
       isPublished: true,
     }).slice(0, 50);
