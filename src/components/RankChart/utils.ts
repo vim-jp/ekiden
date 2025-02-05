@@ -5,39 +5,38 @@ import type { Article, Ranking } from "./types";
  * ランキングを計算し、1つの配列にまとめる
  */
 export function getRanking(articles: Article[]): Ranking[] {
-  /** GitHubユーザーごとの記事を集約 */
-  const articlesGroupByUser = Object.groupBy(
-    articles,
-    ({ githubUser }) => githubUser,
-  );
+  /** GitHubユーザーごとの記事数をカウント */
+  const userCounts: { [user: string]: number } = {};
+  articles.forEach((article) => {
+    const user = article.githubUser;
+    if (userCounts[user]) {
+      userCounts[user]++;
+    } else {
+      userCounts[user] = 1;
+    }
+  });
 
-  /** ランキングを計算 */
-  const userRankings = Object.entries(articlesGroupByUser)
-    /** 記事数を計算 */
-    .map(([user, articles]) => ({
-      user,
-      articleCount: articles?.length ?? 0,
-    }))
+  /** 同率のユーザーをグループ化 */
+  const groupedUsers: { [count: number]: { users: string[] } } = {};
+  Object.entries(userCounts).forEach(([user, count]) => {
+    if (!groupedUsers[count]) {
+      groupedUsers[count] = { users: [] };
+    }
+    groupedUsers[count].users.push(user);
+  });
 
-    /** 記事数で降順ソート */
-    .toSorted((a, b) => b.articleCount - a.articleCount)
-
-    /** ランクを計算。同じ記事数の場合は同じランクにする */
-    .reduce((acc, current, index) => {
-      /** 1つ前のユーザー */
-      const prevRankedUser = acc.at(index - 1);
-
-      /** 
-          もし前の要素が存在し、記事数が同じ場合は同じランクにする 
-          それ以外の場合はインデックス+1をランクとする
-        */
-      const rank =
-        prevRankedUser?.articleCount === current.articleCount
-          ? prevRankedUser.rank
-          : index + 1;
-
-      return [...acc, { ...current, rank }];
-    }, [] as Ranking[]);
+  const userRankings: Ranking[] = [];
+  let rank = 1;
+  Object.keys(groupedUsers)
+    .map(Number)
+    .sort((a, b) => b - a)
+    .forEach((count) => {
+      const users = groupedUsers[count].users;
+      users.forEach((user) => {
+        userRankings.push({ user, articleCount: count, rank });
+      });
+      rank += users.length;
+    });
 
   return userRankings.filter(({ rank }) => rank <= 10);
 }
