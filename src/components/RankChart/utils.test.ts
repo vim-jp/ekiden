@@ -14,8 +14,8 @@ describe("RankChart utils.ts", () => {
       expect(ranking[0].rank).toBe(1);
     });
 
-    it("should have correct ranking", () => {
-      const ranking = utils.getRanking([
+    it("should assign same rank for ties and skip next ranks appropriately", () => {
+      const articles = [
         { githubUser: "alice" },
         { githubUser: "alice" },
         { githubUser: "alice" },
@@ -25,30 +25,16 @@ describe("RankChart utils.ts", () => {
         { githubUser: "charlie" },
         { githubUser: "charlie" },
         { githubUser: "david" },
+      ];
+
+      const ranking = utils.getRanking(articles);
+
+      expect(ranking).toEqual([
+        { rank: 1, user: "alice", articleCount: 3 },
+        { rank: 1, user: "bob", articleCount: 3 },
+        { rank: 3, user: "charlie", articleCount: 2 },
+        { rank: 4, user: "david", articleCount: 1 },
       ]);
-      expect(ranking[0]).toEqual({
-        rank: 1,
-        user: "alice",
-        articleCount: 3,
-      });
-      expect(ranking[1]).toEqual({
-        rank: 1,
-        user: "bob",
-        articleCount: 3,
-      });
-      expect(ranking[0].rank).toBe(ranking[1].rank);
-
-      expect(ranking[2]).toEqual({
-        rank: 3,
-        user: "charlie",
-        articleCount: 2,
-      });
-
-      expect(ranking[3]).toEqual({
-        rank: 4,
-        user: "david",
-        articleCount: 1,
-      });
     });
 
     it("should have total article count", () => {
