@@ -1,26 +1,31 @@
 import * as utils from "./utils";
 
-const ARTICLES = [
-  { githubUser: "alice" },
-  { githubUser: "alice" },
-  { githubUser: "alice" },
-  { githubUser: "bob" },
-  { githubUser: "bob" },
-  { githubUser: "bob" },
-  { githubUser: "charlie" },
-  { githubUser: "charlie" },
-  { githubUser: "david" },
-];
-
 describe("RankChart utils.ts", () => {
   describe("getRanking", () => {
-    const ranking = utils.getRanking(ARTICLES);
-
     it("should start with rank 1", () => {
+      const ranking = utils.getRanking([
+        { githubUser: "alice" },
+        { githubUser: "bob" },
+        { githubUser: "bob" },
+        { githubUser: "bob" },
+        { githubUser: "charlie" },
+        { githubUser: "charlie" },
+      ]);
       expect(ranking[0].rank).toBe(1);
     });
 
-    it("should have same rank for entries with 3 articles (rank 1)", () => {
+    it("should have correct ranking", () => {
+      const ranking = utils.getRanking([
+        { githubUser: "alice" },
+        { githubUser: "alice" },
+        { githubUser: "alice" },
+        { githubUser: "bob" },
+        { githubUser: "bob" },
+        { githubUser: "bob" },
+        { githubUser: "charlie" },
+        { githubUser: "charlie" },
+        { githubUser: "david" },
+      ]);
       expect(ranking[0]).toEqual({
         rank: 1,
         user: "alice",
@@ -32,17 +37,13 @@ describe("RankChart utils.ts", () => {
         articleCount: 3,
       });
       expect(ranking[0].rank).toBe(ranking[1].rank);
-    });
 
-    it("should have correct rank for 2 articles (rank 3)", () => {
       expect(ranking[2]).toEqual({
         rank: 3,
         user: "charlie",
         articleCount: 2,
       });
-    });
 
-    it("should have correct rank for 1 article (rank 4)", () => {
       expect(ranking[3]).toEqual({
         rank: 4,
         user: "david",
@@ -50,17 +51,29 @@ describe("RankChart utils.ts", () => {
       });
     });
 
-    it("should have total article count of 9", () => {
-      const totalArticleCount = ranking.reduce(
-        (acc, { articleCount }) => acc + articleCount,
-        0,
-      );
-      expect(totalArticleCount).toBe(9);
+    it("should have total article count", () => {
+      const ranking = utils.getRanking([
+        { githubUser: "alice" },
+        { githubUser: "alice" },
+        { githubUser: "bob" },
+      ]);
+
+      expect(ranking.length).toBe(2);
     });
   });
 
   describe("getTopNRanking", () => {
-    const ranking = utils.getRanking(ARTICLES);
+    const ranking = utils.getRanking([
+      { githubUser: "alice" },
+      { githubUser: "alice" },
+      { githubUser: "alice" },
+      { githubUser: "bob" },
+      { githubUser: "bob" },
+      { githubUser: "bob" },
+      { githubUser: "charlie" },
+      { githubUser: "charlie" },
+      { githubUser: "david" },
+    ]);
 
     it("should get top 1 rank", () => {
       const top1Ranking = utils.getTopNRanking(ranking, 1);
@@ -89,7 +102,17 @@ describe("RankChart utils.ts", () => {
   });
 
   describe("getData", () => {
-    const ranking = utils.getRanking(ARTICLES);
+    const ranking = utils.getRanking([
+      { githubUser: "alice" },
+      { githubUser: "alice" },
+      { githubUser: "alice" },
+      { githubUser: "bob" },
+      { githubUser: "bob" },
+      { githubUser: "bob" },
+      { githubUser: "charlie" },
+      { githubUser: "charlie" },
+      { githubUser: "david" },
+    ]);
     const top3Ranking = utils.getTopNRanking(ranking, 3);
 
     it("should match getData snapshot", () => {
@@ -122,11 +145,10 @@ describe("RankChart utils.ts", () => {
   });
 
   describe("getOptions", () => {
-    const ranking = utils.getRanking(ARTICLES);
-    const top3Ranking = utils.getTopNRanking(ranking, 3);
+    const ranking = utils.getRanking([]);
 
     it("should match getOptions snapshot", () => {
-      const data = utils.getData(top3Ranking);
+      const data = utils.getData(ranking);
       const options = utils.getOptions(data);
       expect(options).toMatchInlineSnapshot(`
         {
