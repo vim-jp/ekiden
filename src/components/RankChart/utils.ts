@@ -4,7 +4,7 @@ import type { Article, Ranking } from "./types";
 /**
  * ランキングを計算し、1つの配列にまとめる
  */
-export function getRanking(articles: Article[]): Ranking[] {
+export function getRanking(articles: Pick<Article, "githubUser">[]): Ranking[] {
   /** GitHubユーザーごとの記事を集約 */
   const articlesGroupByUser = Object.groupBy(
     articles,
