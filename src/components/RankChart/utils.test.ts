@@ -7,7 +7,20 @@ describe("RankChart utils.ts", () => {
       expect(ranking[0].rank).toBe(1);
     });
 
-    it("should assign same rank for ties and skip next ranks appropriately", () => {
+    it("should assign rank based on article count when no ties", () => {
+      const articles = [
+        { githubUser: "alice" },
+        { githubUser: "alice" },
+        { githubUser: "bob" },
+      ];
+      const ranking = utils.getRanking(articles);
+      expect(ranking).toEqual([
+        { rank: 1, user: "alice", articleCount: 2 },
+        { rank: 2, user: "bob", articleCount: 1 },
+      ]);
+    });
+
+    it("should assign same rank for ties and skip next ranks appropriately when some users have the same article count", () => {
       const articles = [
         { githubUser: "alice" },
         { githubUser: "alice" },
