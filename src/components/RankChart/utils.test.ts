@@ -30,7 +30,7 @@ describe("RankChart utils.ts", () => {
       ]);
     });
 
-    it("should have total article count", () => {
+    it("should have the same length as the number of unique users", () => {
       const ranking = utils.getRanking([
         { githubUser: "alice" },
         { githubUser: "alice" },
