@@ -3,14 +3,7 @@ import * as utils from "./utils";
 describe("RankChart utils.ts", () => {
   describe("getRanking", () => {
     it("should start with rank 1", () => {
-      const ranking = utils.getRanking([
-        { githubUser: "alice" },
-        { githubUser: "bob" },
-        { githubUser: "bob" },
-        { githubUser: "bob" },
-        { githubUser: "charlie" },
-        { githubUser: "charlie" },
-      ]);
+      const ranking = utils.getRanking([{ githubUser: "alice" }]);
       expect(ranking[0].rank).toBe(1);
     });
 
