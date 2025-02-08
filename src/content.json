@@ -2465,6 +2465,14 @@
       "issueNumber": 860
     },
     {
+      "title": "Vim/Neovimでgrep結果をいい感じにフィルタリングして一括編集する~quickfixにプラグインを添えて~",
+      "date": "2025-02-19",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 870
+    },
+    {
       "title": "Meguro.vim #28 を開催しました",
       "date": "2025-03-10",
       "runner": "thinca",
