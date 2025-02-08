@@ -2468,7 +2468,7 @@
       "title": "Vim/Neovimでgrep結果をいい感じにフィルタリングして一括編集する~quickfixにプラグインを添えて~",
       "date": "2025-02-19",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/quickfix-plugins-2025",
       "githubUser": "yuys13",
       "issueNumber": 870
     },
