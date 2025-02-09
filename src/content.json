@@ -2465,6 +2465,14 @@
       "issueNumber": 860
     },
     {
+      "title": "Neovim のターミナルでコマンドが完了したら通知する",
+      "date": "2025-02-17",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 871
+    },
+    {
       "title": "Vim/Neovimでgrep結果をいい感じにフィルタリングして一括編集する~quickfixにプラグインを添えて~",
       "date": "2025-02-19",
       "runner": "yuys13",
