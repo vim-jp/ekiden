@@ -24,8 +24,8 @@ importers:
         specifier: ^5.1.1
         version: 5.1.1
       '@unocss/reset':
-        specifier: ^65.4.3
-        version: 65.4.3
+        specifier: ^65.5.0
+        version: 65.5.0
       astro:
         specifier: ^5.2.5
         version: 5.2.5(@types/node@22.13.1)(jiti@2.4.2)(rollup@4.34.6)(tsx@4.19.2)(typescript@5.7.3)(yaml@2.5.0)
