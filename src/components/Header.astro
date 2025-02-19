@@ -20,6 +20,7 @@ const { slug } = Astro.props;
         <Picture
           src={logoImage}
           formats={["avif", "webp"]}
+          loading="eager"
           alt="Vim-JP"
           class="size-16"
         />
