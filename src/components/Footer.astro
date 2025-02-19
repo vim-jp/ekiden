@@ -1,4 +1,5 @@
 ---
+import { Image } from "astro:assets";
 import PageLink from "./PageLink.astro";
 const { slug } = Astro.props;
 ---
@@ -35,7 +36,7 @@ const { slug } = Astro.props;
       href="http://creativecommons.org/licenses/by/4.0/"
       class="shrink-0"
     >
-      <img
+      <Image
         class="border-0"
         alt="クリエイティブ・コモンズ・ライセンス"
         src="https://i.creativecommons.org/l/by/4.0/88x31.png"
