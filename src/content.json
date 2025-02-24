@@ -2489,10 +2489,10 @@
       "issueNumber": 872
     },
     {
-      "title": "なにか書きます",
+      "title": ":QuickRun で Vim9 script の実行を簡単にするプラグイン作った",
       "date": "2025-02-24",
       "runner": "mityu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/vim-quickrun-auto-vim9-intro",
       "githubUser": "mityu",
       "issueNumber": 887
     },
