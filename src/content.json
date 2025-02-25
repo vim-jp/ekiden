@@ -2505,6 +2505,14 @@
       "issueNumber": 884
     },
     {
+      "title": "Vim でカーソル下の文字コード取得と文字コードでの入力を行う",
+      "date": "2025-02-28",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 907
+    },
+    {
       "title": "Meguro.vim #28 を開催しました",
       "date": "2025-03-10",
       "runner": "thinca",
