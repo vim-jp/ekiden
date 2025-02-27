@@ -2543,6 +2543,14 @@
       "url": "https://thinca.hatenablog.com/entry/2025/03/megurovim-28",
       "githubUser": "thinca",
       "issueNumber": 830
+    },
+    {
+      "title": "コードを折り畳む時、2行目移行の内容も1行にまとめちゃうといいよ on Neovim",
+      "date": "2025-03-12",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 912
     }
   ]
 }
