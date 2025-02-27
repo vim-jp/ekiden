@@ -2513,6 +2513,14 @@
       "issueNumber": 907
     },
     {
+      "title": "略しすぎて別の単語になってしまったVimのコマンドなにこれクイズ",
+      "date": "2025-03-03",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/36213839dda0f2",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 909
+    },
+    {
       "title": "Meguro.vim #28 を開催しました",
       "date": "2025-03-10",
       "runner": "thinca",
