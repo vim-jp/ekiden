@@ -36,8 +36,13 @@ const { slug } = Astro.props;
       <PageLink slug={slug} href="/ranking/">ランキング</PageLink>
       <PageLink slug={slug} href="/statistics/">統計</PageLink>
     </nav>
-    <div>
+    <div class="flex-gap flex flex-row items-center gap-4">
       <ConversionButton href="/ekiden/#first-slot" />
+      <a href="https://github.com/vim-jp/ekiden">
+        <div class="flex flex-row items-center">
+          <span i-radix-icons-github-logo w-7 h-7></span>
+        </div>
+      </a>
     </div>
   </div>
 </div>
