@@ -2559,6 +2559,14 @@
       "url": null,
       "githubUser": "okm321",
       "issueNumber": 914
+    },
+    {
+      "title": "NeovimをCursorのように進化させる - yetone/avante.nvim の導入",
+      "date": "2025-03-17",
+      "runner": "nwiizo",
+      "url": "https://syu-m-5151.hatenablog.com/entry/2025/01/07/220406",
+      "githubUser": "nwiizo",
+      "issueNumber": 923
     }
   ]
 }
