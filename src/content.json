@@ -2524,7 +2524,7 @@
       "title": ":%!xxx-fmtをいい感じにスクリプトでやる",
       "date": "2025-03-05",
       "runner": "kuuote",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20250305_ekiden_vim_script_format",
       "githubUser": "kuuote",
       "issueNumber": 910
     },
