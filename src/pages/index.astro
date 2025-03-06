@@ -34,7 +34,16 @@ const newestArticle = getArticles({ isPublished: true }).at(-1);
     class="flex flex-row items-center gap-x-4 bg-ekiden-green-500 p-4 text-ekiden-white-500 font-bold"
   >
     <ConversionButton href="#first-slot" />
-    あなたもVimやテクノロジーに関する記事を書いて、リレーを繋ごう！
+    <div>
+      <div>あなたもVimやテクノロジーに関する記事を書いて、リレーを繋ごう！</div>
+      <div class="underline font-normal">
+        <a
+          href="https://github.com/vim-jp/ekiden/issues?q=is%3Aissue%20state%3Aopen%20author%3A%40me%20label%3Aarticle"
+        >
+          参加登録済みの方はここから自分の予約を確認できます
+        </a>
+      </div>
+    </div>
   </div>
   <section
     class="news mt-3 border border-ekiden-black-500 rounded p-3 text-ekiden-black-500"
