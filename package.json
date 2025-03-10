@@ -39,7 +39,7 @@
     "@iconify-json/tabler": "^1.2.16",
     "@std/collections": "npm:@jsr/std__collections@^1.0.6",
     "@types/eslint__js": "^9.14.0",
-    "@types/node": "^22.13.8",
+    "@types/node": "^22.13.10",
     "@typescript-eslint/utils": "^8.25.0",
     "@unocss/eslint-config": "^65.5.0",
     "@unocss/preset-web-fonts": "^66.0.0",
