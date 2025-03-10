@@ -24,7 +24,7 @@
     "@astrojs/rss": "^4.0.11",
     "@astrojs/svelte": "^7.0.4",
     "@fontsource/kaushan-script": "^5.2.5",
-    "@fontsource/yuji-syuku": "^5.1.1",
+    "@fontsource/yuji-syuku": "^5.2.5",
     "@unocss/reset": "^66.0.0",
     "astro": "^5.4.1",
     "chart.js": "^4.4.8",
