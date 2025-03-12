@@ -2545,10 +2545,10 @@
       "issueNumber": 830
     },
     {
-      "title": "コードを折り畳む時、2行目移行の内容も1行にまとめちゃうといいよ on Neovim",
+      "title": "Neovim Nightlyでターミナル内でプロンプト間をジャンプできるようになった（OSC133）]",
       "date": "2025-03-12",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2025/03/12/nvim-osc133/",
       "githubUser": "atusy",
       "issueNumber": 912
     },
