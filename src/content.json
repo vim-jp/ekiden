@@ -2575,6 +2575,14 @@
       "url": "https://mikoto2000.blogspot.com/2025/03/vim-json.html",
       "githubUser": "mikoto2000",
       "issueNumber": 935
+    },
+    {
+      "title": "CodeCompanionを使ってNeovimと一緒にAI Coding",
+      "date": "2025-03-21",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 936
     }
   ]
 }
