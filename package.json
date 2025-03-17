@@ -30,7 +30,7 @@
     "chart.js": "^4.4.8",
     "dayjs": "^1.11.13",
     "sharp": "^0.33.5",
-    "svelte": "^5.20.5"
+    "svelte": "^5.23.1"
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.4",
