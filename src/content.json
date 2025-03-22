@@ -2604,7 +2604,7 @@
       "title": "Neovim luaのテストを書こう。neotestで高速に修正🔁テストのサイクルを回す",
       "date": "2025-03-28",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/nvim-test-with-neotest-plenary",
       "githubUser": "yuys13",
       "issueNumber": 946
     }
