@@ -2599,6 +2599,14 @@
       "url": null,
       "githubUser": "mikoto2000",
       "issueNumber": 945
+    },
+    {
+      "title": "Neovim luaのテストを書こう。neotestで高速に修正🔁テストのサイクルを回す",
+      "date": "2025-03-28",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 946
     }
   ]
 }
