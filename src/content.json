@@ -2585,10 +2585,10 @@
       "issueNumber": 936
     },
     {
-      "title": "よく使ってるTelescope Picker集",
+      "title": "Neovimのファジーファインダーtelescope.nvimでよく使っているpicker集",
       "date": "2025-03-24",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2025/03/25/nvim-telescope-pickers/",
       "githubUser": "atusy",
       "issueNumber": 944
     },
