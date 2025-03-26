@@ -2607,6 +2607,14 @@
       "url": "https://zenn.dev/vim_jp/articles/nvim-test-with-neotest-plenary",
       "githubUser": "yuys13",
       "issueNumber": 946
+    },
+    {
+      "title": "vimmerになった",
+      "date": "2025-03-31",
+      "runner": "静カニ",
+      "url": "https://shizukani-cp.github.io/blog/articles/20250331/",
+      "githubUser": "shizukani-cp",
+      "issueNumber": 957
     }
   ]
 }
