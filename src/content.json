@@ -2615,6 +2615,14 @@
       "url": "https://shizukani-cp.github.io/blog/articles/20250331/",
       "githubUser": "shizukani-cp",
       "issueNumber": 957
+    },
+    {
+      "title": "Neovimでtsgoで型チェックする",
+      "date": "2025-04-02",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/1ad3c4c7bfb218",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 958
     }
   ]
 }
