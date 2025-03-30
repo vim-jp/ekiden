@@ -2631,6 +2631,14 @@
       "url": null,
       "githubUser": "tadashi-aikawa",
       "issueNumber": 959
+    },
+    {
+      "title": "devcontainer.vim で Claude Code を使う",
+      "date": "2025-04-07",
+      "runner": "mikoto2000",
+      "url": null,
+      "githubUser": "mikoto2000",
+      "issueNumber": 960
     }
   ]
 }
