@@ -2623,6 +2623,14 @@
       "url": "https://zenn.dev/vim_jp/articles/1ad3c4c7bfb218",
       "githubUser": "kawarimidoll",
       "issueNumber": 958
+    },
+    {
+      "title": "Neovimで最強のダッシュボードを考えてみた",
+      "date": "2025-04-04",
+      "runner": "tadashi-aikawa",
+      "url": null,
+      "githubUser": "tadashi-aikawa",
+      "issueNumber": 959
     }
   ]
 }
