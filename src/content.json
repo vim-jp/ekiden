@@ -2641,10 +2641,10 @@
       "issueNumber": 960
     },
     {
-      "title": "自作プラグインについて書く",
+      "title": "Neovimの履歴管理ができるAIプラグインsenpai.nvimの使い方",
       "date": "2025-04-09",
       "runner": "eetann",
-      "url": null,
+      "url": "https://eiji.page/blog/neovim-senpai-nvim-intro",
       "githubUser": "eetann",
       "issueNumber": 967
     },
