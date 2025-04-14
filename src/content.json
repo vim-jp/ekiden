@@ -2681,6 +2681,14 @@
       "issueNumber": 982
     },
     {
+      "title": "Neovim起動時にロゴをﾋｭﾝﾋｭﾝﾋｭﾝﾋｭﾝﾋｭﾝ!!ﾌﾜﾜ~~ﾝ!!する",
+      "date": "2025-04-25",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/de942e6414685e",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 992
+    },
+    {
       "title": "Meguro.vim #29 を開催しました",
       "date": "2025-05-19",
       "runner": "thinca",
