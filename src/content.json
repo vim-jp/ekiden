@@ -2681,6 +2681,14 @@
       "issueNumber": 982
     },
     {
+      "title": "Neovim のキーマップ設定をより便利にする DSL",
+      "date": "2025-04-21",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 993
+    },
+    {
       "title": "Neovim起動時にロゴをﾋｭﾝﾋｭﾝﾋｭﾝﾋｭﾝﾋｭﾝ!!ﾌﾜﾜ~~ﾝ!!する",
       "date": "2025-04-25",
       "runner": "kawarimidoll",
