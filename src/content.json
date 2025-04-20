@@ -2681,10 +2681,10 @@
       "issueNumber": 982
     },
     {
-      "title": "Neovim のキーマップ設定をより便利にする DSL",
+      "title": "Neovim で文字列を動的にチャチャッと切り替える",
       "date": "2025-04-21",
       "runner": "monaqa",
-      "url": null,
+      "url": "https://zenn.dev/monaqa/articles/2025-04-21-vim-dial-dynamic-constant-switching",
       "githubUser": "monaqa",
       "issueNumber": 993
     },
