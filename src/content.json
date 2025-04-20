@@ -2689,6 +2689,14 @@
       "issueNumber": 993
     },
     {
+      "title": "忙しい人向け nvim-lspconfigのnvim v0.11対応",
+      "date": "2025-04-23",
+      "runner": "yuys13",
+      "url": "https://zenn.dev/yuys13/articles/migrate-nvim-lspconfig-v0_11",
+      "githubUser": "yuys13",
+      "issueNumber": 994
+    },
+    {
       "title": "Neovim起動時にロゴをﾋｭﾝﾋｭﾝﾋｭﾝﾋｭﾝﾋｭﾝ!!ﾌﾜﾜ~~ﾝ!!する",
       "date": "2025-04-25",
       "runner": "kawarimidoll",
