@@ -55,7 +55,7 @@
     "typescript-eslint": "^8.29.1",
     "ufo": "^1.6.1",
     "unocss": "^66.0.0",
-    "vitest": "^3.1.1"
+    "vitest": "^3.1.2"
   },
   "private": true,
   "packageManager": "pnpm@9.10.0+sha512.73a29afa36a0d092ece5271de5177ecbf8318d454ecd701343131b8ebc0c1a91c487da46ab77c8e596d6acf1461e3594ced4becedf8921b074fbd8653ed7051c"
