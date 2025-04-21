@@ -30,8 +30,8 @@ importers:
         specifier: ^5.6.2
         version: 5.6.2(@types/node@22.14.1)(jiti@2.4.2)(rollup@4.40.0)(tsx@4.19.2)(typescript@5.8.3)(yaml@2.5.0)
       chart.js:
-        specifier: ^4.4.8
-        version: 4.4.8
+        specifier: ^4.4.9
+        version: 4.4.9
       dayjs:
         specifier: ^1.11.13
         version: 1.11.13
@@ -1445,8 +1445,8 @@ packages:
   character-entities@2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
 
-  chart.js@4.4.8:
-    resolution: {integrity: sha512-IkGZlVpXP+83QpMm4uxEiGqSI7jFizwVtF3+n5Pc3k7sMO+tkd0qxh2OzLhenM0K80xtmAONWGBn082EiBQSDA==}
+  chart.js@4.4.9:
+    resolution: {integrity: sha512-EyZ9wWKgpAU0fLJ43YAEIF8sr5F2W3LqbS40ZJyHIner2lY14ufqv2VMp69MAiZ2rpwxEUxEhIH/0U3xyRynxg==}
     engines: {pnpm: '>=8'}
 
   check-error@2.1.1:
@@ -4592,7 +4592,7 @@ snapshots:
 
   character-entities@2.0.2: {}
 
-  chart.js@4.4.8:
+  chart.js@4.4.9:
     dependencies:
       '@kurkle/color': 0.3.4
 
