@@ -2705,6 +2705,14 @@
       "issueNumber": 992
     },
     {
+      "title": ".zsh_historyファイルを好きにイジる",
+      "date": "2025-04-28",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 995
+    },
+    {
       "title": "Meguro.vim #29 を開催しました",
       "date": "2025-05-19",
       "runner": "thinca",
