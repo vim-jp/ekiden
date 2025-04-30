@@ -2713,14 +2713,6 @@
       "issueNumber": 995
     },
     {
-      "title": "ステータスラインプラグインの読みこみを遅延する",
-      "date": "2025-04-30",
-      "runner": "atusy",
-      "url": null,
-      "githubUser": "atusy",
-      "issueNumber": 1006
-    },
-    {
       "title": "NixOS で unstable 版や Nightly 版の Neovim をインストールする方法",
       "date": "2025-05-02",
       "runner": "s-show",
