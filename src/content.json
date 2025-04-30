@@ -2716,7 +2716,7 @@
       "title": "ステータスラインプラグインの読みこみを遅延する",
       "date": "2025-04-30",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2025/04/30/vim-ekiden-lazy-load-statusline-plugins/",
       "githubUser": "atusy",
       "issueNumber": 1006
     },
