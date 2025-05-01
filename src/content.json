@@ -2729,6 +2729,14 @@
       "issueNumber": 1007
     },
     {
+      "title": "treesitterを使って閲覧中のヘルプのneovim.io版URLを発行する",
+      "date": "2025-05-05",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1008
+    },
+    {
       "title": "Meguro.vim #29 を開催しました",
       "date": "2025-05-19",
       "runner": "thinca",
