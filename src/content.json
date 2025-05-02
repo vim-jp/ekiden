@@ -2737,6 +2737,14 @@
       "issueNumber": 1008
     },
     {
+      "title": "Hydra.nvimでシンプルなメニューを作る",
+      "date": "2025-05-07",
+      "runner": "mimikun",
+      "url": "http://zenn.dev/mimikun/articles/create-simple-menu-with-hydra-nvim",
+      "githubUser": "mimikun",
+      "issueNumber": 1011
+    },
+    {
       "title": "Meguro.vim #29 を開催しました",
       "date": "2025-05-19",
       "runner": "thinca",
