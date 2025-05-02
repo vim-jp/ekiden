@@ -55,7 +55,7 @@ importers:
         specifier: ^1.2.17
         version: 1.2.17
       '@std/collections':
-        specifier: npm:@jsr/std__collections@^1.0.6
+        specifier: jsr:^1.0.6
         version: '@jsr/std__collections@1.0.9'
       '@types/eslint__js':
         specifier: ^9.14.0
