@@ -2756,7 +2756,7 @@
       "title": "Neovim v0.11のネイティブ補完APIをlazy.nvim+Masonな環境で使う",
       "date": "2025-05-12",
       "runner": "わたすけ",
-      "url": "http://watasuke.net/blog/article/using-lsp-completion-with-lazy-nvim-mason/",
+      "url": "https://watasuke.net/blog/article/using-lsp-completion-with-lazy-nvim-mason/",
       "githubUser": "watasuke102",
       "issueNumber": 1014
     },
