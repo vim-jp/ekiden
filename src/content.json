@@ -2761,6 +2761,14 @@
       "issueNumber": 1014
     },
     {
+      "title": "mini.nvimの新モジュールmini.keymapで決めろマルチステップコンボ",
+      "date": "2025-05-14",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/9a89ecb5ff14a9",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1027
+    },
+    {
       "title": "Meguro.vim #29 を開催しました",
       "date": "2025-05-19",
       "runner": "thinca",
