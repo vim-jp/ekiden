@@ -2769,6 +2769,14 @@
       "issueNumber": 1027
     },
     {
+      "title": "Neovim の Runtime ファイルを GitHub で開く",
+      "date": "2025-05-16",
+      "runner": "delphinus",
+      "url": null,
+      "githubUser": "delphinus",
+      "issueNumber": 1028
+    },
+    {
       "title": "Meguro.vim #29 を開催しました",
       "date": "2025-05-19",
       "runner": "thinca",
