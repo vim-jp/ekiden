@@ -2783,6 +2783,14 @@
       "url": "https://thinca.hatenablog.com/entry/2025/05/megurovim-29",
       "githubUser": "thinca",
       "issueNumber": 980
+    },
+    {
+      "title": "【lazy.nvim】たまに使うプラグインはcondプロパティを使うと便利",
+      "date": "2025-05-21",
+      "runner": "mitsu-yuki",
+      "url": null,
+      "githubUser": "mitsu-yuki",
+      "issueNumber": 1029
     }
   ]
 }
