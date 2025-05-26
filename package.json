@@ -22,7 +22,7 @@
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.11",
-    "@astrojs/svelte": "^7.0.10",
+    "@astrojs/svelte": "^7.1.0",
     "@fontsource/kaushan-script": "^5.2.5",
     "@fontsource/yuji-syuku": "^5.2.5",
     "@unocss/reset": "^66.0.0",
