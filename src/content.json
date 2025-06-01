@@ -2855,6 +2855,14 @@
       "url": "https://zenn.dev/abebe123000/articles/f5fd75017c3e08",
       "githubUser": "Abebe123000",
       "issueNumber": 1049
+    },
+    {
+      "title": "Neovim を設定してみました (`org-mode` で)",
+      "date": "2025-06-11",
+      "runner": "toyboot4e",
+      "url": "https://toyboot4e.github.io/2025-06-11-neovim.html",
+      "githubUser": "toyboot4e",
+      "issueNumber": 1050
     }
   ]
 }
