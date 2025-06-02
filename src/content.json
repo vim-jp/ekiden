@@ -2863,14 +2863,6 @@
       "url": "https://toyboot4e.github.io/2025-06-11-neovim.html",
       "githubUser": "toyboot4e",
       "issueNumber": 1050
-    },
-    {
-      "title": "VSCode + Calva + NeoVim (with Emacs) によるClojure開発環境の設定",
-      "date": "2025-06-13",
-      "runner": "purple-wisteria",
-      "url": "https://chaploud-blog.hatenablog.com/entry/2025/06/01/232305",
-      "githubUser": "purple-wisteria",
-      "issueNumber": 1057
     }
   ]
 }
