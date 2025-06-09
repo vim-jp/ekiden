@@ -2879,6 +2879,14 @@
       "url": "https://zenn.dev/sinotca/articles/6bf254d056af28",
       "githubUser": "sinotca529",
       "issueNumber": 1059
+    },
+    {
+      "title": "Zenn Book を org-mode で書きましょう！",
+      "date": "2025-06-18",
+      "runner": "toyboot4e",
+      "url": "https://zenn.dev/toyboot4e/articles/org-mode-for-zenn-books",
+      "githubUser": "toyboot4e",
+      "issueNumber": 1066
     }
   ]
 }
