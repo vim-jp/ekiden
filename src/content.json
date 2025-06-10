@@ -2887,6 +2887,14 @@
       "url": "https://zenn.dev/toyboot4e/articles/org-mode-for-zenn-books",
       "githubUser": "toyboot4e",
       "issueNumber": 1066
+    },
+    {
+      "title": "【Neovim】爆速で起動するIDE構築の手引き【令和最新版】",
+      "date": "2025-06-23",
+      "runner": "glmlm",
+      "url": null,
+      "githubUser": "glmlm",
+      "issueNumber": 1067
     }
   ]
 }
