@@ -2895,6 +2895,14 @@
       "url": null,
       "githubUser": "glmlm",
       "issueNumber": 1069
+    },
+    {
+      "title": "marp.nvimを開発してCursorから完全移行した話",
+      "date": "2025-06-23",
+      "runner": "nwiizo",
+      "url": "https://syu-m-5151.hatenablog.com/entry/2025/05/31/105405",
+      "githubUser": "nwiizo",
+      "issueNumber": 1076
     }
   ]
 }
