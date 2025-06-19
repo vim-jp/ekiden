@@ -2903,6 +2903,14 @@
       "url": "https://syu-m-5151.hatenablog.com/entry/2025/05/31/105405",
       "githubUser": "nwiizo",
       "issueNumber": 1076
+    },
+    {
+      "title": "Nix を使って複数バージョンの Neovim をインストールする方法",
+      "date": "2025-06-25",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1077
     }
   ]
 }
