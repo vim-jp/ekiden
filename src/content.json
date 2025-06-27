@@ -2927,6 +2927,14 @@
       "url": "https://toyboot4e.github.io/2025-06-30-steno-with-neovim.html",
       "githubUser": "toyboot4e",
       "issueNumber": 1085
+    },
+    {
+      "title": "Meguro.vim #30 を開催しました",
+      "date": "2025-07-07",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2025/07/megurovim-30",
+      "githubUser": "thinca",
+      "issueNumber": 1086
     }
   ]
 }
