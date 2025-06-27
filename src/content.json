@@ -2911,6 +2911,14 @@
       "url": "https://kankodori-blog.com/post/2025-06-25/",
       "githubUser": "s-show",
       "issueNumber": 1077
+    },
+    {
+      "title": "Vim script / Neovim luaで現在のファイルのパスと行数をコピーするコマンド",
+      "date": "2025-06-27",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/175ba80cd3cbaa",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1084
     }
   ]
 }
