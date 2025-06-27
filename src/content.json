@@ -2919,6 +2919,14 @@
       "url": "https://zenn.dev/vim_jp/articles/175ba80cd3cbaa",
       "githubUser": "kawarimidoll",
       "issueNumber": 1084
+    },
+    {
+      "title": "速記キーボードで Neovim がしたい？！",
+      "date": "2025-06-30",
+      "runner": "toyboot4e",
+      "url": "https://toyboot4e.github.io/2025-06-30-steno-with-neovim.html",
+      "githubUser": "toyboot4e",
+      "issueNumber": 1085
     }
   ]
 }
