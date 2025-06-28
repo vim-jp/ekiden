@@ -2929,6 +2929,14 @@
       "issueNumber": 1085
     },
     {
+      "title": "AIを使ったら1時間かからずにVimプラグインが作れた話",
+      "date": "2025-07-02",
+      "runner": "snyt45",
+      "url": null,
+      "githubUser": "snyt45",
+      "issueNumber": 1087
+    },
+    {
       "title": "Meguro.vim #30 を開催しました",
       "date": "2025-07-07",
       "runner": "thinca",
