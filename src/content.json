@@ -2937,6 +2937,14 @@
       "issueNumber": 1087
     },
     {
+      "title": "vim-jetpack管理のVimプラグインをシェルから追加削除する",
+      "date": "2025-07-04",
+      "runner": "nil2",
+      "url": null,
+      "githubUser": "nil-two",
+      "issueNumber": 1094
+    },
+    {
       "title": "Meguro.vim #30 を開催しました",
       "date": "2025-07-07",
       "runner": "thinca",
