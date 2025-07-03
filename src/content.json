@@ -2951,6 +2951,14 @@
       "url": "https://thinca.hatenablog.com/entry/2025/07/megurovim-30",
       "githubUser": "thinca",
       "issueNumber": 1086
+    },
+    {
+      "title": "Goで開発するneovimのplugin",
+      "date": "2025-07-09",
+      "runner": "masamerc",
+      "url": "https://zenn.dev/masterbongo/articles/neovim-plugin-with-go",
+      "githubUser": "masamerc",
+      "issueNumber": 1095
     }
   ]
 }
