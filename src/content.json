@@ -2959,6 +2959,14 @@
       "url": "https://zenn.dev/masterbongo/articles/neovim-plugin-with-go",
       "githubUser": "masamerc",
       "issueNumber": 1095
+    },
+    {
+      "title": "Vim が Wayland の clipboard をサポート",
+      "date": "2025-07-11",
+      "runner": "NI57721",
+      "url": "https://zenn.dev/vim_jp/articles/wayland-clipboard-feature-in-vim",
+      "githubUser": "NI57721",
+      "issueNumber": 1096
     }
   ]
 }
