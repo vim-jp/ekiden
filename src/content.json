@@ -2967,6 +2967,14 @@
       "url": "https://zenn.dev/vim_jp/articles/wayland-clipboard-feature-in-vim",
       "githubUser": "NI57721",
       "issueNumber": 1096
+    },
+    {
+      "title": "Vimへの初コントリビューションの経緯と学び",
+      "date": "2025-07-14",
+      "runner": "uma-chan",
+      "url": "https://i9wa4.github.io/blog/2025-07-14-my-first-vim-contribution.html",
+      "githubUser": "i9wa4",
+      "issueNumber": 1103
     }
   ]
 }
