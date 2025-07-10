@@ -2961,7 +2961,7 @@
       "issueNumber": 1095
     },
     {
-      "title": "Vim が Wayland の clipboard をサポート",
+      "title": "Vim が Wayland のクリップボードをサポート",
       "date": "2025-07-11",
       "runner": "NI57721",
       "url": "https://zenn.dev/vim_jp/articles/wayland-clipboard-feature-in-vim",
