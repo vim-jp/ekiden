@@ -2975,14 +2975,6 @@
       "url": "https://i9wa4.github.io/blog/2025-07-14-my-first-vim-contribution.html",
       "githubUser": "i9wa4",
       "issueNumber": 1103
-    },
-    {
-      "title": "Gemini-CLI&gemini.nvim",
-      "date": "2025-07-16",
-      "runner": "静カニ",
-      "url": "https://shizukani-cp.github.io/blog/articles/20250716/",
-      "githubUser": "shizukani-cp",
-      "issueNumber": 1104
     }
   ]
 }
