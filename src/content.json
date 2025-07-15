@@ -2977,10 +2977,10 @@
       "issueNumber": 1103
     },
     {
-      "title": "なんか書く",
+      "title": "プロンプトを普段のエディタで書けるツールeditpromptの使い方",
       "date": "2025-07-16",
       "runner": "eetann",
-      "url": null,
+      "url": "https://eiji.page/blog/editprompt-intro/",
       "githubUser": "eetann",
       "issueNumber": 1105
     }
