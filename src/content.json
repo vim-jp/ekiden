@@ -2985,7 +2985,7 @@
       "issueNumber": 1105
     },
     {
-      "title": "Telescope git_statusのプロンプトタイトルに作業ブランチ情報を出す",
+      "title": "[git statusをfuzzy findする時にプロンプトタイトルにブランチ情報を出すと便利 with telescope.nvim](https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/)",
       "date": "2025-07-18",
       "runner": "atusy",
       "url": "https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/",
