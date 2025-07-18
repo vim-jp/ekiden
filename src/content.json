@@ -2983,6 +2983,14 @@
       "url": "https://eiji.page/blog/editprompt-intro/",
       "githubUser": "eetann",
       "issueNumber": 1105
+    },
+    {
+      "title": "Telescope git_statusのプロンプトタイトルに作業ブランチ情報を出す",
+      "date": "2025-07-18",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1112
     }
   ]
 }
