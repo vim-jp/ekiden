@@ -2991,6 +2991,14 @@
       "url": null,
       "githubUser": "atusy",
       "issueNumber": 1112
+    },
+    {
+      "title": "Neovimでqキーをprefixとして使う",
+      "date": "2025-07-21",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/29d021fff07e60",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1113
     }
   ]
 }
