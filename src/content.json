@@ -2985,7 +2985,7 @@
       "issueNumber": 1105
     },
     {
-      "title": "[git statusをfuzzy findする時にプロンプトタイトルにブランチ情報を出すと便利 with telescope.nvim](https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/)",
+      "title": "git statusをfuzzy findする時にプロンプトタイトルにブランチ情報を出すと便利 with telescope.nvim",
       "date": "2025-07-18",
       "runner": "atusy",
       "url": "https://blog.atusy.net/2025/07/18/telescope-git-status-with-informative-prompt-title/",
