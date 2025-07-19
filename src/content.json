@@ -2999,6 +2999,14 @@
       "url": "https://zenn.dev/vim_jp/articles/29d021fff07e60",
       "githubUser": "kawarimidoll",
       "issueNumber": 1113
+    },
+    {
+      "title": "Neovim の vim.keymap.set をより便利にする DSL を考えた",
+      "date": "2025-07-23",
+      "runner": "monaqa",
+      "url": null,
+      "githubUser": "monaqa",
+      "issueNumber": 1115
     }
   ]
 }
