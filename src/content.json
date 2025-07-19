@@ -3007,6 +3007,14 @@
       "url": null,
       "githubUser": "monaqa",
       "issueNumber": 1115
+    },
+    {
+      "title": "Partedit で Neovim LSP が起動しない",
+      "date": "2025-07-25",
+      "runner": "gw31415",
+      "url": "http://zenn.dev/gw31415/articles/f5982c009c0158",
+      "githubUser": "gw31415",
+      "issueNumber": 1116
     }
   ]
 }
