@@ -3004,7 +3004,7 @@
       "title": "Neovim の vim.keymap.set をより便利にする DSL を考えた",
       "date": "2025-07-23",
       "runner": "monaqa",
-      "url": null,
+      "url": "https://zenn.dev/monaqa/articles/2025-07-23-vim-keymap-set-dsl",
       "githubUser": "monaqa",
       "issueNumber": 1115
     },
