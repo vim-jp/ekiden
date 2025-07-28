@@ -3017,10 +3017,10 @@
       "issueNumber": 1116
     },
     {
-      "title": "なんか書く",
+      "title": "Neovimで検索文字の入力中にvery magicをトグルする",
       "date": "2025-07-28",
       "runner": "eetann",
-      "url": null,
+      "url": "https://eiji.page/blog/neovim-toggle-very-magic/",
       "githubUser": "eetann",
       "issueNumber": 1117
     },
