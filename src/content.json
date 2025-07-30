@@ -3031,6 +3031,14 @@
       "url": "https://looxu.blogspot.com/2025/07/vibe-coding.html",
       "githubUser": "ArcCosine",
       "issueNumber": 1118
+    },
+    {
+      "title": "Vimの標準機能で自動補完",
+      "date": "2025-08-01",
+      "runner": "Totto66",
+      "url": null,
+      "githubUser": "Totto66",
+      "issueNumber": 1120
     }
   ]
 }
