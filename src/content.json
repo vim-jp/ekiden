@@ -3041,10 +3041,10 @@
       "issueNumber": 1120
     },
     {
-      "title": "ちょっとしたコードで端末のコピー機能を使う",
+      "title": "ちょっとしたコードで端末エミュレータのコピー機能を使う",
       "date": "2025-08-04",
       "runner": "kuuote",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20250804_ekiden_oscyank",
       "githubUser": "kuuote",
       "issueNumber": 1121
     }
