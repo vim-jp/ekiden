@@ -3047,6 +3047,14 @@
       "url": "https://zenn.dev/vim_jp/articles/20250804_ekiden_oscyank",
       "githubUser": "kuuote",
       "issueNumber": 1121
+    },
+    {
+      "title": "いつの間にかVimでも外部プラグインなしでもEditorConfigが使えるようになっていた",
+      "date": "2025-08-06",
+      "runner": "mitsu-yuki",
+      "url": null,
+      "githubUser": "mitsu-yuki",
+      "issueNumber": 1128
     }
   ]
 }
