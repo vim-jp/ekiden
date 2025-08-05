@@ -3055,6 +3055,14 @@
       "url": null,
       "githubUser": "mitsu-yuki",
       "issueNumber": 1128
+    },
+    {
+      "title": "レジスタの上書き回避には-（マイナス）をブラックホールレジスタにマッピングするといいよ",
+      "date": "2025-08-08",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1129
     }
   ]
 }
