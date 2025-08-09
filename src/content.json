@@ -3063,6 +3063,14 @@
       "url": "https://blog.atusy.net/2025/08/08/map-minus-to-blackhole-register/",
       "githubUser": "atusy",
       "issueNumber": 1129
+    },
+    {
+      "title": "Vimへコピぺする時に置き換え元の文字でクリップボードを上書きしないいくつかの方法",
+      "date": "2025-08-11",
+      "runner": "mitsu-yuki",
+      "url": null,
+      "githubUser": "mitsu-yuki",
+      "issueNumber": 1130
     }
   ]
 }
