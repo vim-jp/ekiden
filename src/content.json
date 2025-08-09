@@ -3071,6 +3071,14 @@
       "url": null,
       "githubUser": "mitsu-yuki",
       "issueNumber": 1130
+    },
+    {
+      "title": "nvim-treesitterのmainブランチ移行",
+      "date": "2025-08-13",
+      "runner": "yasunori0418",
+      "url": "https://blog.yasunori0418.dev/p/migrate-treesitter-main/",
+      "githubUser": "yasunori0418",
+      "issueNumber": 1131
     }
   ]
 }
