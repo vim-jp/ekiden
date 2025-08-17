@@ -3079,6 +3079,14 @@
       "url": "https://blog.yasunori0418.dev/p/migrate-treesitter-main/",
       "githubUser": "yasunori0418",
       "issueNumber": 1131
+    },
+    {
+      "title": "イケてるGo版JSX,templを知っているか!?(feat. neovimでの設定)",
+      "date": "2025-08-15",
+      "runner": "sirasagi62",
+      "url": "https://zenn.dev/sirasagi62/articles/0f873debabf232",
+      "githubUser": "sirasagi62",
+      "issueNumber": 1138
     }
   ]
 }
