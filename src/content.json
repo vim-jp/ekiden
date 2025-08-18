@@ -3092,7 +3092,7 @@
       "title": "Vimのaugroup名に `#` は使ってはいけない",
       "date": "2025-08-18",
       "runner": "kuuote",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20250818_ekiden_augroup_hash",
       "githubUser": "kuuote",
       "issueNumber": 1142
     }
