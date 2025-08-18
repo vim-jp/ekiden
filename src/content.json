@@ -3087,6 +3087,14 @@
       "url": "https://zenn.dev/sirasagi62/articles/0f873debabf232",
       "githubUser": "sirasagi62",
       "issueNumber": 1138
+    },
+    {
+      "title": "Vimのaugroup名に `#` は使ってはいけない",
+      "date": "2025-08-18",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 1142
     }
   ]
 }
