@@ -3103,6 +3103,14 @@
       "url": "https://zenn.dev/utubo/articles/20250820-run-vim9script-current-line",
       "githubUser": "utubo",
       "issueNumber": 1144
+    },
+    {
+      "title": "Vim のマクロで気持ち良くなった話 - Java のフィールド定義編",
+      "date": "2025-08-22",
+      "runner": "mikoto2000",
+      "url": "https://mikoto2000.blogspot.com/2025/08/vim-java.html",
+      "githubUser": "mikoto2000",
+      "issueNumber": 1145
     }
   ]
 }
