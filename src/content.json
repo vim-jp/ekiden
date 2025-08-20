@@ -3095,6 +3095,14 @@
       "url": "https://zenn.dev/vim_jp/articles/20250818_ekiden_augroup_hash",
       "githubUser": "kuuote",
       "issueNumber": 1142
+    },
+    {
+      "title": "カーソル行のVim9 scriptを実行する",
+      "date": "2025-08-20",
+      "runner": "utubo",
+      "url": "https://zenn.dev/utubo/articles/20250820-run-vim9script-current-line",
+      "githubUser": "utubo",
+      "issueNumber": 1144
     }
   ]
 }
