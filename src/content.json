@@ -3111,6 +3111,14 @@
       "url": "https://mikoto2000.blogspot.com/2025/08/vim-java.html",
       "githubUser": "mikoto2000",
       "issueNumber": 1145
+    },
+    {
+      "title": "Vim のマクロで気持ち良くなった話 - Java フィールドから SQL の SELECT 定義を作成編",
+      "date": "2025-08-25",
+      "runner": "mikoto2000",
+      "url": "https://mikoto2000.blogspot.com/2025/08/vim-java-sql-select.html",
+      "githubUser": "mikoto2000",
+      "issueNumber": 1146
     }
   ]
 }
