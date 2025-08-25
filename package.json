@@ -19,13 +19,6 @@
     "prettier:fix": "prettier --cache --write --plugin-search-dir=. src",
     "preinstall": "npx only-allow pnpm"
   },
-  "devEngines": {
-    "runtime": {
-      "name": "node",
-      "version": "^22.14.0",
-      "onFail": "download"
-    }
-  },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/rss": "^4.0.11",
@@ -65,5 +58,12 @@
     "vitest": "^3.1.2"
   },
   "private": true,
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@10.15.0",
+  "devEngines": {
+    "runtime": {
+      "name": "node",
+      "version": "^22.14.0",
+      "onFail": "download"
+    }
+  }
 }
