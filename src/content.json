@@ -3119,6 +3119,14 @@
       "url": "https://mikoto2000.blogspot.com/2025/08/vim-java-sql-select.html",
       "githubUser": "mikoto2000",
       "issueNumber": 1146
+    },
+    {
+      "title": "左手デバイスからVimを操作する",
+      "date": "2025-08-27",
+      "runner": "nil-two",
+      "url": null,
+      "githubUser": "nil-two",
+      "issueNumber": 1147
     }
   ]
 }
