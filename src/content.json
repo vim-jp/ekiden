@@ -3123,8 +3123,8 @@
     {
       "title": "左手デバイスからVimを操作する",
       "date": "2025-08-27",
-      "runner": "nil-two",
-      "url": null,
+      "runner": "nil2",
+      "url": "https://zenn.dev/nil2/articles/a88c03e37aa4c3",
       "githubUser": "nil-two",
       "issueNumber": 1147
     },
