@@ -3127,6 +3127,14 @@
       "url": null,
       "githubUser": "nil-two",
       "issueNumber": 1147
+    },
+    {
+      "title": "Neovim 0.12がリリースされたらプラグインなしでもcopilot補完できるようになるっぽい",
+      "date": "2025-08-29",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1155
     }
   ]
 }
