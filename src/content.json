@@ -3129,10 +3129,10 @@
       "issueNumber": 1147
     },
     {
-      "title": "Neovim 0.12がリリースされたらプラグインなしでもcopilot補完できるようになるっぽい",
+      "title": "[Neovim 0.12（開発版）ではLSPクライアント経由でGitHub Copilotを使えるぞ（脱copilot.vim）](https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/)",
       "date": "2025-08-29",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/",
       "githubUser": "atusy",
       "issueNumber": 1155
     }
