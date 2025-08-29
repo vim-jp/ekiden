@@ -3129,7 +3129,7 @@
       "issueNumber": 1147
     },
     {
-      "title": "[Neovim 0.12（開発版）ではLSPクライアント経由でGitHub Copilotを使えるぞ（脱copilot.vim）](https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/)",
+      "title": "Neovim 0.12（開発版）ではLSPクライアント経由でGitHub Copilotを使えるぞ（脱copilot.vim）",
       "date": "2025-08-29",
       "runner": "atusy",
       "url": "https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/",
