@@ -3143,6 +3143,14 @@
       "url": "https://zenn.dev/vim_jp/articles/a6839f7204a611",
       "githubUser": "kawarimidoll",
       "issueNumber": 1156
+    },
+    {
+      "title": "QfSync.nvim: QuickFixのバッファとのずれをなくして便利に使う",
+      "date": "2025-09-08",
+      "runner": "satler",
+      "url": "https://satler.dev/blog/quickfix-qfsync",
+      "githubUser": "satler-git",
+      "issueNumber": 1157
     }
   ]
 }
