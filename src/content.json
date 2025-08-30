@@ -3135,6 +3135,14 @@
       "url": "https://blog.atusy.net/2025/08/29/copilot-via-nvim-lsp-client/",
       "githubUser": "atusy",
       "issueNumber": 1155
+    },
+    {
+      "title": "Neovim 0.12（開発版）でcopilot-language-serverを設定してみたぞ（脱copilot.lua）",
+      "date": "2025-09-01",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/a6839f7204a611",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1156
     }
   ]
 }
