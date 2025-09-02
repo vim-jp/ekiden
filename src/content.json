@@ -3145,10 +3145,10 @@
       "issueNumber": 1156
     },
     {
-      "title": "モノリポだっていけちゃうdenols/ts_ls共存術.nvim",
+      "title": "モノリポだっていけちゃうdenols/ts_ls共存術（Neovim >= 0.11）",
       "date": "2025-09-03",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2025/09/03/node-deno-decision-with-monorepo-support/",
       "githubUser": "atusy",
       "issueNumber": 1160
     },
