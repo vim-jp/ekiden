@@ -3167,6 +3167,14 @@
       "url": "https://satler.dev/blog/quickfix-qfsync",
       "githubUser": "satler-git",
       "issueNumber": 1157
+    },
+    {
+      "title": "Meguro.vim #31 を開催しました",
+      "date": "2025-09-10",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2025/09/megurovim-31",
+      "githubUser": "thinca",
+      "issueNumber": 1161
     }
   ]
 }
