@@ -3175,6 +3175,14 @@
       "url": "https://thinca.hatenablog.com/entry/2025/09/megurovim-31",
       "githubUser": "thinca",
       "issueNumber": 1161
+    },
+    {
+      "title": "Neovim luaのlsとしてemmyluaを使ってみる",
+      "date": "2025-09-12",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/56bc5db545f47b",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1162
     }
   ]
 }
