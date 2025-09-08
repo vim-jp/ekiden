@@ -3183,6 +3183,14 @@
       "url": "https://zenn.dev/vim_jp/articles/56bc5db545f47b",
       "githubUser": "kawarimidoll",
       "issueNumber": 1162
+    },
+    {
+      "title": "Gitのコミットメッセージ上の種別を簡単に変更する",
+      "date": "2025-09-15",
+      "runner": "tsuyoshicho",
+      "url": "https://zenn.dev/vim_jp/articles/2025-09-15-vim-git-util",
+      "githubUser": "tsuyoshicho",
+      "issueNumber": 1173
     }
   ]
 }
