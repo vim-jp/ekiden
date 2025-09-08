@@ -20,7 +20,7 @@ jobs:
         with:
           ref: 'main'
       - name: 'Report'
-        uses: 'actions/github-script@v7'
+        uses: 'actions/github-script@v8'
         env:
           DATE: '${{ inputs.date }}'
         with:
