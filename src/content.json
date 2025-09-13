@@ -3191,6 +3191,14 @@
       "url": "https://zenn.dev/vim_jp/articles/2025-09-15-vim-git-util",
       "githubUser": "tsuyoshicho",
       "issueNumber": 1173
+    },
+    {
+      "title": ":terminal in Neovimでpre-commitフックを使って未保存のバッファがないかチェックする",
+      "date": "2025-09-17",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 1174
     }
   ]
 }
