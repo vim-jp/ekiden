@@ -3196,7 +3196,7 @@
       "title": ":terminal in Neovimでpre-commitフックを使って未保存のバッファがないかチェックする",
       "date": "2025-09-17",
       "runner": "kyoh86",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/c59d88cbe2efb0",
       "githubUser": "kyoh86",
       "issueNumber": 1174
     },
