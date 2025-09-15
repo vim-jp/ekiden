@@ -3215,6 +3215,14 @@
       "url": null,
       "githubUser": "sirasagi62",
       "issueNumber": 1176
+    },
+    {
+      "title": "Neovimのログを揮発させて肥大化を防止する",
+      "date": "2025-09-24",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/c96e9b1bdb9241",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1177
     }
   ]
 }
