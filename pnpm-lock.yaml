@@ -49,8 +49,8 @@ importers:
         specifier: ^9.35.0
         version: 9.35.0
       '@iconify-json/radix-icons':
-        specifier: ^1.2.2
-        version: 1.2.4
+        specifier: ^1.2.5
+        version: 1.2.5
       '@iconify-json/tabler':
         specifier: ^1.2.17
         version: 1.2.22
@@ -612,8 +612,8 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@iconify-json/radix-icons@1.2.4':
-    resolution: {integrity: sha512-QgqVl1q+FfEVcVhMFR0ySeM3Rzz3I/ZH1eepktEwGLMazeIbh4ucGdnsSQBurOi0WMBtZdYaju7RsHTEfQxY5g==}
+  '@iconify-json/radix-icons@1.2.5':
+    resolution: {integrity: sha512-HkUt+ydCivK/S/aFsgaiZRvs7zDEcO07PKkuEuu2EFBWCuC+Pi1mDdXPX0U3qjRr7JknmnoR4sAg53C+Ig35ow==}
 
   '@iconify-json/tabler@1.2.22':
     resolution: {integrity: sha512-KmCtTzZyz7dtszdQGJ5wbWqko6exhI38e4aCQqWZE1Z2wGUqBsMXrRWawXkAp6/XNBebt54h0lcxFCaTYBwFJg==}
@@ -3964,7 +3964,7 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@iconify-json/radix-icons@1.2.4':
+  '@iconify-json/radix-icons@1.2.5':
     dependencies:
       '@iconify/types': 2.0.0
 
