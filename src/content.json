@@ -3223,6 +3223,14 @@
       "url": "https://zenn.dev/vim_jp/articles/c96e9b1bdb9241",
       "githubUser": "kawarimidoll",
       "issueNumber": 1177
+    },
+    {
+      "title": "skkeletonで変換中の文字にハイライトを付けるプラグインを作ったよ",
+      "date": "2025-09-26",
+      "runner": "NI57721",
+      "url": null,
+      "githubUser": "NI57721",
+      "issueNumber": 1189
     }
   ]
 }
