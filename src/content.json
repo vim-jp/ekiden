@@ -3201,10 +3201,10 @@
       "issueNumber": 1174
     },
     {
-      "title": "なんか書く",
+      "title": "Nixのhome-managerでnvimのsymlinkを貼る",
       "date": "2025-09-19",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://wagomu.me/blog/2025-09-19-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 1175
     },
