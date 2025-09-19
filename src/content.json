@@ -3231,6 +3231,14 @@
       "url": null,
       "githubUser": "NI57721",
       "issueNumber": 1189
+    },
+    {
+      "title": "Meguro.vim #32 を開催しました",
+      "date": "2025-11-10",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2025/11/megurovim-32",
+      "githubUser": "thinca",
+      "issueNumber": 1190
     }
   ]
 }
