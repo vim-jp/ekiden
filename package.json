@@ -29,7 +29,7 @@
     "astro": "^5.13.7",
     "chart.js": "^4.5.0",
     "dayjs": "^1.11.18",
-    "sharp": "^0.34.1",
+    "sharp": "^0.34.4",
     "svelte": "^5.38.10"
   },
   "devDependencies": {
