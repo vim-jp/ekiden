@@ -3249,6 +3249,14 @@
       "issueNumber": 1192
     },
     {
+      "title": "countを使ってeasymotionとかでfモーションを拡張した時に組込みのfモーションも残す",
+      "date": "2025-10-03",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1203
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
