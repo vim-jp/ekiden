@@ -3273,6 +3273,14 @@
       "issueNumber": 1205
     },
     {
+      "title": "コマンド履歴ウィンドウに曖昧検索機能を追加する方法",
+      "date": "2025-10-10",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1206
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
