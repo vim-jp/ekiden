@@ -3265,6 +3265,14 @@
       "issueNumber": 1204
     },
     {
+      "title": "Quickfix を Fuzzy Finder やバッファ管理などの UI として使う方法",
+      "date": "2025-10-08",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1205
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
