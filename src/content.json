@@ -3260,7 +3260,7 @@
       "title": "Vim/Neovim で grep 前にディレクトリの確認を入れると便利",
       "date": "2025-10-06",
       "runner": "mityu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/vim-check-path-before-grep",
       "githubUser": "mityu",
       "issueNumber": 1204
     },
