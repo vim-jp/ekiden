@@ -3289,6 +3289,14 @@
       "issueNumber": 1214
     },
     {
+      "title": "ごめん、カーソル移動を効率的にするヘルシェイク矢野.vimのこと考えてた",
+      "date": "2025-10-15",
+      "runner": "takets",
+      "url": "https://zenn.dev/articles/vim-plugin-hellshake-yano",
+      "githubUser": "nekowasabi",
+      "issueNumber": 1215
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
