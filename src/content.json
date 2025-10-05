@@ -3281,6 +3281,14 @@
       "issueNumber": 1206
     },
     {
+      "title": "[Lua] Neovim で斜体を無効化する",
+      "date": "2025-10-13",
+      "runner": "482F",
+      "url": "https://zenn.dev/482f/articles/neovim-disable-italic",
+      "githubUser": "482F",
+      "issueNumber": 1214
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
