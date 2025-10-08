@@ -3305,6 +3305,14 @@
       "issueNumber": 1218
     },
     {
+      "title": "ドットコマンドで再現可能な編集を設計する",
+      "date": "2025-11-05",
+      "runner": "ぺりー",
+      "url": null,
+      "githubUser": "satorunooshie",
+      "issueNumber": 1219
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
