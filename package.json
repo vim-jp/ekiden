@@ -40,7 +40,7 @@
     "@std/collections": "jsr:^1.0.6",
     "@types/eslint__js": "^9.14.0",
     "@types/node": "^24.7.2",
-    "@typescript-eslint/utils": "^8.44.1",
+    "@typescript-eslint/utils": "^8.46.0",
     "@unocss/eslint-config": "^66.5.3",
     "@unocss/preset-web-fonts": "^66.5.3",
     "@unocss/reset": "^66.5.3",
