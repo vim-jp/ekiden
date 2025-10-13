@@ -16,7 +16,7 @@ importers:
         version: 4.0.12
       '@astrojs/svelte':
         specifier: ^7.2.0
-        version: 7.2.0(@types/node@24.7.2)(astro@5.14.3(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0))(jiti@2.6.1)(svelte@5.39.11)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)
+        version: 7.2.0(@types/node@24.7.2)(astro@5.14.4(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0))(jiti@2.6.1)(svelte@5.39.11)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)
       '@fontsource/kaushan-script':
         specifier: ^5.2.8
         version: 5.2.8
@@ -27,8 +27,8 @@ importers:
         specifier: ^66.5.3
         version: 66.5.3
       astro:
-        specifier: ^5.14.3
-        version: 5.14.3(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)
+        specifier: ^5.14.4
+        version: 5.14.4(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)
       chart.js:
         specifier: ^4.5.1
         version: 4.5.1
@@ -1433,8 +1433,8 @@ packages:
     resolution: {integrity: sha512-JepyLROIad6f44uyqMF6HKE2QbunNzp3mYKRcPoDGt0QkxXmH222FAFC64WTyQu2Kg8NNEXHTN/sWuUId9sSxw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  astro@5.14.3:
-    resolution: {integrity: sha512-iRvl3eEYYdSYA195eNREjh43hqMMwKY1uoHYiKfLCB9G+bjFtaBtDe8R0ip7AbTD69wyOKgUCOtMad+lkOnT/w==}
+  astro@5.14.4:
+    resolution: {integrity: sha512-yqgMAO2Whi9GmZkByyiPcG7CiiPr0Me0iBSorMa6M0g+wQk/ewnIqUyr7T/uFCPTQndoKwucnYFTrf0yfb0urw==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -1700,8 +1700,8 @@ packages:
   emmet@2.4.7:
     resolution: {integrity: sha512-O5O5QNqtdlnQM2bmKHtJgyChcrFMgQuulI+WdiOw2NArzprUqqxUW6bgYtKvzKgrsYpuLWalOkdhNP+1jluhCA==}
 
-  emoji-regex@10.5.0:
-    resolution: {integrity: sha512-lb49vf1Xzfx080OKA0o6l8DQQpV+6Vg95zyCJX9VB/BqKYlhG7N4wgROUUHRA+ZPUefLnteQOad7z1kT2bV7bg==}
+  emoji-regex@10.6.0:
+    resolution: {integrity: sha512-toUI84YS5YmxW219erniWD0CIVOo46xGKColeNQRgOzDorgBi1v4D71/OFzgD9GO2UGKIv1C3Sp8DAn0+j5w7A==}
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -3507,10 +3507,10 @@ snapshots:
       fast-xml-parser: 5.2.5
       kleur: 4.1.5
 
-  '@astrojs/svelte@7.2.0(@types/node@24.7.2)(astro@5.14.3(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0))(jiti@2.6.1)(svelte@5.39.11)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)':
+  '@astrojs/svelte@7.2.0(@types/node@24.7.2)(astro@5.14.4(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0))(jiti@2.6.1)(svelte@5.39.11)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)':
     dependencies:
       '@sveltejs/vite-plugin-svelte': 5.1.1(svelte@5.39.11)(vite@6.3.6(@types/node@24.7.2)(jiti@2.6.1)(tsx@4.19.2)(yaml@2.5.0))
-      astro: 5.14.3(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)
+      astro: 5.14.4(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0)
       svelte: 5.39.11
       svelte2tsx: 0.7.44(svelte@5.39.11)(typescript@5.9.3)
       typescript: 5.9.3
@@ -4740,7 +4740,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  astro@5.14.3(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0):
+  astro@5.14.4(@types/node@24.7.2)(jiti@2.6.1)(rollup@4.52.4)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.5.0):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.4
@@ -5055,7 +5055,7 @@ snapshots:
       '@emmetio/abbreviation': 2.3.3
       '@emmetio/css-abbreviation': 2.1.8
 
-  emoji-regex@10.5.0: {}
+  emoji-regex@10.6.0: {}
 
   emoji-regex@8.0.0: {}
 
@@ -6389,7 +6389,7 @@ snapshots:
 
   string-width@7.2.0:
     dependencies:
-      emoji-regex: 10.5.0
+      emoji-regex: 10.6.0
       get-east-asian-width: 1.4.0
       strip-ansi: 7.1.2
 
