@@ -27,7 +27,7 @@
     "@fontsource/yuji-syuku": "^5.2.7",
     "@unocss/reset": "^66.5.2",
     "astro": "^5.14.3",
-    "chart.js": "^4.5.0",
+    "chart.js": "^4.5.1",
     "dayjs": "^1.11.18",
     "sharp": "^0.34.4",
     "svelte": "^5.39.6"
