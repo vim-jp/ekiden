@@ -70,8 +70,8 @@ importers:
         specifier: ^66.5.1
         version: 66.5.1(eslint@9.35.0(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/preset-web-fonts':
-        specifier: ^66.5.2
-        version: 66.5.2
+        specifier: ^66.5.3
+        version: 66.5.3
       astro-eslint-parser:
         specifier: ^1.2.2
         version: 1.2.2
@@ -1254,6 +1254,9 @@ packages:
   '@unocss/core@66.5.2':
     resolution: {integrity: sha512-POSEpwj2FJtrDgzSq6nVhAJbnGIYPqtEMTpzQXfeFqPDMidAXjaH/xZUeTdHDbI9Jg700smrRXJtFJrJFXkmiQ==}
 
+  '@unocss/core@66.5.3':
+    resolution: {integrity: sha512-sGGBgtIfH3Ch7syIzJvA86iIVhSjfGThHBSDA0kFgGTBiYv2VBaUq0UpDfeMpda3LSg59LfEL5Fqa9kUqju5xQ==}
+
   '@unocss/eslint-config@66.5.1':
     resolution: {integrity: sha512-3Wt+xlKmv9wp/jSoNeHQoZX8vEnhVYkK+aiG2X16FarXVZLXYMvAIVaJLSk1YxsVcl+HzILOSQRzwert1JNg1g==}
     engines: {node: '>=14'}
@@ -1294,6 +1297,9 @@ packages:
 
   '@unocss/preset-web-fonts@66.5.2':
     resolution: {integrity: sha512-xMFUE8Bhe2X/VlUBtdXTnDrrZL+WE99RaiBNLS1F1Na5r4Fc5Ck0p8a+SnMB7GDx5gtwf1ekKwi0pAP8+vIJnQ==}
+
+  '@unocss/preset-web-fonts@66.5.3':
+    resolution: {integrity: sha512-frgl2zQEyHWg5LGwkFg8HH3d4py4tGYdl9OR7XpR19L5Yj/xapRqz/JZDcGzF4nhdxAlhC4V/6p30hycc7y2Xg==}
 
   '@unocss/preset-wind3@66.5.2':
     resolution: {integrity: sha512-qgzLiPd6CkepLLssBod7ejQ4sKKqAvCOyjqpp0eFmHVUKGBEGPzOI1/WnbrAzvTHDonbSc52kB/XEWlgWmDhhA==}
@@ -4466,6 +4472,8 @@ snapshots:
 
   '@unocss/core@66.5.2': {}
 
+  '@unocss/core@66.5.3': {}
+
   '@unocss/eslint-config@66.5.1(eslint@9.35.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
       '@unocss/eslint-plugin': 66.5.1(eslint@9.35.0(jiti@2.6.1))(typescript@5.9.3)
@@ -4546,6 +4554,11 @@ snapshots:
       '@unocss/core': 66.5.2
       ofetch: 1.4.1
 
+  '@unocss/preset-web-fonts@66.5.3':
+    dependencies:
+      '@unocss/core': 66.5.3
+      ofetch: 1.4.1
+
   '@unocss/preset-wind3@66.5.2':
     dependencies:
       '@unocss/core': 66.5.2
@@ -4569,12 +4582,12 @@ snapshots:
 
   '@unocss/rule-utils@66.5.1':
     dependencies:
-      '@unocss/core': 66.5.2
+      '@unocss/core': 66.5.3
       magic-string: 0.30.19
 
   '@unocss/rule-utils@66.5.2':
     dependencies:
-      '@unocss/core': 66.5.2
+      '@unocss/core': 66.5.3
       magic-string: 0.30.19
 
   '@unocss/transformer-attributify-jsx@66.5.2':
