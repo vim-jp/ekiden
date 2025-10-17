@@ -3297,6 +3297,14 @@
       "issueNumber": 1215
     },
     {
+      "title": "Neovimのファイルタイプ検出は自分で微調整できるよ",
+      "date": "2025-10-17",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/fad47dfb5fcd09",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1237
+    },
+    {
       "title": "Vimのマッピングの拡張性を高める（疑似）submodeに開始処理・終了処理を加える",
       "date": "2025-10-20",
       "runner": "atusy",
