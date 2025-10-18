@@ -3313,6 +3313,14 @@
       "issueNumber": 1236
     },
     {
+      "title": "縦のカーソル移動を怠惰にやろう",
+      "date": "2025-10-22",
+      "runner": "kamecha",
+      "url": null,
+      "githubUser": "kamecha",
+      "issueNumber": 1238
+    },
+    {
       "title": "初めてのNvim Themプラグイン",
       "date": "2025-10-24",
       "runner": "kuri-sun",
