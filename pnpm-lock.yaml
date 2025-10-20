@@ -70,8 +70,8 @@ importers:
         specifier: ^66.5.3
         version: 66.5.3(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/preset-web-fonts':
-        specifier: ^66.5.3
-        version: 66.5.3
+        specifier: ^66.5.4
+        version: 66.5.4
       astro-eslint-parser:
         specifier: ^1.2.2
         version: 1.2.2
@@ -1291,9 +1291,6 @@ packages:
 
   '@unocss/preset-uno@66.5.4':
     resolution: {integrity: sha512-CEBtkNbbd1lYbCJw+s7HDeOtPeCEkvf+NDi/IrVkkBhOCcYRtYC+VDxjBgh4zjlmgZIQifkU2l7PPfGjd4IMNA==}
-
-  '@unocss/preset-web-fonts@66.5.3':
-    resolution: {integrity: sha512-frgl2zQEyHWg5LGwkFg8HH3d4py4tGYdl9OR7XpR19L5Yj/xapRqz/JZDcGzF4nhdxAlhC4V/6p30hycc7y2Xg==}
 
   '@unocss/preset-web-fonts@66.5.4':
     resolution: {integrity: sha512-FQ/P/a1fSmGkkjWn/FNmErwK5YtsuX2VrkHsEa9DTP372td8Oea3hkK40UUYj3zRUivA71PmjVwhbBf+35nAiA==}
@@ -4563,11 +4560,6 @@ snapshots:
     dependencies:
       '@unocss/core': 66.5.4
       '@unocss/preset-wind3': 66.5.4
-
-  '@unocss/preset-web-fonts@66.5.3':
-    dependencies:
-      '@unocss/core': 66.5.3
-      ofetch: 1.4.1
 
   '@unocss/preset-web-fonts@66.5.4':
     dependencies:
