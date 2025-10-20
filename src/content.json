@@ -3305,10 +3305,10 @@
       "issueNumber": 1237
     },
     {
-      "title": "Vimのマッピングの拡張性を高める（疑似）submodeに開始処理・終了処理を加える",
+      "title": "Vimのマッピングを拡張するサブモードに開始処理・終了処理を加える",
       "date": "2025-10-20",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2025/10/20/hooks-on-submode-in-vim/",
       "githubUser": "atusy",
       "issueNumber": 1236
     },
