@@ -67,8 +67,8 @@ importers:
         specifier: ^8.46.0
         version: 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/eslint-config':
-        specifier: ^66.5.3
-        version: 66.5.3(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
+        specifier: ^66.5.4
+        version: 66.5.4(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/preset-web-fonts':
         specifier: ^66.5.4
         version: 66.5.4
@@ -1240,26 +1240,19 @@ packages:
     engines: {node: '>=14'}
     hasBin: true
 
-  '@unocss/config@66.5.3':
-    resolution: {integrity: sha512-3hFmw5V8YOG2y6YHSxg/N/BVH3FKaxFUOMdVa48FB0ACKaTmWuBiJ4jVZuuWsNycuXbTodlFRWT84JxMLIrepQ==}
-    engines: {node: '>=14'}
-
   '@unocss/config@66.5.4':
     resolution: {integrity: sha512-TYwkUw9nZlLTBGCndsyrcHCJ7M+sEsJiK77Edggmd6B3urjkVc1cDjKF3k3tjg4ghQteGsc2akhzn1a4TouybQ==}
     engines: {node: '>=14'}
 
-  '@unocss/core@66.5.3':
-    resolution: {integrity: sha512-sGGBgtIfH3Ch7syIzJvA86iIVhSjfGThHBSDA0kFgGTBiYv2VBaUq0UpDfeMpda3LSg59LfEL5Fqa9kUqju5xQ==}
-
   '@unocss/core@66.5.4':
     resolution: {integrity: sha512-UDS2CRgyQCEFH+5kStDyJd7OFtgkIUZYn5Ahr5z7v3jc/pEfeOJ0mxsNAr+FgMS/xb17vy4sVFvx3jj/FwMZ1A==}
 
-  '@unocss/eslint-config@66.5.3':
-    resolution: {integrity: sha512-sdRaFE9wu8Vy3V+Ds/j8rXuXYBmut6YxNdWKjE3lf7ATAHum7tf/hseQJ1MFcOqBD/IkcA/D5osptNcZmUJhgQ==}
+  '@unocss/eslint-config@66.5.4':
+    resolution: {integrity: sha512-TyCeituxs86458to3slATbKU0RGTldeIEgeZIW7HyJRC76QkLVDc1wC/XuGAIufTVGqd2PUkdal3F+YwYw0o9g==}
     engines: {node: '>=14'}
 
-  '@unocss/eslint-plugin@66.5.3':
-    resolution: {integrity: sha512-4NpgLIDLx4FhVCySfADPYvRCfto6M3NALAyNMOlUDzKrj0DD2T9CNn+kOuECnM3guRYWs+UeyagBAm4L4u7LAw==}
+  '@unocss/eslint-plugin@66.5.4':
+    resolution: {integrity: sha512-zxHcxO+t3oPioHLISUQTtz0z3y2QvAy3cs2dn8YHgb+c9pbuz51Kj0E9UH8FXpWo3JvBEgsJngU7rA3CBqf0Ww==}
     engines: {node: '>=14'}
 
   '@unocss/extractor-arbitrary-variants@66.5.4':
@@ -1309,10 +1302,6 @@ packages:
 
   '@unocss/reset@66.5.4':
     resolution: {integrity: sha512-RF/Xscv4mOEDUltUpdKYZEBgIiE7nAVkipJ8gZWEwKfmUFz0TRcwlf0igjqjgGn11tuix0mJyk5Uwis9LioX4Q==}
-
-  '@unocss/rule-utils@66.5.3':
-    resolution: {integrity: sha512-3aDxWw3fBjA2hldu5r126Dxl10nP/1dEx+fetiWEGT6X4J9dvJgNAGAJOVZeKv6tSfhqLyFsRV/cSbApYItCYw==}
-    engines: {node: '>=14'}
 
   '@unocss/rule-utils@66.5.4':
     resolution: {integrity: sha512-LFzLuXQfZKI/qJBrsqkaVKlw0ECU8Xw7m+MaKIKyFH/hqggzkvNG0PyWU2HnPNzz1dIiVBn+Epfpz8pzi+MLFA==}
@@ -4472,34 +4461,27 @@ snapshots:
       tinyglobby: 0.2.15
       unplugin-utils: 0.3.1
 
-  '@unocss/config@66.5.3':
-    dependencies:
-      '@unocss/core': 66.5.3
-      unconfig: 7.3.3
-
   '@unocss/config@66.5.4':
     dependencies:
       '@unocss/core': 66.5.4
       unconfig: 7.3.3
 
-  '@unocss/core@66.5.3': {}
-
   '@unocss/core@66.5.4': {}
 
-  '@unocss/eslint-config@66.5.3(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@unocss/eslint-config@66.5.4(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
-      '@unocss/eslint-plugin': 66.5.3(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
+      '@unocss/eslint-plugin': 66.5.4(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
     transitivePeerDependencies:
       - eslint
       - supports-color
       - typescript
 
-  '@unocss/eslint-plugin@66.5.3(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
+  '@unocss/eslint-plugin@66.5.4(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)':
     dependencies:
-      '@typescript-eslint/utils': 8.46.0(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
-      '@unocss/config': 66.5.3
-      '@unocss/core': 66.5.3
-      '@unocss/rule-utils': 66.5.3
+      '@typescript-eslint/utils': 8.46.1(eslint@9.37.0(jiti@2.6.1))(typescript@5.9.3)
+      '@unocss/config': 66.5.4
+      '@unocss/core': 66.5.4
+      '@unocss/rule-utils': 66.5.4
       magic-string: 0.30.19
       synckit: 0.11.11
     transitivePeerDependencies:
@@ -4586,11 +4568,6 @@ snapshots:
   '@unocss/reset@66.5.3': {}
 
   '@unocss/reset@66.5.4': {}
-
-  '@unocss/rule-utils@66.5.3':
-    dependencies:
-      '@unocss/core': 66.5.4
-      magic-string: 0.30.19
 
   '@unocss/rule-utils@66.5.4':
     dependencies:
