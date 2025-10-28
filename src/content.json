@@ -3337,6 +3337,14 @@
       "issueNumber": 1251
     },
     {
+      "title": "Gitを快適にVim/Neovimから操作するためのプラグイン(+設定)",
+      "date": "2025-10-29",
+      "runner": "Peacock",
+      "url": null,
+      "githubUser": "peacock0803sz",
+      "issueNumber": 1258
+    },
+    {
       "title": "なにか書きます",
       "date": "2025-10-31",
       "runner": "mityu",
