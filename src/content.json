@@ -3369,6 +3369,14 @@
       "issueNumber": 1219
     },
     {
+      "title": "折り畳み系プラグインを窓から投げ捨てろ(nvim-treesitterで代替可能)",
+      "date": "2025-11-07",
+      "runner": "glmlm",
+      "url": "https://zenn.dev/glmlm/articles/neovim-treesitter-fold-20251107",
+      "githubUser": "glmlm",
+      "issueNumber": 1259
+    },
+    {
       "title": "Meguro.vim #32 を開催しました",
       "date": "2025-11-10",
       "runner": "thinca",
