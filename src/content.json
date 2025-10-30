@@ -3345,10 +3345,10 @@
       "issueNumber": 1258
     },
     {
-      "title": "なにか書きます",
+      "title": ":terminal から親の Vim でファイルを開く(Neovim 編)",
       "date": "2025-10-31",
       "runner": "mityu",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/drop-from-terminal-neovim",
       "githubUser": "mityu",
       "issueNumber": 1250
     },
