@@ -72,3 +72,9 @@ const newestArticle = getArticles({ isPublished: true }).at(-1);
     scroll-behavior: smooth;
   }
 </style>
+
+<script>
+  import { hashRedirect } from "@/lib/hashRedirect.js";
+  document.addEventListener("astro:page-load", () => hashRedirect());
+  window.addEventListener("hashchange", () => hashRedirect(), false);
+</script>
