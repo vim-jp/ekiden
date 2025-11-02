@@ -3391,6 +3391,14 @@
       "url": "https://shizukani-cp.github.io/blog/articles/20251112/",
       "githubUser": "shizukani-cp",
       "issueNumber": 1260
+    },
+    {
+      "title": "VimConf Small LP制作の振り返り",
+      "date": "2025-11-14",
+      "runner": "staticWagomU",
+      "url": null,
+      "githubUser": "staticWagomU",
+      "issueNumber": 1261
     }
   ]
 }
