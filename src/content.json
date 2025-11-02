@@ -3399,6 +3399,14 @@
       "url": null,
       "githubUser": "staticWagomU",
       "issueNumber": 1261
+    },
+    {
+      "title": "ドットコマンドで再現可能な編集を設計する",
+      "date": "2025-11-17",
+      "runner": "ぺりー",
+      "url": null,
+      "githubUser": "satorunooshie",
+      "issueNumber": 1262
     }
   ]
 }
