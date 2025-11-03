@@ -46,8 +46,8 @@ importers:
         specifier: ^1.10.5
         version: 1.10.5
       '@eslint/js':
-        specifier: ^9.38.0
-        version: 9.38.0
+        specifier: ^9.39.0
+        version: 9.39.0
       '@iconify-json/radix-icons':
         specifier: ^1.2.5
         version: 1.2.5
@@ -83,7 +83,7 @@ importers:
         version: 1.3.1(eslint@9.38.0(jiti@2.6.1))
       node:
         specifier: runtime:^22.14.0
-        version: runtime:22.21.0
+        version: runtime:22.21.1
       prettier:
         specifier: ^3.5.3
         version: 3.6.2
@@ -579,6 +579,10 @@ packages:
 
   '@eslint/js@9.38.0':
     resolution: {integrity: sha512-UZ1VpFvXf9J06YG9xQBdnzU+kthors6KjhMAl6f4gH4usHyh31rUf2DLGInT8RFYIReYXNSydgPY0V2LuWgl7A==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.39.0':
+    resolution: {integrity: sha512-BIhe0sW91JGPiaF1mOuPy5v8NflqfjIcDNpC+LbW9f609WVRX1rArrhi6Z2ymvrAry9jw+5POTj4t2t62o8Bmw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.7':
@@ -2340,113 +2344,113 @@ packages:
   node-mock-http@1.0.3:
     resolution: {integrity: sha512-jN8dK25fsfnMrVsEhluUTPkBFY+6ybu7jSB1n+ri/vOGjJxU8J9CZhpSGkHXSkFjtUhbmoncG/YG9ta5Ludqog==}
 
-  node@runtime:22.21.0:
+  node@runtime:22.21.1:
     resolution:
       type: variations
       variants:
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-iEa9N6cd9MWBckxkNVZt5LENf1LOnj2EiniSpZx9OkU=
+            integrity: sha256-nk72dIu8Vefev3klKaEIvCY1hZ9M5G0HdWaLJ8xcx1A=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-aix-ppc64.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-aix-ppc64.tar.gz
           targets:
             - cpu: ppc64
               os: aix
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-28GhcCSjKCetsjtbEc6YzvzXgxRaMP5BuyhFvnEel0I=
+            integrity: sha256-wXDWVU+6g9QdJads262FSHwHflH6c1GeQayIWqQp2K8=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-darwin-arm64.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-darwin-arm64.tar.gz
           targets:
             - cpu: arm64
               os: darwin
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-dWZ0VCooIHUVzdIsopDlOpwft7kDYDBHJ40zkWTrN28=
+            integrity: sha256-jj3IlhTevmbCpq0jE6GtsG6zfbbNbEDX3m99mH99Gv0=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-darwin-x64.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-darwin-x64.tar.gz
           targets:
             - cpu: x64
               os: darwin
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-UYDnTyzephQlSL2CcknaMsDoa6JYHWJB4vJ2H5V7ntE=
+            integrity: sha256-yGgw3t93+JQfqmxanIY7390ZJ6M2pGlD3swGo4+Av7I=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-linux-arm64.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-linux-arm64.tar.gz
           targets:
             - cpu: arm64
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-m6tiYh0dX3BNbjZb54BCM9A4UWmKqvVU/nJqoC9Z2OQ=
+            integrity: sha256-QNPQmu5VarwpfdeChk/Ma55grNQ4/wZgup3c1WnACSA=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-linux-armv7l.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-linux-armv7l.tar.gz
           targets:
             - cpu: armv7l
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-sgsmJ2rY+VxznbfjkeF75XiQXstOoSJ0Yk7VE9IxfX4=
+            integrity: sha256-sk9MGdVUbNQYZ06DveVtUKfCtl+ux6ZcNQLyhe6zqnA=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-linux-ppc64le.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-linux-ppc64le.tar.gz
           targets:
             - cpu: ppc64le
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-UpHZDK7ID3lrUGZvyagbAcLbBOSRVVqSQwka8AgKnFI=
+            integrity: sha256-fEa9SlErNfA6y5crKwT+zC1MR+NQaauajdXNjwCRGVo=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-linux-s390x.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-linux-s390x.tar.gz
           targets:
             - cpu: s390x
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-JiuEsC9+K8AX1L24H+yFyg1hkKXNB4HS1uhDF8CIcfg=
+            integrity: sha256-IZoVLqhZhh11repXi97D3OgUOFPBPFGH9AxA53sBQ7I=
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-linux-x64.tar.gz
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-linux-x64.tar.gz
           targets:
             - cpu: x64
               os: linux
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-a0SueZJYQKyA2RwxFfn3itJOo0+FgH24W823038o4Hs=
-            prefix: node-v22.21.0-win-arm64
+            integrity: sha256-udf6rNC1QLi0ZkDbyPVvQgX/Y7ed7HANTwPTZZGwMY8=
+            prefix: node-v22.21.1-win-arm64
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-win-arm64.zip
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-win-arm64.zip
           targets:
             - cpu: arm64
               os: win32
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-hNMd9lccPHFWcHJlv1HioCFlb6FYS/b0SGt5Lc3lTX0=
-            prefix: node-v22.21.0-win-x64
+            integrity: sha256-PGJOn74H4yF1UuxSoPhOK9wub/pzSPP9+5+/j0LiP88=
+            prefix: node-v22.21.1-win-x64
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-win-x64.zip
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-win-x64.zip
           targets:
             - cpu: x64
               os: win32
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-66EDqz+j0a1RWL+a04+B0ufMXW144Gto8BfPaWAWAl4=
-            prefix: node-v22.21.0-win-x86
+            integrity: sha256-/K279FdbtlSulN5TKOd+Mj/zzqY2ByXQc7pW4sl1PlI=
+            prefix: node-v22.21.1-win-x86
             type: binary
-            url: https://nodejs.org/download/release/v22.21.0/node-v22.21.0-win-x86.zip
+            url: https://nodejs.org/download/release/v22.21.1/node-v22.21.1-win-x86.zip
           targets:
             - cpu: x86
               os: win32
-    version: 22.21.0
+    version: 22.21.1
     hasBin: true
 
   normalize-path@3.0.0:
@@ -3840,6 +3844,8 @@ snapshots:
 
   '@eslint/js@9.38.0': {}
 
+  '@eslint/js@9.39.0': {}
+
   '@eslint/object-schema@2.1.7': {}
 
   '@eslint/plugin-kit@0.4.0':
@@ -4240,7 +4246,7 @@ snapshots:
 
   '@types/eslint__js@9.14.0':
     dependencies:
-      '@eslint/js': 9.38.0
+      '@eslint/js': 9.39.0
 
   '@types/estree@1.0.8': {}
 
@@ -5979,7 +5985,7 @@ snapshots:
 
   node-mock-http@1.0.3: {}
 
-  node@runtime:22.21.0: {}
+  node@runtime:22.21.1: {}
 
   normalize-path@3.0.0: {}
 
