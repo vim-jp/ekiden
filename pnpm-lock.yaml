@@ -70,8 +70,8 @@ importers:
         specifier: ^66.5.5
         version: 66.5.5(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/preset-web-fonts':
-        specifier: ^66.5.4
-        version: 66.5.4
+        specifier: ^66.5.5
+        version: 66.5.5
       astro-eslint-parser:
         specifier: ^1.2.2
         version: 1.2.2
@@ -1368,9 +1368,6 @@ packages:
     resolution: {integrity: sha512-HHrU0S/3SRWrmkuIK26OnH/X3luyGFXDXJYqIWkJ1n9xpYs8picX2v8CylaeHI3PVQNeR7o853kDd1HBCt1yMw==}
     engines: {node: '>=14'}
 
-  '@unocss/core@66.5.4':
-    resolution: {integrity: sha512-UDS2CRgyQCEFH+5kStDyJd7OFtgkIUZYn5Ahr5z7v3jc/pEfeOJ0mxsNAr+FgMS/xb17vy4sVFvx3jj/FwMZ1A==}
-
   '@unocss/core@66.5.5':
     resolution: {integrity: sha512-BL+TdQMJCuu3fOGnF8wugGVpqrgBUEFzWp3yI9VJe/+p6H6NXuqlzwgSKcbpJD0XQMnxhRYYtC5Gh1coNXiBIQ==}
 
@@ -1411,9 +1408,6 @@ packages:
 
   '@unocss/preset-uno@66.5.5':
     resolution: {integrity: sha512-MHUMNXikr3JM043jibXJszeC8lz3t6Jn+HDZHaRamdtZO/+H/HK8YR46dbFEndGlQ3d3qjBqTZXg0BBWM0jApQ==}
-
-  '@unocss/preset-web-fonts@66.5.4':
-    resolution: {integrity: sha512-FQ/P/a1fSmGkkjWn/FNmErwK5YtsuX2VrkHsEa9DTP372td8Oea3hkK40UUYj3zRUivA71PmjVwhbBf+35nAiA==}
 
   '@unocss/preset-web-fonts@66.5.5':
     resolution: {integrity: sha512-ySwIigf7OGBlzUKe9KZ0luzzA/yjz84T/WVGF75SkYUw6vyfWo3XxSIxU/sHYjoRCKUC/7di3FAUPT5xkX45Vw==}
@@ -2538,9 +2532,6 @@ packages:
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
     engines: {node: '>=0.10.0'}
-
-  ofetch@1.4.1:
-    resolution: {integrity: sha512-QZj2DfGplQAr2oj9KzceK9Hwz6Whxazmn85yYeVuS3u9XTMOGMRx0kO95MQ+vLsj/S/NwBDMMLU5hpxvI6Tklw==}
 
   ofetch@1.5.1:
     resolution: {integrity: sha512-2W4oUZlVaqAPAil6FUg/difl6YhqhUR7x2eZY4bQCko22UXg3hptq9KLQdqFClV+Wu85UX7hNtdGTngi/1BxcA==}
@@ -4528,8 +4519,6 @@ snapshots:
       '@unocss/core': 66.5.5
       unconfig: 7.4.0
 
-  '@unocss/core@66.5.4': {}
-
   '@unocss/core@66.5.5': {}
 
   '@unocss/eslint-config@66.5.5(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)':
@@ -4606,11 +4595,6 @@ snapshots:
     dependencies:
       '@unocss/core': 66.5.5
       '@unocss/preset-wind3': 66.5.5
-
-  '@unocss/preset-web-fonts@66.5.4':
-    dependencies:
-      '@unocss/core': 66.5.4
-      ofetch: 1.4.1
 
   '@unocss/preset-web-fonts@66.5.5':
     dependencies:
@@ -6033,12 +6017,6 @@ snapshots:
 
   normalize-path@3.0.0: {}
 
-  ofetch@1.4.1:
-    dependencies:
-      destr: 2.0.5
-      node-fetch-native: 1.6.7
-      ufo: 1.6.1
-
   ofetch@1.5.1:
     dependencies:
       destr: 2.0.5
@@ -6634,7 +6612,7 @@ snapshots:
   unifont@0.6.0:
     dependencies:
       css-tree: 3.1.0
-      ofetch: 1.4.1
+      ofetch: 1.5.1
       ohash: 2.0.11
 
   unist-util-find-after@5.0.0:
@@ -6719,7 +6697,7 @@ snapshots:
       h3: 1.15.4
       lru-cache: 10.4.3
       node-fetch-native: 1.6.7
-      ofetch: 1.4.1
+      ofetch: 1.5.1
       ufo: 1.6.1
 
   uri-js@4.4.1:
