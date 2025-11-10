@@ -1,17 +1,29 @@
 ---
+import dayjs from "dayjs";
 import type { ProcessedArticle } from "@/lib/article.js";
 import type { SetOptional } from "type-fest";
 import RunnerImage from "/public/1f3c3.svg";
 
 type Props = SetOptional<ProcessedArticle, "runner">;
 
-const { title, url, originalIndex, runner, runnerPath, published, shortDate } =
-  Astro.props;
+const {
+  title,
+  url,
+  originalIndex,
+  runner,
+  runnerPath,
+  published,
+  shortDate,
+  year,
+} = Astro.props;
+
+const fullDate = dayjs(shortDate).format("MM-DD");
 ---
 
 <div class="mb-4 pb-2 [&+div]:border-t">
   <div
     class:list={["w-full", published && "hover:bg-[#efefef] hover:shadow-md"]}
+    id={`article-${year}-${fullDate}`}
   >
     <a href={published ? url : undefined}>
       <div class="p-2">
