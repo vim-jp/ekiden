@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@astrojs/ts-plugin": "^1.10.5",
-    "@eslint/js": "^9.39.0",
+    "@eslint/js": "^9.39.1",
     "@iconify-json/radix-icons": "^1.2.5",
     "@iconify-json/tabler": "^1.2.23",
     "@std/collections": "jsr:^1.0.6",
