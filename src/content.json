@@ -3407,6 +3407,14 @@
       "url": null,
       "githubUser": "satorunooshie",
       "issueNumber": 1262
+    },
+    {
+      "title": "Vimとtmuxで複数のAIコーディングエージェントを操作してみる",
+      "date": "2025-11-19",
+      "runner": "uma-chan",
+      "url": "https://i9wa4.github.io/blog/2025-11-19-vim-tmux-orchestrating-ai-coding-agents",
+      "githubUser": "i9wa4",
+      "issueNumber": 1291
     }
   ]
 }
