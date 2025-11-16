@@ -3415,6 +3415,14 @@
       "url": "https://i9wa4.github.io/blog/2025-11-19-vim-tmux-orchestrating-ai-coding-agents",
       "githubUser": "i9wa4",
       "issueNumber": 1291
+    },
+    {
+      "title": "コメントを評価する機能を作る",
+      "date": "2025-12-01",
+      "runner": "PicricAcid",
+      "url": null,
+      "githubUser": "PicricAcid",
+      "issueNumber": 1292
     }
   ]
 }
