@@ -3425,6 +3425,14 @@
       "issueNumber": 1295
     },
     {
+      "title": "今更だけどNeovimでvim-fernを設定する",
+      "date": "2025-11-24",
+      "runner": "sirasagi62",
+      "url": null,
+      "githubUser": "sirasagi62",
+      "issueNumber": 1296
+    },
+    {
       "title": "コメントを評価する機能を作る",
       "date": "2025-12-01",
       "runner": "PicricAcid",
