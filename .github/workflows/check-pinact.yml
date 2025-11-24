@@ -1,0 +1,21 @@
+on:
+  pull_request:
+    paths:
+      - ".github/**/*.yml"
+      - ".github/**/*.yaml"
+
+permissions:
+  pull-requests: write
+
+jobs:
+  pinact:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+        with:
+          persist-credentials: false
+
+      - name: Check GitHub Actions with pinact
+        uses: suzuki-shunsuke/pinact-action@49cbd6acd0dbab6a6be2585d1dbdaa43b4410133 # v1.0.0
+        with:
+          skip_push: "true"
