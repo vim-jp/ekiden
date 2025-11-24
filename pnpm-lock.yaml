@@ -70,8 +70,8 @@ importers:
         specifier: ^66.5.9
         version: 66.5.9(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
       '@unocss/preset-web-fonts':
-        specifier: ^66.5.5
-        version: 66.5.5
+        specifier: ^66.5.9
+        version: 66.5.9
       astro-eslint-parser:
         specifier: ^1.2.2
         version: 1.2.2
@@ -1106,9 +1106,6 @@ packages:
     resolution: {integrity: sha512-M8O0Z+6iCXuQOz/quaKueSb2cmN7cP9JGWdAH2E+qFD8txljaY88tNL4OwFZtO9GjhT2f/pEsLoEOAtAo1xT6g==}
     engines: {node: '>=14'}
 
-  '@unocss/core@66.5.5':
-    resolution: {integrity: sha512-BL+TdQMJCuu3fOGnF8wugGVpqrgBUEFzWp3yI9VJe/+p6H6NXuqlzwgSKcbpJD0XQMnxhRYYtC5Gh1coNXiBIQ==}
-
   '@unocss/core@66.5.9':
     resolution: {integrity: sha512-0ch1dN1AJFX+QCxaQR6WLfWqr8PHt7U/wqSTm5vdLXTsm96R7ggCGMs360TiDMimDUvXak6gka+y/6wdQBf8/A==}
 
@@ -1149,9 +1146,6 @@ packages:
 
   '@unocss/preset-uno@66.5.9':
     resolution: {integrity: sha512-8c1wPbV4cDZNqPcPtNJd08cmRVuhnvoyAU8ER57bbuSe4g0BspT4cLaUf7OuqBg6bmc55a6w9A66fj+kYwpMqw==}
-
-  '@unocss/preset-web-fonts@66.5.5':
-    resolution: {integrity: sha512-ySwIigf7OGBlzUKe9KZ0luzzA/yjz84T/WVGF75SkYUw6vyfWo3XxSIxU/sHYjoRCKUC/7di3FAUPT5xkX45Vw==}
 
   '@unocss/preset-web-fonts@66.5.9':
     resolution: {integrity: sha512-iRXiIg7A0+QmUdH+7NNZmGm9JCV0TI1FG3kMhkc2F3EKjmyTJRxlAgcWjysyWjH2drkJYTaouVDDV43c5xQkKQ==}
@@ -4114,8 +4108,6 @@ snapshots:
       '@unocss/core': 66.5.9
       unconfig: 7.4.1
 
-  '@unocss/core@66.5.5': {}
-
   '@unocss/core@66.5.9': {}
 
   '@unocss/eslint-config@66.5.9(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)':
@@ -4192,11 +4184,6 @@ snapshots:
     dependencies:
       '@unocss/core': 66.5.9
       '@unocss/preset-wind3': 66.5.9
-
-  '@unocss/preset-web-fonts@66.5.5':
-    dependencies:
-      '@unocss/core': 66.5.5
-      ofetch: 1.5.1
 
   '@unocss/preset-web-fonts@66.5.9':
     dependencies:
