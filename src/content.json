@@ -3433,10 +3433,10 @@
       "issueNumber": 1296
     },
     {
-      "title": "vim-ginとlazygitを見比べてみる",
+      "title": "Oil.nvimからvim-fernを開くのがちょっと便利だった",
       "date": "2025-11-26",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://wagomu.me/blog/2025-11-26-vim-ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 1307
     },
