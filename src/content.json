@@ -3441,6 +3441,14 @@
       "issueNumber": 1307
     },
     {
+      "title": "Neovimのツリー表示ファイラでテキスト感覚にファイル操作もできちゃうfyler.nvimよさげ",
+      "date": "2025-11-28",
+      "runner": "atusy",
+      "url": "https://blog.atusy.net/2025/11/28/fyler-nvim/",
+      "githubUser": "atusy",
+      "issueNumber": 1308
+    },
+    {
       "title": "コメントを評価する機能を作る",
       "date": "2025-12-01",
       "runner": "PicricAcid",
