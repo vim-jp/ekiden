@@ -55,7 +55,7 @@
     "typescript-eslint": "^8.47.0",
     "ufo": "^1.6.1",
     "unocss": "^66.5.9",
-    "vitest": "^4.0.13"
+    "vitest": "^4.0.14"
   },
   "private": true,
   "packageManager": "pnpm@10.15.0",
