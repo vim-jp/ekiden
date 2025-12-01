@@ -33,7 +33,7 @@
     "svelte": "^5.43.14"
   },
   "devDependencies": {
-    "@astrojs/ts-plugin": "^1.10.5",
+    "@astrojs/ts-plugin": "^1.10.6",
     "@eslint/js": "^9.39.1",
     "@iconify-json/radix-icons": "^1.2.5",
     "@iconify-json/tabler": "^1.2.23",
