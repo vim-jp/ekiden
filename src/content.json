@@ -3455,6 +3455,14 @@
       "url": "https://zenn.dev/picric_acid/articles/65de8bc4308aab",
       "githubUser": "PicricAcid",
       "issueNumber": 1292
+    },
+    {
+      "title": "配列の順序変えたいけど、da{だとインデントとかカンマがとりのこされてぐちゃるなーって人、dVa{ 使ってみて！",
+      "date": "2025-12-03",
+      "runner": "atusy",
+      "url": "https://x.com/Atsushi776/status/1995875156900897078",
+      "githubUser": "atusy",
+      "issueNumber": 1317
     }
   ]
 }
