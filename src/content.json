@@ -3463,6 +3463,14 @@
       "url": "https://x.com/Atsushi776/status/1996185684336607255",
       "githubUser": "atusy",
       "issueNumber": 1317
+    },
+    {
+      "title": "vim.on_keyの使い方と0.12以降の仕様変更について",
+      "date": "2025-12-05",
+      "runner": "sirasagi62",
+      "url": null,
+      "githubUser": "sirasagi62",
+      "issueNumber": 1318
     }
   ]
 }
