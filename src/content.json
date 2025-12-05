@@ -3465,10 +3465,10 @@
       "issueNumber": 1317
     },
     {
-      "title": "vim.on_keyの使い方と0.12以降の仕様変更について",
+      "title": "あまりにもカオスすぎるvim.on_keyの挙動と0.12以降の仕様変更について",
       "date": "2025-12-05",
       "runner": "sirasagi62",
-      "url": null,
+      "url": "https://zenn.dev/sirasagi62/articles/c95a0b813a88ce",
       "githubUser": "sirasagi62",
       "issueNumber": 1318
     }
