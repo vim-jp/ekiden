@@ -54,7 +54,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.48.1",
     "ufo": "^1.6.1",
-    "unocss": "^66.5.9",
+    "unocss": "^66.5.10",
     "vitest": "^4.0.15"
   },
   "private": true,
