@@ -3481,6 +3481,14 @@
       "issueNumber": 1319
     },
     {
+      "title": "生成AI時代だからこそ、Vim as an IME",
+      "date": "2025-12-10",
+      "runner": "tani",
+      "url": "https://zenn.dev/dog/articles/vim-as-an-ime",
+      "githubUser": "tani",
+      "issueNumber": 1334
+    },
+    {
       "title": "lazy.nvimで差分を確認してからアップデートする",
       "date": "2025-12-12",
       "runner": "yuys13",
