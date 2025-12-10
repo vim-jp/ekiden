@@ -3481,6 +3481,14 @@
       "issueNumber": 1319
     },
     {
+      "title": "lazy.nvimで差分を確認してからアップデートする",
+      "date": "2025-12-12",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 1333
+    },
+    {
       "title": "【毎秒バックアップ】bakaup.vimの紹介【backupオプション拡張】",
       "date": "2025-12-15",
       "runner": "aiya000",
