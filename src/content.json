@@ -3492,7 +3492,7 @@
       "title": "lazy.nvimで差分を確認してからアップデートする",
       "date": "2025-12-12",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/lazy-check-for-update-plugin",
       "githubUser": "yuys13",
       "issueNumber": 1333
     },
