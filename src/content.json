@@ -3505,6 +3505,14 @@
       "issueNumber": 1320
     },
     {
+      "title": "Neovim >= 0.12に言語サーバー関連のExコマンドlspが入った",
+      "date": "2025-12-17",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1336
+    },
+    {
       "title": "未定",
       "date": "2025-12-24",
       "runner": "kyoh86",
