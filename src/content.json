@@ -3513,6 +3513,14 @@
       "issueNumber": 1336
     },
     {
+      "title": "Vim/Neovimのターミナルでノーマルモードに戻る <C-\\><C-N> って長いよね。<C-\\>だけに省略すると便利！",
+      "date": "2025-12-19",
+      "runner": "atusy",
+      "url": "https://x.com/Atsushi776/status/2001816825500438886",
+      "githubUser": "atusy",
+      "issueNumber": 1337
+    },
+    {
       "title": "未定",
       "date": "2025-12-24",
       "runner": "kyoh86",
