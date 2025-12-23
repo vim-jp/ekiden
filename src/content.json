@@ -3537,6 +3537,14 @@
       "issueNumber": 1335
     },
     {
+      "title": "Vim scriptで値を隠蔽する",
+      "date": "2025-12-26",
+      "runner": "kuuote",
+      "url": null,
+      "githubUser": "kuuote",
+      "issueNumber": 1341
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
