@@ -3529,10 +3529,10 @@
       "issueNumber": 1339
     },
     {
-      "title": "未定",
+      "title": "NeovimからCodexを呼び出してコードの補完を提案してもらう",
       "date": "2025-12-24",
       "runner": "kyoh86",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/8badce9ef420e7",
       "githubUser": "kyoh86",
       "issueNumber": 1335
     },
