@@ -3521,6 +3521,14 @@
       "issueNumber": 1337
     },
     {
+      "title": "Denops v8以降のプラグイン開発の注意点",
+      "date": "2025-12-22",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/0a9c6029aa221e",
+      "githubUser": "kyoh86",
+      "issueNumber": 1339
+    },
+    {
       "title": "未定",
       "date": "2025-12-24",
       "runner": "kyoh86",
