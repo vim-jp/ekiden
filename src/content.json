@@ -3535,6 +3535,14 @@
       "url": null,
       "githubUser": "kyoh86",
       "issueNumber": 1335
+    },
+    {
+      "title": "Meguro.vim #33 を開催しました",
+      "date": "2026-01-19",
+      "runner": "thinca",
+      "url": "https://thinca.hatenablog.com/entry/2026/01/megurovim-33",
+      "githubUser": "thinca",
+      "issueNumber": 1340
     }
   ]
 }
