@@ -3545,6 +3545,14 @@
       "issueNumber": 1341
     },
     {
+      "title": "製作中のNeovim用プラグインマネージャの紹介と相談",
+      "date": "2025-12-29",
+      "runner": "gw31415",
+      "url": "https://zenn.dev/gw31415/articles/909af402ba806a",
+      "githubUser": "gw31415",
+      "issueNumber": 1343
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
