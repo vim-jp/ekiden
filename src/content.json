@@ -3553,6 +3553,14 @@
       "issueNumber": 1343
     },
     {
+      "title": "Vim/Neovimをquitするときに特殊ウィンドウを一気に閉じる",
+      "date": "2025-12-31",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/ff6cd224fab0c7",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1344
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
