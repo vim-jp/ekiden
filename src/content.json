@@ -3561,6 +3561,14 @@
       "issueNumber": 1344
     },
     {
+      "title": "新たな始まり：Vim/Neovimを再起動させるRestartコマンド",
+      "date": "2026-01-02",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/2308d5e7db8bc7",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1345
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
