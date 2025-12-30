@@ -3601,6 +3601,14 @@
       "issueNumber": 1340
     },
     {
+      "title": "Vimでqキーをprefixとして使う",
+      "date": "2026-01-21",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/d9ad1dd0d7ecca",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1350
+    },
+    {
       "title": "先輩たちに憧れvimデビューしてみた話",
       "date": "2026-01-23",
       "runner": "テヘラニファルド　スィナ",
