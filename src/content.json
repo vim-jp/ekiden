@@ -3569,6 +3569,14 @@
       "issueNumber": 1345
     },
     {
+      "title": "VimのコードベースはどのバージョンのSTEVIEか？",
+      "date": "2026-01-05",
+      "runner": "nil2",
+      "url": null,
+      "githubUser": "nil-two",
+      "issueNumber": 1348
+    },
+    {
       "title": "外部依存ゼロのVimでもプラグインを使える。本体に同梱されてるから。",
       "date": "2026-01-07",
       "runner": "kawarimidoll",
