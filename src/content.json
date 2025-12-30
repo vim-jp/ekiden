@@ -3569,6 +3569,14 @@
       "issueNumber": 1345
     },
     {
+      "title": "外部依存ゼロのVimでもプラグインを使える。本体に同梱されてるから。",
+      "date": "2026-01-07",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/e2620b502913f4",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1347
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
