@@ -3585,6 +3585,14 @@
       "issueNumber": 1347
     },
     {
+      "title": "vimを終了した時の状態に復元する",
+      "date": "2026-01-09",
+      "runner": "takaya-ishiyama",
+      "url": "https://zenn.dev/takaya9/articles/vim-session-my-settings",
+      "githubUser": "takaya-ishiyama",
+      "issueNumber": 1351
+    },
+    {
       "title": "便利Neovimプラグイン紹介：undo-glow.nvim",
       "date": "2026-01-12",
       "runner": "kawarimidoll",
