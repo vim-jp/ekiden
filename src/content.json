@@ -3601,6 +3601,14 @@
       "issueNumber": 1349
     },
     {
+      "title": "2026年になったのでVSCodeからNeovimへ移行しました。",
+      "date": "2026-01-14",
+      "runner": "Kamiyama",
+      "url": "https://qiita.com/kamiyama-fol/private/28ff0fb459e2544ab33e",
+      "githubUser": "kamiyama-fol",
+      "issueNumber": 1352
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
