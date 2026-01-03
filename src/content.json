@@ -3609,6 +3609,14 @@
       "issueNumber": 1352
     },
     {
+      "title": "ddu-ui-filerでnetrwをハイジャックする",
+      "date": "2026-01-16",
+      "runner": "laraochan",
+      "url": null,
+      "githubUser": "laraochan",
+      "issueNumber": 1353
+    },
+    {
       "title": "Meguro.vim #33 を開催しました",
       "date": "2026-01-19",
       "runner": "thinca",
