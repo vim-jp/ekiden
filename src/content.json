@@ -3639,6 +3639,14 @@
       "url": "https://scriptlab.jp/",
       "githubUser": "Sina-TehraniFard",
       "issueNumber": 1342
+    },
+    {
+      "title": "Zshの補完をするためにLnaguage Serverを実装した(仮)",
+      "date": "2026-01-26",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 1354
     }
   ]
 }
