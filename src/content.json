@@ -3655,6 +3655,14 @@
       "url": "https://zenn.dev/vim_jp/articles/27ffdef704e164",
       "githubUser": "kyoh86",
       "issueNumber": 1355
+    },
+    {
+      "title": "Neovim内ターミナル前提でMCPサーバを作った（後編）",
+      "date": "2026-01-30",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/0813b272ce5859",
+      "githubUser": "kyoh86",
+      "issueNumber": 1356
     }
   ]
 }
