@@ -3647,6 +3647,14 @@
       "url": null,
       "githubUser": "yuys13",
       "issueNumber": 1354
+    },
+    {
+      "title": "Codex in :terminal in Neovimなら親のNeovimのいじりたいんじゃねーの？わっかんねーけど",
+      "date": "2026-01-28",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/27ffdef704e164",
+      "githubUser": "kyoh86",
+      "issueNumber": 1355
     }
   ]
 }
