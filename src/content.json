@@ -3649,7 +3649,7 @@
       "issueNumber": 1354
     },
     {
-      "title": "Neovim内ターミナル運用のためのnvim-proxyを作った話",
+      "title": "Neovim内ターミナル運用のためのnvim-proxyを作った（前編）",
       "date": "2026-01-28",
       "runner": "kyoh86",
       "url": "https://zenn.dev/vim_jp/articles/27ffdef704e164",
