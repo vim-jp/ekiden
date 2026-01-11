@@ -196,7 +196,7 @@
       "title": "Neovim 0.8以降のビルトインLSPについて",
       "date": "2023-04-26",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/ryoppippi/articles/8aeedded34c914",
+      "url": "https://ryoppippi.com/blog/2023-04-26-zenn-8aeedded34c914-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 69
     },
@@ -284,7 +284,7 @@
       "title": "NeovimでのSvelte/SvelteKitの開発環境",
       "date": "2023-05-22",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/ryoppippi/articles/a8d8928795c8c1",
+      "url": "https://ryoppippi.com/blog/2023-05-22-zenn-a8d8928795c8c1-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 86
     },
@@ -412,7 +412,7 @@
       "title": "とあるｺｰﾃﾞｨﾝｸﾞﾁｮｯﾄﾜｶﾙ勢のエディタ遍歴",
       "date": "2023-06-28",
       "runner": "ryoppippi",
-      "url": "https://github.com/ryoppippi/zenn-repo/blob/47efee838de5e817bfcf13fd022f6961036637ee/articles/58d97a2ec2c2ae.md",
+      "url": "https://ryoppippi.com/blog/2023-06-28-zenn-58d97a2ec2c2ae-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 108
     },
@@ -580,7 +580,7 @@
       "title": "「commit messageを考えてる間によしなに git hooks を実行しておいてね！」を実現するneovimの設定をかいた",
       "date": "2023-08-16",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/3b5125f9e06bf9",
+      "url": "https://ryoppippi.com/blog/2023-08-16-zenn-3b5125f9e06bf9-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 135
     },
@@ -724,7 +724,7 @@
       "title": "BunとNeovim",
       "date": "2023-09-27",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/c097917f163431",
+      "url": "https://ryoppippi.com/blog/2023-09-27-zenn-c097917f163431-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 156
     },
@@ -788,7 +788,7 @@
       "title": "Vim/Neovimのプラグインマネージャーを悪用してCLIの管理ツールとして使う",
       "date": "2023-10-16",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/a33de9d64b90d8",
+      "url": "https://ryoppippi.com/blog/2023-10-15-zenn-a33de9d64b90d8-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 166
     },
@@ -892,7 +892,7 @@
       "title": "Masonをやめようかな、ま、そんなところです",
       "date": "2023-11-15",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/f24212092323d9",
+      "url": "https://ryoppippi.com/blog/2023-11-14-zenn-f24212092323d9-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 187
     },
@@ -1428,7 +1428,7 @@
       "title": "なぜVimmerの僕はマルチカーソルを必要としないか",
       "date": "2024-04-19",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/38915175fe4648",
+      "url": "https://ryoppippi.com/blog/2024-04-19-zenn-38915175fe4648-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 377
     },
@@ -1444,7 +1444,7 @@
       "title": "Neovim + oil.nvim + Weztermで頑張って画像を表示する",
       "date": "2024-04-24",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/5b5f704de07673",
+      "url": "https://ryoppippi.com/blog/2024-04-24-zenn-5b5f704de07673-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 384
     },
@@ -1468,7 +1468,7 @@
       "title": "マクロ記録中にColorSchemeを変更する設定をしました",
       "date": "2024-05-01",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/68eb77d2f2a37a",
+      "url": "https://ryoppippi.com/blog/2024-04-30-zenn-68eb77d2f2a37a-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 392
     },
@@ -1500,7 +1500,7 @@
       "title": "俺の denols/tsserver(vtsls) 共存術 for Neovim 2024",
       "date": "2024-05-10",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/10b408bc0cf077",
+      "url": "https://ryoppippi.com/blog/2024-05-10-zenn-10b408bc0cf077-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 410
     },
@@ -1604,7 +1604,7 @@
       "title": "CopilotChatとNeovimでGitの効率を上げる",
       "date": "2024-06-10",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/041300c0f9cc50",
+      "url": "https://ryoppippi.com/blog/2024-06-10-zenn-041300c0f9cc50-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 443
     },
@@ -1692,7 +1692,7 @@
       "title": "ray.soをNeovim/Vimから快適に使えるプラグインを書いた",
       "date": "2024-07-05",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/527fe9cea500c5",
+      "url": "https://ryoppippi.com/blog/2024-07-04-zenn-527fe9cea500c5-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 458
     },
@@ -1748,7 +1748,7 @@
       "title": "vim-jp ラジオ オフィシャルサイト制作の舞台裏！",
       "date": "2024-07-22",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/e1192d17156a2d",
+      "url": "https://ryoppippi.com/blog/2024-07-22-zenn-e1192d17156a2d-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 485
     },
@@ -1924,7 +1924,7 @@
       "title": "Neovimで記録したマクロを後から編集する",
       "date": "2024-09-11",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/ryoppippi/articles/e2ad1047bc950c",
+      "url": "https://ryoppippi.com/blog/2024-09-10-zenn-e2ad1047bc950c-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 569
     },
@@ -2060,7 +2060,7 @@
       "title": "How many HHKBs is it?",
       "date": "2024-10-21",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/vim_jp/articles/67394c013701ad",
+      "url": "https://ryoppippi.com/blog/2024-10-21-zenn-67394c013701ad-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 660
     },
@@ -2796,7 +2796,7 @@
       "title": "Vim-jp ラジオ オフィシャルサイトの目に見えないアプデ履歴",
       "date": "2025-05-23",
       "runner": "ryoppippi",
-      "url": "https://zenn.dev/ryoppippi/articles/d787bce6dae9c5",
+      "url": "https://ryoppippi.com/blog/2025-05-25-zenn-d787bce6dae9c5-ja",
       "githubUser": "ryoppippi",
       "issueNumber": 1030
     },
