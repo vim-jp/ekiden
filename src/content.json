@@ -3663,6 +3663,14 @@
       "url": "https://zenn.dev/vim_jp/articles/0813b272ce5859",
       "githubUser": "kyoh86",
       "issueNumber": 1356
+    },
+    {
+      "title": "ファイル名補完を「カレントディレクトリから」ではなく「開いているファイルのディレクトリから」にしたい",
+      "date": "2026-02-02",
+      "runner": "mikoto2000",
+      "url": "https://mikoto2000.blogspot.com/2026/02/blog-post.html",
+      "githubUser": "mikoto2000",
+      "issueNumber": 1363
     }
   ]
 }
