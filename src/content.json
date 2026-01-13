@@ -3671,6 +3671,14 @@
       "url": "https://mikoto2000.blogspot.com/2026/02/blog-post.html",
       "githubUser": "mikoto2000",
       "issueNumber": 1363
+    },
+    {
+      "title": "Vim script問題：任意の関数をdot repeat可能にせよ",
+      "date": "2026-02-04",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/2d14953753f044",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1364
     }
   ]
 }
