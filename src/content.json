@@ -3679,6 +3679,14 @@
       "url": "https://zenn.dev/vim_jp/articles/2d14953753f044",
       "githubUser": "kawarimidoll",
       "issueNumber": 1364
+    },
+    {
+      "title": "Neovimにスナップショットテストを導入してみる",
+      "date": "2026-02-06",
+      "runner": "kyoh86",
+      "url": null,
+      "githubUser": "kyoh86",
+      "issueNumber": 1366
     }
   ]
 }
