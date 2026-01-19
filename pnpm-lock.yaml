@@ -24,8 +24,8 @@ importers:
         specifier: ^5.2.7
         version: 5.2.7
       '@unocss/reset':
-        specifier: ^66.5.10
-        version: 66.5.12
+        specifier: ^66.6.0
+        version: 66.6.0
       astro:
         specifier: ^5.16.11
         version: 5.16.11(@types/node@25.0.9)(jiti@2.6.1)(rollup@4.55.2)(tsx@4.19.2)(typescript@5.9.3)(yaml@2.7.1)
@@ -1386,6 +1386,9 @@ packages:
 
   '@unocss/reset@66.5.12':
     resolution: {integrity: sha512-wGTMu1sXVdxnzAonzHk/yUsyDyGrr8OiXCDSC7pVNep6eXhhf0g85v/Gx9FoAjZRyCppm6ePDWXtWYS8zglfCQ==}
+
+  '@unocss/reset@66.6.0':
+    resolution: {integrity: sha512-OQK5F7Dzx0wWDSPTYEz7NRP9pekufSAkjxfKOyKokiXOUzVTg8Yx8sOvCsA3Oi0Rx5WlsO2LN+MOBekpkrttXg==}
 
   '@unocss/rule-utils@66.5.12':
     resolution: {integrity: sha512-2UQvdjS6nD3QHLEwcXlDhXFNiOUQDuOC+itX4tjqvnjP/hj5A99WEUHemb8WEHAlHAt7khe9591+BkHHo3BX/w==}
@@ -4592,6 +4595,8 @@ snapshots:
       '@unocss/preset-wind3': 66.5.12
 
   '@unocss/reset@66.5.12': {}
+
+  '@unocss/reset@66.6.0': {}
 
   '@unocss/rule-utils@66.5.12':
     dependencies:
