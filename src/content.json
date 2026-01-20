@@ -3689,14 +3689,6 @@
       "issueNumber": 1366
     },
     {
-      "title": "telescope-skill-picker.nvim",
-      "date": "2026-02-09",
-      "runner": "metaphor",
-      "url": null,
-      "githubUser": "hayashiroto",
-      "issueNumber": 1368
-    },
-    {
       "title": "Meguro.vim #34 を開催しました",
       "date": "2026-03-16",
       "runner": "thinca",
