@@ -3641,10 +3641,10 @@
       "issueNumber": 1342
     },
     {
-      "title": "Zshの補完をするためにLnaguage Serverを実装した(仮)",
+      "title": "Zshの補完をあらゆるエディタで使いたいのでLanguage Serverを自作した",
       "date": "2026-01-26",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/zsh-language-server-zshcs",
       "githubUser": "yuys13",
       "issueNumber": 1354
     },
