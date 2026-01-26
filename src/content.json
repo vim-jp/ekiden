@@ -3697,7 +3697,7 @@
       "issueNumber": 1384
     },
     {
-      "title": "lemonadeを使ってSSH先のVimでもヤンク・ペーストするShort Tips (with nix-darwin)",
+      "title": "SSH先のVimとクリップボード共有するShort Tips (feat. lemonade)",
       "date": "2026-02-11",
       "runner": "peacock0803sz",
       "url": null,
