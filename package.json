@@ -52,7 +52,7 @@
     "prettier-plugin-svelte": "^3.4.1",
     "type-fest": "^5.4.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.53.0",
+    "typescript-eslint": "^8.53.1",
     "ufo": "^1.6.3",
     "unocss": "^66.5.10",
     "vitest": "^4.0.17"
