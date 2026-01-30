@@ -3713,6 +3713,14 @@
       "issueNumber": 1395
     },
     {
+      "title": "vim-dadbod-uiとauto-saveの競合が発生した話",
+      "date": "2026-02-16",
+      "runner": "テヘラニ",
+      "url": "https://scriptlab.jp/",
+      "githubUser": "Sina-TehraniFard",
+      "issueNumber": 1396
+    },
+    {
       "title": "Meguro.vim #34 を開催しました",
       "date": "2026-03-16",
       "runner": "thinca",
