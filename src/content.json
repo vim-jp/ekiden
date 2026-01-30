@@ -3681,7 +3681,7 @@
       "issueNumber": 1364
     },
     {
-      "title": "Neovimにスナップショットテストを導入してみる",
+      "title": "Neovimプラグイン開発にSnapshot testingを導入してみる",
       "date": "2026-02-06",
       "runner": "kyoh86",
       "url": null,
