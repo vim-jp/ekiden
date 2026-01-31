@@ -3721,6 +3721,14 @@
       "issueNumber": 1396
     },
     {
+      "title": "LSPの自動インストールはmason-lspconfig.nvimが無くてもできる",
+      "date": "2026-02-18",
+      "runner": "glmlm",
+      "url": "https://zenn.dev/",
+      "githubUser": "glmlm",
+      "issueNumber": 1398
+    },
+    {
       "title": "Meguro.vim #34 を開催しました",
       "date": "2026-03-16",
       "runner": "thinca",
