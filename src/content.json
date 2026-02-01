@@ -3705,7 +3705,7 @@
       "issueNumber": 1385
     },
     {
-      "title": "(仮タイトル)ミニマルなデバッグを体験せよ",
+      "title": "単一ウィンドウで扱うNeovim向けデバッグUI (nvim-dap-view)",
       "date": "2026-02-13",
       "runner": "glmlm",
       "url": "https://zenn.dev/glmlm/articles/neovim-dap-view-20260213",
