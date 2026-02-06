@@ -3729,6 +3729,14 @@
       "issueNumber": 1398
     },
     {
+      "title": "Macに環境入れたくない人のNeovim",
+      "date": "2026-02-20",
+      "runner": "たくみ",
+      "url": null,
+      "githubUser": "taku-271",
+      "issueNumber": 1405
+    },
+    {
       "title": "Meguro.vim #34 を開催しました",
       "date": "2026-03-16",
       "runner": "thinca",
