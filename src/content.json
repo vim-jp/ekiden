@@ -3729,10 +3729,10 @@
       "issueNumber": 1398
     },
     {
-      "title": "Macに環境入れたくない人のNeovim",
+      "title": "環境を入れたくない私 vs 環境を入れさせるNeovim",
       "date": "2026-02-20",
       "runner": "たくみ",
-      "url": null,
+      "url": "https://zenn.dev/uniformnext/articles/neovim-in-docker",
       "githubUser": "taku-271",
       "issueNumber": 1405
     },
