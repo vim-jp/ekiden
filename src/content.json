@@ -3724,7 +3724,7 @@
       "title": "LSPの自動インストールはmason-lspconfig.nvimが無くてもできる",
       "date": "2026-02-18",
       "runner": "glmlm",
-      "url": "https://zenn.dev/",
+      "url": "https://zenn.dev/glmlm/articles/neovim-mason-lspconfig-20250218",
       "githubUser": "glmlm",
       "issueNumber": 1398
     },
