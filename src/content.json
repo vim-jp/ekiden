@@ -3753,6 +3753,14 @@
       "issueNumber": 1411
     },
     {
+      "title": "Vim9 script 基礎文法最速マスター（AI 生成記事）",
+      "date": "2026-02-27",
+      "runner": "mikoto2000",
+      "url": "https://mikoto2000.blogspot.com/2026/02/vim9-script-ai.html",
+      "githubUser": "mikoto2000",
+      "issueNumber": 1412
+    },
+    {
       "title": "Meguro.vim #34 を開催しました",
       "date": "2026-03-16",
       "runner": "thinca",
