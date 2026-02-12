@@ -3745,6 +3745,14 @@
       "issueNumber": 1410
     },
     {
+      "title": "ddu.vim を再び活用するために実行したこと",
+      "date": "2026-02-25",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1411
+    },
+    {
       "title": "Meguro.vim #34 を開催しました",
       "date": "2026-03-16",
       "runner": "thinca",
