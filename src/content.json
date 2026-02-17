@@ -3753,6 +3753,14 @@
       "issueNumber": 1411
     },
     {
+      "title": "memd-cliをneovim内で使いやすくするpluginを書いた",
+      "date": "2026-02-27",
+      "runner": "ktrysmt",
+      "url": "https://ktrysmt.github.io/blog/memd-nvim/",
+      "githubUser": "ktrysmt",
+      "issueNumber": 1421
+    },
+    {
       "title": "Weztermのタブ内の文字をシンプルにしたい",
       "date": "2026-03-13",
       "runner": "テヘラニ",
