@@ -58,8 +58,8 @@
     "vitest": "^4.0.18"
   },
   "private": true,
-  "packageManager": "pnpm@10.15.0",
-  "devEngines": {
+  "packageManager": "pnpm@10.30.3",
+  "engines": {
     "runtime": {
       "name": "node",
       "version": "^22.14.0",
