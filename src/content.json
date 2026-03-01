@@ -3761,6 +3761,14 @@
       "issueNumber": 1421
     },
     {
+      "title": "ローカル LLM でコード補完する Vim プラグインを作った",
+      "date": "2026-03-02",
+      "runner": "mikoto2000",
+      "url": "https://mikoto2000.blogspot.com/2026/03/llm-vim.html",
+      "githubUser": "mikoto2000",
+      "issueNumber": 1424
+    },
+    {
       "title": "Weztermのタブ内の文字をシンプルにしたい",
       "date": "2026-03-13",
       "runner": "テヘラニ",
