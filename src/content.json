@@ -3769,6 +3769,14 @@
       "issueNumber": 1424
     },
     {
+      "title": "Neovimで使うluaのlanguage serverによってos.date()の型定義が違ってめんどいのよね",
+      "date": "2026-03-04",
+      "runner": "kawarimidoll",
+      "url": "https://zenn.dev/vim_jp/articles/b2289e24e24f78",
+      "githubUser": "kawarimidoll",
+      "issueNumber": 1435
+    },
+    {
       "title": "kakehashi.nvim",
       "date": "2026-03-06",
       "runner": "atusy",
