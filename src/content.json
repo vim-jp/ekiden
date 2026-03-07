@@ -3777,10 +3777,10 @@
       "issueNumber": 1435
     },
     {
-      "title": "kakehashi.nvim",
+      "title": "🌉 kakehashiを使ってコードブロック内の補完とか簡単にできるように、kakehashi.nvim作った",
       "date": "2026-03-06",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2026/03/07/kakehashi-nvim/",
       "githubUser": "atusy",
       "issueNumber": 1434
     },
