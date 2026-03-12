@@ -3785,7 +3785,7 @@
       "issueNumber": 1434
     },
     {
-      "title": "Weztermのタブ内の文字をシンプルにしたい",
+      "title": "WezTermタブを整理する：Luaで実現した見やすい設定集",
       "date": "2026-03-13",
       "runner": "テヘラニ",
       "url": "https://scriptlab.jp/wezterm-tab-customization/",
