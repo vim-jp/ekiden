@@ -3785,6 +3785,14 @@
       "issueNumber": 1434
     },
     {
+      "title": "懺悔: DependabotのPRでCIが落ちているのに自動マージされていました(直した)",
+      "date": "2026-03-09",
+      "runner": "peacock0803sz",
+      "url": null,
+      "githubUser": "peacock0803sz",
+      "issueNumber": 1449
+    },
+    {
       "title": "WezTermタブを整理する：Luaで実現した見やすい設定集",
       "date": "2026-03-13",
       "runner": "テヘラニ",
