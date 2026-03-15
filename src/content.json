@@ -3793,6 +3793,14 @@
       "issueNumber": 1449
     },
     {
+      "title": "ターミナル上でのファイルビューアーとしてサクっと Neovim を使ってみる",
+      "date": "2026-03-11",
+      "runner": "uma-chan",
+      "url": "https://zenn.dev/i9wa4/articles/2026-03-15-neovim-as-file-viewer",
+      "githubUser": "i9wa4",
+      "issueNumber": 1450
+    },
+    {
       "title": "WezTermタブを整理する：Luaで実現した見やすい設定集",
       "date": "2026-03-13",
       "runner": "テヘラニ",
