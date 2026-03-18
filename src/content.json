@@ -3815,6 +3815,14 @@
       "url": "https://thinca.hatenablog.com/entry/2026/03/megurovim-34",
       "githubUser": "thinca",
       "issueNumber": 1367
+    },
+    {
+      "title": "本番環境が完全停止！緊急対応から再発防止策まで",
+      "date": "2026-03-18",
+      "runner": "テヘラニ",
+      "url": "https://scriptlab.jp/production-502-disk-full-incident-response/",
+      "githubUser": "Sina-TehraniFard",
+      "issueNumber": 1454
     }
   ]
 }
