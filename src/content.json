@@ -3825,10 +3825,10 @@
       "issueNumber": 1454
     },
     {
-      "title": "なんか書く",
+      "title": "AIエージェントのお供にNeovimはいかが？ ― コードビューアーとしてのNeovim",
       "date": "2026-03-20",
       "runner": "staticWagomU",
-      "url": null,
+      "url": "https://zenn.dev/vim_jp/articles/20260320vim_ekiden",
       "githubUser": "staticWagomU",
       "issueNumber": 1457
     },
