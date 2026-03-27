@@ -1,5 +1,9 @@
 ---
 import Base from "@/layouts/Base.astro";
+import { Code } from "astro:components";
+
+const ekidenStatement = `この記事は[Vim 駅伝](https://vim-jp.org/ekiden/)のyyyy-mm-ddの記事です。
+Vim 駅伝は常に参加者を募集しています。詳しくは[こちらのページ](https://vim-jp.org/ekiden/about/)をご覧ください。`;
 ---
 
 <Base title="Vim 駅伝 - Vim 駅伝について" slug="/about">
@@ -34,6 +38,22 @@ import Base from "@/layouts/Base.astro";
         >Vim駅伝1日目、発案者のthincaさんの記事</a
       >をぜひ読んでみてください）
     </p>
+  </div>
+  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">注意事項！</h2>
+  <div class="my-4">
+    <p>
+      個人攻撃や差別的な内容を含む記事、公序良俗に反する不適切な記事の投稿を禁止します。
+    </p>
+    <p>
+      明らかに不適切と判断された記事については、GitHub経由での通告のうえ、本ページからリンクを削除する場合があります。
+    </p>
+  </div>
+  <div class="my-4">
+    <p>
+      記事中のどこか(最初でも最後でも、途中でも構いません)に以下の例ような「Vim
+      駅伝の参加記事であること」を明記してください。
+    </p>
+    <p><Code lang="md" theme="github-light" code={ekidenStatement} /></p>
   </div>
   <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
     どんなものを書けば良いの？
@@ -117,15 +137,6 @@ import Base from "@/layouts/Base.astro";
     </p>
     <p>
       スケジュール上の予定がキャンセルされ、再び参加を受け付けられるようになります。
-    </p>
-  </div>
-  <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">注意事項！</h2>
-  <div class="my-4">
-    <p>
-      個人攻撃や差別的な内容を含む記事、公序良俗に反する不適切な記事の投稿を禁止します。
-    </p>
-    <p>
-      明らかに不適切と判断された記事については、GitHub経由での通告のうえ、本ページからリンクを削除する場合があります。
     </p>
   </div>
   <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
