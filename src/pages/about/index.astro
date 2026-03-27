@@ -3,8 +3,7 @@ import Base from "@/layouts/Base.astro";
 import { Code } from "astro:components";
 
 const ekidenStatement = `この記事は[Vim 駅伝](https://vim-jp.org/ekiden/)のyyyy-mm-ddの記事です。
-Vim 駅伝は常に参加者を募集しています。詳しくは[こちらのページ](https://vim-jp.org/ekiden/about/)をご覧ください。`
-
+Vim 駅伝は常に参加者を募集しています。詳しくは[こちらのページ](https://vim-jp.org/ekiden/about/)をご覧ください。`;
 ---
 
 <Base title="Vim 駅伝 - Vim 駅伝について" slug="/about">
@@ -50,7 +49,10 @@ Vim 駅伝は常に参加者を募集しています。詳しくは[こちらの
     </p>
   </div>
   <div class="my-4">
-    <p>記事中のどこか(最初でも最後でも、途中でも構いません)に以下の例ような「Vim 駅伝の参加記事であること」を明記してください。</p>
+    <p>
+      記事中のどこか(最初でも最後でも、途中でも構いません)に以下の例ような「Vim
+      駅伝の参加記事であること」を明記してください。
+    </p>
     <p><Code lang="md" theme="github-light" code={ekidenStatement} /></p>
   </div>
   <h2 class="my-6 text-2xl text-ekiden-green-500 font-bold">
