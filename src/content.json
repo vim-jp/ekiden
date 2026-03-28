@@ -3849,6 +3849,14 @@
       "issueNumber": 1474
     },
     {
+      "title": "Windowsで手軽に始める最小限のLaTeX環境構築【Neovim・VSCode対応】",
+      "date": "2026-03-30",
+      "runner": "glmlm",
+      "url": "https://zenn.dev/glmlm/articles/latex-windows-neovim-vscode-20260330",
+      "githubUser": "glmlm",
+      "issueNumber": 1480
+    },
+    {
       "title": "vim x AI",
       "date": "2026-04-03",
       "runner": "tositada",
