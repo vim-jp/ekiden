@@ -3844,7 +3844,7 @@
       "title": "Neovim 0.12でDeprecatedになったDIAGNOSTICSの設定を更新する方法",
       "date": "2026-03-25",
       "runner": "yuys13",
-      "url": null,
+      "url": "https://zenn.dev/yuys13/articles/nvim-012-diagnostic-on_jump",
       "githubUser": "yuys13",
       "issueNumber": 1491
     },
