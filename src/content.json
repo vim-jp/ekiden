@@ -3841,6 +3841,14 @@
       "issueNumber": 1473
     },
     {
+      "title": "Neovim 0.12でDeprecatedになったDIAGNOSTICSの設定を更新する方法",
+      "date": "2026-03-25",
+      "runner": "yuys13",
+      "url": null,
+      "githubUser": "yuys13",
+      "issueNumber": 1491
+    },
+    {
       "title": "Neovimの折り畳み表示に出る「謎の数字」を消す方法",
       "date": "2026-03-27",
       "runner": "glmlm",
