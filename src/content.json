@@ -3865,10 +3865,10 @@
       "issueNumber": 1480
     },
     {
-      "title": "vim x AI",
+      "title": "goose.nvim をインストールしてみた",
       "date": "2026-04-03",
       "runner": "tositada",
-      "url": null,
+      "url": "https://zenn.dev/tositada/articles/9f5abcaffd5c1a",
       "githubUser": "tositada17",
       "issueNumber": 1458
     }
