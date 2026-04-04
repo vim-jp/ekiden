@@ -3871,6 +3871,14 @@
       "url": "https://zenn.dev/tositada/articles/9f5abcaffd5c1a",
       "githubUser": "tositada17",
       "issueNumber": 1458
+    },
+    {
+      "title": "nvim-treesitterが消えた今、その役割を改めて整理する",
+      "date": "2026-04-06",
+      "runner": "glmlm",
+      "url": "https://zenn.dev/glmlm/articles/neovim-treesitter-archived-20260406",
+      "githubUser": "glmlm",
+      "issueNumber": 1492
     }
   ]
 }
