@@ -1,5 +1,6 @@
 ---
 import { ClientRouter } from "astro:transitions";
+import { joinURL } from "ufo";
 
 import Footer from "@/components/Footer.astro";
 import Header from "@/components/Header.astro";
@@ -17,7 +18,7 @@ const baseURL = joinURLWithTrailingSlash(
 const description =
   "Vim 駅伝は、駅伝でタスキを繋ぐように Vim に関する記事を参加者で順番に書いていくイベントです。";
 const url = joinURLWithTrailingSlash(baseURL, slug);
-const ogImage = baseURL + "og-image.png";
+const ogImage = joinURL(baseURL, "og-image.png");
 ---
 
 <html lang="ja" class="scroll-smooth">
