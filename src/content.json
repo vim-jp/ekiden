@@ -3879,6 +3879,14 @@
       "url": "https://zenn.dev/glmlm/articles/neovim-treesitter-archived-20260406",
       "githubUser": "glmlm",
       "issueNumber": 1492
+    },
+    {
+      "title": "ブラウザで日本語入力中にIMEが勝手に切り替わると思ったらNeovimのLSPが原因だった",
+      "date": "2026-04-20",
+      "runner": "ultimatile",
+      "url": "https://zenn.dev/ultimatile/articles/neovim-lsp-ime-switch-autocmd-conflict",
+      "githubUser": "ultimatile",
+      "issueNumber": 1509
     }
   ]
 }
