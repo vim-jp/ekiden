@@ -52,7 +52,7 @@ jobs:
           echo "COMMIT_HASH=$(git rev-parse HEAD)" >> "${GITHUB_OUTPUT}"
           git push
       - name: 'Report'
-        uses: 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' # v8.0.0
+        uses: 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' # v9.0.0
         env:
           SCRIPT_RESULT: '${{ steps.script.outputs.RESULT }}'
           COMMIT_HASH: '${{ steps.push.outputs.COMMIT_HASH }}'
@@ -102,7 +102,7 @@ jobs:
     permissions:
       actions: 'write'
     steps:
-      - uses: 'actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd' # v8.0.0
+      - uses: 'actions/github-script@3a2844b7e9c422d3c10d287c895573f7108da1b3' # v9.0.0
         with:
           script: |
             github.rest.actions.createWorkflowDispatch({
