@@ -3895,6 +3895,14 @@
       "url": "https://qiita.com/delphinus/items/7dab609ef95bf030f217",
       "githubUser": "delphinus",
       "issueNumber": 1517
+    },
+    {
+      "title": "Neovim 0.11 -> 0.12へアップデートする際の勘所とnvim-treesitterの扱い",
+      "date": "2026-05-04",
+      "runner": "Toru Takahashi",
+      "url": "https://zenn.dev/tttol/articles/2881b678ee005b",
+      "githubUser": "tttol",
+      "issueNumber": 1527
     }
   ]
 }
