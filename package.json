@@ -20,7 +20,7 @@
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.8",
+    "@astrojs/check": "^0.9.9",
     "@astrojs/rss": "^4.0.18",
     "@astrojs/svelte": "^7.2.2",
     "@fontsource/kaushan-script": "^5.2.8",
