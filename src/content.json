@@ -3911,6 +3911,14 @@
       "url": "https://note.com/uhooi/n/ndb4af2d57daa",
       "githubUser": "uhooi",
       "issueNumber": 1534
+    },
+    {
+      "title": "Vim のステータスラインにカーソル下の文字コードを表示する",
+      "date": "2026-05-13",
+      "runner": "mikoto2000",
+      "url": "https://mikoto2000.blogspot.com/2026/05/vim.html",
+      "githubUser": "mikoto2000",
+      "issueNumber": 1542
     }
   ]
 }
