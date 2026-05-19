@@ -3921,6 +3921,14 @@
       "issueNumber": 1542
     },
     {
+      "title": "Neovim v0.13には新しいテキストオブジェクトとして行選択のilとバッファ選択のalが入るらしい",
+      "date": "2026-05-15",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1553
+    },
+    {
       "title": "Meguro.vim #35 を開催しました",
       "date": "2026-05-25",
       "runner": "thinca",
