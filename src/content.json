@@ -3922,7 +3922,7 @@
     },
     {
       "title": "Neovim v0.13には新しいテキストオブジェクトとして行選択のilとバッファ選択のalが入るらしい",
-      "date": "2026-05-15",
+      "date": "2026-05-20",
       "runner": "atusy",
       "url": null,
       "githubUser": "atusy",
