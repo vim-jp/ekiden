@@ -3921,10 +3921,10 @@
       "issueNumber": 1542
     },
     {
-      "title": "Neovim v0.13には新しいテキストオブジェクトとして行選択のilとバッファ選択のalが入るらしい",
+      "title": "Neovim 0.13（開発版）にテキストオブジェクトが増えるらしい。ilで空白を除いた1行、alでバッファ全体だってよ",
       "date": "2026-05-20",
       "runner": "atusy",
-      "url": null,
+      "url": "https://blog.atusy.net/2026/05/20/nvim-textobjects-il-and-al/",
       "githubUser": "atusy",
       "issueNumber": 1553
     },
