@@ -3897,6 +3897,14 @@
       "issueNumber": 1517
     },
     {
+      "title": "Visual Studio・(Neo)Vim・Visual Studio Code のそれぞれでそれぞれのファイルを開こう",
+      "date": "2026-04-24",
+      "runner": "kamecha",
+      "url": null,
+      "githubUser": "kamecha",
+      "issueNumber": 1554
+    },
+    {
       "title": "Neovim 0.11 -> 0.12へアップデートする際の勘所とnvim-treesitterの扱い",
       "date": "2026-05-04",
       "runner": "Toru Takahashi",
