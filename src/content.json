@@ -3945,10 +3945,10 @@
       "issueNumber": 1543
     },
     {
-      "title": "そのTODOいつから残ってる？ - todoage.nvimを作った話",
+      "title": "そのTODOいつから残ってる？ - todoage.nvim",
       "date": "2026-05-27",
       "runner": "kuri-sun",
-      "url": "https://zenn.dev/kuri_sun/articles/24051ba5378f21",
+      "url": null,
       "githubUser": "kuri-sun",
       "issueNumber": 1560
     }
