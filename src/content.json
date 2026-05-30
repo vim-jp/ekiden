@@ -3943,6 +3943,14 @@
       "url": "https://thinca.hatenablog.com/entry/2026/05/megurovim-35",
       "githubUser": "thinca",
       "issueNumber": 1543
+    },
+    {
+      "title": "yadm + mise で開発環境構築を整理する",
+      "date": "2026-05-29",
+      "runner": "sankantsu",
+      "url": null,
+      "githubUser": "sankantsu",
+      "issueNumber": 1561
     }
   ]
 }
