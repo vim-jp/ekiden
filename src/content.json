@@ -3945,6 +3945,14 @@
       "issueNumber": 1543
     },
     {
+      "title": "MiniMax で始める、読んで育てる Neovim 設定",
+      "date": "2026-05-27",
+      "runner": "kmkkiii",
+      "url": "https://kmkkiii.com/blog/20260531/",
+      "githubUser": "kmkkiii",
+      "issueNumber": 1562
+    },
+    {
       "title": "yadm + mise で開発環境構築を整理する",
       "date": "2026-05-29",
       "runner": "sankantsu",
