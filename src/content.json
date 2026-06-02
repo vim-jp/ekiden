@@ -3959,6 +3959,14 @@
       "url": "https://zenn.dev/vim_jp/articles/2ee400a66228a7",
       "githubUser": "sankantsu",
       "issueNumber": 1561
+    },
+    {
+      "title": "VimでJavaを実行する方法 2026年最新版",
+      "date": "2026-06-03",
+      "runner": "kamichidu",
+      "url": "https://kamichidu.hatenablog.com/entry/2026/06/03/001719",
+      "githubUser": "kamichidu",
+      "issueNumber": 1572
     }
   ]
 }
