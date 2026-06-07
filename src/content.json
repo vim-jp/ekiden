@@ -3967,6 +3967,14 @@
       "url": "https://kamichidu.hatenablog.com/entry/2026/06/03/001719",
       "githubUser": "kamichidu",
       "issueNumber": 1572
+    },
+    {
+      "title": "Neovim のコマンドライン周りに少し機能を追加する",
+      "date": "2026-06-08",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1573
     }
   ]
 }
