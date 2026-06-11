@@ -3921,6 +3921,14 @@
       "issueNumber": 1534
     },
     {
+      "title": "🌉 kakehashiでマークダウンのコードブロックとかをフォーマットできるようになったぞ！",
+      "date": "2026-05-11",
+      "runner": "atusy",
+      "url": null,
+      "githubUser": "atusy",
+      "issueNumber": 1581
+    },
+    {
       "title": "Vim のステータスラインにカーソル下の文字コードを表示する",
       "date": "2026-05-13",
       "runner": "mikoto2000",
