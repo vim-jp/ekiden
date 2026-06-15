@@ -3983,6 +3983,14 @@
       "url": "https://blog.atusy.net/2026/06/10/kakehashi-code-formatting/",
       "githubUser": "atusy",
       "issueNumber": 1581
+    },
+    {
+      "title": "Vim/Neovim の設定を共有できるサービスを開発しました",
+      "date": "2026-06-17",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1588
     }
   ]
 }
