@@ -3999,6 +3999,14 @@
       "url": "https://blog.atusy.net/2026/06/24/agentic-nvim/",
       "githubUser": "atusy",
       "issueNumber": 1598
+    },
+    {
+      "title": "Vimのインストーラーを作り直してみた",
+      "date": "2026-06-29",
+      "runner": "k-takata",
+      "url": "https://zenn.dev/k_takata/articles/vim-rework-installer",
+      "githubUser": "k-takata",
+      "issueNumber": 1600
     }
   ]
 }
