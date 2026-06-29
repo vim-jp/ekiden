@@ -37,7 +37,7 @@ importers:
         version: 1.11.21
       node:
         specifier: runtime:^22.14.0
-        version: runtime:22.23.0
+        version: runtime:22.23.1
       sharp:
         specifier: ^0.35.1
         version: 0.35.1
@@ -74,7 +74,7 @@ importers:
         version: 66.7.0(eslint@10.5.0(jiti@2.7.0))(typescript@5.9.3)
       '@unocss/preset-web-fonts':
         specifier: <=66.8.0
-        version: 66.7.2
+        version: 66.7.3
       astro-eslint-parser:
         specifier: ^1.4.0
         version: 1.4.0
@@ -1228,8 +1228,8 @@ packages:
   '@unocss/core@66.7.0':
     resolution: {integrity: sha512-j6MFMx5C3iIwW4T4hVbh+30fKWgSGkmS3bCcdjlfqM88lRT+dHFBN9nkfNOBJT6e6IHN9415nexuzcQvTjJXxw==}
 
-  '@unocss/core@66.7.2':
-    resolution: {integrity: sha512-NNnhm9IVPEZ34drwztREP+mq1rio0L4Tp0u247qBKxJJWYec1+I+FTRsw7EvtukZKvr56YAxFA1qbBV+LjyV+Q==}
+  '@unocss/core@66.7.3':
+    resolution: {integrity: sha512-UBfEXpW8NKACeEeUddvPDRuuroDtByO3ZHocs/SqqOEybs5Qb9oWdMJMj1DSe960RvzucLPDtOeCFL2gilzRVA==}
 
   '@unocss/eslint-config@66.7.0':
     resolution: {integrity: sha512-Zgwx8V3l2RWBz9v2wGQ4G1YZojvzP8//HI0OnhmGkMOB+RY9XHM2urRSqOWGOyVOM2VyMv2mVQiGMtJsdn3uWQ==}
@@ -1270,8 +1270,8 @@ packages:
   '@unocss/preset-web-fonts@66.6.0':
     resolution: {integrity: sha512-Mqb8bVSAfDEnkGyAl8ZPdvaojq3YSow4lvxGCOm7nHJFIXkRKgYBgD3tmm+rvO81CUtihZd7hdw0Ay+8pYrlTw==}
 
-  '@unocss/preset-web-fonts@66.7.2':
-    resolution: {integrity: sha512-Tx6YJWxD29NoG6t8hpbnectdL8KkBVEzEYwBcJlEa200O6/KXNpGJ8tk4l5+EK1dwTxWkUqsG+60fzXzTpe5Gg==}
+  '@unocss/preset-web-fonts@66.7.3':
+    resolution: {integrity: sha512-qJVB0NzYyweZsQJ9EHwEBEvTsdKUuNp8BQst6kSEkyl5kGfb2sw2YauPWalH+g0QPBJAmUXkL+iwK6zmEJLEeQ==}
 
   '@unocss/preset-wind3@66.6.0':
     resolution: {integrity: sha512-7gzswF810BCSru7pF01BsMzGZbfrsWT5GV6JJLkhROS2pPjeNOpqy2VEfiavv5z09iGSIESeOFMlXr5ORuLZrg==}
@@ -2231,113 +2231,113 @@ packages:
   node-mock-http@1.0.4:
     resolution: {integrity: sha512-8DY+kFsDkNXy1sJglUfuODx1/opAGJGyrTuFqEoN90oRc2Vk0ZbD4K2qmKXBBEhZQzdKHIVfEJpDU8Ak2NJEvQ==}
 
-  node@runtime:22.23.0:
+  node@runtime:22.23.1:
     resolution:
       type: variations
       variants:
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-XFle8z4bHc1IEoaQq1mc8ka1Gr7UcJKHBu2vVvHQQkg=
+            integrity: sha256-r6sHH3cQcyNdwRkeLthyUF16CNI83/UQPGePnsK6RPk=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-aix-ppc64.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-aix-ppc64.tar.gz
           targets:
             - cpu: ppc64
               os: aix
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-4PODohXdMJPebSx0+HBW3CMGouCa1JTL/9uij4kEb1Y=
+            integrity: sha256-7yjY+rLA5DFFItS7G3FzJwqjk36TuSy33nnBEqwfqVM=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-darwin-arm64.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-darwin-arm64.tar.gz
           targets:
             - cpu: arm64
               os: darwin
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-3CzKsmH9cMNH5MxSCF2NIm9HHMuh/CpyUig5SbMcqfk=
+            integrity: sha256-uNqYG4oLEkG3AkkgSRbadsY1c931gU29LR5BBpEFy4E=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-darwin-x64.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-darwin-x64.tar.gz
           targets:
             - cpu: x64
               os: darwin
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-DJaqB0q9EJ4LXajRAgKpu86pvPndtYeyCUT3G48h+Mg=
+            integrity: sha256-VD+jnlfUwHhVk5RZoyP03rmnndG7RebplFiw8t4Q240=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-linux-arm64.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-linux-arm64.tar.gz
           targets:
             - cpu: arm64
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-KmrId7I4FxHFUXgFKm9IEXHglkwvjTPQz+NtjjXxwsA=
+            integrity: sha256-A8VqwL0+88zpZ8L3svesIlmkrnzuqmYSkarfZXKai1M=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-linux-armv7l.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-linux-armv7l.tar.gz
           targets:
             - cpu: armv7l
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-dA+oS6HT5/XTFV+fe3HiGJ0vu6EZ3wwMWVM9x+QV7+E=
+            integrity: sha256-dboK1JScyQ/gz18eDCi7fl0Xwe2uzTXb8B9YMPmztVI=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-linux-ppc64le.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-linux-ppc64le.tar.gz
           targets:
             - cpu: ppc64le
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-J0yJRs2VvTt7WGwb+zXeMVg2+eiGPindJk3sxz5lK4o=
+            integrity: sha256-lMfFVVOtVSAXL1v70UM4nuvR5qIApeLY0wnp7XPzcOU=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-linux-s390x.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-linux-s390x.tar.gz
           targets:
             - cpu: s390x
               os: linux
         - resolution:
             archive: tarball
             bin: bin/node
-            integrity: sha256-U17rYIyh4LcdSaDjaZHUSdX5NfuwTsphZ3UZsBDNZzo=
+            integrity: sha256-eoywS0od9Or0MhJTJLgbKaCI5zVwojJZqN4cZdB/wSk=
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-linux-x64.tar.gz
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-linux-x64.tar.gz
           targets:
             - cpu: x64
               os: linux
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-jVQKeh7rP/ZoH1FsR9eGlkuHSs2qT9gzONaJi7tPaKQ=
-            prefix: node-v22.23.0-win-arm64
+            integrity: sha256-tHD9/jUCwFFRZW4G1JXj9HVE8u6LHZyHBQkPLdWZa9A=
+            prefix: node-v22.23.1-win-arm64
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-win-arm64.zip
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-win-arm64.zip
           targets:
             - cpu: arm64
               os: win32
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-Qlpb1ozJXo6xa8zNCnUIG0iYP8aib2cSa9TWxxmCMeg=
-            prefix: node-v22.23.0-win-x64
+            integrity: sha256-ffC8k3VyP0qGs6obfMczQkI9lneo30U4rKMaBJ4wnCk=
+            prefix: node-v22.23.1-win-x64
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-win-x64.zip
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-win-x64.zip
           targets:
             - cpu: x64
               os: win32
         - resolution:
             archive: zip
             bin: node.exe
-            integrity: sha256-KJSNvtCCjSDPZKygpFH6OJZyFMy4fQLnBI22OYVFsMA=
-            prefix: node-v22.23.0-win-x86
+            integrity: sha256-4pizaKrYbFcUR6NlDbPOGQYzc//TnW1z0BSl2a0x3GI=
+            prefix: node-v22.23.1-win-x86
             type: binary
-            url: https://nodejs.org/download/release/v22.23.0/node-v22.23.0-win-x86.zip
+            url: https://nodejs.org/download/release/v22.23.1/node-v22.23.1-win-x86.zip
           targets:
             - cpu: x86
               os: win32
-    version: 22.23.0
+    version: 22.23.1
     hasBin: true
 
   normalize-path@3.0.0:
@@ -4183,7 +4183,7 @@ snapshots:
 
   '@unocss/core@66.7.0': {}
 
-  '@unocss/core@66.7.2': {}
+  '@unocss/core@66.7.3': {}
 
   '@unocss/eslint-config@66.7.0(eslint@10.5.0(jiti@2.7.0))(typescript@5.9.3)':
     dependencies:
@@ -4263,9 +4263,9 @@ snapshots:
       '@unocss/core': 66.6.0
       ofetch: 1.5.1
 
-  '@unocss/preset-web-fonts@66.7.2':
+  '@unocss/preset-web-fonts@66.7.3':
     dependencies:
-      '@unocss/core': 66.7.2
+      '@unocss/core': 66.7.3
       ofetch: 1.5.1
 
   '@unocss/preset-wind3@66.6.0':
@@ -4291,7 +4291,7 @@ snapshots:
 
   '@unocss/rule-utils@66.6.0':
     dependencies:
-      '@unocss/core': 66.7.2
+      '@unocss/core': 66.6.0
       magic-string: 0.30.21
 
   '@unocss/rule-utils@66.7.0':
@@ -5571,7 +5571,7 @@ snapshots:
 
   node-mock-http@1.0.4: {}
 
-  node@runtime:22.23.0: {}
+  node@runtime:22.23.1: {}
 
   normalize-path@3.0.0: {}
 
