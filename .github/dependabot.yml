@@ -18,3 +18,7 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 3
+    groups:
+      github-actions:
+        patterns:
+          - "*"
