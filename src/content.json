@@ -3969,6 +3969,14 @@
       "issueNumber": 1572
     },
     {
+      "title": "tmux と Neovim のペイン配置を「境界線操作」として扱う",
+      "date": "2026-06-05",
+      "runner": "kyoh86",
+      "url": "https://zenn.dev/vim_jp/articles/f10e11ada8f114",
+      "githubUser": "kyoh86",
+      "issueNumber": 1609
+    },
+    {
       "title": "Neovim のコマンドライン周りに少し機能を追加する",
       "date": "2026-06-08",
       "runner": "s-show",
