@@ -4015,6 +4015,14 @@
       "url": "https://zenn.dev/k_takata/articles/vim-rework-installer",
       "githubUser": "k-takata",
       "issueNumber": 1600
+    },
+    {
+      "title": "Vimのインストーラー用CIを作り直してみた",
+      "date": "2026-07-06",
+      "runner": "k-takata",
+      "url": "https://zenn.dev/k_takata/articles/vim-rework-ci",
+      "githubUser": "k-takata",
+      "issueNumber": 1616
     }
   ]
 }
