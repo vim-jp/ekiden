@@ -4039,6 +4039,14 @@
       "url": "https://thinca.hatenablog.com/entry/2026/07/megurovim-36",
       "githubUser": "thinca",
       "issueNumber": 1633
+    },
+    {
+      "title": "Vimで選択したテキストをポップアップするプラグイン",
+      "date": "2026-07-17",
+      "runner": "utubo",
+      "url": "https://zenn.dev/utubo/articles/vim-popclip_",
+      "githubUser": "utubo",
+      "issueNumber": 1634
     }
   ]
 }
