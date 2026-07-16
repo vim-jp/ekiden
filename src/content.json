@@ -4044,7 +4044,7 @@
       "title": "Vimで選択したテキストをポップアップするプラグイン",
       "date": "2026-07-17",
       "runner": "utubo",
-      "url": "https://zenn.dev/utubo/articles/vim-popclip_",
+      "url": "https://zenn.dev/utubo/articles/vim-popclip-vim9",
       "githubUser": "utubo",
       "issueNumber": 1634
     }
