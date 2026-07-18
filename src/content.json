@@ -4047,6 +4047,14 @@
       "url": "https://zenn.dev/utubo/articles/vim-popclip-vim9",
       "githubUser": "utubo",
       "issueNumber": 1634
+    },
+    {
+      "title": "Vimのビジュアルモードの切り替えについて考える",
+      "date": "2026-07-20",
+      "runner": "utubo",
+      "url": "https://zenn.dev/utubo/articles/vim-visualmodes",
+      "githubUser": "utubo",
+      "issueNumber": 1635
     }
   ]
 }
