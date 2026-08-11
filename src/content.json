@@ -4055,6 +4055,14 @@
       "url": "https://zenn.dev/utubo/articles/vim-visualmodes",
       "githubUser": "utubo",
       "issueNumber": 1635
+    },
+    {
+      "title": "NeovimのタイムアウトしないZプレフィックス風キーマップの設定",
+      "date": "2026-08-14",
+      "runner": "ultimatile",
+      "url": "https://zenn.dev/ultimatile/articles/neovim-no-timeout-prefix-keymap",
+      "githubUser": "ultimatile",
+      "issueNumber": 1639
     }
   ]
 }
