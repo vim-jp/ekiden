@@ -4041,6 +4041,14 @@
       "issueNumber": 1633
     },
     {
+      "title": "ターミナルを占領するのは許さないよ、Neovimですべて管理する",
+      "date": "2026-07-15",
+      "runner": "nwiizo",
+      "url": "https://syu-m-5151.hatenablog.com/entry/2026/08/03/165215",
+      "githubUser": "nwiizo",
+      "issueNumber": 1640
+    },
+    {
       "title": "Vimで選択したテキストをポップアップするプラグイン",
       "date": "2026-07-17",
       "runner": "utubo",
