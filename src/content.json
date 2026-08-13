@@ -4065,6 +4065,14 @@
       "issueNumber": 1635
     },
     {
+      "title": "Codex CLIをNeovimで使うcodex.nvimを作ったので、使ってみてほしい",
+      "date": "2026-08-12",
+      "runner": "nwiizo",
+      "url": "https://syu-m-5151.hatenablog.com/entry/2026/08/01/205220",
+      "githubUser": "nwiizo",
+      "issueNumber": 1641
+    },
+    {
       "title": "NeovimのタイムアウトしないZプレフィックス風キーマップの設定",
       "date": "2026-08-14",
       "runner": "ultimatile",
