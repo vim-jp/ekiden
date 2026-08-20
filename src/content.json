@@ -4079,6 +4079,14 @@
       "url": "https://zenn.dev/ultimatile/articles/neovim-no-timeout-prefix-keymap",
       "githubUser": "ultimatile",
       "issueNumber": 1639
+    },
+    {
+      "title": "🌉 kakehashi v1をリリース！マークダウンのコードブロックで定義ジャンプとか使えたり、エディタごとの言語サーバー設定を抽象化できたりして便利だぞ！！",
+      "date": "2026-08-19",
+      "runner": "atusy",
+      "url": "https://blog.atusy.net/2026/08/20/kakehashi-v-1-0-0/",
+      "githubUser": "atusy",
+      "issueNumber": 1642
     }
   ]
 }
