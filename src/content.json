@@ -4095,6 +4095,14 @@
       "url": "https://thinca.hatenablog.com/entry/2026/09/megurovim-37",
       "githubUser": "thinca",
       "issueNumber": 1645
+    },
+    {
+      "title": "日本語入力を Skkeleton から Skkelua に変えてみました",
+      "date": "2026-09-18",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1647
     }
   ]
 }
