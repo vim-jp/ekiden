@@ -4103,6 +4103,14 @@
       "url": null,
       "githubUser": "s-show",
       "issueNumber": 1647
+    },
+    {
+      "title": "日本語入力を Skkeleton から Skkelua に変えてみました",
+      "date": "2026-10-19",
+      "runner": "s-show",
+      "url": "https://kankodori-blog.com/post/2026-10-18/",
+      "githubUser": "s-show",
+      "issueNumber": 1648
     }
   ]
 }
