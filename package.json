@@ -44,7 +44,7 @@
     "@unocss/eslint-config": "<=66.8.0",
     "@unocss/preset-web-fonts": "<=66.8.0",
     "@unocss/reset": "<=66.8.0",
-    "astro-eslint-parser": "^1.4.0",
+    "astro-eslint-parser": "^2.1.0",
     "eslint": "^10.6.0",
     "eslint-plugin-astro": "^1.7.0",
     "prettier": "^3.9.4",
