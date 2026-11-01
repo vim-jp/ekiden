@@ -4111,6 +4111,14 @@
       "url": "https://kankodori-blog.com/post/2026-11-01/",
       "githubUser": "s-show",
       "issueNumber": 1650
+    },
+    {
+      "title": "Neovim の dir プラグインをカスタマイズした",
+      "date": "2026-11-04",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1651
     }
   ]
 }
