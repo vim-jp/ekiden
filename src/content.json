@@ -4103,6 +4103,14 @@
       "url": "https://kankodori-blog.com/post/2026-10-18/",
       "githubUser": "s-show",
       "issueNumber": 1648
+    },
+    {
+      "title": "Neovim と Lazy.nvim のプラグイン読み込み順の違い",
+      "date": "2026-11-02",
+      "runner": "s-show",
+      "url": null,
+      "githubUser": "s-show",
+      "issueNumber": 1650
     }
   ]
 }
